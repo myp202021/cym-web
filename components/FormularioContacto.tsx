@@ -6,31 +6,33 @@ import { waLink, mensajeWeb } from '@/lib/sitio'
 const ZONAS = ['Vitacura', 'La Dehesa', 'Las Condes', 'San Carlos de Apoquindo', 'La Reina', 'Otra']
 
 export default function FormularioContacto({ origen, zona = '', codigo = '' }: { origen: string; zona?: string; codigo?: string }) {
-  const [estado, setEstado] = useState<'listo' | 'enviando' | 'ok' | 'error'>('listo')
+  const [estado, setEstado] = useState<'listo' | 'ok'>('listo')
 
-  async function enviar(e: React.FormEvent<HTMLFormElement>) {
+  // Mientras CyM no tenga cuenta de envío de correo propia, el formulario arma el mensaje y abre el WhatsApp central.
+  // Cuando la tengan, volver a llamar a /api/contacto.
+  function enviar(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const datos = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>
-    setEstado('enviando')
-    try {
-      const r = await fetch('/api/contacto', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...datos, origen, pagina: location.pathname }),
-      })
-      if (!r.ok) throw new Error(String(r.status))
-      track('formulario', { origen, zona: datos.zona || '' })
-      setEstado('ok')
-    } catch {
-      setEstado('error')
-    }
+    const d = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>
+    if (d.empresa) return
+    const texto = mensajeWeb([
+      d.nombre && `Mi nombre es ${d.nombre}.`,
+      d.operacion && d.operacion !== 'Otro' && `Quiero ${d.operacion.toLowerCase()}.`,
+      d.zona && `Zona: ${d.zona}.`,
+      d.codigo && `Código ${d.codigo}.`,
+      d.telefono && `Teléfono: ${d.telefono}.`,
+      d.email && `Email: ${d.email}.`,
+      d.mensaje,
+    ])
+    track('formulario', { origen, zona: d.zona || '' })
+    window.open(waLink(texto), '_blank', 'noopener')
+    setEstado('ok')
   }
 
   if (estado === 'ok')
     return (
       <div className="form-ok">
-        <b>¡Gracias! Recibimos tu mensaje.</b>
-        <p>Un corredor de CyM te contactará a la brevedad.</p>
+        <b>¡Gracias! Te abrimos WhatsApp con tus datos.</b>
+        <p>Envía el mensaje y un corredor de CyM te contactará a la brevedad.</p>
       </div>
     )
 
@@ -48,8 +50,8 @@ export default function FormularioContacto({ origen, zona = '', codigo = '' }: {
       </div>
       <div className="fila">
         <label>
-          Email*
-          <input name="email" required type="email" maxLength={120} autoComplete="email" />
+          Email
+          <input name="email" type="email" maxLength={120} autoComplete="email" />
         </label>
         <label>
           ¿Qué necesitas?
@@ -81,18 +83,7 @@ export default function FormularioContacto({ origen, zona = '', codigo = '' }: {
         <textarea name="mensaje" rows={4} maxLength={1500} />
       </label>
       <input name="empresa" className="oculto" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-      <button className="btn" disabled={estado === 'enviando'}>
-        {estado === 'enviando' ? 'Enviando…' : 'Enviar mensaje'}
-      </button>
-      {estado === 'error' && (
-        <p className="form-error">
-          No pudimos enviar el formulario.{' '}
-          <a href={waLink(mensajeWeb([zona ? `Quiero cotizar propiedades en ${zona}.` : 'Quiero información de propiedades.']))} target="_blank" rel="noopener">
-            Escríbenos por WhatsApp
-          </a>{' '}
-          o llama al +56 9 3401 8822.
-        </p>
-      )}
+      <button className="btn">Enviar por WhatsApp</button>
     </form>
   )
 }
