@@ -2,7 +2,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-const sitio = (process.env.NEXT_PUBLIC_SITE_URL || 'https://cym-web.vercel.app').replace(/\/$/, '')
+const sitio = (process.env.NEXT_PUBLIC_SITE_URL || 'https://cym-web-two.vercel.app').replace(/\/$/, '')
 const key = fs.readdirSync(path.join(import.meta.dirname, '..', 'public')).find((f) => /^[a-f0-9]{32}\.txt$/.test(f)).replace('.txt', '')
 const xml = await (await fetch(`${sitio}/sitemap.xml`)).text()
 const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])

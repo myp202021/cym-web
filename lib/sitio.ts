@@ -1,6 +1,6 @@
 // Datos fijos de CyM Propiedades (tomados de www.cympropiedades.cl, 27 oct 2026)
 export const SITIO = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://cym-web.vercel.app').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://cym-web-two.vercel.app').replace(/\/$/, ''),
   nombre: 'CyM Propiedades',
   razon: 'CyM Propiedades — Clients & Management Properties Chile',
   telefono: '+56 9 3401 8822',
