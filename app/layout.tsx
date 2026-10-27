@@ -67,14 +67,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </noscript>
         <JsonLd data={organizacion} />
 
-        <div className="barra-sup">
-          <div className="contenedor">
-            <a href={SITIO.telefonoHref}>{SITIO.telefono}</a>
-            <span>
-              {SITIO.direccion}, {SITIO.comuna}
-            </span>
-          </div>
-        </div>
         <header className="cabecera">
           <div className="contenedor">
             <Link href="/" className="marca" aria-label="CyM Propiedades, inicio">
