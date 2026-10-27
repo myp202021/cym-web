@@ -16,9 +16,9 @@ body { margin: 0; color: var(--texto); background: #fff; font-size: 16px; line-h
 a { color: var(--acento); text-decoration: none; }
 a:hover { text-decoration: underline; }
 h1, h2, h3 { color: var(--negro); line-height: 1.2; margin: 0 0 .5em; }
-h1 { font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 800; letter-spacing: -.01em; }
-h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); font-weight: 800; }
-h3 { font-size: 1.1rem; font-weight: 700; }
+h1 { font-size: clamp(1.55rem, 2.8vw, 2.2rem); font-weight: 700; letter-spacing: -.005em; }
+h2 { font-size: clamp(1.2rem, 1.9vw, 1.5rem); font-weight: 700; }
+h3 { font-size: 1.02rem; font-weight: 700; }
 p { margin: 0 0 1em; }
 img { max-width: 100%; }
 .contenedor { width: min(1180px, 100% - 40px); margin: 0 auto; }
@@ -36,7 +36,7 @@ img { max-width: 100%; }
 .marca:hover { text-decoration: none; }
 .marca b { color: var(--acento); }
 .cabecera nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
-.cabecera nav a { color: var(--negro); font-weight: 700; font-size: .92rem; text-transform: uppercase; letter-spacing: .02em; }
+.cabecera nav a { color: var(--negro); font-weight: 600; font-size: .84rem; text-transform: uppercase; letter-spacing: .02em; }
 .cabecera nav a:hover { color: var(--acento); text-decoration: none; }
 .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 8px 14px; border-radius: 6px; }
 @media (max-width: 900px) {
@@ -65,17 +65,17 @@ img { max-width: 100%; }
 .hero { position: relative; overflow: hidden; background: #111; color: #eee; padding: 72px 0; }
 .hero > .contenedor { position: relative; z-index: 2; }
 .hero-fondo { object-fit: cover; z-index: 0; }
-.hero-velo { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(10,10,10,.88) 0%, rgba(10,10,10,.7) 45%, rgba(10,10,10,.35) 100%); }
-@media (max-width: 900px) { .hero-velo { background: rgba(10,10,10,.72); } }
+.hero-velo { position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(10,10,10,.78) 0%, rgba(10,10,10,.55) 45%, rgba(10,10,10,.2) 100%); }
+@media (max-width: 900px) { .hero-velo { background: rgba(10,10,10,.62); } }
 .hero h1 { color: #fff; }
-.hero .bajada { font-size: 1.1rem; color: #ddd; max-width: 640px; }
+.hero .bajada { font-size: 1.02rem; color: #ddd; max-width: 640px; }
 .hero a:not(.btn) { color: #fff; text-decoration: underline; }
 .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
 .hero-zona { padding: 64px 0 68px; }
 .sobretitulo { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; font-weight: 700; color: var(--acento); margin-bottom: 10px; }
 .cifras { list-style: none; padding: 0; margin: 24px 0; display: flex; flex-wrap: wrap; gap: 12px 28px; }
 .cifras li { font-size: .9rem; color: #ccc; }
-.cifras b { display: block; color: #fff; font-size: 1.25rem; }
+.cifras b { display: block; color: #fff; font-size: 1.1rem; }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 28px; } .hero { padding: 36px 0; } }
 
 /* árbol WhatsApp */
@@ -105,7 +105,7 @@ img { max-width: 100%; }
 .zona img { object-fit: cover; transition: transform .4s; }
 .zona:hover img { transform: scale(1.05); }
 .zona span { position: relative; z-index: 1; width: 100%; padding: 18px; background: linear-gradient(transparent, rgba(0,0,0,.8)); font-size: .9rem; }
-.zona b { display: block; font-size: 1.3rem; }
+.zona b { display: block; font-size: 1.12rem; }
 .zona:hover { text-decoration: none; }
 @media (max-width: 860px) { .zonas { grid-template-columns: repeat(2, 1fr); } }
 
@@ -120,8 +120,8 @@ img { max-width: 100%; }
 .tarjeta-texto { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
 .tarjeta h3 { font-size: 1.02rem; margin-bottom: 6px; }
 .tarjeta h3 a { color: var(--negro); }
-.precio { color: var(--acento); font-weight: 800; font-size: 1.25rem; margin: 0 0 4px; }
-.precio.grande { font-size: 1.8rem; }
+.precio { color: var(--acento); font-weight: 700; font-size: 1.15rem; margin: 0 0 4px; }
+.precio.grande { font-size: 1.5rem; }
 .datos { font-size: .9rem; margin-bottom: 4px; }
 .codigo { font-size: .8rem; color: var(--suave); margin-top: auto; }
 
@@ -164,7 +164,7 @@ img { max-width: 100%; }
 .migas a { color: var(--suave); }
 .ficha-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; align-items: start; }
 .ficha-lateral { position: sticky; top: 100px; background: #fff; border: 1px solid var(--borde); border-radius: var(--radio); padding: 24px; display: grid; gap: 12px; }
-.ficha-lateral h1 { font-size: 1.6rem; margin: 0; }
+.ficha-lateral h1 { font-size: 1.35rem; margin: 0; }
 .ficha-lateral .sobretitulo { margin: 0; }
 .atributos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 0; }
 .atributos div { background: var(--gris); border-radius: 8px; padding: 10px 12px; }
@@ -189,3 +189,19 @@ img { max-width: 100%; }
 .pie a:hover { color: #fff; }
 .legal { margin-top: 28px; font-size: .8rem; color: #888; }
 @media (max-width: 760px) { .pie-grid { grid-template-columns: 1fr; } }
+
+/* acciones, chips, proceso, alianzas (brief CyM oct 2026) */
+.acciones { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 8px; }
+.btn-claro { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.55); }
+.btn-claro:hover { background: #fff; color: var(--negro); }
+.hero .btn-claro { text-decoration: none; }
+.chips { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li { border: 1px solid #e3e3e3; border-radius: 999px; padding: 6px 14px; font-size: .88rem; background: #fff; }
+.proceso { counter-reset: paso; list-style: none; padding: 0; margin: 18px 0 24px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px 18px; }
+.proceso li { counter-increment: paso; display: flex; gap: 10px; align-items: baseline; font-size: .95rem; }
+.proceso li::before { content: counter(paso); color: var(--acento); font-weight: 700; font-size: .85rem; min-width: 1.2em; }
+.caja-propietarios { background: #fff; border: 1px solid #ececec; border-radius: 12px; padding: 28px; align-self: start; }
+.alianzas { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.alianzas li { border: 1px solid #ececec; border-radius: 12px; padding: 22px; }
+.alianzas b { display: block; font-size: 1.05rem; color: var(--negro); margin-bottom: 6px; letter-spacing: .02em; }
+.alianzas p { margin: 0; font-size: .93rem; }

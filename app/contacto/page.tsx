@@ -1,4 +1,4 @@
-import FondoHero, { fotoPortada } from '@/components/FondoHero'
+import FondoHero, { FONDOS } from '@/components/FondoHero'
 import FormularioContacto from '@/components/FormularioContacto'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
@@ -14,7 +14,7 @@ export default function Contacto() {
   return (
     <>
       <section className="hero hero-zona">
-        <FondoHero src={fotoPortada('5985')} />
+        <FondoHero src={FONDOS.contacto} />
         <div className="contenedor">
           <p className="sobretitulo">Contacto</p>
           <h1>Conversemos sobre tu propiedad</h1>

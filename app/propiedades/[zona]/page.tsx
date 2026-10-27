@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import FondoHero, { fotoPortada } from '@/components/FondoHero'
+import FondoHero, { FONDOS } from '@/components/FondoHero'
 import type { Metadata } from 'next'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
@@ -44,7 +44,7 @@ export default async function PaginaZona({ params }: Props) {
       </nav>
 
       <section className="hero hero-zona">
-        <FondoHero src={[...lista].reverse().find((p) => p.tipo === 'Casa')?.fotos[0] || fotoPortada()} />
+        <FondoHero src={FONDOS[z.slug as keyof typeof FONDOS]} />
         <div className="contenedor">
           <p className="sobretitulo">
             {z.nombre === z.comuna ? 'Comuna de' : 'Sector de'} {z.nombre === z.comuna ? z.comuna : `${z.nombre}, ${z.comuna}`}
@@ -95,6 +95,9 @@ export default async function PaginaZona({ params }: Props) {
         <div className="contenedor dos-col">
           <div>
             <h2>Vivir en {z.nombre}</h2>
+            <p>
+              <b>CyM es una corredora boutique especializada en compra, venta y tasación de propiedades residenciales en {z.nombre}, Zona Oriente de Santiago.</b>
+            </p>
             {z.intro.map((t) => (
               <p key={t}>{t}</p>
             ))}
@@ -113,6 +116,42 @@ export default async function PaginaZona({ params }: Props) {
                 <p>{b.texto}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="seccion">
+        <div className="contenedor dos-col">
+          <div>
+            <h2>Microzonas de {z.nombre}</h2>
+            <ul className="chips">
+              {z.microzonas.map((m) => (
+                <li key={m}>{m}</li>
+              ))}
+            </ul>
+            {z.colegios.length > 0 && (
+              <>
+                <h2>Colegios y educación cerca</h2>
+                <ul className="chips">
+                  {z.colegios.map((c) => (
+                    <li key={c}>{c}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+          <div className="caja-propietarios">
+            <p className="sobretitulo">Propietarios</p>
+            <h2>¿Tienes una propiedad en {z.nombre}?</h2>
+            <p>Conoce su valor comercial y accede a una estrategia de venta basada en información de mercado, posicionamiento y demanda activa.</p>
+            <div className="acciones">
+              <Link href="/vende-tu-propiedad" className="btn">
+                Quiero vender
+              </Link>
+              <Link href="/tasacion-propiedades" className="btn btn-borde">
+                Tasar mi propiedad
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -78,8 +78,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   {z.nombre}
                 </Link>
               ))}
-              <Link href="/vende-tu-propiedad">Vende tu propiedad</Link>
-              <Link href="/quienes-somos">Quiénes somos</Link>
+              <Link href="/vende-tu-propiedad">Vender</Link>
+              <Link href="/tasacion-propiedades">Tasar</Link>
+              <Link href="/quienes-somos">Nosotros</Link>
               <Link href="/contacto" className="nav-cta">
                 Contacto
               </Link>

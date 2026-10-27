@@ -3,9 +3,21 @@ import { useState } from 'react'
 import { track } from './track'
 import { waLink, mensajeWeb } from '@/lib/sitio'
 
-const ZONAS = ['Vitacura', 'La Dehesa', 'Las Condes', 'San Carlos de Apoquindo', 'La Reina', 'Otra']
+const ZONAS = ['Vitacura', 'Las Condes', 'San Carlos de Apoquindo', 'La Dehesa', 'Lo Barnechea', 'La Reina', 'Otra']
 
-export default function FormularioContacto({ origen, zona = '', codigo = '' }: { origen: string; zona?: string; codigo?: string }) {
+export default function FormularioContacto({
+  origen,
+  zona = '',
+  codigo = '',
+  propietario = false,
+  boton = 'Enviar por WhatsApp',
+}: {
+  origen: string
+  zona?: string
+  codigo?: string
+  propietario?: boolean
+  boton?: string
+}) {
   const [estado, setEstado] = useState<'listo' | 'ok'>('listo')
 
   // Mientras CyM no tenga cuenta de envío de correo propia, el formulario arma el mensaje y abre el WhatsApp central.
@@ -21,6 +33,14 @@ export default function FormularioContacto({ origen, zona = '', codigo = '' }: {
       d.codigo && `Código ${d.codigo}.`,
       d.telefono && `Teléfono: ${d.telefono}.`,
       d.email && `Email: ${d.email}.`,
+      d.direccion && `Dirección: ${d.direccion}.`,
+      d.tipo && `Tipo: ${d.tipo}.`,
+      d.terreno && `Terreno: ${d.terreno} m².`,
+      d.construida && `Construidos: ${d.construida} m².`,
+      d.dormitorios && `${d.dormitorios} dormitorios.`,
+      d.banos && `${d.banos} baños.`,
+      d.precio && `Precio esperado: ${d.precio}.`,
+      d.fecha && `Fecha estimada de venta: ${d.fecha}.`,
       d.mensaje,
     ])
     track('formulario', { origen, zona: d.zona || '' })
@@ -55,7 +75,7 @@ export default function FormularioContacto({ origen, zona = '', codigo = '' }: {
         </label>
         <label>
           ¿Qué necesitas?
-          <select name="operacion" defaultValue="Comprar">
+          <select name="operacion" defaultValue={propietario ? 'Vender mi propiedad' : 'Comprar'}>
             <option>Comprar</option>
             <option>Arrendar</option>
             <option>Vender mi propiedad</option>
@@ -78,12 +98,61 @@ export default function FormularioContacto({ origen, zona = '', codigo = '' }: {
           <input name="codigo" defaultValue={codigo} maxLength={6} inputMode="numeric" />
         </label>
       </div>
+      {propietario && (
+        <>
+          <div className="fila">
+            <label>
+              Dirección
+              <input name="direccion" maxLength={120} autoComplete="street-address" />
+            </label>
+            <label>
+              Tipo de propiedad
+              <select name="tipo" defaultValue="Casa">
+                <option>Casa</option>
+                <option>Departamento</option>
+                <option>Terreno</option>
+                <option>Otro</option>
+              </select>
+            </label>
+          </div>
+          <div className="fila">
+            <label>
+              Terreno (m²)
+              <input name="terreno" maxLength={8} inputMode="numeric" />
+            </label>
+            <label>
+              Superficie construida (m²)
+              <input name="construida" maxLength={8} inputMode="numeric" />
+            </label>
+          </div>
+          <div className="fila">
+            <label>
+              Dormitorios
+              <input name="dormitorios" maxLength={2} inputMode="numeric" />
+            </label>
+            <label>
+              Baños
+              <input name="banos" maxLength={2} inputMode="numeric" />
+            </label>
+          </div>
+          <div className="fila">
+            <label>
+              Precio esperado (UF)
+              <input name="precio" maxLength={20} />
+            </label>
+            <label>
+              Fecha estimada de venta
+              <input name="fecha" maxLength={40} placeholder="Ej.: marzo 2027" />
+            </label>
+          </div>
+        </>
+      )}
       <label>
         Mensaje
         <textarea name="mensaje" rows={4} maxLength={1500} />
       </label>
       <input name="empresa" className="oculto" tabIndex={-1} autoComplete="off" aria-hidden="true" />
-      <button className="btn">Enviar por WhatsApp</button>
+      <button className="btn">{boton}</button>
     </form>
   )
 }

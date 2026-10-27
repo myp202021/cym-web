@@ -1,10 +1,11 @@
-import FondoHero, { fotoPortada } from '@/components/FondoHero'
+import FondoHero, { FONDOS } from '@/components/FondoHero'
 import Link from 'next/link'
+import Alianzas from '@/components/Alianzas'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { SITIO } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'Quiénes somos | CyM Propiedades, gestión inmobiliaria en La Dehesa',
+  title: 'Quiénes somos | CyM Propiedades, corredora boutique en Zona Oriente',
   description:
     'CyM Propiedades: gestión inmobiliaria con oficina en La Dehesa. Compraventa, arriendo, administración, asesoría legal y financiera en el sector oriente de Santiago.',
   alternates: { canonical: '/quienes-somos' },
@@ -14,16 +15,22 @@ export default function QuienesSomos() {
   return (
     <>
       <section className="hero hero-zona">
-        <FondoHero src={fotoPortada('5821')} />
+        <FondoHero src={FONDOS.nosotros} />
         <div className="contenedor">
           <p className="sobretitulo">La empresa</p>
           <h1>Quiénes somos</h1>
-          <p className="bajada">Clients &amp; Management Properties Chile. Nuestros clientes son nuestra mejor publicidad.</p>
+          <p className="bajada">Corredora boutique de la Zona Oriente de Santiago. 11 años en el mercado y más de 1.500 ventas.</p>
         </div>
       </section>
       <section className="seccion">
         <div className="contenedor dos-col">
           <div>
+            <h2>CyM Propiedades</h2>
+            <p>
+              CyM Propiedades es una corredora boutique especializada en compra, venta y tasación de propiedades residenciales en Vitacura, Las
+              Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina. La dirigen Javier Marshall y Alejandro Ceballos, con oficina en La
+              Dehesa y un corredor a cargo de cada zona.
+            </p>
             <h2>Nuestra misión</h2>
             <p>
               Ayudar a nuestros clientes en la gestión inmobiliaria, otorgándoles asesorías y servicios con soluciones rápidas, efectivas y eficientes en
@@ -61,6 +68,7 @@ export default function QuienesSomos() {
           </div>
         </div>
       </section>
+      <Alianzas />
       <WhatsAppFlotante />
     </>
   )

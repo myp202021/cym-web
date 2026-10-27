@@ -1,22 +1,35 @@
 import Link from 'next/link'
-import FondoHero, { fotoPortada } from '@/components/FondoHero'
+import FondoHero, { FONDOS } from '@/components/FondoHero'
 import Image from 'next/image'
 import ArbolWhatsApp from '@/components/ArbolWhatsApp'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import FormularioContacto from '@/components/FormularioContacto'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import Faq from '@/components/Faq'
+import Alianzas from '@/components/Alianzas'
 import JsonLd from '@/components/JsonLd'
 import { ZONAS, FAQ_HOME } from '@/lib/zonas'
 import { PROPIEDADES, porZona, resumen, formatoUF } from '@/lib/propiedades'
 import { SITIO } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'CyM Propiedades | Casas y departamentos en venta en el sector oriente de Santiago',
+  title: 'Corredora de propiedades en Zona Oriente | CyM Propiedades',
   description:
-    'Casas y departamentos en venta en Vitacura, Las Condes, La Dehesa y La Reina. Corredores por zona, fichas con fotos y precio en UF, y atención inmediata por WhatsApp.',
+    'Compra, vende o tasa tu propiedad en Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina. 11 años y más de 1.500 ventas.',
   alternates: { canonical: '/' },
 }
+
+export const PROCESO = [
+  'Evaluación comercial',
+  'Análisis de mercado',
+  'Estrategia de precio',
+  'Presentación',
+  'Marketing',
+  'Calificación de compradores',
+  'Visitas y seguimiento',
+  'Negociación',
+  'Cierre',
+]
 
 const SERVICIOS = [
   { t: 'Compraventa', d: 'Te acompañamos en la búsqueda, la visita, la negociación y la escritura.' },
@@ -34,29 +47,34 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <FondoHero src={fotoPortada()} />
+        <FondoHero src={FONDOS.home} />
         <div className="contenedor hero-grid">
           <div>
-            <p className="sobretitulo">Corretaje de propiedades · Sector oriente</p>
-            <h1>Casas y departamentos en venta en el sector oriente de Santiago</h1>
+            <p className="sobretitulo">CyM Propiedades · Zona Oriente</p>
+            <h1>Corredora de propiedades especialista en Zona Oriente</h1>
             <p className="bajada">
-              Vitacura, Las Condes, La Dehesa y La Reina. Un corredor de CyM por zona y atención inmediata por WhatsApp: cuéntanos qué buscas y te
-              contactamos con propiedades reales.
+              Compra, vende o tasa tu propiedad en Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina.
             </p>
+            <div className="acciones">
+              <Link href="#zonas" className="btn">
+                Buscar propiedad
+              </Link>
+              <Link href="/vende-tu-propiedad" className="btn btn-claro">
+                Quiero vender
+              </Link>
+              <Link href="/tasacion-propiedades" className="btn btn-claro">
+                Tasar mi propiedad
+              </Link>
+            </div>
             <ul className="cifras">
               <li>
-                <b>{r.total}</b> propiedades destacadas
+                <b>11 años</b> en el mercado
               </li>
-              {r.minUF && r.maxUF && (
-                <li>
-                  <b>
-                    {formatoUF(r.minUF)} – {formatoUF(r.maxUF)}
-                  </b>{' '}
-                  rango de precios
-                </li>
-              )}
               <li>
-                <b>4</b> zonas con corredor propio
+                <b>+1.500</b> ventas
+              </li>
+              <li>
+                <b>{r.total}</b> propiedades destacadas
               </li>
             </ul>
           </div>
@@ -64,7 +82,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion">
+      <section className="seccion" id="zonas">
         <div className="contenedor">
           <h2>Propiedades por zona</h2>
           <p className="intro-seccion">Elige la zona y revisa las propiedades con fotos, superficie y precio. En cada una puedes cotizar por WhatsApp.</p>
@@ -124,17 +142,39 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="banda">
-        <div className="contenedor banda-grid">
+      <section className="seccion gris">
+        <div className="contenedor dos-col">
           <div>
+            <p className="sobretitulo">Propietarios</p>
             <h2>¿Quieres vender tu propiedad?</h2>
-            <p>Tasación comercial, publicación en los principales portales del país y acompañamiento hasta la escritura.</p>
+            <p>
+              Conoce su valor comercial y accede a una estrategia de venta basada en información de mercado, posicionamiento y demanda activa.
+              Vendemos con un proceso, no con improvisación.
+            </p>
+            <ol className="proceso">
+              {PROCESO.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ol>
+            <Link href="/vende-tu-propiedad" className="btn">
+              Quiero vender mi propiedad
+            </Link>
           </div>
-          <Link href="/vende-tu-propiedad" className="btn btn-blanco">
-            Vende con CyM
-          </Link>
+          <div className="caja-propietarios">
+            <p className="sobretitulo">Tasación</p>
+            <h2>¿Cuánto vale tu propiedad?</h2>
+            <p>
+              El valor depende de la ubicación y la microzona, el terreno, la superficie, la orientación, el estado, la distribución, los comparables,
+              la competencia y la demanda. Te lo explicamos con datos.
+            </p>
+            <Link href="/tasacion-propiedades" className="btn btn-borde">
+              Solicitar tasación
+            </Link>
+          </div>
         </div>
       </section>
+
+      <Alianzas />
 
       <Faq items={FAQ_HOME} />
 

@@ -1,11 +1,19 @@
 import Image from 'next/image'
-import { PROPIEDADES } from '@/lib/propiedades'
 
-// Foto real de una propiedad publicada como fondo de portada, con velo oscuro para que se lea el texto.
-// Por defecto la casa 5716 (La Dehesa); si sale de campaña, la primera casa disponible.
-export function fotoPortada(codigo = '5716') {
-  return (PROPIEDADES.find((p) => p.codigo === codigo) || PROPIEDADES.find((p) => p.tipo === 'Casa') || PROPIEDADES[0])?.fotos[0]
-}
+// Fondos de portada: fotos de Santiago oriente con la cordillera (Unsplash, licencia libre).
+// Las fotos de las propiedades traen la marca de agua "CyM PROPIEDADES" al centro y de fondo se ven mal.
+const U = (id: string) => `https://images.unsplash.com/photo-${id}?w=1920&q=75&auto=format&fit=crop`
+export const FONDOS = {
+  home: U('1597006438013-0f0cca2c1a03'),
+  vitacura: U('1593985437133-03d5e1435c03'),
+  'la-dehesa': U('1689850543263-01a52ccc6943'),
+  'las-condes': U('1566079463188-97d2f1352582'),
+  'la-reina': U('1535479672101-8486af672be0'),
+  vender: U('1593985437133-03d5e1435c03'),
+  tasacion: U('1566079463188-97d2f1352582'),
+  nosotros: U('1557974040-3bec341da09b'),
+  contacto: U('1597006438013-0f0cca2c1a03'),
+} as const
 
 export default function FondoHero({ src }: { src?: string }) {
   if (!src) return null

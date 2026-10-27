@@ -11,6 +11,8 @@ export type Zona = {
   barrios: { nombre: string; texto: string }[]
   porQue: string[]
   faq: { q: string; a: string }[]
+  microzonas: string[]
+  colegios: string[]
 }
 
 export const ZONAS: Zona[] = [
@@ -44,6 +46,8 @@ export const ZONAS: Zona[] = [
       { q: '¿CyM ayuda con el crédito hipotecario?', a: 'Sí. CyM ofrece gestión de créditos hipotecarios y asesoría financiera para que compares alternativas antes de ofertar.' },
       { q: '¿Los precios están en UF?', a: 'Sí, las propiedades en venta se publican en UF, como es habitual en el mercado chileno. El corredor te puede indicar el valor en pesos del día.' },
     ],
+    microzonas: ['Santa María de Manquehue', 'Jardín del Este', 'Lo Curro', 'Club de Polo', 'Lo Castillo', 'Las Hualtatas', 'Luis Pasteur'],
+    colegios: ['Tabancura', 'Alianza Francesa', 'Colegio Alemán', "Saint George's", 'San Benito', 'Huelén', 'Los Andes', 'La Maisonnette', 'Santa Úrsula', 'Sagrados Corazones de Manquehue'],
   },
   {
     slug: 'la-dehesa',
@@ -75,6 +79,8 @@ export const ZONAS: Zona[] = [
       { q: '¿Dónde está la oficina de CyM?', a: 'En Av. La Dehesa 1844, oficina 313, Torre Norte, Lo Barnechea.' },
       { q: '¿Cómo agendo una visita?', a: 'Escríbenos por WhatsApp desde la propiedad que te interesa. El corredor de La Dehesa te contacta para coordinar el día y la hora.' },
     ],
+    microzonas: ['Los Trapenses', 'Huinganal', 'El Tranque', 'Pie Andino', 'Camino del Sol', 'Los Nogales', 'El Arrayán'],
+    colegios: ['Santiago College', 'Craighouse', 'Newland', 'Everest', 'Monte Tabor y Nazaret', 'Huinganal', 'Los Alerces', 'Nido de Águilas', 'Mayflower', 'Instituto Hebreo', 'Huelquén Montessori'],
   },
   {
     slug: 'las-condes',
@@ -106,6 +112,8 @@ export const ZONAS: Zona[] = [
       { q: '¿Cómo cotizo?', a: 'Toca "Cotizar por WhatsApp". El asistente de CyM toma tus datos y te deriva al corredor de la zona.' },
       { q: '¿Puedo vender mi propiedad en Las Condes con CyM?', a: 'Sí. Revisa la sección "Vende tu propiedad" o escríbenos por WhatsApp para una tasación comercial.' },
     ],
+    microzonas: ['San Carlos de Apoquindo', 'El Golf', 'Nueva Las Condes', 'Los Dominicos', 'Colón y Estoril'],
+    colegios: ['Scuola Italiana Vittorio Montiglio', 'Colegio Cordillera', 'Padre Hurtado y Juanita de Los Andes', 'San Francisco de Asís', 'Villa María Academy', 'Verbo Divino', 'Universidad de los Andes', 'Universidad del Desarrollo', 'Duoc UC San Carlos'],
   },
   {
     slug: 'la-reina',
@@ -135,6 +143,8 @@ export const ZONAS: Zona[] = [
       { q: '¿Cómo cotizo una casa en La Reina?', a: 'Toca "Cotizar por WhatsApp" y el asistente de CyM te deriva al corredor a cargo.' },
       { q: '¿CyM ayuda con el crédito?', a: 'Sí, CyM ofrece gestión de créditos hipotecarios y asesoría financiera.' },
     ],
+    microzonas: ['La Reina Alta', 'Entorno Príncipe de Gales', 'Eje Av. Larraín'],
+    colegios: [],
   },
 ]
 
@@ -143,10 +153,11 @@ export function zona(slug: string) {
 }
 
 export const FAQ_HOME = [
-  { q: '¿En qué comunas trabaja CyM Propiedades?', a: 'Principalmente en el sector oriente de Santiago: Vitacura, Las Condes (incluido San Carlos de Apoquindo), Lo Barnechea (La Dehesa) y La Reina.' },
+  { q: '¿En qué comunas trabaja CyM Propiedades?', a: 'En la Zona Oriente de Santiago: Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina.' },
   { q: '¿Cómo me contacto con un corredor?', a: 'Por WhatsApp: responde 3 preguntas en el asistente de esta página y el corredor de la zona te escribe a la brevedad. También puedes usar el formulario de contacto o llamar al +56 9 3401 8822.' },
   { q: '¿CyM vende y arrienda propiedades?', a: 'Sí. CyM hace compraventa, arriendo y administración de propiedades, además de asesorías inmobiliarias y legales.' },
-  { q: '¿Puedo vender mi propiedad con CyM?', a: 'Sí. Te asesoramos con una tasación comercial, publicación en los principales portales del país y acompañamiento hasta la escritura.' },
-  { q: '¿CyM ayuda con el crédito hipotecario?', a: 'Sí, CyM ofrece gestión de créditos hipotecarios y asesoría financiera.' },
+  { q: '¿Cómo se determina el precio de una propiedad?', a: 'Depende de la ubicación y la microzona, el terreno, la superficie, la orientación, el estado, la distribución, los comparables del sector y la demanda activa. En la tasación te lo explicamos con datos.' },
+  { q: '¿Puedo vender mi propiedad con CyM?', a: 'Sí. Trabajamos con un proceso de venta: evaluación comercial, análisis de mercado, estrategia de precio, marketing, calificación de compradores, visitas, negociación y cierre.' },
+  { q: '¿CyM ayuda con el crédito hipotecario?', a: 'Sí. Por nuestra alianza con Bci puedes acceder a un crédito preaprobado y conocer tu capacidad de compra antes de elegir.' },
   { q: '¿Dónde están ubicados?', a: 'Av. La Dehesa 1844, oficina 313, Torre Norte, Lo Barnechea.' },
 ]
