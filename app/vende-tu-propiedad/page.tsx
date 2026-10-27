@@ -1,3 +1,4 @@
+import FondoHero, { fotoPortada } from '@/components/FondoHero'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 import FormularioContacto from '@/components/FormularioContacto'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
@@ -31,6 +32,7 @@ export default function Vende() {
   return (
     <>
       <section className="hero hero-zona">
+        <FondoHero src={fotoPortada('5952')} />
         <div className="contenedor">
           <p className="sobretitulo">Propietarios</p>
           <h1>Vende tu propiedad con CyM</h1>

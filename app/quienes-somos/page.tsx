@@ -1,3 +1,4 @@
+import FondoHero, { fotoPortada } from '@/components/FondoHero'
 import Link from 'next/link'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { SITIO } from '@/lib/sitio'
@@ -13,6 +14,7 @@ export default function QuienesSomos() {
   return (
     <>
       <section className="hero hero-zona">
+        <FondoHero src={fotoPortada('5821')} />
         <div className="contenedor">
           <p className="sobretitulo">La empresa</p>
           <h1>Quiénes somos</h1>

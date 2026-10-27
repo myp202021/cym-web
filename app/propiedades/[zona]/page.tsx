@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import FondoHero, { fotoPortada } from '@/components/FondoHero'
 import type { Metadata } from 'next'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
@@ -43,6 +44,7 @@ export default async function PaginaZona({ params }: Props) {
       </nav>
 
       <section className="hero hero-zona">
+        <FondoHero src={[...lista].reverse().find((p) => p.tipo === 'Casa')?.fotos[0] || fotoPortada()} />
         <div className="contenedor">
           <p className="sobretitulo">
             {z.nombre === z.comuna ? 'Comuna de' : 'Sector de'} {z.nombre === z.comuna ? z.comuna : `${z.nombre}, ${z.comuna}`}

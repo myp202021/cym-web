@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FondoHero, { fotoPortada } from '@/components/FondoHero'
 import Image from 'next/image'
 import ArbolWhatsApp from '@/components/ArbolWhatsApp'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
@@ -33,6 +34,7 @@ export default function Home() {
   return (
     <>
       <section className="hero">
+        <FondoHero src={fotoPortada()} />
         <div className="contenedor hero-grid">
           <div>
             <p className="sobretitulo">Corretaje de propiedades · Sector oriente</p>
