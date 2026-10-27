@@ -4,7 +4,7 @@ Next.js (App Router). Home con árbol de WhatsApp, una página por zona (Vitacur
 una ficha por propiedad en campaña, vende tu propiedad, quiénes somos y contacto.
 
 - **Propiedades**: `npm run propiedades` (lee los códigos con gasto del mes en `~/cym-dashboard/data/seguimiento-AAAA-MM.json` y baja la ficha oficial de cympropiedades.cl) → `data/propiedades.json` → commit + push.
-- **WhatsApp**: todos los botones abren el número del agente (`lib/sitio.ts`, WHATSAPP_AGENTE) con un mensaje "Vengo de la web…". El agente (`~/myp-whatsapp-agent`, nodos `web_*`) pregunta lo que falta y deriva al corredor de la zona.
+- **WhatsApp**: todos los botones abren el WhatsApp central +56 9 3401 8822 (`lib/sitio.ts`, WHATSAPP_AGENTE) con un mensaje "Vengo de la web…". El agente (`~/myp-whatsapp-agent`, nodos `web_*`) pregunta lo que falta y deriva al corredor de la zona.
 - **Formulario**: `/api/contacto` → correo a contacto@cympropiedades.cl (copia oculta a christopher@). Variables en Vercel: `GMAIL_USER`, `GMAIL_APP_PASSWORD`.
 - **Seguimiento**: GTM-57H283KW, GA4 G-52T9G8JFN6, Pixel 2684262525251873 (los mismos del sitio oficial). Eventos: `Contact`/`click_whatsapp` y `Lead`/`generate_lead`.
 - **SEO**: title/description/canonical por página, H1 único, schema RealEstateAgent, CollectionPage, ItemList, SingleFamilyResidence/Apartment + RealEstateListing + Offer (CLF), FAQPage, BreadcrumbList. sitemap.xml y robots.txt.

@@ -13,9 +13,10 @@ export const SITIO = {
   sitioOficial: 'https://www.cympropiedades.cl',
 }
 
-// WhatsApp atendido por el agente de CyM (número de Rayen, ~/myp-whatsapp-agent).
-// El agente reconoce los mensajes que dicen "Vengo de la web" y deriva al corredor de la zona.
-export const WHATSAPP_AGENTE = '56951432633'
+// WhatsApp central de CyM (+56 9 3401 8822), pedido de Christopher 27 oct.
+// Los mensajes salen armados ("Vengo de la web…" + zona/código/nombre). Si el agente (~/myp-whatsapp-agent)
+// se vincula a este número, los reconoce y deriva solo al corredor de la zona.
+export const WHATSAPP_AGENTE = '56934018822'
 
 export const TRACKING = {
   gtm: 'GTM-57H283KW',
