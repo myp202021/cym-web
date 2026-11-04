@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { track } from './track'
 import { waLink, mensajeWeb } from '@/lib/sitio'
 
-const ZONAS = ['Vitacura', 'Las Condes', 'San Carlos de Apoquindo', 'La Dehesa', 'Lo Barnechea', 'La Reina', 'Otra']
+const ZONAS = ['Vitacura', 'La Dehesa', 'San Carlos de Apoquindo', 'Las Condes', 'La Reina', 'Otra']
 
 export default function FormularioContacto({
   origen,
@@ -77,8 +77,8 @@ export default function FormularioContacto({
           ¿Qué necesitas?
           <select name="operacion" defaultValue={propietario ? 'Vender mi propiedad' : 'Comprar'}>
             <option>Comprar</option>
-            <option>Arrendar</option>
             <option>Vender mi propiedad</option>
+            <option>Tasar mi propiedad</option>
             <option>Otro</option>
           </select>
         </label>

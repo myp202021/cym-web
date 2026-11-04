@@ -10,12 +10,12 @@ import Alianzas from '@/components/Alianzas'
 import JsonLd from '@/components/JsonLd'
 import { ZONAS, FAQ_HOME } from '@/lib/zonas'
 import { PROPIEDADES, porZona, resumen, formatoUF } from '@/lib/propiedades'
-import { SITIO } from '@/lib/sitio'
+import { SITIO, DESCRIPCION } from '@/lib/sitio'
+import { GUIAS } from '@/lib/guias'
 
 export const metadata = {
-  title: 'Corredora de propiedades en Zona Oriente | CyM Propiedades',
-  description:
-    'Compra, vende o tasa tu propiedad en Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina. 11 años y más de 1.500 ventas.',
+  title: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades',
+  description: DESCRIPCION,
   alternates: { canonical: '/' },
 }
 
@@ -32,11 +32,11 @@ export const PROCESO = [
 ]
 
 const SERVICIOS = [
-  { t: 'Compraventa', d: 'Te acompañamos en la búsqueda, la visita, la negociación y la escritura.' },
-  { t: 'Arriendo y administración', d: 'Arrendamos y administramos tu propiedad con contratos y cobranza en orden.' },
+  { t: 'Venta de casas', d: 'Publicación, visitas, negociación y cierre, con un corredor por zona.' },
+  { t: 'Compra', d: 'Te acompañamos en la búsqueda, la visita, la negociación y la escritura.' },
+  { t: 'Tasación sin costo', d: 'Valor comercial con comparables reales del sector.' },
   { t: 'Asesoría legal', d: 'Estudio de títulos y revisión de documentos antes de firmar.' },
   { t: 'Crédito hipotecario', d: 'Gestión de créditos y asesoría financiera para comparar alternativas.' },
-  { t: 'Remodelaciones', d: 'Apoyo para remodelar y poner en valor la propiedad.' },
   { t: 'Proyectos y segunda vivienda', d: 'Proyectos inmobiliarios en venta y propiedades en otras regiones.' },
 ]
 
@@ -50,10 +50,10 @@ export default function Home() {
         <FondoHero src={FONDOS.home} />
         <div className="contenedor hero-grid">
           <div>
-            <p className="sobretitulo">CyM Propiedades · Zona Oriente</p>
-            <h1>Corredora de propiedades especialista en Zona Oriente</h1>
+            <p className="sobretitulo">CyM Propiedades · Sector oriente</p>
+            <h1>Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo</h1>
             <p className="bajada">
-              Compra, vende o tasa tu propiedad en Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina.
+              Compra, vende o tasa sin costo tu propiedad en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina.
             </p>
             <div className="acciones">
               <Link href="#zonas" className="btn">
@@ -63,18 +63,18 @@ export default function Home() {
                 Quiero vender
               </Link>
               <Link href="/tasacion-propiedades" className="btn btn-claro">
-                Tasar mi propiedad
+                Tasar sin costo
               </Link>
             </div>
             <ul className="cifras">
               <li>
-                <b>11 años</b> en el mercado
+                <b>12 años</b> en el mercado
               </li>
               <li>
-                <b>+1.500</b> ventas
+                <b>+100.000</b> compradores
               </li>
               <li>
-                <b>{r.total}</b> propiedades destacadas
+                <b>{r.total}</b> propiedades en venta
               </li>
             </ul>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
 
       <section className="seccion gris">
         <div className="contenedor">
-          <h2>Propiedades destacadas</h2>
+          <h2>Casas destacadas</h2>
           <div className="grilla">
             {destacadas.map((p) => (
               <TarjetaPropiedad key={p.codigo} p={p} nombreZona={ZONAS.find((z) => z.slug === p.zona)!.nombre} />
@@ -119,10 +119,7 @@ export default function Home() {
         <div className="contenedor dos-col">
           <div>
             <h2>Quiénes somos</h2>
-            <p>
-              CyM Propiedades es una empresa de gestión inmobiliaria con oficina en La Dehesa. Nuestra misión es ayudar a nuestros clientes con
-              soluciones rápidas, efectivas y eficientes, con atención personalizada en cada etapa.
-            </p>
+            <p>{DESCRIPCION}</p>
             <p>Trabajamos con un corredor a cargo de cada zona, para que siempre hables con alguien que conoce el barrio y los valores reales de venta.</p>
             <Link href="/quienes-somos" className="btn btn-borde">
               Conoce CyM
@@ -148,7 +145,7 @@ export default function Home() {
             <p className="sobretitulo">Propietarios</p>
             <h2>¿Quieres vender tu propiedad?</h2>
             <p>
-              Conoce su valor comercial y accede a una estrategia de venta basada en información de mercado, posicionamiento y demanda activa.
+              Conoce su valor comercial y accede a una estrategia de venta basada en información de mercado, posicionamiento y una base de +100.000 compradores.
               Vendemos con un proceso, no con improvisación.
             </p>
             <ol className="proceso">
@@ -161,15 +158,30 @@ export default function Home() {
             </Link>
           </div>
           <div className="caja-propietarios">
-            <p className="sobretitulo">Tasación</p>
+            <p className="sobretitulo">Tasación sin costo</p>
             <h2>¿Cuánto vale tu propiedad?</h2>
             <p>
               El valor depende de la ubicación y la microzona, el terreno, la superficie, la orientación, el estado, la distribución, los comparables,
-              la competencia y la demanda. Te lo explicamos con datos.
+              la competencia y la demanda. Te lo explicamos con datos, sin costo.
             </p>
             <Link href="/tasacion-propiedades" className="btn btn-borde">
               Solicitar tasación
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="seccion">
+        <div className="contenedor">
+          <h2>Guías del sector oriente</h2>
+          <p className="intro-seccion">Respuestas con fuentes a lo que más nos preguntan antes de comprar o vender.</p>
+          <div className="guias">
+            {GUIAS.map((g) => (
+              <Link key={g.slug} href={`/guias/${g.slug}`} className="guia">
+                <b>{g.titulo}</b>
+                <span>{g.resumen}</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -189,7 +201,7 @@ export default function Home() {
       </section>
 
       <WhatsAppFlotante />
-      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITIO.nombre, url: SITIO.url, inLanguage: 'es-CL' }} />
+      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITIO.nombre, url: SITIO.url, inLanguage: 'es-CL', publisher: { '@id': `${SITIO.url}/#cym` } }} />
     </>
   )
 }

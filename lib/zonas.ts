@@ -83,37 +83,62 @@ export const ZONAS: Zona[] = [
     colegios: ['Santiago College', 'Craighouse', 'Newland', 'Everest', 'Monte Tabor y Nazaret', 'Huinganal', 'Los Alerces', 'Nido de Águilas', 'Mayflower', 'Instituto Hebreo', 'Huelquén Montessori'],
   },
   {
+    slug: 'san-carlos-de-apoquindo',
+    nombre: 'San Carlos de Apoquindo',
+    comuna: 'Las Condes',
+    title: 'Casas en venta en San Carlos de Apoquindo | CyM Propiedades',
+    description:
+      'Casas en venta en San Carlos de Apoquindo (Las Condes), con fotos, m² y precio en UF. Tasación sin costo y corredor de la zona con CyM Propiedades.',
+    h1: 'Casas y departamentos en venta en San Carlos de Apoquindo',
+    bajada: 'Propiedades seleccionadas por CyM, con un corredor dedicado a la zona.',
+    intro: [
+      'San Carlos de Apoquindo es el sector alto de Las Condes, con casas familiares, colegios cercanos y vista a la ciudad. En CyM lo trabajamos como un mercado propio, separado del resto de Las Condes, porque sus compradores y sus precios son distintos.',
+    ],
+    barrios: [],
+    porQue: [
+      'Corredor CyM dedicado a San Carlos de Apoquindo.',
+      'Fichas con fotos, superficie y precio en UF publicados.',
+      'Tasación sin costo y apoyo en crédito hipotecario.',
+    ],
+    faq: [
+      { q: '¿San Carlos de Apoquindo es parte de Las Condes?', a: 'Sí. Es un sector de la comuna de Las Condes, en la precordillera. En CyM tiene un corredor dedicado.' },
+      { q: '¿Cómo cotizo una casa en San Carlos de Apoquindo?', a: 'Toca "Cotizar por WhatsApp" en la propiedad que te interesa y el corredor de la zona te escribe con la información completa.' },
+      { q: '¿Puedo vender mi casa en San Carlos de Apoquindo con CyM?', a: 'Sí. Revisa "Vende tu propiedad" o pide una tasación sin costo.' },
+    ],
+    microzonas: ['Lomas de Asís'],
+    colegios: ['Padre Hurtado y Juanita de Los Andes', 'San Francisco de Asís', 'Universidad de los Andes', 'Universidad del Desarrollo', 'Duoc UC San Carlos'],
+  },
+  {
     slug: 'las-condes',
     nombre: 'Las Condes',
     comuna: 'Las Condes',
     title: 'Casas y departamentos en venta en Las Condes | CyM Propiedades',
     description:
-      'Propiedades en venta en Las Condes y San Carlos de Apoquindo: casas y departamentos con fotos y precio en UF. Cotiza por WhatsApp con CyM.',
+      'Propiedades en venta en Las Condes: casas y departamentos con fotos y precio en UF. Cotiza por WhatsApp con CyM.',
     h1: 'Casas y departamentos en venta en Las Condes',
-    bajada: 'Incluye San Carlos de Apoquindo, con corredor especialista en el sector.',
+    bajada: 'Casas y departamentos en Las Condes, con un corredor a cargo de la comuna.',
     intro: [
-      'Las Condes concentra una oferta muy variada: departamentos bien conectados cerca de Av. Apoquindo y del Metro, y casas de barrio en sectores como Los Dominicos, Colón o San Carlos de Apoquindo, en la precordillera.',
-      'En CyM separamos la atención: un corredor para Las Condes y otro especialista en San Carlos de Apoquindo, para que hables siempre con alguien que conoce el barrio.',
+      'Las Condes concentra una oferta muy variada: departamentos bien conectados cerca de Av. Apoquindo y del Metro, y casas de barrio en sectores como Los Dominicos o Colón.',
+      'En CyM un corredor está a cargo de Las Condes, para que hables siempre con alguien que conoce el barrio. San Carlos de Apoquindo tiene su propia página y su propio corredor.',
     ],
     barrios: [
-      { nombre: 'San Carlos de Apoquindo', texto: 'Sector precordillerano de casas amplias y condominios, muy buscado por familias.' },
       { nombre: 'Los Dominicos', texto: 'Barrio residencial de casas, con parques y acceso a la línea 1 del Metro.' },
       { nombre: 'Eje Apoquindo', texto: 'Departamentos cerca del Metro, comercio, oficinas y servicios.' },
       { nombre: 'Colón y Estoril', texto: 'Barrios consolidados de casas y departamentos, con buena conectividad.' },
     ],
     porQue: [
-      'Corredor para Las Condes y especialista en San Carlos de Apoquindo.',
+      'Corredor CyM a cargo de Las Condes.',
       'Casas y departamentos en distintos rangos de precio.',
       'Asesoría en crédito hipotecario y negociación.',
     ],
     faq: [
-      { q: '¿San Carlos de Apoquindo es parte de Las Condes?', a: 'Sí. Es un sector de la comuna de Las Condes, en la precordillera. En CyM tiene un corredor especialista.' },
+      { q: '¿San Carlos de Apoquindo es parte de Las Condes?', a: 'Sí, pero en CyM lo trabajamos aparte, con su propia página y corredor.' },
       { q: '¿Tienen departamentos en Las Condes?', a: 'Sí. En esta página verás casas y departamentos; el tipo aparece en cada ficha.' },
       { q: '¿Cómo cotizo?', a: 'Toca "Cotizar por WhatsApp". El asistente de CyM toma tus datos y te deriva al corredor de la zona.' },
       { q: '¿Puedo vender mi propiedad en Las Condes con CyM?', a: 'Sí. Revisa la sección "Vende tu propiedad" o escríbenos por WhatsApp para una tasación comercial.' },
     ],
-    microzonas: ['San Carlos de Apoquindo', 'El Golf', 'Nueva Las Condes', 'Los Dominicos', 'Colón y Estoril'],
-    colegios: ['Scuola Italiana Vittorio Montiglio', 'Colegio Cordillera', 'Padre Hurtado y Juanita de Los Andes', 'San Francisco de Asís', 'Villa María Academy', 'Verbo Divino', 'Universidad de los Andes', 'Universidad del Desarrollo', 'Duoc UC San Carlos'],
+    microzonas: ['El Golf', 'Nueva Las Condes', 'Los Dominicos', 'Colón y Estoril'],
+    colegios: ['Scuola Italiana Vittorio Montiglio', 'Colegio Cordillera', 'Villa María Academy', 'Verbo Divino'],
   },
   {
     slug: 'la-reina',
@@ -153,11 +178,11 @@ export function zona(slug: string) {
 }
 
 export const FAQ_HOME = [
-  { q: '¿En qué comunas trabaja CyM Propiedades?', a: 'En la Zona Oriente de Santiago: Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina.' },
-  { q: '¿Cómo me contacto con un corredor?', a: 'Por WhatsApp: responde 3 preguntas en el asistente de esta página y el corredor de la zona te escribe a la brevedad. También puedes usar el formulario de contacto o llamar al +56 9 3401 8822.' },
-  { q: '¿CyM vende y arrienda propiedades?', a: 'Sí. CyM hace compraventa, arriendo y administración de propiedades, además de asesorías inmobiliarias y legales.' },
+  { q: '¿En qué comunas trabaja CyM Propiedades?', a: 'En el sector oriente de Santiago: Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina. Nos especializamos en la venta de casas en Vitacura, La Dehesa y San Carlos de Apoquindo.' },
+  { q: '¿Cómo me contacto con un corredor?', a: 'Por WhatsApp: responde las preguntas del asistente de esta página y el corredor de tu zona te escribe. También puedes usar el formulario de contacto o llamar al +56 9 3401 8822.' },
+  { q: '¿La tasación tiene costo?', a: 'No. La tasación comercial de CyM es sin costo y sin compromiso de venta.' },
   { q: '¿Cómo se determina el precio de una propiedad?', a: 'Depende de la ubicación y la microzona, el terreno, la superficie, la orientación, el estado, la distribución, los comparables del sector y la demanda activa. En la tasación te lo explicamos con datos.' },
   { q: '¿Puedo vender mi propiedad con CyM?', a: 'Sí. Trabajamos con un proceso de venta: evaluación comercial, análisis de mercado, estrategia de precio, marketing, calificación de compradores, visitas, negociación y cierre.' },
   { q: '¿CyM ayuda con el crédito hipotecario?', a: 'Sí. Por nuestra alianza con Bci puedes acceder a un crédito preaprobado y conocer tu capacidad de compra antes de elegir.' },
-  { q: '¿Dónde están ubicados?', a: 'Av. La Dehesa 1844, oficina 313, Torre Norte, Lo Barnechea.' },
+  { q: '¿Dónde están ubicados?', a: 'Av. La Dehesa 1844, of. 313, Torre Norte, Lo Barnechea.' },
 ]

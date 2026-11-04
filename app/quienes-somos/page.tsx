@@ -2,12 +2,11 @@ import FondoHero, { FONDOS } from '@/components/FondoHero'
 import Link from 'next/link'
 import Alianzas from '@/components/Alianzas'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
-import { SITIO } from '@/lib/sitio'
+import { SITIO, DESCRIPCION } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'Quiénes somos | CyM Propiedades, corredora boutique en Zona Oriente',
-  description:
-    'CyM Propiedades: gestión inmobiliaria con oficina en La Dehesa. Compraventa, arriendo, administración, asesoría legal y financiera en el sector oriente de Santiago.',
+  title: 'Quiénes somos | CyM Propiedades',
+  description: DESCRIPCION,
   alternates: { canonical: '/quienes-somos' },
 }
 
@@ -19,18 +18,22 @@ export default function QuienesSomos() {
         <div className="contenedor">
           <p className="sobretitulo">La empresa</p>
           <h1>Quiénes somos</h1>
-          <p className="bajada">Corredora boutique de la Zona Oriente de Santiago. 11 años en el mercado y más de 1.500 ventas.</p>
+          <p className="bajada">CyM Propiedades: venta de casas en Vitacura, La Dehesa y San Carlos de Apoquindo.</p>
         </div>
       </section>
       <section className="seccion">
         <div className="contenedor dos-col">
           <div>
             <h2>CyM Propiedades</h2>
+            <p>{DESCRIPCION}</p>
             <p>
-              CyM Propiedades es una corredora boutique especializada en compra, venta y tasación de propiedades residenciales en Vitacura, Las
-              Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina. La dirigen Javier Marshall y Alejandro Ceballos, con oficina en La
-              Dehesa y un corredor a cargo de cada zona.
+              Trabajamos en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina, con un corredor a cargo de cada zona. Así siempre hablas con alguien que conoce el barrio, los condominios y los valores a los que de verdad se cierran las ventas.
             </p>
+            <ul className="cifras oscuro">
+              <li><b>12 años</b> en el mercado</li>
+              <li><b>+100.000</b> compradores en nuestra base</li>
+              <li><b>Sin costo</b> tasación comercial</li>
+            </ul>
             <h2>Nuestra misión</h2>
             <p>
               Ayudar a nuestros clientes en la gestión inmobiliaria, otorgándoles asesorías y servicios con soluciones rápidas, efectivas y eficientes en
@@ -50,8 +53,7 @@ export default function QuienesSomos() {
           <div>
             <h2>Servicios</h2>
             <p>
-              Compraventa, arriendo y administración de propiedades, asesorías inmobiliarias y legales, remodelaciones, gestión de créditos
-              hipotecarios, asesorías financieras y otros servicios asociados al rubro.
+              Venta y compra de casas, tasación sin costo, asesorías inmobiliarias y legales, gestión de créditos hipotecarios y asesorías financieras.
             </p>
             <h3>Proyectos inmobiliarios</h3>
             <p>Contamos con proyectos inmobiliarios en venta.</p>

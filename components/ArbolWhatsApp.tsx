@@ -8,15 +8,15 @@ import { IconoWA } from './BotonWhatsApp'
 // El mensaje sale armado ("Vengo de la web…") y el agente deriva directo al corredor de la zona.
 const OPERACIONES = [
   { id: 'comprar', label: 'Comprar una propiedad', frase: 'Quiero comprar' },
-  { id: 'arrendar', label: 'Arrendar una propiedad', frase: 'Quiero arrendar' },
-  { id: 'vender', label: 'Vender o publicar mi propiedad', frase: 'Quiero vender' },
+  { id: 'vender', label: 'Vender mi propiedad', frase: 'Quiero vender' },
+  { id: 'tasar', label: 'Tasar mi propiedad sin costo', frase: 'Quiero tasar' },
   { id: 'codigo', label: 'Tengo el código de una propiedad', frase: '' },
 ]
 const TIPOS = [
   { id: 'casa', label: 'Casa', frase: 'una casa' },
   { id: 'departamento', label: 'Departamento', frase: 'un departamento' },
 ]
-const ZONAS = ['Vitacura', 'La Dehesa', 'Las Condes', 'San Carlos de Apoquindo', 'La Reina', 'Aún no lo sé']
+const ZONAS = ['Vitacura', 'La Dehesa', 'San Carlos de Apoquindo', 'Las Condes', 'La Reina', 'Aún no lo sé']
 
 export default function ArbolWhatsApp() {
   const [op, setOp] = useState<string>('')
@@ -34,7 +34,7 @@ export default function ArbolWhatsApp() {
     op === 'codigo'
       ? mensajeWeb([`Me interesa la propiedad código ${codigo}.`, nombre && `Mi nombre es ${nombre.trim()}.`])
       : mensajeWeb([
-          operacion && tipoSel && `${operacion.frase} ${op === 'vender' ? tipoSel.frase.replace(/^un[a]? /, 'mi ') : tipoSel.frase}${zonaTexto}.`,
+          operacion && tipoSel && `${operacion.frase} ${op === 'vender' || op === 'tasar' ? tipoSel.frase.replace(/^un[a]? /, 'mi ') : tipoSel.frase}${zonaTexto}.`,
           nombre && `Mi nombre es ${nombre.trim()}.`,
         ])
 
@@ -80,7 +80,7 @@ export default function ArbolWhatsApp() {
 
         {op && op !== 'codigo' && (
           <>
-            <p className="burbuja">{op === 'vender' ? '¿Qué tipo de propiedad quieres vender?' : '¿Buscas casa o departamento?'}</p>
+            <p className="burbuja">{op === 'vender' || op === 'tasar' ? '¿Qué tipo de propiedad quieres vender?' : '¿Buscas casa o departamento?'}</p>
             {paso === 2 ? (
               <div className="opciones">
                 {TIPOS.map((t) => (
@@ -97,7 +97,7 @@ export default function ArbolWhatsApp() {
 
         {op && op !== 'codigo' && paso >= 3 && (
           <>
-            <p className="burbuja">{op === 'vender' ? '¿En qué zona está tu propiedad?' : '¿En qué zona del sector oriente?'}</p>
+            <p className="burbuja">{op === 'vender' || op === 'tasar' ? '¿En qué zona está tu propiedad?' : '¿En qué zona del sector oriente?'}</p>
             {paso === 3 ? (
               <div className="opciones">
                 {ZONAS.map((z) => (

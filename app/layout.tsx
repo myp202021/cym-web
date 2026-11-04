@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Raleway } from 'next/font/google'
 import JsonLd from '@/components/JsonLd'
-import { SITIO, TRACKING } from '@/lib/sitio'
+import { SITIO, TRACKING, DESCRIPCION } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import './globals.css'
 
@@ -12,9 +12,8 @@ const raleway = Raleway({ subsets: ['latin'], weight: ['400', '500', '700', '800
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITIO.url),
-  title: { default: 'CyM Propiedades | Casas y departamentos en el sector oriente de Santiago', template: '%s' },
-  description:
-    'Corretaje de propiedades en Vitacura, Las Condes, La Dehesa y La Reina. Compra, venta y arriendo con corredores por zona y atención por WhatsApp.',
+  title: { default: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades', template: '%s' },
+  description: DESCRIPCION,
   applicationName: SITIO.nombre,
   openGraph: { type: 'website', locale: 'es_CL', siteName: SITIO.nombre, images: ['/logo5.jpg'] },
   twitter: { card: 'summary_large_image' },
@@ -29,6 +28,7 @@ const organizacion = {
   name: SITIO.nombre,
   alternateName: SITIO.razon,
   url: SITIO.url,
+  description: DESCRIPCION,
   logo: `${SITIO.url}/logo5.jpg`,
   image: `${SITIO.url}/logo5.jpg`,
   telephone: SITIO.telefono,
@@ -80,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
               <Link href="/vende-tu-propiedad">Vender</Link>
               <Link href="/tasacion-propiedades">Tasar</Link>
+              <Link href="/guias">Guías</Link>
               <Link href="/quienes-somos">Nosotros</Link>
               <Link href="/contacto" className="nav-cta">
                 Contacto
@@ -94,7 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="contenedor pie-grid">
             <div>
               <Image src="/logo_blanco.png" alt="CyM Propiedades" width={110} height={58} />
-              <p>Gestión inmobiliaria en el sector oriente de Santiago: compraventa, arriendo, administración y asesoría legal y financiera.</p>
+              <p>{DESCRIPCION}</p>
             </div>
             <div>
               <b>Propiedades</b>
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   Propiedades en {z.nombre}
                 </Link>
               ))}
+              <Link href="/guias">Guías del sector oriente</Link>
             </div>
             <div>
               <b>Contacto</b>

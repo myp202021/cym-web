@@ -7,6 +7,7 @@ export const FONDOS = {
   home: U('1597006438013-0f0cca2c1a03'),
   vitacura: U('1593985437133-03d5e1435c03'),
   'la-dehesa': U('1689850543263-01a52ccc6943'),
+  'san-carlos-de-apoquindo': U('1566079463188-97d2f1352582'),
   'las-condes': U('1566079463188-97d2f1352582'),
   'la-reina': U('1535479672101-8486af672be0'),
   vender: U('1593985437133-03d5e1435c03'),

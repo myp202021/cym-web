@@ -34,7 +34,7 @@ export default async function PaginaZona({ params }: Props) {
   if (!z) notFound()
   const lista = porZona(z.slug)
   const r = resumen(lista)
-  const sectores = [...new Set(lista.map((p) => p.sector).filter(Boolean))]
+  const sectores = [...new Set(lista.map((p) => p.sector).filter((s) => s && s !== z.nombre))]
   const url = `${SITIO.url}/propiedades/${z.slug}`
 
   return (
@@ -96,7 +96,7 @@ export default async function PaginaZona({ params }: Props) {
           <div>
             <h2>Vivir en {z.nombre}</h2>
             <p>
-              <b>CyM es una corredora boutique especializada en compra, venta y tasación de propiedades residenciales en {z.nombre}, Zona Oriente de Santiago.</b>
+              <b>CyM es una corredora de propiedades especializada en compra, venta y tasación de propiedades residenciales en {z.nombre}, sector oriente de Santiago.</b>
             </p>
             {z.intro.map((t) => (
               <p key={t}>{t}</p>

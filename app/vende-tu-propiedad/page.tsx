@@ -7,9 +7,9 @@ import Link from 'next/link'
 import { mensajeWeb } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'Vende tu propiedad en Zona Oriente — tasación y estrategia | CyM',
+  title: 'Vende tu propiedad en el sector oriente — tasación y estrategia | CyM',
   description:
-    'Vende tu casa o departamento en Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea o La Reina con un proceso de venta basado en información de mercado.',
+    'Vende tu casa o departamento en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes o La Reina con un proceso de venta basado en información de mercado.',
   alternates: { canonical: '/vende-tu-propiedad' },
 }
 
@@ -29,8 +29,8 @@ const FAQ = [
   { q: '¿Cuánto vale mi propiedad?', a: 'Te hacemos una tasación comercial con referencias del sector. Escríbenos por WhatsApp o deja tus datos en el formulario.' },
   { q: '¿Cuánto demora vender una casa?', a: 'Depende del precio de salida, la microzona y la demanda del momento. Con un precio bien definido desde el inicio, los plazos se acortan; en la evaluación te damos una estimación para tu caso.' },
   { q: '¿Dónde publican las propiedades?', a: 'En los principales portales del país, en el sitio de CyM, en redes y en campañas por zona, además de nuestra base de compradores.' },
-  { q: '¿También arriendan y administran?', a: 'Sí. CyM arrienda y administra propiedades, con contrato, cobranza y seguimiento.' },
-  { q: '¿En qué comunas trabajan?', a: 'Vitacura, Las Condes, San Carlos de Apoquindo, La Dehesa, Lo Barnechea y La Reina.' },
+  { q: '¿La tasación tiene costo?', a: 'No. La tasación comercial de CyM es sin costo y sin compromiso de venta.' },
+  { q: '¿En qué comunas trabajan?', a: 'Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina.' },
 ]
 
 export default function Vende() {
@@ -40,7 +40,7 @@ export default function Vende() {
         <FondoHero src={FONDOS.vender} />
         <div className="contenedor">
           <p className="sobretitulo">Propietarios</p>
-          <h1>Vende tu propiedad con especialistas en Zona Oriente</h1>
+          <h1>Vende tu propiedad con especialistas en el sector oriente</h1>
           <p className="bajada">
             Metodología, precio, posicionamiento, marketing, compradores calificados, visitas, ofertas, negociación y cierre, con información de mercado
             propia.
@@ -61,7 +61,6 @@ export default function Vende() {
             ))}
           </ol>
           <p>
-            ¿Prefieres arrendar? También <Link href="/contacto">arrendamos y administramos</Link> propiedades.
           </p>
         </div>
       </section>

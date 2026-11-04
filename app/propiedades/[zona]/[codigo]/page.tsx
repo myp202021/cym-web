@@ -22,18 +22,17 @@ function datosPagina(zonaSlug: string, codigo: string) {
   const z = buscarZona(zonaSlug)
   if (!p || !z || p.zona !== z.slug) return null
   const lugar = p.sector ? `${p.sector}, ${p.comuna}` : p.comuna
-  const title = `${p.tipo} en ${p.operacion.toLowerCase()} en ${p.sector || z.nombre}, ${p.precio} · Código ${p.codigo} | CyM`
+  const zonaTxt = p.sector || z.nombre
+  const m2 = p.m2_construidos ? ` de ${p.m2_construidos} m²` : ''
+  const h1 = `${p.tipo}${m2} en venta en ${zonaTxt}`
+  const title = `${p.tipo} en venta en ${zonaTxt}, ${p.precio} · Código ${p.codigo} | CyM Propiedades`
   const description = [
-    `${p.tipo} en ${p.operacion.toLowerCase()} en ${lugar}`,
-    p.dormitorios && `${p.dormitorios} dormitorios`,
-    p.banos && `${p.banos} baños`,
-    p.m2_construidos && `${p.m2_construidos} m² construidos`,
-    p.precio,
-  ]
-    .filter(Boolean)
-    .join(', ')
-    .concat('. Cotiza por WhatsApp con CyM Propiedades.')
-  return { p, z, lugar, title, description }
+    `${p.tipo}${m2}`,
+    p.m2_terreno ? ` en terreno de ${p.m2_terreno} m²` : '',
+    p.dormitorios ? ` con ${p.dormitorios} dormitorios${p.banos ? ` y ${p.banos} baños` : ''}` : '',
+    ` en ${zonaTxt}${p.sector || z.nombre !== z.comuna ? `, ${p.comuna}` : ""}. ${p.precio}. Agenda tu visita con CyM Propiedades.`,
+  ].join('')
+  return { p, z, lugar, title, description, h1 }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -88,7 +87,8 @@ export default async function PaginaPropiedad({ params }: Props) {
             <p className="sobretitulo">
               {p.tipo} en {p.operacion.toLowerCase()} · {lugar}
             </p>
-            <h1>{titulo(p)}</h1>
+            <h1>{d.h1}</h1>
+            <p className="bajada-ficha">{titulo(p)}</p>
             <p className="precio grande">{p.precio}</p>
             <dl className="atributos">
               <div>
@@ -193,7 +193,7 @@ export default async function PaginaPropiedad({ params }: Props) {
                       price: precioUF,
                       priceCurrency: 'CLF',
                       availability: 'https://schema.org/InStock',
-                      businessFunction: p.operacion === 'Arriendo' ? 'http://purl.org/goodrelations/v1#LeaseOut' : 'http://purl.org/goodrelations/v1#Sell',
+                      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
                       seller: { '@id': `${SITIO.url}/#cym` },
                     },
                   }),

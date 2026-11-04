@@ -78,10 +78,13 @@ def main():
         if not d or not d.get('fotos'):
             print('sin ficha publicada', x['codigo'])
             continue
+        if d.get('operacion') != 'Venta':  # CyM no trabaja arriendo en esta landing
+            continue
         d['campana'] = x['comuna']
         d['zona'] = ZONA.get(x['comuna']) or COMUNA_ZONA.get(d['comuna'], '')
         if x['comuna'] == 'SCA':
             d['sector'] = 'San Carlos de Apoquindo'
+            d['zona'] = 'san-carlos-de-apoquindo'
         if not d['zona']:
             print('sin zona', x['codigo'], d['comuna'])
             continue
