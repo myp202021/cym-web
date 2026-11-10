@@ -199,7 +199,6 @@ export default function Home() {
         </div>
       </section>
 
-      <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITIO.nombre, url: SITIO.url, inLanguage: 'es-CL', publisher: { '@id': `${SITIO.url}/#cym` } }} />
     </>
   )
 }

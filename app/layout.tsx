@@ -41,7 +41,7 @@ const organizacion = {
     addressRegion: SITIO.region,
     addressCountry: 'CL',
   },
-  areaServed: ZONAS.map((z) => ({ '@type': 'Place', name: `${z.nombre}, ${z.comuna}` })),
+  areaServed: ZONAS.map((z) => ({ '@type': 'AdministrativeArea', name: `${z.nombre}, ${z.comuna}` })),
   sameAs: [SITIO.instagram, SITIO.sitioOficial],
 }
 
@@ -67,6 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <img height="1" width="1" style={{ display: 'none' }} alt="" src={`https://www.facebook.com/tr?id=${TRACKING.pixel}&ev=PageView&noscript=1`} />
         </noscript>
         <JsonLd data={organizacion} />
+        <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITIO.nombre, url: SITIO.url, inLanguage: 'es-CL', publisher: { '@id': `${SITIO.url}/#cym` } }} />
 
         <header className="cabecera">
           <div className="contenedor">
