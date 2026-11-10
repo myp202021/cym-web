@@ -39,14 +39,26 @@ img { max-width: 100%; }
 .cabecera nav a { color: var(--negro); font-weight: 600; font-size: .84rem; text-transform: uppercase; letter-spacing: .02em; }
 .cabecera nav a:hover { color: var(--acento); text-decoration: none; }
 .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 8px 14px; border-radius: 6px; }
+
+/* menú: títulos y botón ☰ solo en celular */
+.menu-titulo, .menu-boton { display: none; }
+@media (max-width: 1080px) { .cabecera nav { gap: 10px 14px; } .cabecera nav a { font-size: .76rem; } }
 @media (max-width: 900px) {
-  .cabecera nav { gap: 10px 14px; }
-  .cabecera nav a { font-size: .78rem; }
   .barra-sup span { display: none; }
-}
-@media (max-width: 640px) {
-  .cabecera .contenedor { flex-direction: column; align-items: flex-start; }
-  .cabecera nav { justify-content: flex-start; }
+  .cabecera .contenedor { padding: 6px 0; }
+  .marca img { width: 68px; height: auto; }
+  .menu-boton { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; background: none; border: 0; cursor: pointer; }
+  .menu-boton span { display: block; height: 2px; background: var(--negro); border-radius: 2px; transition: transform .2s, opacity .2s; }
+  .menu-boton[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-boton[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-boton[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .cabecera nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 2px solid var(--acento); box-shadow: 0 14px 30px rgba(0,0,0,.12); padding: 6px 20px 20px; flex-direction: column; align-items: stretch; gap: 0; max-height: calc(100dvh - 64px); overflow-y: auto; }
+  .cabecera nav.abierto { display: flex; }
+  .cabecera nav a { font-size: .95rem; padding: 13px 0; border-bottom: 1px solid var(--borde); }
+  .cabecera nav .menu-comuna { text-transform: none; letter-spacing: 0; font-weight: 700; }
+  .cabecera nav .nav-cta { margin-top: 16px; text-align: center; padding: 14px; border: 0; }
+  .menu-titulo { display: block; margin: 14px 0 0; font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--suave); }
+  body.menu-abierto { overflow: hidden; }
 }
 
 /* botones */
@@ -234,3 +246,32 @@ img { max-width: 100%; }
 .comunas-hero a{color:inherit;text-decoration:none}
 .comunas-hero a:hover{text-decoration:underline}
 .comunas-hero a:not(:last-child)::after{content:'·';margin:0 10px;opacity:.6}
+
+/* Portada en celular (10 nov 2026) */
+.hero .comunas-hero a{text-decoration:none}
+.hero .comunas-hero a:hover{text-decoration:underline}
+html,body{overflow-x:clip}
+@media (max-width: 640px) {
+  .contenedor, .angosto { width: calc(100% - 32px); }
+  .hero { padding: 28px 0 32px; }
+  .hero h1 { font-size: 1.7rem; }
+  .sobretitulo { font-size: .72rem; letter-spacing: .1em; }
+  .comunas-hero { gap: 8px; margin: 14px 0 12px; font-size: .9rem; }
+  .comunas-hero a:not(:last-child)::after { content: none; }
+  .hero .comunas-hero a { border: 1px solid rgba(255,255,255,.45); background: rgba(255,255,255,.08); border-radius: 999px; padding: 6px 12px; }
+  .hero .bajada { font-size: .98rem; }
+  .acciones { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .acciones .btn { padding: 13px 10px; font-size: .95rem; }
+  .cifras { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 22px 0 4px; }
+  .cifras li { font-size: .78rem; line-height: 1.3; }
+  .cifras b { font-size: 1.05rem; }
+  .seccion { padding: 40px 0; }
+  .pasos { grid-template-columns: 1fr; }
+  .zonas { gap: 10px; }
+  .zonas > :last-child:nth-child(odd) { grid-column: 1 / -1; aspect-ratio: 16/9; }
+  .zona span { padding: 12px; font-size: .8rem; }
+  .banda-grid .btn { width: 100%; }
+  .formulario { padding: 18px; }
+  .wa-flotante { right: 16px; bottom: 16px; width: 56px; height: 56px; }
+  .asistente-panel { right: 16px; bottom: 82px; }
+}

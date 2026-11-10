@@ -94,7 +94,7 @@ export default function Home() {
                   {lista[0] && <Image src={lista[0].fotos[0]} alt={`Propiedades en ${z.nombre}`} fill sizes="(max-width: 700px) 100vw, 300px" />}
                   <span>
                     <b>{z.nombre}</b>
-                    {rz.total} propiedades{rz.minUF ? ` · desde ${formatoUF(rz.minUF)}` : ''}
+                    {rz.total} {rz.total === 1 ? 'propiedad' : 'propiedades'}{rz.minUF ? ` · desde ${formatoUF(rz.minUF)}` : ''}
                   </span>
                 </Link>
               )

@@ -1,4 +1,6 @@
 import datos from '@/data/propiedades.json'
+import { WHATSAPP_ZONA } from '@/lib/sitio'
+import { zona as buscarZonaSlug } from '@/lib/zonas'
 
 export type Propiedad = {
   codigo: string
@@ -63,4 +65,9 @@ export function resumen(lista: Propiedad[]) {
     minDorm: dorm.length ? Math.min(...dorm) : null,
     maxDorm: dorm.length ? Math.max(...dorm) : null,
   }
+}
+
+// WhatsApp de la ejecutiva a cargo (10 nov 2026): departamentos → Caro; casas → director de la comuna.
+export function numeroPropiedad(p: Propiedad) {
+  return WHATSAPP_ZONA[p.tipo === 'Departamento' ? 'Departamentos' : buscarZonaSlug(p.zona)?.nombre || '']
 }

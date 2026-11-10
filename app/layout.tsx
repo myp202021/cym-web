@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Raleway } from 'next/font/google'
 import JsonLd from '@/components/JsonLd'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
+import MenuPrincipal from '@/components/MenuPrincipal'
 import { SITIO, TRACKING, DESCRIPCION } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import './globals.css'
@@ -74,20 +75,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="marca" aria-label="CyM Propiedades, inicio">
               <Image src="/logo5.jpg" alt="CyM Propiedades" width={85} height={48} priority />
             </Link>
-            <nav aria-label="Principal">
-              {ZONAS.map((z) => (
-                <Link key={z.slug} href={`/propiedades/${z.slug}`}>
-                  {z.nombre}
-                </Link>
-              ))}
-              <Link href="/vende-tu-propiedad">Vender</Link>
-              <Link href="/tasacion-propiedades">Tasar</Link>
-              <Link href="/guias">Guías</Link>
-              <Link href="/quienes-somos">Nosotros</Link>
-              <Link href="/contacto" className="nav-cta">
-                Contacto
-              </Link>
-            </nav>
+            <MenuPrincipal comunas={ZONAS.map((z) => ({ href: `/propiedades/${z.slug}`, texto: z.nombre }))} />
           </div>
         </header>
 

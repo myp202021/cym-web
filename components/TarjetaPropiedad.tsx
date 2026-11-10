@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import BotonWhatsApp from './BotonWhatsApp'
-import { type Propiedad, titulo, zonaAgente } from '@/lib/propiedades'
+import { type Propiedad, titulo, zonaAgente, numeroPropiedad } from '@/lib/propiedades'
 import { mensajeWeb } from '@/lib/sitio'
 
 export default function TarjetaPropiedad({ p, nombreZona }: { p: Propiedad; nombreZona: string }) {
@@ -25,7 +25,7 @@ export default function TarjetaPropiedad({ p, nombreZona }: { p: Propiedad; nomb
           {p.m2_construidos ? ` · ${p.m2_construidos} m²` : ''}
         </p>
         <p className="codigo">Código {p.codigo}</p>
-        <BotonWhatsApp texto="Cotizar por WhatsApp" mensaje={mensaje} origen={`propiedad_${p.codigo}`} className="btn btn-wa ancho" />
+        <BotonWhatsApp texto="Cotizar por WhatsApp" mensaje={mensaje} origen={`propiedad_${p.codigo}`} className="btn btn-wa ancho" numero={numeroPropiedad(p)} />
       </div>
     </article>
   )

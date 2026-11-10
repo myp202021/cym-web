@@ -8,7 +8,7 @@ import FormularioContacto from '@/components/FormularioContacto'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import JsonLd from '@/components/JsonLd'
 import { zona as buscarZona } from '@/lib/zonas'
-import { PROPIEDADES, porCodigo, porZona, titulo, uf, zonaAgente } from '@/lib/propiedades'
+import { PROPIEDADES, porCodigo, porZona, titulo, uf, zonaAgente, numeroPropiedad } from '@/lib/propiedades'
 import { SITIO, mensajeWeb } from '@/lib/sitio'
 
 type Props = { params: Promise<{ zona: string; codigo: string }> }
@@ -121,7 +121,7 @@ export default async function PaginaPropiedad({ params }: Props) {
                 </div>
               ) : null}
             </dl>
-            <BotonWhatsApp texto="Cotizar por WhatsApp" mensaje={mensaje} origen={`ficha_${p.codigo}`} className="btn btn-wa ancho" />
+            <BotonWhatsApp texto="Cotizar por WhatsApp" mensaje={mensaje} origen={`ficha_${p.codigo}`} className="btn btn-wa ancho" numero={numeroPropiedad(p)} />
             <a className="btn btn-borde ancho" href={SITIO.telefonoHref}>
               Llamar {SITIO.telefono}
             </a>

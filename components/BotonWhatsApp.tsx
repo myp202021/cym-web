@@ -2,9 +2,9 @@
 import { track } from './track'
 import { waLink } from '@/lib/sitio'
 
-export default function BotonWhatsApp({ texto, mensaje, origen, className = 'btn btn-wa' }: { texto: string; mensaje: string; origen: string; className?: string }) {
+export default function BotonWhatsApp({ texto, mensaje, origen, className = 'btn btn-wa', numero }: { texto: string; mensaje: string; origen: string; className?: string; numero?: string }) {
   return (
-    <a className={className} href={waLink(mensaje)} target="_blank" rel="noopener" onClick={() => track('whatsapp', { origen })}>
+    <a className={className} href={waLink(mensaje, numero || undefined)} target="_blank" rel="noopener" onClick={() => track('whatsapp', { origen })}>
       <IconoWA /> {texto}
     </a>
   )

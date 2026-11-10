@@ -10,7 +10,7 @@ import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import { ZONAS, zona as buscarZona } from '@/lib/zonas'
 import { porZona, resumen, formatoUF, titulo } from '@/lib/propiedades'
-import { SITIO, mensajeWeb } from '@/lib/sitio'
+import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 
 type Props = { params: Promise<{ zona: string }> }
 
@@ -53,14 +53,14 @@ export default async function PaginaZona({ params }: Props) {
           <p className="bajada">{z.bajada}</p>
           <ul className="cifras">
             <li>
-              <b>{r.total}</b> propiedades publicadas
+              <b>{r.total}</b> {r.total === 1 ? 'propiedad publicada' : 'propiedades publicadas'}
             </li>
             {r.minUF && r.maxUF && (
               <li>
                 <b>
-                  {formatoUF(r.minUF)} – {formatoUF(r.maxUF)}
+                  {r.minUF === r.maxUF ? formatoUF(r.minUF) : `${formatoUF(r.minUF)} – ${formatoUF(r.maxUF)}`}
                 </b>{' '}
-                rango de precios
+                {r.minUF === r.maxUF ? 'precio' : 'rango de precios'}
               </li>
             )}
             {r.minDorm && r.maxDorm && (
@@ -72,7 +72,7 @@ export default async function PaginaZona({ params }: Props) {
               </li>
             )}
           </ul>
-          <BotonWhatsApp texto={`Cotizar en ${z.nombre} por WhatsApp`} mensaje={mensajeWeb([`Quiero cotizar propiedades en ${z.nombre}.`])} origen={`zona_${z.slug}`} />
+          <BotonWhatsApp texto={`Cotizar en ${z.nombre} por WhatsApp`} mensaje={mensajeWeb([`Quiero cotizar propiedades en ${z.nombre}.`])} origen={`zona_${z.slug}`} numero={WHATSAPP_ZONA[z.nombre]} />
         </div>
       </section>
 
@@ -80,7 +80,7 @@ export default async function PaginaZona({ params }: Props) {
         <div className="contenedor">
           <h2>Propiedades en venta en {z.nombre}</h2>
           <p className="intro-seccion">
-            {r.casas} casas{r.deptos ? ` y ${r.deptos} departamentos` : ''}
+            {r.casas} {r.casas === 1 ? 'casa' : 'casas'}{r.deptos ? ` y ${r.deptos} ${r.deptos === 1 ? 'departamento' : 'departamentos'}` : ''}
             {sectores.length ? `, incluidas propiedades en ${sectores.join(', ')}` : ''}. Ordenadas de menor a mayor precio.
           </p>
           <div className="grilla">
