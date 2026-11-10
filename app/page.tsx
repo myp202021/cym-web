@@ -86,15 +86,17 @@ export default function Home() {
           <h2>Propiedades por zona</h2>
           <p className="intro-seccion">Elige la zona y revisa las propiedades con fotos, superficie y precio. En cada una puedes cotizar por WhatsApp.</p>
           <div className="zonas">
-            {ZONAS.map((z) => {
-              const lista = porZona(z.slug)
-              const rz = resumen(lista)
+            {[
+              ...ZONAS.map((z) => ({ nombre: z.nombre, href: `/propiedades/${z.slug}`, lista: porZona(z.slug).filter((p) => p.tipo === 'Casa'), unidad: ['casa', 'casas'] })),
+              { nombre: 'Departamentos', href: '/propiedades/departamentos', lista: PROPIEDADES.filter((p) => p.tipo === 'Departamento'), unidad: ['departamento', 'departamentos'] },
+            ].map((z) => {
+              const rz = resumen(z.lista)
               return (
-                <Link key={z.slug} href={`/propiedades/${z.slug}`} className="zona">
-                  {lista[0] && <Image src={lista[0].fotos[0]} alt={`Propiedades en ${z.nombre}`} fill sizes="(max-width: 700px) 100vw, 300px" />}
+                <Link key={z.href} href={z.href} className="zona">
+                  {z.lista[0] && <Image src={z.lista[0].fotos[0]} alt={`${z.nombre}: propiedades en venta`} fill sizes="(max-width: 700px) 50vw, 380px" />}
                   <span>
                     <b>{z.nombre}</b>
-                    {rz.total} {rz.total === 1 ? 'propiedad' : 'propiedades'}{rz.minUF ? ` · desde ${formatoUF(rz.minUF)}` : ''}
+                    {rz.total} {rz.total === 1 ? z.unidad[0] : z.unidad[1]}{rz.minUF ? ` · desde ${formatoUF(rz.minUF)}` : ''}
                   </span>
                 </Link>
               )

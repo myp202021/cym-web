@@ -161,7 +161,7 @@ export default async function PaginaPropiedad({ params }: Props) {
         </section>
       )}
 
-      <WhatsAppFlotante zona={zonaAgente(p, z.nombre)} />
+      <WhatsAppFlotante zona={z.nombre} propiedad={{ codigo: p.codigo, tipo: p.tipo, zona: z.nombre }} />
       <JsonLd
         data={{
           '@context': 'https://schema.org',

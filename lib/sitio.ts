@@ -43,5 +43,5 @@ export function waLink(texto: string, numero: string = WHATSAPP_AGENTE) {
 }
 
 export function mensajeWeb(partes: (string | false | undefined)[]) {
-  return ['Hola CyM 👋 Vengo de la web.', ...partes.filter(Boolean)].join(' ')
+  return ['Hola CyM, vengo de la web.', ...partes.filter(Boolean)].join(' ')
 }

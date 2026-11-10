@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${SITIO.url}/`, lastModified: fecha, changeFrequency: 'weekly', priority: 1 },
     ...ZONAS.map((z) => ({ url: `${SITIO.url}/propiedades/${z.slug}`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.9 })),
+    { url: `${SITIO.url}/propiedades/departamentos`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.9 },
     ...PROPIEDADES.map((p) => ({ url: `${SITIO.url}/propiedades/${p.zona}/${p.codigo}`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.7 })),
     ...GUIAS.map((g) => ({ url: `${SITIO.url}/guias/${g.slug}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.7 })),
     ...['guias', 'vende-tu-propiedad', 'tasacion-propiedades', 'quienes-somos', 'contacto'].map((r) => ({ url: `${SITIO.url}/${r}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.6 })),

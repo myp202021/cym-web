@@ -111,14 +111,15 @@ img { max-width: 100%; }
 .dos-col { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
 @media (max-width: 860px) { .dos-col { grid-template-columns: 1fr; gap: 32px; } .seccion { padding: 44px 0; } }
 
-.zonas { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.zonas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.zonas .zona { aspect-ratio: 4/3; }
 .zona { position: relative; aspect-ratio: 4/5; border-radius: var(--radio); overflow: hidden; display: flex; align-items: flex-end; color: #fff; }
 .zona img { object-fit: cover; transition: transform .4s; }
 .zona:hover img { transform: scale(1.05); }
 .zona span { position: relative; z-index: 1; width: 100%; padding: 18px; background: linear-gradient(transparent, rgba(0,0,0,.8)); font-size: .9rem; }
 .zona b { display: block; font-size: 1.12rem; }
 .zona:hover { text-decoration: none; }
-@media (max-width: 860px) { .zonas { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 860px) { .zonas { grid-template-columns: repeat(2, 1fr); } .zonas .zona { aspect-ratio: 4/5; } }
 
 .grilla { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 960px) { .grilla { grid-template-columns: repeat(2, 1fr); } }
@@ -267,7 +268,6 @@ html,body{overflow-x:clip}
   .seccion { padding: 40px 0; }
   .pasos { grid-template-columns: 1fr; }
   .zonas { gap: 10px; }
-  .zonas > :last-child:nth-child(odd) { grid-column: 1 / -1; aspect-ratio: 16/9; }
   .zona span { padding: 12px; font-size: .8rem; }
   .banda-grid .btn { width: 100%; }
   .formulario { padding: 18px; }
