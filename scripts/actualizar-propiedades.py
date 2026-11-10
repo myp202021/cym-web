@@ -3,11 +3,14 @@
 Fuente de códigos: ~/cym-dashboard/data/seguimiento-AAAA-MM.json (gasto > 0).
 Fuente de datos: ficha oficial www.cympropiedades.cl/property.asp (precio, superficie, dormitorios, fotos, descripción).
 Uso: python3 scripts/actualizar-propiedades.py [AAAA-MM]
+     python3 scripts/actualizar-propiedades.py data/campana-semana.json   (solo lo que tiene gasto esta semana)
 """
 import json, re, html, sys, os, datetime, urllib.request, time
 
-MES = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().strftime('%Y-%m')
-SEG = os.path.expanduser(f'~/cym-dashboard/data/seguimiento-{MES}.json')
+ARG = sys.argv[1] if len(sys.argv) > 1 else datetime.date.today().strftime('%Y-%m')
+SEMANA = ARG.endswith('.json')
+MES = datetime.date.today().strftime('%Y-%m') if SEMANA else ARG
+SEG = ARG if SEMANA else os.path.expanduser(f'~/cym-dashboard/data/seguimiento-{MES}.json')
 FICHA = 'https://www.cympropiedades.cl/property.asp?Origen=CODIGO&idpro={}'
 SALIDA = os.path.join(os.path.dirname(__file__), '..', 'data', 'propiedades.json')
 
@@ -82,6 +85,7 @@ def main():
             continue
         d['campana'] = x['comuna']
         d['zona'] = ZONA.get(x['comuna']) or COMUNA_ZONA.get(d['comuna'], '')
+        if x['comuna'] == 'Departamentos': d['zona'] = COMUNA_ZONA.get(d['comuna'], '')
         if x['comuna'] == 'SCA':
             d['sector'] = 'San Carlos de Apoquindo'
             d['zona'] = 'san-carlos-de-apoquindo'
@@ -90,7 +94,7 @@ def main():
             continue
         salida.append(d)
         time.sleep(0.4)
-    json.dump({'actualizado': datetime.date.today().isoformat(), 'mes_campana': MES, 'propiedades': salida},
+    json.dump({'actualizado': datetime.date.today().isoformat(), 'mes_campana': MES, 'semana_campana': seg.get('semana'), 'propiedades': salida},
               open(SALIDA, 'w'), ensure_ascii=False, indent=1)
     print(len(salida), 'propiedades →', os.path.abspath(SALIDA))
 

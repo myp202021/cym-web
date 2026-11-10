@@ -1,5 +1,5 @@
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
-import { notFound } from 'next/navigation'
+import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
@@ -51,7 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PaginaPropiedad({ params }: Props) {
   const { zona, codigo } = await params
   const d = datosPagina(zona, codigo)
-  if (!d) notFound()
+  // Propiedad que salió de campaña: lleva a la página de su zona (o a la portada) en vez de un 404.
+  if (!d) redirect(buscarZona(zona) ? `/propiedades/${zona}` : '/')
   const { p, z, lugar } = d
   const url = `${SITIO.url}/propiedades/${z.slug}/${p.codigo}`
   const tipoArt = p.tipo === 'Casa' ? 'la casa' : 'el departamento'
