@@ -27,8 +27,19 @@ export const TRACKING = {
   pixel: '2684262525251873',
 }
 
-export function waLink(texto: string) {
-  return `https://wa.me/${WHATSAPP_AGENTE}?text=${encodeURIComponent(texto)}`
+// WhatsApp de cada comuna (Christopher, 10 nov 2026): el asistente deriva directo a la ejecutiva de la zona.
+// Departamentos van a Caro Paoletti en cualquier comuna. Sin zona o código desconocido: central.
+export const WHATSAPP_ZONA: Record<string, string> = {
+  'Vitacura': '56956994725', // Alejandro Ceballos
+  'La Dehesa': '56966616220',
+  'San Carlos de Apoquindo': '56975474362', // Benjamín Ceballos
+  'Las Condes': '56923884109', // Anita Hernández
+  'La Reina': '56923884109', // Anita Hernández
+  'Departamentos': '56993327318', // Caro Paoletti
+}
+
+export function waLink(texto: string, numero: string = WHATSAPP_AGENTE) {
+  return `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`
 }
 
 export function mensajeWeb(partes: (string | false | undefined)[]) {

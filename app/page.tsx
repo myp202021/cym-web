@@ -50,15 +50,15 @@ export default function Home() {
         <div className="contenedor hero-grid">
           <div>
             <p className="sobretitulo">CyM Propiedades · Sector oriente</p>
-            <h1>Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo</h1>
-            <p className="bajada">
-              Compra, vende o tasa sin costo tu propiedad en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina.
+            <h1>Líderes en venta en el sector oriente</h1>
+            <p className="comunas-hero">
+              {ZONAS.map((z) => (
+                <Link key={z.slug} href={`/propiedades/${z.slug}`}>{z.nombre}</Link>
+              ))}
             </p>
+            <p className="bajada">Compra, vende o tasa sin costo tu propiedad con CyM.</p>
             <div className="acciones">
-              <Link href="#zonas" className="btn">
-                Buscar propiedad
-              </Link>
-              <Link href="/vende-tu-propiedad" className="btn btn-claro">
+              <Link href="/vende-tu-propiedad" className="btn">
                 Quiero vender
               </Link>
               <Link href="/tasacion-propiedades" className="btn btn-claro">

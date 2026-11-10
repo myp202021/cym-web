@@ -1,13 +1,14 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { track } from './track'
-import { waLink, mensajeWeb } from '@/lib/sitio'
+import { waLink, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
+import { CODIGOS } from '@/lib/codigos'
 import { IconoWA } from './BotonWhatsApp'
 
 // Asistente CyM (demo en la web, 10 nov 2026): replica el flujo del agente de WhatsApp de CyM
 // (~/myp-whatsapp-agent, nodos web_nombre → web_consulta → web_derivar) sin conectar ningún bot.
 // Qué busca → tipo → zona (o código) → nombre → consulta → "te contacta una ejecutiva de {zona}".
-// Al final abre el WhatsApp central con el resumen armado ("Vengo de la web…").
+// Al final abre el WhatsApp de la ejecutiva de esa zona (WHATSAPP_ZONA) con el resumen armado; sin zona, el central.
 const OPERACIONES = [
   { id: 'comprar', label: 'Comprar una propiedad', frase: 'Quiero comprar' },
   { id: 'vender', label: 'Vender mi propiedad', frase: 'Quiero vender' },
@@ -45,6 +46,10 @@ export default function ArbolWhatsApp({ origen = 'arbol_home', zonaInicial = '' 
   const datosOk = op === 'codigo' ? codigo.length >= 4 : !!(op && tipo && zona)
   const nom = nombre.trim().split(' ')[0]
   const destino = op === 'codigo' ? 'la propiedad' : equipo(tipo, zona)
+  // Con código: zona y tipo salen de la propiedad publicada; si no está, va al central.
+  const prop = op === 'codigo' ? CODIGOS[codigo] : undefined
+  const equipoFinal = op === 'codigo' ? (prop ? (prop.tipo === 'Departamento' ? 'Departamentos' : prop.zona) : '') : destino
+  const numero = WHATSAPP_ZONA[equipoFinal]
 
   const zonaTexto = zona && zona !== 'Aún no lo sé' ? ` en ${zona}` : ''
   const mensaje =
@@ -150,8 +155,8 @@ export default function ArbolWhatsApp({ origen = 'arbol_home', zonaInicial = '' 
             <p className="burbuja">
               ¡Listo, {nom}! 🙌 {op === 'codigo' ? 'Te contacta la ejecutiva a cargo de esa propiedad' : `Te contacta una ejecutiva de ${destino}`} a la brevedad. Toca el botón para enviarnos tu mensaje por WhatsApp.
             </p>
-            <a className="btn btn-wa ancho" href={waLink(mensaje)} target="_blank" rel="noopener"
-              onClick={() => track('whatsapp', { origen, operacion: op, zona: zona || '' })}>
+            <a className="btn btn-wa ancho" href={waLink(mensaje, numero)} target="_blank" rel="noopener"
+              onClick={() => track('whatsapp', { origen, operacion: op, zona: zona || '', equipo: equipoFinal || 'central' })}>
               <IconoWA /> Enviar por WhatsApp
             </a>
             <small className="nota">Se abrirá WhatsApp con tu mensaje listo. Solo tienes que enviarlo.</small>

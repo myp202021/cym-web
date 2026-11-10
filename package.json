@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/codigos.mjs",
     "build": "next build",
     "start": "next start",
     "propiedades": "python3 scripts/actualizar-propiedades.py",
