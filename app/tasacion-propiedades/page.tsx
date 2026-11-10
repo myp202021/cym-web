@@ -1,7 +1,6 @@
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 import FormularioContacto from '@/components/FormularioContacto'
-import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import Faq from '@/components/Faq'
 import { mensajeWeb } from '@/lib/sitio'
 
@@ -64,7 +63,6 @@ export default function Tasacion() {
           <FormularioContacto origen="tasacion" propietario boton="Solicitar tasación" />
         </div>
       </section>
-      <WhatsAppFlotante />
     </>
   )
 }

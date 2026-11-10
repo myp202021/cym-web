@@ -1,7 +1,6 @@
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import Link from 'next/link'
 import Alianzas from '@/components/Alianzas'
-import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { SITIO, DESCRIPCION } from '@/lib/sitio'
 
 export const metadata = {
@@ -71,7 +70,6 @@ export default function QuienesSomos() {
         </div>
       </section>
       <Alianzas />
-      <WhatsAppFlotante />
     </>
   )
 }

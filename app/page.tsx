@@ -4,7 +4,6 @@ import Image from 'next/image'
 import ArbolWhatsApp from '@/components/ArbolWhatsApp'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import FormularioContacto from '@/components/FormularioContacto'
-import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import Faq from '@/components/Faq'
 import Alianzas from '@/components/Alianzas'
 import JsonLd from '@/components/JsonLd'
@@ -200,7 +199,6 @@ export default function Home() {
         </div>
       </section>
 
-      <WhatsAppFlotante />
       <JsonLd data={{ '@context': 'https://schema.org', '@type': 'WebSite', name: SITIO.nombre, url: SITIO.url, inLanguage: 'es-CL', publisher: { '@id': `${SITIO.url}/#cym` } }} />
     </>
   )

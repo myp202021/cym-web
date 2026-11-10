@@ -3,7 +3,6 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import Faq from '@/components/Faq'
 import FormularioContacto from '@/components/FormularioContacto'
-import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import JsonLd from '@/components/JsonLd'
 import { GUIAS, guia } from '@/lib/guias'
 import { SITIO } from '@/lib/sitio'
@@ -45,7 +44,6 @@ export default async function PaginaGuia({ params }: Props) {
           <FormularioContacto origen={`guia-${g.slug}`} />
         </div>
       </section>
-      <WhatsAppFlotante />
       <JsonLd
         data={{
           '@context': 'https://schema.org',

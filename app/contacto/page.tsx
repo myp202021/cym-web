@@ -1,7 +1,6 @@
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import FormularioContacto from '@/components/FormularioContacto'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
-import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { SITIO, mensajeWeb } from '@/lib/sitio'
 
 export const metadata = {
@@ -31,7 +30,6 @@ export default function Contacto() {
           <FormularioContacto origen="contacto" />
         </div>
       </section>
-      <WhatsAppFlotante />
     </>
   )
 }

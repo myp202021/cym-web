@@ -218,3 +218,13 @@ img { max-width: 100%; }
 .articulo a{color:#eb3d60;text-decoration:underline}
 .bajada-ficha{color:#666;margin:-4px 0 10px}
 .cifras.oscuro{color:inherit;margin:16px 0 22px}
+
+/* asistente CyM flotante (demo del agente, 10 nov 2026) */
+.wa-flotante { border: 0; cursor: pointer; }
+.asistente-panel { position: fixed; right: 20px; bottom: 92px; z-index: 61; width: min(380px, calc(100vw - 32px)); }
+.asistente-panel .arbol-cuerpo { max-height: min(520px, calc(100vh - 220px)); }
+.asistente-cerrar { position: absolute; top: 8px; right: 10px; z-index: 2; background: none; border: 0; color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer; }
+.fila-campo { display: flex; gap: 6px; }
+.fila-campo .campo { flex: 1; }
+.fila-campo .btn { padding: 0 14px; white-space: nowrap; }
+.fila-campo .btn:disabled { opacity: .5; }
