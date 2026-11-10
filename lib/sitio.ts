@@ -3,7 +3,7 @@
 export const DESCRIPCION = 'CyM Propiedades es una corredora de propiedades de Santiago de Chile especializada en la venta de casas en Vitacura, La Dehesa (Lo Barnechea) y San Carlos de Apoquindo (Las Condes). Acompaña a propietarios y compradores en todo el proceso: tasación sin costo, publicación, visitas, negociación y cierre. Trabaja con una base de más de 100.000 compradores y 12 años en el mercado.'
 
 export const SITIO = {
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://cym-web-two.vercel.app').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.cympropiedadeschile.cl').replace(/\/$/, ''),
   nombre: 'CyM Propiedades',
   razon: 'CyM Propiedades — Clients & Management Properties Chile',
   telefono: '+56 9 3401 8822',
