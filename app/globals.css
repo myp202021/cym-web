@@ -43,10 +43,9 @@ img { max-width: 100%; }
 /* menú: títulos y botón ☰ solo en celular */
 .menu-titulo, .menu-boton { display: none; }
 @media (max-width: 1080px) { .cabecera nav { gap: 10px 14px; } .cabecera nav a { font-size: .76rem; } }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .barra-sup span { display: none; }
   .cabecera .contenedor { padding: 6px 0; }
-  .marca img { width: 68px; height: auto; }
   .menu-boton { display: inline-flex; flex-direction: column; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 10px; background: none; border: 0; cursor: pointer; }
   .menu-boton span { display: block; height: 2px; background: var(--negro); border-radius: 2px; transition: transform .2s, opacity .2s; }
   .menu-boton[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -275,3 +274,12 @@ html,body{overflow-x:clip}
   .wa-flotante { right: 16px; bottom: 16px; width: 56px; height: 56px; }
   .asistente-panel { right: 16px; bottom: 82px; }
 }
+
+/* logo CyM con barras (10 nov 2026) */
+.marca img { height: 50px; width: auto; }
+@media (max-width: 1100px) { .marca img { height: 46px; width: auto; } }
+.cabecera nav { flex-wrap: nowrap; gap: 16px; }
+.cabecera nav a { white-space: nowrap; font-size: .8rem; }
+@media (max-width: 1180px) and (min-width: 1101px) { .cabecera nav { gap: 12px; } .cabecera nav a { font-size: .72rem; } .marca img { height: 42px; } }
+@media (max-width: 1100px) { .cabecera nav a { white-space: normal; font-size: .95rem; } }
+.marca { flex-shrink: 0; }

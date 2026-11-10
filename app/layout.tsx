@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: { default: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades', template: '%s' },
   description: DESCRIPCION,
   applicationName: SITIO.nombre,
-  openGraph: { type: 'website', locale: 'es_CL', siteName: SITIO.nombre, images: ['/logo5.jpg'] },
+  openGraph: { type: 'website', locale: 'es_CL', siteName: SITIO.nombre, images: ['/og-cym.png'] },
   twitter: { card: 'summary_large_image' },
-  icons: { icon: '/logo5.jpg', apple: '/logo5.jpg' },
+  icons: { icon: '/icono-cym.png', apple: '/icono-cym.png' },
   robots: { index: true, follow: true },
 }
 
@@ -31,8 +31,8 @@ const organizacion = {
   alternateName: SITIO.razon,
   url: SITIO.url,
   description: DESCRIPCION,
-  logo: `${SITIO.url}/logo5.jpg`,
-  image: `${SITIO.url}/logo5.jpg`,
+  logo: `${SITIO.url}/logo-cym.png`,
+  image: `${SITIO.url}/og-cym.png`,
   telephone: SITIO.telefono,
   email: SITIO.email,
   address: {
@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="cabecera">
           <div className="contenedor">
             <Link href="/" className="marca" aria-label="CyM Propiedades, inicio">
-              <Image src="/logo5.jpg" alt="CyM Propiedades" width={85} height={48} priority />
+              <Image src="/logo-cym.png" alt="CyM Propiedades" width={218} height={56} priority />
             </Link>
             <MenuPrincipal comunas={ZONAS.map((z) => ({ href: `/propiedades/${z.slug}`, texto: z.nombre }))} />
           </div>
@@ -84,7 +84,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="pie">
           <div className="contenedor pie-grid">
             <div>
-              <Image src="/logo_blanco.png" alt="CyM Propiedades" width={110} height={58} />
+              <Image src="/logo-cym-claro.png" alt="CyM Propiedades" width={200} height={52} />
               <p>{DESCRIPCION}</p>
             </div>
             <div>
