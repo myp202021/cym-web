@@ -1,3 +1,5 @@
+import { FAQ_CYM } from '@/lib/faqs'
+import Faq from '@/components/Faq'
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import Link from 'next/link'
 import Alianzas from '@/components/Alianzas'
@@ -70,6 +72,7 @@ export default function QuienesSomos() {
         </div>
       </section>
       <Alianzas />
+      <Faq items={FAQ_CYM} titulo="Preguntas frecuentes sobre CyM Propiedades" />
     </>
   )
 }

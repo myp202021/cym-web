@@ -1,3 +1,5 @@
+import { FAQ_DEPTOS } from '@/lib/faqs'
+import Faq from '@/components/Faq'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import FondoHero, { FONDOS } from '@/components/FondoHero'
@@ -49,6 +51,7 @@ export default function PaginaDepartamentos() {
         </div>
       </section>
       <WhatsAppFlotante zona="Departamentos" />
+      <Faq items={FAQ_DEPTOS} titulo="Preguntas frecuentes sobre departamentos con CyM" />
     </>
   )
 }

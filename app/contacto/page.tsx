@@ -1,3 +1,5 @@
+import { FAQ_CYM } from '@/lib/faqs'
+import Faq from '@/components/Faq'
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import FormularioContacto from '@/components/FormularioContacto'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
@@ -30,6 +32,7 @@ export default function Contacto() {
           <FormularioContacto origen="contacto" />
         </div>
       </section>
+      <Faq items={FAQ_CYM.slice(0, 4)} titulo="Preguntas frecuentes sobre CyM Propiedades" />
     </>
   )
 }

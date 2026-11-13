@@ -1,3 +1,5 @@
+import { faqFicha } from '@/lib/faqs'
+import Faq from '@/components/Faq'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
@@ -210,6 +212,7 @@ export default async function PaginaPropiedad({ params }: Props) {
           ],
         }}
       />
+      <Faq items={faqFicha(p, z.nombre)} titulo="Preguntas frecuentes" />
     </>
   )
 }
