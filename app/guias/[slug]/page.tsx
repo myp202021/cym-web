@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -60,6 +61,7 @@ export default async function PaginaGuia({ params }: Props) {
           ],
         }}
       />
+      <SitioOficial />
     </>
   )
 }

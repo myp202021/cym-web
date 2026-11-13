@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import FondoHero, { FONDOS } from '@/components/FondoHero'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 import FormularioContacto from '@/components/FormularioContacto'
@@ -70,6 +71,7 @@ export default function Vende() {
           <FormularioContacto origen="vende" propietario boton="Solicitar evaluación" />
         </div>
       </section>
+      <SitioOficial />
     </>
   )
 }

@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 // Página por comuna × operación (corredoras, vender casa/departamento, tasación, comprar casa) y madre de corredoras.
 import Link from 'next/link'
 import FondoHero, { FONDOS } from '@/components/FondoHero'
@@ -132,6 +133,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
         </div>
       </section>
 
+      <SitioOficial zona={c?.slug} nombreZona={c?.nombre} />
       <WhatsAppFlotante zona={c?.nombre} />
       <JsonLd
         data={{

@@ -29,7 +29,7 @@ const organizacion = {
   '@id': `${SITIO.url}/#cym`,
   name: SITIO.nombre,
   alternateName: SITIO.razon,
-  url: SITIO.url,
+  url: SITIO.sitioOficial,
   description: DESCRIPCION,
   logo: `${SITIO.url}/logo-cym.png`,
   image: `${SITIO.url}/og-cym.png`,
@@ -105,9 +105,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
               <Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link>
               <Link href="/precios-casas-sector-oriente">Precios de casas en el sector oriente</Link>
+              <Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades en el sector oriente</Link>
             </div>
             <div>
               <b>Contacto</b>
+              <a href={SITIO.sitioOficial} target="_blank" rel="noopener">
+                Sitio oficial: www.cympropiedades.cl
+              </a>
               <a href={SITIO.telefonoHref}>{SITIO.telefono}</a>
               <a href={`mailto:${SITIO.email}`}>{SITIO.email}</a>
               <span>

@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 // Páginas madre (pilar) del sector oriente: ranking de barrios y precios por barrio.
 // Contenido en data/madre/<slug>.json, con metodología y fuentes (pensadas para que las citen ChatGPT, Gemini y Claude).
 import Link from 'next/link'
@@ -208,6 +209,7 @@ export default function PaginaMadre({ m }: { m: Madre }) {
         </div>
       </section>
 
+      <SitioOficial />
       <WhatsAppFlotante />
       <JsonLd
         data={{

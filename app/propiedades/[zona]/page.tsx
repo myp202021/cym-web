@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -166,6 +167,7 @@ export default async function PaginaZona({ params }: Props) {
         </div>
       </section>
 
+      <SitioOficial zona={z.slug} nombreZona={z.nombre} />
       <WhatsAppFlotante zona={z.nombre} />
       <JsonLd
         data={{

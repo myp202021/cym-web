@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import { FAQ_DEPTOS } from '@/lib/faqs'
 import Faq from '@/components/Faq'
 import Link from 'next/link'
@@ -52,6 +53,7 @@ export default function PaginaDepartamentos() {
       </section>
       <WhatsAppFlotante zona="Departamentos" />
       <Faq items={FAQ_DEPTOS} titulo="Preguntas frecuentes sobre departamentos con CyM" />
+      <SitioOficial />
     </>
   )
 }

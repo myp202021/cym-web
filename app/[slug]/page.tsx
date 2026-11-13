@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
@@ -285,6 +286,7 @@ export default async function PaginaRaiz({ params }: Props) {
         </div>
       </section>
 
+      <SitioOficial zona={c.slug} nombreZona={c.nombre} />
       <WhatsAppFlotante zona={c.nombre} />
       <JsonLd
         data={{
@@ -309,6 +311,7 @@ export default async function PaginaRaiz({ params }: Props) {
               },
               areaServed: { '@type': 'Place', name: `${lugar}, Santiago, Chile`, geo: { '@type': 'GeoCoordinates', latitude: c.mapa.lat, longitude: c.mapa.lng } },
               parentOrganization: { '@id': `${SITIO.url}/#cym` },
+              sameAs: [SITIO.sitioOficial, SITIO.instagram],
               makesOffer: c.servicios.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `${s.nombre} en ${c.nombre}`, description: s.texto } })),
             },
             {

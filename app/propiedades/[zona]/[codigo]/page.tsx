@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import { faqFicha } from '@/lib/faqs'
 import Faq from '@/components/Faq'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
@@ -163,6 +164,7 @@ export default async function PaginaPropiedad({ params }: Props) {
         </section>
       )}
 
+      <SitioOficial codigo={p.codigo} />
       <WhatsAppFlotante zona={z.nombre} propiedad={{ codigo: p.codigo, tipo: p.tipo, zona: z.nombre }} />
       <JsonLd
         data={{

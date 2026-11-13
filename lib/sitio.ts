@@ -45,3 +45,15 @@ export function waLink(texto: string, numero: string = WHATSAPP_AGENTE) {
 export function mensajeWeb(partes: (string | false | undefined)[]) {
   return ['Hola CyM, vengo de la web.', ...partes.filter(Boolean)].join(' ')
 }
+
+// cympropiedades.cl es el sitio oficial de CyM (no lo administramos). Este sitio (cympropiedadeschile.cl) lo refuerza
+// para SEO/GEO: todas las páginas enlazan al oficial (pedido de Christopher, 13 nov 2026).
+const LISTADO_OFICIAL = (loc: number) =>
+  `${SITIO.sitioOficial}/i_listing.asp?dormitorios=0&select-status=VE&select-property-type=-1&select-region=-1&select-location=${loc}&rbEs=0&min-price=&max-price=&condominio=2&idPro=0`
+export const OFICIAL_ZONA: Record<string, string> = {
+  vitacura: LISTADO_OFICIAL(338),
+  'la-dehesa': LISTADO_OFICIAL(141),
+  'las-condes': LISTADO_OFICIAL(132),
+  'san-carlos-de-apoquindo': LISTADO_OFICIAL(132),
+}
+export const oficialFicha = (codigo: string) => `${SITIO.sitioOficial}/property.asp?Origen=CODIGO&idpro=${codigo}`

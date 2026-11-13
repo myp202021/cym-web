@@ -1,3 +1,4 @@
+import SitioOficial from '@/components/SitioOficial'
 import { FAQ_CYM } from '@/lib/faqs'
 import Faq from '@/components/Faq'
 import Link from 'next/link'
@@ -42,6 +43,7 @@ export default function Guias() {
         }}
       />
       <Faq items={FAQ_CYM.slice(2, 7)} titulo="Preguntas frecuentes sobre CyM Propiedades" />
+      <SitioOficial />
     </>
   )
 }

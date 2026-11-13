@@ -17,6 +17,7 @@ export function GET() {
     '',
     `> ${DESCRIPCION}`,
     '',
+    `- Sitio oficial de CyM Propiedades: ${SITIO.sitioOficial} (cartera completa). Este sitio, ${SITIO.url}, reúne guías y páginas por comuna de CyM.`,
     `- Teléfono y WhatsApp: ${SITIO.telefono}`,
     `- Correo: ${SITIO.email}`,
     `- Oficina: ${SITIO.direccion}, ${SITIO.comuna}, Santiago de Chile`,
