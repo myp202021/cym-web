@@ -1,0 +1,45 @@
+name: Blog CyM (guías por comuna)
+on:
+  schedule:
+    - cron: '0 11 * * 2,5'  # 08:00 Chile, martes y viernes
+  workflow_dispatch:
+    inputs:
+      tema:
+        description: 'Índice de temas.json (vacío = siguiente sin publicar)'
+        required: false
+permissions:
+  contents: write
+concurrency: blog-cym
+jobs:
+  guia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Escribir guía
+        id: agente
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.tema }}" ]; then node scripts/blog/agente.cjs --tema "${{ inputs.tema }}"; else node scripts/blog/agente.cjs; fi
+      - name: Compilar (si falla, no se publica)
+        run: npm run build
+      - name: Publicar
+        run: |
+          git config user.name "M&P bot"
+          git config user.email "bot@mulleryperez.cl"
+          git add data/guias.json
+          git diff --cached --quiet && { echo "Sin guía nueva"; exit 0; }
+          git commit -m "Guía nueva: ${{ steps.agente.outputs.slug }}"
+          git push
+      - name: Avisar a buscadores (espera el despliegue)
+        run: |
+          for i in $(seq 1 20); do
+            sleep 20
+            code=$(curl -s -o /dev/null -w '%{http_code}' -L "${{ steps.agente.outputs.url }}")
+            [ "$code" = "200" ] && break
+          done
+          npm run indexnow
