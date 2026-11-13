@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="cabecera">
           <div className="contenedor">
             <Link href="/" className="marca" aria-label="CyM Propiedades, inicio">
-              <Image src="/logo5.jpg" alt="CyM Propiedades" width={124} height={70} priority />
+              <Image src="/logo-cym.png" alt="CyM Propiedades" width={218} height={56} priority />
             </Link>
             <MenuPrincipal comunas={ZONAS.map((z) => ({ href: `/propiedades/${z.slug}`, texto: z.nombre }))} />
             <Image src="/oficial/CCP.jpg" alt="Círculo de Corredores de Propiedades" width={133} height={38} className="sello-ccp" />
@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="pie">
           <div className="contenedor pie-grid">
             <div>
-              <Image src="/logo_blanco.png" alt="CyM Propiedades" width={150} height={79} />
+              <Image src="/logo-cym-claro.png" alt="CyM Propiedades" width={200} height={52} />
               <p>{DESCRIPCION}</p>
             </div>
             <div>

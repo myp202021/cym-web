@@ -305,14 +305,14 @@ h1, h2, h3 { color: #222; }
 /* cabecera como la oficial: logo apilado, menú gris en mayúsculas, línea roja fina */
 .cabecera { border-bottom: 1px solid var(--acento); box-shadow: 0 1px 0 rgba(0,0,0,.03); }
 .cabecera .contenedor { padding: 10px 0; }
-.marca img { height: 62px; width: auto; }
+.marca img { height: 50px; width: auto; }
 .cabecera nav { gap: 22px; }
 .cabecera nav a { color: #555; font-weight: 700; font-size: .74rem; letter-spacing: .03em; }
 .cabecera nav a:hover { color: var(--acento); }
 .cabecera nav .nav-cta { background: none; color: var(--acento); padding: 0; border-radius: 0; }
 .sello-ccp { height: 38px; width: auto; flex-shrink: 0; }
 @media (max-width: 1260px) { .sello-ccp { display: none; } }
-@media (max-width: 1100px) { .marca img { height: 52px; } .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 14px; } }
+@media (max-width: 1100px) { .marca img { height: 44px; } .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 14px; } }
 
 /* botones rectos, mayúsculas, como "BUSCAR" del oficial */
 .btn { border-radius: var(--radio); text-transform: uppercase; font-size: .82rem; letter-spacing: .06em; padding: 15px 24px; }
@@ -383,10 +383,39 @@ div.servicios p { margin: 0; font-size: .95rem; }
 
 /* pie negro con logo blanco, como el oficial */
 .pie { background: var(--negro); border-top: 0; color: #c8c9cb; padding: 56px 0 24px; }
-.pie img { width: 150px; height: auto; }
+.pie img { width: 200px; height: auto; }
 .pie b { text-transform: uppercase; font-size: .8rem; letter-spacing: .08em; }
 .pie a, .pie span { color: #c8c9cb; }
 .pie a:hover { color: var(--acento); text-decoration: none; }
 .legal { border-top: 1px solid rgba(255,255,255,.08); padding-top: 18px; }
 /* el mapa acompaña la lista de barrios al bajar */
 @media (min-width: 861px) { .seccion .dos-col > div:last-child:has(iframe) { position: sticky; top: 110px; align-self: start; } }
+
+/* Ancho completo (13 nov 2026): nada de columna angosta en las landings.
+   Secciones de texto en dos columnas: título a la izquierda (fijo al bajar) y texto a la derecha. */
+.seccion > .contenedor.angosto { width: min(1180px, 100% - 40px); }
+.seccion > .contenedor.angosto.articulo { display: grid; grid-template-columns: minmax(240px, 340px) 1fr; column-gap: 64px; align-items: start; max-width: none; }
+.seccion > .contenedor.angosto.articulo > h2 { grid-column: 1; grid-row: 1 / span 40; position: sticky; top: 110px; font-size: clamp(1.3rem, 2vw, 1.65rem); margin: 0; }
+.seccion > .contenedor.angosto.articulo > :not(h2) { grid-column: 2; }
+.seccion > .contenedor.angosto.articulo > p { font-size: 1.02rem; line-height: 1.8; }
+.seccion > .contenedor.angosto.articulo > ul.checks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 8px; }
+.seccion > .contenedor.angosto.articulo > ul.checks li { background: #fff; border: 1px solid var(--borde); padding: 16px 18px 16px 44px; margin: 0; font-size: .95rem; }
+.seccion.gris > .contenedor.angosto.articulo > ul.checks li { background: #fff; }
+.seccion:not(.gris) > .contenedor.angosto.articulo > ul.checks li { background: var(--gris); border-color: transparent; }
+.seccion > .contenedor.angosto.articulo > ul.checks li::before { left: 18px; top: 16px; }
+/* apertura a todo el ancho */
+.seccion > .contenedor.angosto .intro-seccion { max-width: none; margin: 0; }
+.intro-seccion b { font-size: 1.28rem; line-height: 1.7; color: #333; }
+/* preguntas frecuentes en dos columnas */
+#preguntas > .contenedor.angosto { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+#preguntas > .contenedor.angosto > h2 { grid-column: 1 / -1; margin-bottom: 18px; }
+/* formularios y cierres: centrados con ancho cómodo */
+.seccion > .contenedor.angosto:has(form), .seccion > .contenedor.angosto.centro { width: min(860px, 100% - 40px); }
+@media (max-width: 900px) {
+  .seccion > .contenedor.angosto.articulo { grid-template-columns: 1fr; }
+  .seccion > .contenedor.angosto.articulo > h2 { grid-row: auto; position: static; margin-bottom: 16px; }
+  .seccion > .contenedor.angosto.articulo > :not(h2) { grid-column: 1; }
+  .seccion > .contenedor.angosto.articulo > ul.checks { grid-template-columns: 1fr; }
+  #preguntas > .contenedor.angosto { grid-template-columns: 1fr; }
+  .intro-seccion b { font-size: 1.1rem; }
+}
