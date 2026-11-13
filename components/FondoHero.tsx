@@ -1,19 +1,19 @@
 import Image from 'next/image'
 
-// Fondos de portada: fotos de Santiago oriente con la cordillera (Unsplash, licencia libre).
-// Las fotos de las propiedades traen la marca de agua "CyM PROPIEDADES" al centro y de fondo se ven mal.
-const U = (id: string) => `https://images.unsplash.com/photo-${id}?w=1920&q=75&auto=format&fit=crop`
+// Fondos de portada: las mismas fotos de casas del slider de cympropiedades.cl (13 nov 2026),
+// para que el sitio se vea como el oficial. Sin velo oscuro: el texto va en un recuadro blanco.
+const F = (n: number) => `/oficial/slider${n}.jpg`
 export const FONDOS = {
-  home: U('1597006438013-0f0cca2c1a03'),
-  vitacura: U('1593985437133-03d5e1435c03'),
-  'la-dehesa': U('1689850543263-01a52ccc6943'),
-  'san-carlos-de-apoquindo': U('1566079463188-97d2f1352582'),
-  'las-condes': U('1566079463188-97d2f1352582'),
-  'la-reina': U('1535479672101-8486af672be0'),
-  vender: U('1593985437133-03d5e1435c03'),
-  tasacion: U('1566079463188-97d2f1352582'),
-  nosotros: U('1557974040-3bec341da09b'),
-  contacto: U('1597006438013-0f0cca2c1a03'),
+  home: F(26),
+  vitacura: F(27),
+  'la-dehesa': F(26),
+  'san-carlos-de-apoquindo': F(29),
+  'las-condes': F(28),
+  'la-reina': F(29),
+  vender: F(28),
+  tasacion: F(27),
+  nosotros: F(28),
+  contacto: F(26),
 } as const
 
 export default function FondoHero({ src }: { src?: string }) {

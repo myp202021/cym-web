@@ -292,3 +292,101 @@ html,body{overflow-x:clip}
 .tabla-ranking td:first-child { font-weight: 800; color: #eb3d60; }
 .fuentes { font-size: 0.9rem; line-height: 1.7; }
 .fuentes a { color: #666; }
+
+/* ============================================================
+   Estilo oficial cympropiedades.cl (13 nov 2026)
+   Igual que el sitio oficial: Raleway, blanco, acento #eb3d60, negro #1d1e19,
+   foto grande de casa en la portada con recuadro blanco y pestañas, esquinas rectas.
+   ============================================================ */
+:root { --negro: #1d1e19; --texto: #555; --suave: #888; --gris: #f5f5f5; --borde: #e3e3e3; --radio: 2px; }
+body { color: var(--texto); }
+h1, h2, h3 { color: #222; }
+
+/* cabecera como la oficial: logo apilado, menú gris en mayúsculas, línea roja fina */
+.cabecera { border-bottom: 1px solid var(--acento); box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+.cabecera .contenedor { padding: 10px 0; }
+.marca img { height: 62px; width: auto; }
+.cabecera nav { gap: 22px; }
+.cabecera nav a { color: #555; font-weight: 700; font-size: .74rem; letter-spacing: .03em; }
+.cabecera nav a:hover { color: var(--acento); }
+.cabecera nav .nav-cta { background: none; color: var(--acento); padding: 0; border-radius: 0; }
+.sello-ccp { height: 38px; width: auto; flex-shrink: 0; }
+@media (max-width: 1260px) { .sello-ccp { display: none; } }
+@media (max-width: 1100px) { .marca img { height: 52px; } .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 14px; } }
+
+/* botones rectos, mayúsculas, como "BUSCAR" del oficial */
+.btn { border-radius: var(--radio); text-transform: uppercase; font-size: .82rem; letter-spacing: .06em; padding: 15px 24px; }
+.btn:hover { transform: none; }
+.btn-borde { border-width: 1px; }
+
+/* portada: foto de casa a lo ancho, sin velo, recuadro blanco con pestañas */
+.hero { min-height: 560px; padding: 0; display: flex; align-items: flex-end; background: #ddd; color: var(--texto); }
+.hero-zona { padding: 0; }
+.hero-velo { background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.18) 100%); }
+@media (max-width: 900px) { .hero-velo { background: none; } }
+.hero-zona > .contenedor,
+.hero:not(.hero-zona) .hero-grid > div:first-child {
+  position: relative; background: rgba(255,255,255,.93); padding: 30px 36px 28px; margin-top: 64px;
+  box-shadow: 0 -1px 0 rgba(0,0,0,.02);
+}
+.hero-zona > .contenedor { width: min(700px, 100% - 40px); margin-left: max(20px, calc((100% - 1180px) / 2)); margin-right: auto; }
+.hero:not(.hero-zona) .hero-grid { align-items: end; padding-top: 48px; }
+.hero:not(.hero-zona) .hero-grid > div:last-child { margin-bottom: 28px; }
+.hero .sobretitulo {
+  position: absolute; left: 0; bottom: 100%; margin: 0; display: flex;
+  background: var(--acento); color: #fff; font-size: .78rem; letter-spacing: .04em; padding: 11px 18px;
+}
+.hero .sobretitulo::after { content: 'Consúltenos'; position: absolute; left: 100%; top: 0; bottom: 0; display: flex; align-items: center; padding: 0 18px; background: #2b2b2b; color: #fff; text-transform: none; letter-spacing: 0; font-weight: 700; white-space: nowrap; }
+.hero h1 { color: #333; font-size: clamp(1.6rem, 2.6vw, 2.15rem); font-weight: 700; margin-bottom: .35em; }
+.hero .bajada { color: #555; font-size: 1rem; }
+.hero a:not(.btn) { color: #222; }
+.hero .comunas-hero a, .hero .comunas-hero { color: #222; }
+.hero .cifras li { color: #777; }
+.hero .cifras b { color: #222; }
+.btn-claro, .hero .btn-claro { background: transparent; color: #222; border: 1px solid #222; }
+.btn-claro:hover, .hero .btn-claro:hover { background: #222; color: #fff; }
+@media (max-width: 760px) {
+  .hero { display: block; min-height: 0; padding-top: 230px; }
+  .hero-zona > .contenedor, .hero:not(.hero-zona) .hero-grid > div:first-child { width: 100%; margin: 0; padding: 24px 20px 22px; background: #fff; }
+  .hero:not(.hero-zona) .hero-grid { padding-top: 0; width: 100%; }
+  .hero:not(.hero-zona) .hero-grid > div:last-child { margin: 0 16px 20px; }
+  .hero .sobretitulo::after { display: none; }
+  .hero .comunas-hero a { border-color: #ddd; background: #fff; }
+}
+
+/* títulos de sección con la línea roja del oficial */
+.seccion > .contenedor > h2, .articulo h2, .seccion > .contenedor > div > h2 { font-weight: 700; letter-spacing: .005em; }
+.seccion > .contenedor > h2::after, .articulo > h2::after, .seccion > .contenedor > div > h2::after { content: ''; display: block; width: 46px; height: 2px; background: var(--acento); margin-top: 14px; }
+.centro > h2::after, h2.centro::after { margin-left: auto; margin-right: auto; }
+.seccion { padding: 72px 0; }
+.seccion.gris { background: var(--gris); }
+
+/* texto de apertura: más aire y jerarquía */
+.intro-seccion b { font-weight: 500; color: #444; font-size: 1.12rem; line-height: 1.75; display: block; border-left: 3px solid var(--acento); padding-left: 22px; }
+
+/* servicios en tarjetas */
+div.servicios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 24px; }
+div.servicios > div { background: #fff; border: 1px solid var(--borde); border-top: 3px solid var(--acento); padding: 24px 26px; }
+div.servicios h3 { font-size: 1.02rem; margin-bottom: 8px; }
+div.servicios p { margin: 0; font-size: .95rem; }
+@media (max-width: 760px) { div.servicios { grid-template-columns: 1fr; } }
+
+/* tarjetas y cajas rectas, borde fino */
+.tarjeta, .formulario, .caja-propietarios, .alianzas li, .guia, .ficha-lateral, .zona, .arbol, .atributos div, .galeria .foto, .pasos li { border-radius: var(--radio); }
+.tarjeta:hover, .guia:hover { box-shadow: 0 12px 30px rgba(0,0,0,.08); border-color: var(--borde); }
+.etiqueta { border-radius: 0; }
+.formulario input, .formulario select, .formulario textarea, .campo { border-radius: 0; border-color: #d6d6d6; }
+.chips li { border-radius: 0; }
+
+/* tablas */
+.tabla-ranking th { background: var(--negro); font-weight: 700; font-size: .85rem; letter-spacing: .02em; }
+
+/* pie negro con logo blanco, como el oficial */
+.pie { background: var(--negro); border-top: 0; color: #c8c9cb; padding: 56px 0 24px; }
+.pie img { width: 150px; height: auto; }
+.pie b { text-transform: uppercase; font-size: .8rem; letter-spacing: .08em; }
+.pie a, .pie span { color: #c8c9cb; }
+.pie a:hover { color: var(--acento); text-decoration: none; }
+.legal { border-top: 1px solid rgba(255,255,255,.08); padding-top: 18px; }
+/* el mapa acompaña la lista de barrios al bajar */
+@media (min-width: 861px) { .seccion .dos-col > div:last-child:has(iframe) { position: sticky; top: 110px; align-self: start; } }
