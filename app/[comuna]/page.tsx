@@ -11,7 +11,7 @@ import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import { COMUNAS, comuna as buscar } from '@/lib/comunas'
 import { porZona } from '@/lib/propiedades'
-import { SITIO, mensajeWeb, WHATSAPP_ZONA, DESCRIPCION } from '@/lib/sitio'
+import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 import { PROCESO } from '@/app/page'
 
 type Props = { params: Promise<{ comuna: string }> }
@@ -73,7 +73,6 @@ export default async function LandingComuna({ params }: Props) {
           <p className="intro-seccion">
             <b>{c.resumen}</b>
           </p>
-          <p>{DESCRIPCION}</p>
         </div>
       </section>
 
