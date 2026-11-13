@@ -4,12 +4,14 @@ import { ZONAS } from '@/lib/zonas'
 import { PROPIEDADES, ACTUALIZADO } from '@/lib/propiedades'
 import { GUIAS } from '@/lib/guias'
 import { COMUNAS } from '@/lib/comunas'
+import { PAGINAS } from '@/lib/paginas'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const fecha = new Date(ACTUALIZADO)
   return [
     { url: `${SITIO.url}/`, lastModified: fecha, changeFrequency: 'weekly', priority: 1 },
     ...COMUNAS.map((c) => ({ url: `${SITIO.url}/${c.slug}`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.95 })),
+    ...PAGINAS.map((p) => ({ url: `${SITIO.url}/${p.slug}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.85 })),
     ...['ranking-barrios-sector-oriente', 'precios-casas-sector-oriente'].map((r) => ({ url: `${SITIO.url}/${r}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.9 })),
     ...ZONAS.map((z) => ({ url: `${SITIO.url}/propiedades/${z.slug}`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.9 })),
     { url: `${SITIO.url}/propiedades/departamentos`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.9 },

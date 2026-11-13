@@ -10,20 +10,25 @@ import Alianzas from '@/components/Alianzas'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import { COMUNAS, comuna as buscar } from '@/lib/comunas'
+import { PAGINAS, pagina, paginasDe, TIPOS } from '@/lib/paginas'
+import PaginaOperacion from '@/components/PaginaOperacion'
 import { porZona } from '@/lib/propiedades'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 import { PROCESO } from '@/app/page'
 
-type Props = { params: Promise<{ comuna: string }> }
+type Props = { params: Promise<{ slug: string }> }
 
 export const dynamicParams = false
 
 export function generateStaticParams() {
-  return COMUNAS.map((c) => ({ comuna: c.slug }))
+  return [...COMUNAS.map((c) => ({ slug: c.slug })), ...PAGINAS.map((p) => ({ slug: p.slug }))]
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const c = buscar((await params).comuna)
+  const slug = (await params).slug
+  const pg = pagina(slug)
+  if (pg) return { title: pg.title, description: pg.description, alternates: { canonical: `/${pg.slug}` }, openGraph: { title: pg.title, description: pg.description, url: `/${pg.slug}`, type: 'article' } }
+  const c = buscar(slug)
   if (!c) return {}
   return {
     title: c.title,
@@ -33,9 +38,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function LandingComuna({ params }: Props) {
-  const c = buscar((await params).comuna)
+export default async function PaginaRaiz({ params }: Props) {
+  const slug = (await params).slug
+  const pg = pagina(slug)
+  if (pg) return <PaginaOperacion p={pg} />
+  const c = buscar(slug)
   if (!c) notFound()
+  const relacionadas = paginasDe(c.slug)
   const url = `${SITIO.url}/${c.slug}`
   const numero = WHATSAPP_ZONA[c.nombre]
   const propiedades = porZona(c.slug).slice(0, 6)
@@ -253,6 +262,18 @@ export default async function LandingComuna({ params }: Props) {
               </li>
             ))}
           </ul>
+          {relacionadas.length > 0 && (
+            <>
+              <h2>Más de CyM en {c.nombre}</h2>
+              <ul className="chips">
+                {relacionadas.map((r) => (
+                  <li key={r.slug}>
+                    <Link href={`/${r.slug}`}>{TIPOS[r.tipo]} en {c.nombre}</Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
           <h2>CyM en otras comunas</h2>
           <ul className="chips">
             {COMUNAS.filter((o) => o.slug !== c.slug).map((o) => (

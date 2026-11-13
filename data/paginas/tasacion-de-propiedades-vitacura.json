@@ -1,0 +1,155 @@
+{
+  "slug": "tasacion-de-propiedades-vitacura",
+  "comuna": "vitacura",
+  "tipo": "tasacion",
+  "title": "Tasación de propiedades en Vitacura sin costo | CyM",
+  "description": "Tasación de propiedades en Vitacura: diferencias entre tasación comercial, bancaria y avalúo fiscal, qué mira el tasador y cómo pedir tu tasación sin costo.",
+  "h1": "Tasación de propiedades en Vitacura",
+  "bajada": "Qué tipo de tasación necesitas, qué se evalúa y cómo obtener una sin costo.",
+  "resumen": "Una tasación de propiedades en Vitacura estima cuánto vale hoy tu casa o departamento en el mercado, comparándola con propiedades similares del mismo barrio. CyM Propiedades tasa sin costo las casas que evalúas vender en Vitacura y te entrega un rango de precio explicado con datos.",
+  "secciones": [
+    {
+      "h2": "Para qué sirve una tasación",
+      "parrafos": [
+        "Sirve para decidir con números. Si vas a vender, te dice con qué precio salir. Si vas a comprar, te ayuda a saber si la oferta es razonable. Si vas a pedir un crédito, el banco hará la suya para decidir cuánto presta.",
+        "En Vitacura importa más que en otras comunas, porque hay grandes diferencias entre barrios. Según Colliers, en los sectores más caros el valor supera las 120 UF/m², pero no todos los barrios ni todas las casas están en ese rango."
+      ]
+    },
+    {
+      "h2": "Tasación comercial, tasación bancaria y avalúo fiscal",
+      "parrafos": [
+        "La tasación comercial estima el precio al que podría venderse la propiedad hoy. La hace un tasador, una corredora o un banco, y se basa sobre todo en ventas y ofertas comparables.",
+        "La tasación bancaria es una tasación comercial que encarga el banco cuando pides un crédito hipotecario. Su objetivo es medir la garantía: el banco presta un porcentaje de ese valor o del precio, el que sea menor.",
+        "El avalúo fiscal lo fija el Servicio de Impuestos Internos para calcular las contribuciones. Usa criterios estandarizados y no corresponde al valor comercial de la propiedad, así que no sirve para fijar un precio de venta."
+      ]
+    },
+    {
+      "h2": "Qué mira el tasador",
+      "parrafos": [
+        "Según Tinsa, la tasación combina aspectos de la propiedad y de su ubicación:"
+      ],
+      "lista": [
+        "Construcción: antigüedad, estado de conservación y terminaciones.",
+        "Regularización: si las construcciones tienen recepción municipal o pueden regularizarse.",
+        "Tamaño y distribución: metros construidos, terrazas o patio, dormitorios, baños, pieza de servicio.",
+        "Obras complementarias: quincho, piscina y terraza en casas; estacionamientos y bodegas en departamentos.",
+        "Luminosidad y orientación: se prefieren las orientaciones norte y nororiente.",
+        "Restricciones: por ejemplo, afectaciones a expropiación.",
+        "Ubicación y demanda por el barrio.",
+        "Servicios cercanos, accesibilidad, seguridad y áreas verdes."
+      ]
+    },
+    {
+      "h2": "Lo que pesa especialmente en Vitacura",
+      "parrafos": [
+        "El terreno: en sectores como Lo Curro o Santa María de Manquehue, el tamaño y la pendiente del terreno influyen tanto como la casa. En Lo Curro, Colliers registró viviendas con 285 m² interiores promedio y un precio de oferta promedio de 39.000 UF.",
+        "Los trayectos: en Vitacura más del 60% de quienes trabajan van en auto, según el Censo 2024. La salida a Kennedy, Costanera Norte o Américo Vespucio cuenta.",
+        "Lo que viene: la Línea 7 del Metro, con apertura estimada a fines de 2028, y la actualización del Plan Regulador pueden cambiar el interés por algunos sectores. Un buen tasador lo menciona, aunque todavía no tenga un precio asignado."
+      ]
+    },
+    {
+      "h2": "Cómo funciona la tasación sin costo de CyM",
+      "parrafos": [
+        "Nos especializamos en casas en Vitacura, La Dehesa y San Carlos de Apoquindo, y la tasación es el primer paso de nuestro proceso de venta."
+      ],
+      "lista": [
+        "Nos contactas y agendamos una visita a la propiedad.",
+        "Revisamos la casa, el terreno, la regularización y los documentos básicos.",
+        "Comparamos con casas similares en oferta y vendidas en el mismo sector.",
+        "Te entregamos un rango de precio con los comparables que lo sostienen.",
+        "Si decides vender con nosotros, seguimos con publicación, visitas, negociación y cierre."
+      ]
+    }
+  ],
+  "tabla": {
+    "titulo": "Tipos de valor de una propiedad",
+    "columnas": [
+      "Tipo",
+      "Quién la hace",
+      "Para qué sirve",
+      "Ojo"
+    ],
+    "filas": [
+      [
+        "Tasación comercial",
+        "Tasador, corredora o banco",
+        "Fijar precio de venta o evaluar una compra",
+        "Debe basarse en comparables del mismo barrio"
+      ],
+      [
+        "Tasación bancaria",
+        "Tasador designado por el banco",
+        "Definir cuánto presta el banco",
+        "Si es menor que el precio, el comprador cubre la diferencia"
+      ],
+      [
+        "Avalúo fiscal",
+        "Servicio de Impuestos Internos",
+        "Calcular contribuciones",
+        "No corresponde al valor comercial"
+      ],
+      [
+        "Tasación CyM",
+        "Equipo de CyM Propiedades",
+        "Definir el precio de salida al vender tu casa",
+        "Es sin costo"
+      ]
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿Cuánto cuesta una tasación en Vitacura?",
+      "a": "Con CyM la tasación de tu casa es sin costo. Las tasaciones bancarias tienen un costo que fija cada banco y que normalmente paga quien pide el crédito."
+    },
+    {
+      "q": "¿El avalúo fiscal sirve para saber cuánto vale mi casa?",
+      "a": "No. El avalúo fiscal lo calcula el SII para las contribuciones con criterios estandarizados. El valor comercial se obtiene con una tasación basada en propiedades comparables."
+    },
+    {
+      "q": "¿Por qué la tasación del banco puede ser menor que el precio?",
+      "a": "El banco tasa para proteger su garantía y suele ser conservador. Si su valor es menor al precio pactado, el comprador debe poner la diferencia o renegociar."
+    },
+    {
+      "q": "¿Qué documentos necesito para la tasación?",
+      "a": "Para una primera tasación basta con la dirección, el rol de avalúo y, si los tienes, los planos y el certificado de recepción final. Con eso se revisan metros y regularización."
+    },
+    {
+      "q": "¿Las ampliaciones sin regularizar suman valor?",
+      "a": "Pueden sumar para el comprador, pero el banco suele descontarlas o ajustarlas. Según Tinsa, los bancos ajustan el valor según la situación de regularización."
+    },
+    {
+      "q": "¿Cada cuánto conviene actualizar una tasación?",
+      "a": "Si la casa lleva tiempo publicada o cambió el mercado del sector, conviene revisarla. En Vitacura la velocidad de venta de los barrios más caros cayó cerca de 50%, según Colliers, así que un precio desactualizado se nota rápido."
+    },
+    {
+      "q": "¿La tasación de CyM me obliga a vender con ustedes?",
+      "a": "No. Te entregamos el rango de precio y tú decides si quieres avanzar."
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "Diario Financiero: Vitacura lidera el lujo inmobiliario: Lo Curro, Santa María y Jardín del Este (Colliers, nov. 2025)",
+      "url": "https://www.df.cl/empresas/construccion/vitacura-lidera-el-lujo-inmobiliario-lo-curro-santa-maria-y-jardin-del"
+    },
+    {
+      "titulo": "Emol: barrios de Santiago y precios del segmento alto (Colliers, feb. 2025)",
+      "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+    },
+    {
+      "titulo": "BioBioChile: los factores que determinan el valor de la tasación de una propiedad (Tinsa, 2021)",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2021/07/13/los-factores-que-determinan-el-valor-de-la-tasacion-de-una-propiedad.shtml"
+    },
+    {
+      "titulo": "The Clinic: Censo 2024, comunas donde predomina ir al trabajo en auto",
+      "url": "https://www.theclinic.cl/2025/12/22/la-fuerte-brecha-que-revela-el-censo-2024-solo-en-cinco-comunas-del-gran-santiago-predomina-ir-a-trabajar-en-auto-mientras-la-mayoria-usa-el-transporte-publico/"
+    },
+    {
+      "titulo": "Infraestructura Pública: Línea 7 de Metro alcanza 40% de avance y abriría a fines de 2028 (feb. 2026)",
+      "url": "https://cpichile.org/linea-7-de-metro-alcanza-40-de-avance-y-se-estima-que-abrira-a-fines-de-2028/"
+    },
+    {
+      "titulo": "Emol: Vitacura licita la actualización de su Plan Regulador (sept. 2026)",
+      "url": "https://www.emol.com/noticias/Economia/2026/09/06/1210588/plan-regulador-vitacura.html"
+    }
+  ]
+}

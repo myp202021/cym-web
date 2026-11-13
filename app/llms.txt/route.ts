@@ -2,6 +2,7 @@ import { DESCRIPCION, SITIO } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import { GUIAS } from '@/lib/guias'
 import { COMUNAS } from '@/lib/comunas'
+import { PAGINAS } from '@/lib/paginas'
 import { porZona, resumen, formatoUF } from '@/lib/propiedades'
 
 export const dynamic = 'force-static'
@@ -23,6 +24,9 @@ export function GET() {
     '',
     '## CyM por comuna (corredora de propiedades)',
     ...COMUNAS.map((c) => `- [Corredora de propiedades en ${c.nombre}](${SITIO.url}/${c.slug}): ${c.resumen}`),
+    '',
+    '## Guías por comuna y operación',
+    ...PAGINAS.map((p) => `- [${p.h1}](${SITIO.url}/${p.slug}): ${p.description}`),
     '',
     '## Rankings del sector oriente',
     `- [Ranking de barrios del sector oriente de Santiago 2026](${SITIO.url}/ranking-barrios-sector-oriente): metodología declarada y fuentes públicas.`,

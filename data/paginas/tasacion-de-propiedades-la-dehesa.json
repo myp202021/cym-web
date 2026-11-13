@@ -1,0 +1,151 @@
+{
+  "slug": "tasacion-de-propiedades-la-dehesa",
+  "comuna": "la-dehesa",
+  "tipo": "tasacion",
+  "title": "Tasación de propiedades en La Dehesa sin costo | CyM",
+  "description": "Tasación de propiedades en La Dehesa: diferencias entre tasación comercial, bancaria y avalúo fiscal, qué mira el tasador y cómo pedir tu tasación sin costo.",
+  "h1": "Tasación de propiedades en La Dehesa",
+  "bajada": "Qué valor tiene tu casa hoy, cómo se calcula y en qué se diferencia de la tasación del banco.",
+  "resumen": "Una tasación de propiedades en La Dehesa estima el valor de mercado de tu casa comparándola con propiedades similares del mismo sector y ajustando por terreno, construcción, estado, vista y si está en condominio. Es distinta del avalúo fiscal del SII, que sirve para calcular contribuciones, y de la tasación bancaria, que define cuánto financia el banco al comprador. En CyM Propiedades tasamos tu casa sin costo, con comparables reales.",
+  "secciones": [
+    {
+      "h2": "Tasación comercial, tasación bancaria y avalúo fiscal",
+      "parrafos": [
+        "Son tres valores distintos y es común confundirlos.",
+        "La tasación comercial estima el valor de mercado. La hace un tasador, un corredor o un banco, a partir de ventas y ofertas comparables, el estado de la propiedad, su ubicación y la oferta y demanda del momento. Es la que usas para decidir a qué precio vender o cuánto ofrecer.",
+        "La tasación bancaria es una tasación comercial que el banco encarga cuando el comprador pide un crédito hipotecario. La hace un tasador de una lista del banco y define cuánto está dispuesto a financiar. Si sale por debajo del precio acordado, el comprador debe cubrir la diferencia con más pie. No fija el precio de venta: ese lo negocian comprador y vendedor.",
+        "El avalúo fiscal lo determina el Servicio de Impuestos Internos con tablas estandarizadas y sirve para calcular contribuciones. El propio SII aclara que no representa el valor comercial de una propiedad, y suele quedar por debajo del valor de mercado."
+      ]
+    },
+    {
+      "h2": "Qué mira el tasador en una casa de La Dehesa",
+      "parrafos": [
+        "Tinsa Chile resume los factores de una tasación en dos grupos: los propios del inmueble y los de su localización. Aplicados a La Dehesa, estos son los que más mueven el valor:"
+      ],
+      "lista": [
+        "Sector y posición: no vale lo mismo una casa en El Huinganal que en Los Trapenses o en el entorno de Av. La Dehesa. Dentro de un condominio, también importa la ubicación de la casa.",
+        "Condominio o calle abierta: el control de acceso y las áreas comunes suelen ser valorados por familias.",
+        "Terreno: superficie, forma, pendiente y jardín. En las laderas, la pendiente puede sumar vista pero restar uso.",
+        "Vista y orientación: se privilegian las orientaciones norte y nororiente; la vista a la cordillera o la ciudad suma.",
+        "Construcción: superficie, programa (dormitorios, baños, pieza de servicio), antigüedad y estado de terminaciones e instalaciones.",
+        "Obras complementarias: piscina, quincho y terrazas aumentan la tasación.",
+        "Regularización: las ampliaciones sin recepción municipal pueden bajar el valor bancario.",
+        "Restricciones normativas: afectaciones a utilidad pública o la zonificación del nuevo Plan Regulador.",
+        "Entorno: acceso a colegios, comercio, áreas verdes y salidas viales."
+      ]
+    },
+    {
+      "h2": "El contexto que usamos para tasar en La Dehesa",
+      "parrafos": [
+        "Una buena tasación combina datos de la casa con datos del mercado. En La Dehesa revisamos la oferta comparable activa del sector, que es amplia: en noviembre de 2026 contamos más de 800 avisos de casas en venta en un portal inmobiliario. También usamos referencias públicas, como el análisis de Colliers publicado por Emol en 2025, que situó el precio promedio del segmento alto de Lo Barnechea cerca de 34.000 UF.",
+        "Un aviso muestra un precio de oferta, no el de cierre. Por eso la tasación debe ajustar por el tiempo que llevan publicadas las casas comparables y por sus diferencias reales con la tuya.",
+        "La norma urbana también entra en el cálculo. El Plan Regulador de Lo Barnechea, vigente desde el 30 de octubre de 2025, permite de 4 a 8 pisos en ejes como Av. La Dehesa, El Rodeo y José Alcalde Délano y mantiene 2 pisos en la periferia. Un terreno en un eje puede tener un valor de desarrollo que una casa en un barrio interior no tiene."
+      ]
+    },
+    {
+      "h2": "Cómo es la tasación sin costo de CyM",
+      "parrafos": [
+        "Nuestra tasación es sin costo y sin compromiso de venta. Este es el proceso:"
+      ],
+      "lista": [
+        "Agendamos una visita a la casa en el horario que te acomode.",
+        "Recorremos la propiedad y revisamos terreno, construcción, estado, vista y regularización.",
+        "Pedimos o revisamos los documentos básicos: dominio, avalúo fiscal y recepción municipal.",
+        "Seleccionamos comparables reales del mismo sector y los ajustamos por diferencias.",
+        "Te entregamos un rango de precio y te explicamos los datos que lo sostienen.",
+        "Si decides vender, diseñamos contigo la estrategia de salida al mercado."
+      ]
+    }
+  ],
+  "tabla": {
+    "titulo": "Tasación comercial, tasación bancaria y avalúo fiscal",
+    "columnas": [
+      "",
+      "Tasación comercial",
+      "Tasación bancaria",
+      "Avalúo fiscal"
+    ],
+    "filas": [
+      [
+        "Quién la hace",
+        "Tasador, corredor o banco",
+        "Tasador de la lista del banco",
+        "Servicio de Impuestos Internos"
+      ],
+      [
+        "Para qué sirve",
+        "Fijar precio de venta o de oferta",
+        "Definir cuánto financia el banco",
+        "Calcular contribuciones"
+      ],
+      [
+        "Base del cálculo",
+        "Comparables de mercado, estado y ubicación",
+        "Comparables de mercado, estado, ubicación y regularización",
+        "Tablas técnicas estandarizadas"
+      ],
+      [
+        "Relación con el valor de mercado",
+        "Busca acercarse a él",
+        "Busca acercarse a él, con criterio conservador",
+        "Suele quedar por debajo"
+      ]
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿Cuánto cuesta una tasación en CyM?",
+      "a": "Nada. La tasación de tu propiedad en La Dehesa es sin costo y no te obliga a vender con nosotros."
+    },
+    {
+      "q": "¿El avalúo fiscal sirve para saber cuánto vale mi casa?",
+      "a": "No. El avalúo fiscal del SII sirve para calcular contribuciones y, según el propio SII, no corresponde al valor comercial. Suele estar por debajo del valor de mercado."
+    },
+    {
+      "q": "¿Qué pasa si la tasación del banco sale menor que el precio?",
+      "a": "El banco financia según su tasación, así que el comprador debe cubrir la diferencia con más pie o renegociar el precio con el vendedor."
+    },
+    {
+      "q": "¿Cada cuánto conviene actualizar la tasación?",
+      "a": "Si vas a vender, tásala justo antes de publicar. Si la casa lleva tiempo publicada sin ofertas, conviene revisar el precio con los comparables actuales."
+    },
+    {
+      "q": "¿Una ampliación siempre sube el valor?",
+      "a": "Suma si está bien construida y regularizada. Si no tiene recepción municipal, el banco del comprador puede no considerarla, lo que afecta el financiamiento."
+    },
+    {
+      "q": "¿Tasan también departamentos y terrenos?",
+      "a": "Sí. En departamentos consideramos piso, vista, estacionamientos, bodega y estado del edificio. En terrenos revisamos la zonificación del Plan Regulador."
+    },
+    {
+      "q": "¿Cuánto demora la tasación?",
+      "a": "Coordinamos la visita según tu disponibilidad y luego te entregamos el rango de precio con sus comparables."
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "RE/MAX First: tasación vs. avalúo fiscal en Chile",
+      "url": "https://www.remax-first.cl/tasacion-vs-avaluo-fiscal-chile/"
+    },
+    {
+      "titulo": "BioBioChile: los factores que determinan el valor de la tasación de una propiedad (Tinsa Chile)",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2021/07/13/los-factores-que-determinan-el-valor-de-la-tasacion-de-una-propiedad.shtml"
+    },
+    {
+      "titulo": "HousePricing: casas en venta en La Dehesa, Lo Barnechea (consulta nov. 2026)",
+      "url": "https://www.housepricing.cl/venta/casa-lo-barnechea-metropolitana/la-dehesa/"
+    },
+    {
+      "titulo": "Emol: barrios de Santiago y precios del segmento alto (Colliers, feb. 2025)",
+      "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+    },
+    {
+      "titulo": "The Clinic: Lo Barnechea actualiza su Plan Regulador (oct. 2025)",
+      "url": "https://www.theclinic.cl/2025/10/11/lo-barnechea-actualiza-su-plan-regulador-y-permitira-el-desarrollo-de-inversiones-inmobiliarias-por-alrededor-de-500-mil-metros-cuadrados/"
+    },
+    {
+      "titulo": "Meganoticias: proyecto en Lo Barnechea y vigencia del nuevo Plan Regulador (may. 2026)",
+      "url": "https://www.meganoticias.cl/nacional/521746-cencosud-activa-proyecto-lo-barnechea-viviendas-comercio-servicios-11-05-2026.html"
+    }
+  ]
+}
