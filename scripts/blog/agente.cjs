@@ -53,7 +53,7 @@ async function openai(url, body) {
 }
 
 // Portales y corredoras: no se citan como fuente (regla CyM: no nombrar competidores).
-const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria|emol\.com\/propiedad|propiedades\.emol|\/ficha\/|\/propiedad\/|codR\d|propiedadesya/i
+const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria|emol\.com\/propiedad|propiedades\.emol|\/ficha\/|\/propiedad\/|codR\d|propiedadesya|portalpm/i
 
 // 1) Investigación con búsqueda web, en tres ángulos para juntar suficientes datos con fuente.
 const ANGULOS = [
