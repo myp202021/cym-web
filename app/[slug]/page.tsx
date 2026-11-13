@@ -192,13 +192,13 @@ export default async function PaginaRaiz({ params }: Props) {
               <tbody>
                 {c.ranking.items.map((r) => (
                   <tr key={r.puesto}>
-                    <td>{r.puesto}</td>
-                    <td>
+                    <td data-label="#">{r.puesto}</td>
+                    <td data-label="Barrio">
                       <b>{r.barrio}</b>
                     </td>
-                    <td>{r.fortalezas}</td>
-                    <td>{r.ojo}</td>
-                    <td>{r.ideal_para}</td>
+                    <td data-label="Fortalezas">{r.fortalezas}</td>
+                    <td data-label="A considerar">{r.ojo}</td>
+                    <td data-label="Ideal para">{r.ideal_para}</td>
                   </tr>
                 ))}
               </tbody>
