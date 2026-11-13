@@ -53,7 +53,7 @@ async function openai(url, body) {
 }
 
 // Portales y corredoras: no se citan como fuente (regla CyM: no nombrar competidores).
-const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria/i
+const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria|emol\.com\/propiedad|propiedades\.emol|\/ficha\/|\/propiedad\/|codR\d|propiedadesya/i
 
 // 1) Investigación con búsqueda web, en tres ángulos para juntar suficientes datos con fuente.
 const ANGULOS = [
@@ -65,7 +65,7 @@ async function buscar(t, c, angulo) {
   const pregunta = `Investiga en fuentes chilenas confiables y recientes (2024-2026) para una guía sobre: "${t.tema}" (sector ${c.nombre}, comuna de ${c.comuna}, Santiago de Chile).
 Ángulo de esta búsqueda: ${angulo}.
 Fuentes preferidas: municipalidad, MINVU, SII, Banco Central, CMF, INE, Metro, universidades, CChC, prensa (Emol, La Tercera, DF, El Mercurio Inversiones, Biobío, CNN Chile, Ex-Ante).
-NO uses portales de avisos (Portal Inmobiliario, TocToc, Chilepropiedades, Yapo, Enlace Inmobiliario, GoPlaceIt, Mercado Libre) ni sitios de corredoras o inmobiliarias. Nada de arriendo.
+NO uses portales de avisos (Portal Inmobiliario, TocToc, Chilepropiedades, Yapo, Enlace Inmobiliario, GoPlaceIt, Mercado Libre) ni sitios de corredoras o inmobiliarias, ni avisos o fichas individuales de propiedades aunque estén en un diario (por ejemplo Emol Propiedades). Solo estudios, estadísticas, normas y notas de prensa. Nada de arriendo.
 Responde en texto plano, sin markdown, sin numerar, entre 10 y 20 líneas, una por dato, con este formato exacto:
 DATO: <el dato, con cifra y periodo> | FUENTE: <medio o institución> | URL: <url exacta> | FECHA: <fecha de publicación o "s/f">`
   const j = await openai('responses', { model: MODELO, tools: [{ type: 'web_search_preview', search_context_size: 'high', user_location: { type: 'approximate', country: 'CL', city: 'Santiago' } }], input: pregunta })
@@ -83,7 +83,15 @@ DATO: <el dato, con cifra y periodo> | FUENTE: <medio o institución> | URL: <ur
   return datos
 }
 async function investigar(t, c) {
-  const listas = await Promise.all(ANGULOS.map((a) => buscar(t, c, a).catch((e) => { console.log('búsqueda falló:', e.message); return [] })))
+  const una = async (a) => {
+    for (let intento = 1; intento <= 3; intento++) {
+      const d = await buscar(t, c, a).catch((e) => { console.log('búsqueda falló:', e.message); return [] })
+      if (d.length >= 3) return d
+      console.log(`  ángulo con ${d.length} datos, reintento ${intento}`)
+    }
+    return []
+  }
+  const listas = await Promise.all(ANGULOS.map(una))
   const vistos = new Set()
   return listas.flat().filter((d) => { const k = d.split('| URL:')[0]; if (vistos.has(k)) return false; vistos.add(k); return true })
 }
@@ -110,7 +118,13 @@ function datosCyM(t) {
 const REGLAS = `Escribes para CyM Propiedades, corredora de propiedades del sector oriente de Santiago. Español de Chile, sin voseo, tuteando al lector. Concreto y útil: cada párrafo aporta un dato, un ejemplo o un consejo accionable. Prohibido el relleno ("es importante considerar", "en conclusión", "cabe destacar", "juega un papel clave", "no solo... sino también"), repetir ideas de otras secciones o listas genéricas que valen para cualquier ciudad.
 - Cifras y hechos: SOLO los de los datos investigados o del contexto verificado. Cada cifra con su fuente enlazada en el mismo párrafo: <a href="URL" rel="noopener">nombre de la fuente</a>. No inventes cifras, fuentes ni URLs.
 - Nunca hables de arriendo ni de arrendar. Nunca menciones comisiones. Nunca nombres otras corredoras ni portales inmobiliarios.
-- CyM: "${DESCRIPCION_CYM}" No le atribuyas otras cifras.
+- CyM: "${DESCRIPCION_CYM}" No le atribuyas otras cifras ni servicios que no estén en esa descripción o en el contexto (nada de reportes periódicos, tasación online, datos de ventas propios, etc.).
+- Un precio de aviso es "precio publicado", nunca "se vendió". No cites avisos de otras corredoras.
+- Nunca estimes ni extrapoles: si no hay una cifra por barrio, describe el barrio sin números. Prohibido armar rangos de precio, superficies "típicas" o porcentajes que no estén literalmente en los datos.
+- Tablas: solo con cifras que aparezcan tal cual en los datos, y cada fila con su propia fuente. Si no hay al menos 3 filas con datos reales, no hagas tabla.
+- La fuente va enlazada dentro de la frase ("según <a ...>la CChC</a>, ..."), nunca como palabra suelta al final del párrafo ni entre paréntesis sin contexto.
+- Normas y zonas: atribuye cada norma solo al sector que el dato nombra; no la extiendas a otros barrios.
+- Los subtítulos <h3> nunca repiten el título de la sección.
 - HTML simple: p, h3, ul, ol, li, strong, table, thead, tbody, tr, th, td, a. Sin estilos ni clases.`
 
 async function chatJSON(sistema, usuario, maxTokens) {
@@ -118,8 +132,27 @@ async function chatJSON(sistema, usuario, maxTokens) {
   return JSON.parse(j.choices[0].message.content)
 }
 
+
+// Verificador de cifras: toda cifra de 2+ dígitos (salvo años) debe estar en los datos o el contexto.
+function cifras(texto) {
+  const limpio = texto.replace(/<a [^>]*href="[^"]*"[^>]*>/g, ' ').replace(/<[^>]+>/g, ' ')
+  const out = new Set()
+  for (const m of limpio.matchAll(/\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+(?:,\d+)?/g)) {
+    const n = m[0].replace(/\.(?=\d{3}\b)/g, '').replace(',', '.')
+    const v = Number(n)
+    if (!Number.isFinite(v) || (Number.isInteger(v) && v < 10) || (v >= 1900 && v <= 2100 && Number.isInteger(v))) continue
+    out.add(String(v))
+  }
+  return out
+}
+function sinRespaldo(html, respaldo) { return [...cifras(html)].filter((x) => !respaldo.has(x)) }
+
 async function redactar(t, c, datos, contexto) {
-  const lista = datos.map((d, i) => `[${i}] ${d}`).join('\n')
+  const respaldo = cifras(datos.join(' ') + ' ' + contexto + ' ' + DESCRIPCION_CYM)
+  const esCyM = (d) => d.includes('FUENTE: CyM Propiedades')
+  const listaDe = (conCyM) => datos.map((d, i) => (conCyM || !esCyM(d) ? `[${i}] ${d}` : null)).filter(Boolean).join('\n')
+  const lista = listaDe(true)
+  const baseDe = (conCyM) => `Tema: ${t.tema}\nPalabra clave: ${t.kw}\nSector: ${c.nombre} (comuna de ${c.comuna})\nFecha de hoy: ${hoy()}\n\nDATOS INVESTIGADOS:\n${listaDe(conCyM)}\n\nCONTEXTO VERIFICADO DE LA COMUNA:\n${contexto}`
   const base = `Tema: ${t.tema}\nPalabra clave: ${t.kw}\nSector: ${c.nombre} (comuna de ${c.comuna})\nFecha de hoy: ${hoy()}\n\nDATOS INVESTIGADOS:\n${lista}\n\nCONTEXTO VERIFICADO DE LA COMUNA:\n${contexto}`
   const esquema = await chatJSON(REGLAS, base + `
 
@@ -129,20 +162,47 @@ Arma el esquema de una guía de 3.000 a 3.500 palabras. Responde JSON con:
 "secciones": 9 a 11 objetos {"h2": título con forma de pregunta o tema concreto, "enfoque": qué responde y qué la diferencia de las demás, "datos": índices de DATOS INVESTIGADOS que usa (2 a 5, sin repetir entre secciones cuando se pueda), "tabla": true si conviene una tabla comparativa}. Al menos una sección con tabla. La penúltima sección explica cómo trabaja CyM en ${c.nombre}; la última es "Qué hacer ahora" con pasos concretos.
 "faq": 6 objetos {"q","a"} con preguntas reales de personas; respuestas de 2-4 frases solo con datos de la lista.`, 6000)
   const titulos = esquema.secciones.map((x) => x.h2)
-  let html = esquema.intro
+  if (sinRespaldo(esquema.intro, respaldo).length) console.log('    intro con cifras sin respaldo: ' + sinRespaldo(esquema.intro, respaldo).join(', '))
+  let html = esquema.intro.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g, (m) => (sinRespaldo(m, respaldo).length ? '' : m))
+  if (!html.trim()) html = `<p>${t.tema}: en esta guía revisamos los datos disponibles para ${c.nombre}, con sus fuentes, y lo que significan para quien vende o compra.</p>`
+  esquema.faq = (esquema.faq || []).filter((f) => !sinRespaldo(f.a + ' ' + f.q, respaldo).length)
+  const yaUsados = new Set()
   for (const [n, sec] of esquema.secciones.entries()) {
-    const usados = (sec.datos || []).map((i) => datos[i]).filter(Boolean)
-    const r = await chatJSON(REGLAS, base + `
+    const seccionCyM = n === titulos.length - 2
+    const usados = (sec.datos || []).map((i) => datos[i]).filter(Boolean).filter((d) => seccionCyM || !esCyM(d))
+    const previos = [...yaUsados].filter((d) => !usados.includes(d))
+    const r = await chatJSON(REGLAS, baseDe(seccionCyM) + `
 
 Artículo: "${esquema.titulo}". Secciones del artículo, en orden: ${titulos.map((h, i) => `${i + 1}. ${h}`).join(' / ')}.
 Escribe SOLO la sección ${n + 1}: "${sec.h2}". Enfoque: ${sec.enfoque}.
 Datos principales para esta sección: ${usados.join(' || ') || 'los del contexto verificado que correspondan'}.
 ${sec.tabla ? 'Incluye una tabla comparativa con datos reales y una columna o fila de fuente.' : ''}
-Entre 280 y 380 palabras, con 1-3 subtítulos <h3> si ayudan. No repitas lo que cubren las otras secciones. No pongas el <h2>.
+Entre 280 y 380 palabras, con 1-3 subtítulos <h3> si ayudan (distintos de "${sec.h2}"). No repitas lo que cubren las otras secciones. No pongas el <h2>.
+${previos.length ? `Estas cifras ya se usaron en secciones anteriores; NO las repitas: ${previos.map((d) => d.split(' | FUENTE')[0].replace(/^DATO: /, '')).join(' || ')}` : ''}
+${seccionCyM ? 'Menciona como ejemplo a lo más una propiedad de CyM, una sola vez.' : 'No menciones propiedades específicas de CyM en esta sección.'}
 ${n === titulos.length - 2 ? `Menciona de forma natural <a href="/${t.comuna}">CyM Propiedades en ${c.nombre}</a> y el sitio oficial <a href="${OFICIAL}" rel="noopener">cympropiedades.cl</a>.` : ''}
 ${n === 1 ? `Incluye de forma natural un enlace a <a href="${MADRES[0].url}">${MADRES[0].texto}</a>.` : ''}${n === 3 ? ` Incluye de forma natural un enlace a <a href="${MADRES[1].url}">${MADRES[1].texto}</a>.` : ''}
 Responde JSON {"html": "..."}`, 3000)
-    html += `\n<h2>${sec.h2}</h2>\n${r.html}`
+    let malas = sinRespaldo(r.html, respaldo)
+    if (malas.length) {
+      console.log(`    cifras sin respaldo en sección ${n + 1}: ${malas.join(', ')} → reescribiendo`)
+      const r2 = await chatJSON(REGLAS, baseDe(seccionCyM) + `
+
+Este es el texto de la sección "${sec.h2}":
+${r.html}
+
+Contiene cifras que NO están en los datos investigados ni en el contexto: ${malas.join(', ')}. Reescríbelo quitando esas cifras (y las filas de tabla que las tengan; si la tabla queda con menos de 3 filas, quítala). No agregues cifras nuevas. Mantén el largo con explicación útil. Responde JSON {"html": "..."}`, 3000)
+      r.html = r2.html
+      malas = sinRespaldo(r.html, respaldo)
+      if (malas.length) {
+        console.log(`    siguen sin respaldo: ${malas.join(', ')} → se quitan esos párrafos o filas`)
+        r.html = r.html.replace(/<(p|li|tr)\b[^>]*>[\s\S]*?<\/\1>/g, (m) => (sinRespaldo(m, respaldo).length ? '' : m))
+      }
+    }
+    usados.forEach((d) => yaUsados.add(d))
+    const norm = (x) => x.replace(/<[^>]+>/g, '').replace(/[¿?¡!.:]/g, '').trim().toLowerCase()
+    const cuerpo = r.html.replace(/<h3[^>]*>([\s\S]*?)<\/h3>/g, (m, h) => (norm(h) === norm(sec.h2) ? '' : m))
+    html += `\n<h2>${sec.h2}</h2>\n${cuerpo}`
     console.log(`  sección ${n + 1}/${titulos.length}: ${largo.palabras(r.html)} palabras`)
   }
   return { art: { titulo: esquema.titulo, descripcion: esquema.descripcion, html, faq: esquema.faq }, sistema: REGLAS }
