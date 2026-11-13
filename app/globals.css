@@ -493,3 +493,34 @@ div.servicios p { margin: 0; font-size: .95rem; }
   .tabla-ranking td[data-label="Fuente"], .tabla-ranking td[data-label="Casa típica"], .tabla-ranking td[data-label="Rango"] { grid-column: 1 / -1; }
   .tabla-ranking td[data-label="Total"] { color: var(--acento); }
 }
+
+/* ===== Guías a todo el ancho (13 nov 2026) ===== */
+.guia-cab { padding-bottom: 28px; border-bottom: 1px solid var(--borde); margin-bottom: 40px; }
+.guia-cab h1 { font-size: clamp(1.7rem, 3vw, 2.5rem); max-width: 980px; margin: 8px 0 12px; }
+.guia-cab .sobretitulo { color: var(--acento); font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .78rem; }
+.guia-bajada { font-size: 1.12rem; color: #666; max-width: 900px; margin: 0; }
+.guia-grid { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 64px; align-items: start; }
+.guia-indice { position: sticky; top: 110px; border-top: 3px solid var(--acento); background: var(--gris); padding: 20px 22px; max-height: calc(100vh - 140px); overflow: auto; }
+.guia-indice p { font-weight: 700; text-transform: uppercase; letter-spacing: .06em; font-size: .75rem; color: #333; margin: 0 0 10px; }
+.guia-indice ol { margin: 0; padding-left: 18px; }
+.guia-indice li { font-size: .88rem; line-height: 1.4; margin: 0 0 10px; color: #999; }
+.guia-indice a { color: #444; text-decoration: none; }
+.guia-indice a:hover { color: var(--acento); }
+.articulo.guia-cuerpo { max-width: none; }
+.guia-cuerpo > p:first-child { font-size: 1.15rem; line-height: 1.75; color: #444; border-left: 3px solid var(--acento); padding-left: 22px; }
+.guia-cuerpo h2 { scroll-margin-top: 100px; margin-top: 52px; font-size: clamp(1.35rem, 2vw, 1.7rem); }
+.guia-cuerpo h2::after { content: ''; display: block; width: 46px; height: 2px; background: var(--acento); margin-top: 12px; }
+.guia-cuerpo h3 { margin-top: 26px; font-size: 1.12rem; }
+.guia-cuerpo p, .guia-cuerpo li { font-size: 1.03rem; line-height: 1.8; }
+.guia-cuerpo table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: .95rem; }
+.guia-cuerpo th { background: var(--negro); color: #fff; text-align: left; padding: 10px 12px; }
+.guia-cuerpo td { border-bottom: 1px solid var(--borde); padding: 10px 12px; }
+@media (max-width: 1000px) {
+  .guia-grid { grid-template-columns: 1fr; gap: 24px; }
+  .guia-indice { position: static; max-height: none; }
+}
+@media (max-width: 760px) {
+  .guia-cab { margin-bottom: 24px; }
+  .guia-cuerpo > p:first-child { font-size: 1.02rem; padding-left: 16px; }
+  .guia-cuerpo table { display: block; overflow-x: auto; }
+}
