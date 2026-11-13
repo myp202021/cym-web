@@ -82,11 +82,11 @@ export default function PaginaMadre({ m }: { m: Madre }) {
                 <tbody>
                   {m.tabla_mercado.map((r, i) => (
                     <tr key={i}>
-                      <td><LinkZona zona={r.zona} /></td>
-                      <td>{String(r.uf_m2 ?? '')}</td>
-                      <td>{String(r.precio_casa_tipica ?? '')}</td>
-                      <td>{String(r.fuente ?? '')}</td>
-                      <td>{String(r.fecha ?? '')}</td>
+                      <td data-label="Zona"><LinkZona zona={r.zona} /></td>
+                      <td data-label="UF/m²">{String(r.uf_m2 ?? '')}</td>
+                      <td data-label="Casa típica">{String(r.precio_casa_tipica ?? '')}</td>
+                      <td data-label="Fuente">{String(r.fuente ?? '')}</td>
+                      <td data-label="Fecha">{String(r.fecha ?? '')}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -108,10 +108,10 @@ export default function PaginaMadre({ m }: { m: Madre }) {
                 <tbody>
                   {m.tabla_cym.map((r, i) => (
                     <tr key={i}>
-                      <td><LinkZona zona={r.zona} /></td>
-                      <td>{String(r.n ?? '')}</td>
-                      <td>{String(r.rango_uf ?? '')}</td>
-                      <td>{String(r.uf_m2_construido ?? '')}</td>
+                      <td data-label="Zona"><LinkZona zona={r.zona} /></td>
+                      <td data-label="Propiedades">{String(r.n ?? '')}</td>
+                      <td data-label="Rango">{String(r.rango_uf ?? '')}</td>
+                      <td data-label="UF/m² construido">{String(r.uf_m2_construido ?? '')}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -138,13 +138,13 @@ export default function PaginaMadre({ m }: { m: Madre }) {
               <tbody>
                 {m.ranking.map((r) => (
                   <tr key={String(r.puesto)}>
-                    <td>{String(r.puesto)}</td>
-                    <td><b>{String(r.barrio)}</b></td>
-                    <td><LinkZona zona={r.zona} /></td>
+                    <td data-label="#">{String(r.puesto)}</td>
+                    <td data-label="Barrio"><b>{String(r.barrio)}</b></td>
+                    <td data-label="Zona"><LinkZona zona={r.zona} /></td>
                     {conPuntajes
-                      ? criterios.map((k) => <td key={k}>{String((r.puntajes as Record<string, number>)[k] ?? '')}</td>)
-                      : <td>{String(r.referencia ?? '')}</td>}
-                    {conPuntajes && <td><b>{String(r.total)}</b></td>}
+                      ? criterios.map((k) => <td key={k} data-label={ETIQUETAS[k] || k}>{String((r.puntajes as Record<string, number>)[k] ?? '')}</td>)
+                      : <td data-label="Referencia">{String(r.referencia ?? '')}</td>}
+                    {conPuntajes && <td data-label="Total"><b>{String(r.total)}</b></td>}
                   </tr>
                 ))}
               </tbody>

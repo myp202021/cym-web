@@ -4,6 +4,7 @@ import FondoHero, { FONDOS } from '@/components/FondoHero'
 import FormularioContacto from '@/components/FormularioContacto'
 import BotonWhatsApp from '@/components/BotonWhatsApp'
 import { SITIO, mensajeWeb } from '@/lib/sitio'
+import SitioOficial from '@/components/SitioOficial'
 
 export const metadata = {
   title: 'Contacto | CyM Propiedades',
@@ -33,6 +34,7 @@ export default function Contacto() {
         </div>
       </section>
       <Faq items={FAQ_CYM.slice(0, 4)} titulo="Preguntas frecuentes sobre CyM Propiedades" />
+      <SitioOficial />
     </>
   )
 }

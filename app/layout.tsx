@@ -75,7 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="marca" aria-label="CyM Propiedades, inicio">
               <Image src="/logo-cym.png" alt="CyM Propiedades" width={218} height={56} priority />
             </Link>
-            <MenuPrincipal comunas={ZONAS.map((z) => ({ href: `/propiedades/${z.slug}`, texto: z.nombre }))} />
+            <MenuPrincipal comunas={ZONAS.map((z) => ({ href: `/${z.slug}`, texto: z.nombre }))} />
+            <Image src="/oficial/CCP.jpg" alt="Círculo de Corredores de Propiedades" width={133} height={38} className="sello-ccp" />
           </div>
         </header>
 

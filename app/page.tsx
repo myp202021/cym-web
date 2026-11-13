@@ -11,6 +11,10 @@ import { ZONAS, FAQ_HOME } from '@/lib/zonas'
 import { PROPIEDADES, porZona, resumen, formatoUF } from '@/lib/propiedades'
 import { SITIO, DESCRIPCION } from '@/lib/sitio'
 import { GUIAS } from '@/lib/guias'
+import { COMUNAS } from '@/lib/comunas'
+import { paginasDe, TIPOS } from '@/lib/paginas'
+import { FONDOS as FOTOS } from '@/components/FondoHero'
+import SitioOficial from '@/components/SitioOficial'
 
 export const metadata = {
   title: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades',
@@ -53,7 +57,7 @@ export default function Home() {
             <h1>Líderes en venta en el sector oriente</h1>
             <p className="comunas-hero">
               {ZONAS.map((z) => (
-                <Link key={z.slug} href={`/propiedades/${z.slug}`}>{z.nombre}</Link>
+                <Link key={z.slug} href={`/${z.slug}`}>{z.nombre}</Link>
               ))}
             </p>
             <p className="bajada">Compra, vende o tasa sin costo tu propiedad con CyM.</p>
@@ -81,7 +85,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion" id="zonas">
+      <section className="seccion" id="comunas">
+        <div className="contenedor">
+          <h2>CyM en tu comuna</h2>
+          <p className="intro-seccion">Un corredor a cargo de cada zona. En cada comuna encuentras barrios, precios de referencia, ranking de sectores, propiedades y contacto directo.</p>
+          <div className="comunas-cym">
+            {COMUNAS.map((c) => {
+              const lista = porZona(c.slug)
+              const foto = lista.find((p) => p.tipo === 'Casa')?.fotos[0] || FOTOS[c.slug as keyof typeof FOTOS]
+              return (
+                <article key={c.slug} className="comuna-cym">
+                  <Link href={`/${c.slug}`} className="comuna-cym-foto">
+                    {foto && <Image src={foto} alt={`CyM Propiedades en ${c.nombre}`} fill sizes="(max-width: 760px) 100vw, 400px" />}
+                    <span>{c.nombre}</span>
+                  </Link>
+                  <div className="comuna-cym-texto">
+                    <h3><Link href={`/${c.slug}`}>Corredora de propiedades en {c.nombre}</Link></h3>
+                    <p>{c.bajada}</p>
+                    <ul>
+                      {paginasDe(c.slug).map((pg) => (
+                        <li key={pg.slug}><Link href={`/${pg.slug}`}>{TIPOS[pg.tipo]}</Link></li>
+                      ))}
+                      <li><Link href={`/propiedades/${c.slug}`}>Propiedades en venta ({lista.length})</Link></li>
+                    </ul>
+                  </div>
+                </article>
+              )
+            })}
+            <article className="comuna-cym madres-cym">
+              <div className="comuna-cym-texto">
+                <p className="sobretitulo">Sector oriente</p>
+                <h3>Compara las comunas</h3>
+                <ul>
+                  <li><Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link></li>
+                  <li><Link href="/precios-casas-sector-oriente">Precios de casas por comuna</Link></li>
+                  <li><Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades del sector oriente</Link></li>
+                </ul>
+                <a href={SITIO.sitioOficial} target="_blank" rel="noopener" className="btn btn-borde">Sitio oficial: cympropiedades.cl</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="seccion gris" id="zonas">
         <div className="contenedor">
           <h2>Propiedades por zona</h2>
           <p className="intro-seccion">Elige la zona y revisa las propiedades con fotos, superficie y precio. En cada una puedes cotizar por WhatsApp.</p>
@@ -105,7 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion gris">
+      <section className="seccion">
         <div className="contenedor">
           <h2>Casas destacadas</h2>
           <div className="grilla">
@@ -201,6 +248,7 @@ export default function Home() {
         </div>
       </section>
 
+      <SitioOficial />
     </>
   )
 }

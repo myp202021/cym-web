@@ -292,3 +292,204 @@ html,body{overflow-x:clip}
 .tabla-ranking td:first-child { font-weight: 800; color: #eb3d60; }
 .fuentes { font-size: 0.9rem; line-height: 1.7; }
 .fuentes a { color: #666; }
+
+/* ============================================================
+   Estilo oficial cympropiedades.cl (13 nov 2026)
+   Igual que el sitio oficial: Raleway, blanco, acento #eb3d60, negro #1d1e19,
+   foto grande de casa en la portada con recuadro blanco y pestañas, esquinas rectas.
+   ============================================================ */
+:root { --negro: #1d1e19; --texto: #555; --suave: #888; --gris: #f5f5f5; --borde: #e3e3e3; --radio: 2px; }
+body { color: var(--texto); }
+h1, h2, h3 { color: #222; }
+
+/* cabecera como la oficial: logo apilado, menú gris en mayúsculas, línea roja fina */
+.cabecera { border-bottom: 1px solid var(--acento); box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+.cabecera .contenedor { padding: 10px 0; }
+.marca img { height: 50px; width: auto; }
+.cabecera nav { gap: 22px; }
+.cabecera nav a { color: #555; font-weight: 700; font-size: .74rem; letter-spacing: .03em; }
+.cabecera nav a:hover { color: var(--acento); }
+.cabecera nav .nav-cta { background: none; color: var(--acento); padding: 0; border-radius: 0; }
+.sello-ccp { height: 38px; width: auto; flex-shrink: 0; }
+@media (max-width: 1260px) { .sello-ccp { display: none; } }
+@media (max-width: 1100px) { .marca img { height: 44px; } .cabecera nav .nav-cta { background: var(--acento); color: #fff; padding: 14px; } }
+
+/* botones rectos, mayúsculas, como "BUSCAR" del oficial */
+.btn { border-radius: var(--radio); text-transform: uppercase; font-size: .82rem; letter-spacing: .06em; padding: 15px 24px; }
+.btn:hover { transform: none; }
+.btn-borde { border-width: 1px; }
+
+/* portada: foto de casa a lo ancho, sin velo, recuadro blanco con pestañas */
+.hero { min-height: 560px; padding: 0; display: flex; align-items: flex-end; background: #ddd; color: var(--texto); }
+.hero-zona { padding: 0; }
+.hero-velo { background: linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,.18) 100%); }
+@media (max-width: 900px) { .hero-velo { background: none; } }
+.hero-zona > .contenedor,
+.hero:not(.hero-zona) .hero-grid > div:first-child {
+  position: relative; background: rgba(255,255,255,.93); padding: 30px 36px 28px; margin-top: 64px;
+  box-shadow: 0 -1px 0 rgba(0,0,0,.02);
+}
+.hero-zona > .contenedor { width: min(700px, 100% - 40px); margin-left: max(20px, calc((100% - 1180px) / 2)); margin-right: auto; }
+.hero:not(.hero-zona) .hero-grid { align-items: end; padding-top: 48px; }
+.hero:not(.hero-zona) .hero-grid > div:last-child { margin-bottom: 28px; }
+.hero .sobretitulo {
+  position: absolute; left: 0; bottom: 100%; margin: 0; display: flex;
+  background: var(--acento); color: #fff; font-size: .78rem; letter-spacing: .04em; padding: 11px 18px;
+}
+.hero .sobretitulo::after { content: 'Consúltenos'; position: absolute; left: 100%; top: 0; bottom: 0; display: flex; align-items: center; padding: 0 18px; background: #2b2b2b; color: #fff; text-transform: none; letter-spacing: 0; font-weight: 700; white-space: nowrap; }
+.hero h1 { color: #333; font-size: clamp(1.6rem, 2.6vw, 2.15rem); font-weight: 700; margin-bottom: .35em; }
+.hero .bajada { color: #555; font-size: 1rem; }
+.hero a:not(.btn) { color: #222; }
+.hero .comunas-hero a, .hero .comunas-hero { color: #222; }
+.hero .cifras li { color: #777; }
+.hero .cifras b { color: #222; }
+.btn-claro, .hero .btn-claro { background: transparent; color: #222; border: 1px solid #222; }
+.btn-claro:hover, .hero .btn-claro:hover { background: #222; color: #fff; }
+@media (max-width: 760px) {
+  .hero { display: block; min-height: 0; padding-top: 230px; }
+  .hero-zona > .contenedor, .hero:not(.hero-zona) .hero-grid > div:first-child { width: 100%; margin: 0; padding: 24px 20px 22px; background: #fff; }
+  .hero:not(.hero-zona) .hero-grid { padding-top: 0; width: 100%; }
+  .hero:not(.hero-zona) .hero-grid > div:last-child { margin: 0 16px 20px; }
+  .hero .sobretitulo::after { display: none; }
+  .hero .comunas-hero a { border-color: #ddd; background: #fff; }
+}
+
+/* títulos de sección con la línea roja del oficial */
+.seccion > .contenedor > h2, .articulo h2, .seccion > .contenedor > div > h2 { font-weight: 700; letter-spacing: .005em; }
+.seccion > .contenedor > h2::after, .articulo > h2::after, .seccion > .contenedor > div > h2::after { content: ''; display: block; width: 46px; height: 2px; background: var(--acento); margin-top: 14px; }
+.centro > h2::after, h2.centro::after { margin-left: auto; margin-right: auto; }
+.seccion { padding: 72px 0; }
+.seccion.gris { background: var(--gris); }
+
+/* texto de apertura: más aire y jerarquía */
+.intro-seccion b { font-weight: 500; color: #444; font-size: 1.12rem; line-height: 1.75; display: block; border-left: 3px solid var(--acento); padding-left: 22px; }
+
+/* servicios en tarjetas */
+div.servicios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 24px; }
+div.servicios > div { background: #fff; border: 1px solid var(--borde); border-top: 3px solid var(--acento); padding: 24px 26px; }
+div.servicios h3 { font-size: 1.02rem; margin-bottom: 8px; }
+div.servicios p { margin: 0; font-size: .95rem; }
+@media (max-width: 760px) { div.servicios { grid-template-columns: 1fr; } }
+
+/* tarjetas y cajas rectas, borde fino */
+.tarjeta, .formulario, .caja-propietarios, .alianzas li, .guia, .ficha-lateral, .zona, .arbol, .atributos div, .galeria .foto, .pasos li { border-radius: var(--radio); }
+.tarjeta:hover, .guia:hover { box-shadow: 0 12px 30px rgba(0,0,0,.08); border-color: var(--borde); }
+.etiqueta { border-radius: 0; }
+.formulario input, .formulario select, .formulario textarea, .campo { border-radius: 0; border-color: #d6d6d6; }
+.chips li { border-radius: 0; }
+
+/* tablas */
+.tabla-ranking th { background: var(--negro); font-weight: 700; font-size: .85rem; letter-spacing: .02em; }
+
+/* pie negro con logo blanco, como el oficial */
+.pie { background: var(--negro); border-top: 0; color: #c8c9cb; padding: 56px 0 24px; }
+.pie img { width: 200px; height: auto; }
+.pie b { text-transform: uppercase; font-size: .8rem; letter-spacing: .08em; }
+.pie a, .pie span { color: #c8c9cb; }
+.pie a:hover { color: var(--acento); text-decoration: none; }
+.legal { border-top: 1px solid rgba(255,255,255,.08); padding-top: 18px; }
+/* el mapa acompaña la lista de barrios al bajar */
+@media (min-width: 861px) { .seccion .dos-col > div:last-child:has(iframe) { position: sticky; top: 110px; align-self: start; } }
+
+/* Ancho completo (13 nov 2026): nada de columna angosta en las landings.
+   Secciones de texto en dos columnas: título a la izquierda (fijo al bajar) y texto a la derecha. */
+.seccion > .contenedor.angosto { width: min(1180px, 100% - 40px); }
+.seccion > .contenedor.angosto.articulo { display: grid; grid-template-columns: minmax(240px, 340px) 1fr; column-gap: 64px; align-items: start; max-width: none; }
+.seccion > .contenedor.angosto.articulo > h2 { grid-column: 1; grid-row: 1 / span 40; position: sticky; top: 110px; font-size: clamp(1.3rem, 2vw, 1.65rem); margin: 0; }
+.seccion > .contenedor.angosto.articulo > :not(h2) { grid-column: 2; }
+.seccion > .contenedor.angosto.articulo > p { font-size: 1.02rem; line-height: 1.8; }
+.seccion > .contenedor.angosto.articulo > ul.checks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 8px; }
+.seccion > .contenedor.angosto.articulo > ul.checks li { background: #fff; border: 1px solid var(--borde); padding: 16px 18px 16px 44px; margin: 0; font-size: .95rem; }
+.seccion.gris > .contenedor.angosto.articulo > ul.checks li { background: #fff; }
+.seccion:not(.gris) > .contenedor.angosto.articulo > ul.checks li { background: var(--gris); border-color: transparent; }
+.seccion > .contenedor.angosto.articulo > ul.checks li::before { left: 18px; top: 16px; }
+/* apertura a todo el ancho */
+.seccion > .contenedor.angosto .intro-seccion { max-width: none; margin: 0; }
+.intro-seccion b { font-size: 1.28rem; line-height: 1.7; color: #333; }
+/* preguntas frecuentes en dos columnas */
+#preguntas > .contenedor.angosto { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+#preguntas > .contenedor.angosto > h2 { grid-column: 1 / -1; margin-bottom: 18px; }
+/* formularios y cierres: centrados con ancho cómodo */
+.seccion > .contenedor.angosto:has(form), .seccion > .contenedor.angosto.centro { width: min(860px, 100% - 40px); }
+@media (max-width: 900px) {
+  .seccion > .contenedor.angosto.articulo { grid-template-columns: 1fr; }
+  .seccion > .contenedor.angosto.articulo > h2 { grid-row: auto; position: static; margin-bottom: 16px; }
+  .seccion > .contenedor.angosto.articulo > :not(h2) { grid-column: 1; }
+  .seccion > .contenedor.angosto.articulo > ul.checks { grid-template-columns: 1fr; }
+  #preguntas > .contenedor.angosto { grid-template-columns: 1fr; }
+  .intro-seccion b { font-size: 1.1rem; }
+}
+
+/* Portada: CyM en tu comuna (conecta con las landings por comuna) */
+.comunas-cym { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 26px; }
+.comuna-cym { background: #fff; border: 1px solid var(--borde); display: flex; flex-direction: column; transition: box-shadow .2s; }
+.comuna-cym:hover { box-shadow: 0 14px 34px rgba(0,0,0,.08); }
+.comuna-cym-foto { position: relative; aspect-ratio: 16/10; display: block; overflow: hidden; background: #ddd; }
+.comuna-cym-foto img { object-fit: cover; transition: transform .5s; }
+.comuna-cym:hover .comuna-cym-foto img { transform: scale(1.04); }
+.comuna-cym-foto span { position: absolute; left: 0; bottom: 0; background: var(--acento); color: #fff; font-weight: 700; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; padding: 9px 16px; }
+.comuna-cym-texto { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+.comuna-cym-texto h3 { font-size: 1.08rem; margin-bottom: 8px; }
+.comuna-cym-texto h3 a { color: #222; }
+.comuna-cym-texto p { font-size: .93rem; margin-bottom: 14px; }
+.comuna-cym-texto ul { list-style: none; padding: 0; margin: auto 0 0; border-top: 1px solid var(--borde); }
+.comuna-cym-texto li a { display: block; padding: 9px 0; border-bottom: 1px solid var(--borde); color: #444; font-size: .9rem; font-weight: 600; }
+.comuna-cym-texto li a::after { content: '→'; float: right; color: var(--acento); }
+.comuna-cym-texto li a:hover { color: var(--acento); text-decoration: none; }
+.madres-cym { background: var(--negro); border-color: var(--negro); }
+.madres-cym h3, .madres-cym .comuna-cym-texto li a { color: #fff; }
+.madres-cym .comuna-cym-texto ul, .madres-cym .comuna-cym-texto li a { border-color: rgba(255,255,255,.14); }
+.madres-cym .comuna-cym-texto { justify-content: center; }
+.madres-cym .btn-borde { margin-top: 22px; color: #fff; border-color: #fff; }
+.madres-cym .btn-borde:hover { background: #fff; color: #222; }
+@media (max-width: 1000px) { .comunas-cym { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .comunas-cym { grid-template-columns: 1fr; } }
+.madres-cym .comuna-cym-texto { justify-content: flex-start; } .madres-cym .comuna-cym-texto ul { margin-top: 16px; } .madres-cym .comuna-cym-texto p:not(.sobretitulo) { color: #c8c9cb; }
+
+/* ===== Celular (13 nov 2026) ===== */
+@media (max-width: 760px) {
+  .seccion { padding: 44px 0; }
+  .seccion > .contenedor > h2, .articulo h2 { font-size: 1.35rem; line-height: 1.25; }
+  .seccion > .contenedor > h2::after, .articulo > h2::after { margin-top: 10px; }
+  /* hero: foto más alta, botones apilados a lo ancho */
+  .hero { padding-top: 250px; }
+  .hero h1 { font-size: 1.55rem; line-height: 1.2; }
+  .hero .bajada { font-size: .95rem; }
+  .hero .acciones, .acciones { display: flex; flex-direction: column; gap: 10px; }
+  .acciones .btn { width: 100%; justify-content: center; text-align: center; padding: 15px 14px; font-size: .8rem; white-space: normal; line-height: 1.3; }
+  .hero .sobretitulo { font-size: .7rem; padding: 9px 14px; max-width: calc(100% - 20px); }
+  /* texto de apertura */
+  .intro-seccion b { font-size: 1rem; line-height: 1.65; padding-left: 16px; }
+  /* tarjetas y servicios más compactos */
+  div.servicios { gap: 12px; margin-top: 18px; }
+  div.servicios > div { padding: 18px 18px; }
+  ul.checks { gap: 10px; }
+  .comuna-cym-texto { padding: 18px 18px 20px; }
+  /* tablas de ranking: cada fila es una tarjeta */
+  .tabla-ranking, .tabla-ranking tbody, .tabla-ranking tr, .tabla-ranking td { display: block; width: 100%; }
+  .tabla-ranking thead { display: none; }
+  .tabla-ranking { margin: 16px 0; font-size: .92rem; }
+  .tabla-ranking tr { background: #fff; border: 1px solid var(--borde); border-top: 3px solid var(--acento); margin-bottom: 12px; padding: 6px 0; }
+  .tabla-ranking tr:nth-child(even) td { background: transparent; }
+  .tabla-ranking td { border: 0; padding: 7px 16px; }
+  .tabla-ranking td[data-label]::before { content: attr(data-label); display: block; font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #999; margin-bottom: 2px; }
+  .tabla-ranking td[data-label="#"] { display: inline-block; width: auto; font-size: 1.3rem; padding-bottom: 0; }
+  .tabla-ranking td[data-label="#"]::before { display: none; }
+  .tabla-ranking td[data-label="#"] + td[data-label="Barrio"] { display: inline-block; width: auto; padding-left: 4px; font-size: 1.05rem; }
+  .tabla-ranking td[data-label="#"] + td[data-label="Barrio"]::before { display: none; }
+  /* FAQ y formularios */
+  #preguntas details, #preguntas summary { font-size: .95rem; }
+  .formulario { padding: 20px 16px; }
+  /* pie */
+  .pie-grid { gap: 28px; }
+}
+@media (max-width: 760px) {
+  .tabla-ranking tr { display: grid; grid-template-columns: repeat(6, 1fr); padding: 8px 0 10px; }
+  .tabla-ranking td { grid-column: span 2; width: auto; }
+  .tabla-ranking td[data-label="#"] { grid-column: span 1; display: block; padding-right: 0; }
+  .tabla-ranking td[data-label="#"] + td[data-label="Barrio"] { grid-column: span 5; display: block; padding-left: 0; align-self: center; }
+  .tabla-ranking td[data-label="Barrio"], .tabla-ranking td[data-label="Zona"], .tabla-ranking td[data-label="Fortalezas"],
+  .tabla-ranking td[data-label="A considerar"], .tabla-ranking td[data-label="Ideal para"], .tabla-ranking td[data-label="Referencia"],
+  .tabla-ranking td[data-label="Fuente"], .tabla-ranking td[data-label="Casa típica"], .tabla-ranking td[data-label="Rango"] { grid-column: 1 / -1; }
+  .tabla-ranking td[data-label="Total"] { color: var(--acento); }
+}
