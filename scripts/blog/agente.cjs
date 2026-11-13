@@ -53,7 +53,7 @@ async function openai(url, body) {
 }
 
 // Portales y corredoras: no se citan como fuente (regla CyM: no nombrar competidores).
-const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria|emol\.com\/propiedad|propiedades\.emol|\/ficha\/|\/propiedad\/|codR\d|propiedadesya|portalpm/i
+const NO_FUENTE = /portalinmobiliario|toctoc|chilepropiedades|yapo\.cl|enlaceinmobiliario|goplaceit|mercadolibre|icasas|properati|zoominmobiliario|economicos\.cl|remax|engelvoelkers|sothebys|century21|corredora|propiedades\.cl|inmobiliaria|emol\.com\/propiedad|propiedades\.emol|\/ficha\/|\/propiedad\/|codR\d|propiedadesya|portalpm|macal\.cl|gpremium|valprop/i
 
 // 1) Investigación con búsqueda web, en tres ángulos para juntar suficientes datos con fuente.
 const ANGULOS = [
@@ -208,6 +208,10 @@ Contiene cifras que NO están en los datos investigados ni en el contexto: ${mal
   return { art: { titulo: esquema.titulo, descripcion: esquema.descripcion, html, faq: esquema.faq }, sistema: REGLAS }
 }
 
+function quitarEnlacesBloqueados(html) {
+  return html.replace(/<a href="(https?:\/\/[^"]+)"[^>]*>([^<]*)<\/a>/g, (m, url, txt) => (NO_FUENTE.test(url) && !/cympropiedades/.test(url) ? txt : m))
+}
+
 function asegurarEnlaces(html, t, c) {
   let extra = ''
   if (!html.includes(`href="/${t.comuna}"`)) extra += `<p>Si tienes una casa en ${c.nombre} o buscas una, revisa <a href="/${t.comuna}">CyM Propiedades en ${c.nombre}</a>: barrios, precios de referencia y contacto directo con un corredor de la zona.</p>`
@@ -235,7 +239,7 @@ async function main() {
   const { art, sistema } = await redactar(t, c, [...datos, ...propios], contextoComuna(t))
   let html = await largo.asegurarLargo(art.html, { tema: art.titulo, sistema, apiKey: KEY })
   html = (await verificarFuentes(html, { dominioPropio: 'cympropiedadeschile.cl' })).html
-  html = asegurarEnlaces(html, t, c)
+  html = asegurarEnlaces(quitarEnlacesBloqueados(html), t, c)
   largo.exigirLargo(html)
 
   const todo = [art.titulo, art.descripcion, html, ...art.faq.map((f) => f.q + ' ' + f.a)].join(' ')
