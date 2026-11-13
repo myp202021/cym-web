@@ -419,3 +419,29 @@ div.servicios p { margin: 0; font-size: .95rem; }
   #preguntas > .contenedor.angosto { grid-template-columns: 1fr; }
   .intro-seccion b { font-size: 1.1rem; }
 }
+
+/* Portada: CyM en tu comuna (conecta con las landings por comuna) */
+.comunas-cym { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 26px; }
+.comuna-cym { background: #fff; border: 1px solid var(--borde); display: flex; flex-direction: column; transition: box-shadow .2s; }
+.comuna-cym:hover { box-shadow: 0 14px 34px rgba(0,0,0,.08); }
+.comuna-cym-foto { position: relative; aspect-ratio: 16/10; display: block; overflow: hidden; background: #ddd; }
+.comuna-cym-foto img { object-fit: cover; transition: transform .5s; }
+.comuna-cym:hover .comuna-cym-foto img { transform: scale(1.04); }
+.comuna-cym-foto span { position: absolute; left: 0; bottom: 0; background: var(--acento); color: #fff; font-weight: 700; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; padding: 9px 16px; }
+.comuna-cym-texto { padding: 22px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+.comuna-cym-texto h3 { font-size: 1.08rem; margin-bottom: 8px; }
+.comuna-cym-texto h3 a { color: #222; }
+.comuna-cym-texto p { font-size: .93rem; margin-bottom: 14px; }
+.comuna-cym-texto ul { list-style: none; padding: 0; margin: auto 0 0; border-top: 1px solid var(--borde); }
+.comuna-cym-texto li a { display: block; padding: 9px 0; border-bottom: 1px solid var(--borde); color: #444; font-size: .9rem; font-weight: 600; }
+.comuna-cym-texto li a::after { content: '→'; float: right; color: var(--acento); }
+.comuna-cym-texto li a:hover { color: var(--acento); text-decoration: none; }
+.madres-cym { background: var(--negro); border-color: var(--negro); }
+.madres-cym h3, .madres-cym .comuna-cym-texto li a { color: #fff; }
+.madres-cym .comuna-cym-texto ul, .madres-cym .comuna-cym-texto li a { border-color: rgba(255,255,255,.14); }
+.madres-cym .comuna-cym-texto { justify-content: center; }
+.madres-cym .btn-borde { margin-top: 22px; color: #fff; border-color: #fff; }
+.madres-cym .btn-borde:hover { background: #fff; color: #222; }
+@media (max-width: 1000px) { .comunas-cym { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .comunas-cym { grid-template-columns: 1fr; } }
+.madres-cym .comuna-cym-texto { justify-content: flex-start; } .madres-cym .comuna-cym-texto ul { margin-top: 16px; } .madres-cym .comuna-cym-texto p:not(.sobretitulo) { color: #c8c9cb; }
