@@ -283,3 +283,12 @@ html,body{overflow-x:clip}
 @media (max-width: 1180px) and (min-width: 1101px) { .cabecera nav { gap: 12px; } .cabecera nav a { font-size: .72rem; } .marca img { height: 42px; } }
 @media (max-width: 1100px) { .cabecera nav a { white-space: normal; font-size: .95rem; } }
 .marca { flex-shrink: 0; }
+
+/* Tablas de ranking (landings por comuna y páginas madre) */
+.tabla-ranking { width: 100%; border-collapse: collapse; font-size: 0.95rem; margin: 1rem 0; }
+.tabla-ranking th, .tabla-ranking td { padding: 0.7rem 0.8rem; border-bottom: 1px solid #e5e5e5; text-align: left; vertical-align: top; }
+.tabla-ranking th { background: #111; color: #fff; font-weight: 700; }
+.tabla-ranking tr:nth-child(even) td { background: #fafafa; }
+.tabla-ranking td:first-child { font-weight: 800; color: #eb3d60; }
+.fuentes { font-size: 0.9rem; line-height: 1.7; }
+.fuentes a { color: #666; }

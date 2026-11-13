@@ -1,0 +1,306 @@
+{
+ "slug": "las-condes",
+ "nombre": "Las Condes",
+ "comuna": "Las Condes",
+ "title": "Corredora de propiedades en Las Condes | CyM Propiedades",
+ "description": "Corredora de propiedades en Las Condes: vende tu casa con tasación sin costo, publicación, visitas y cierre con CyM, o compra con asesoría y crédito.",
+ "h1": "Corredora de propiedades en Las Condes",
+ "bajada": "Tasamos, publicamos y vendemos casas en Las Condes, con una ejecutiva dedicada a la comuna.",
+ "resumen": "CyM Propiedades es una corredora de propiedades que vende casas en Las Condes y acompaña a propietarios y compradores desde la tasación sin costo hasta la firma de la escritura. Una ejecutiva está a cargo de la comuna y trabajamos con una base de más de 100.000 compradores y 12 años en el mercado. Si quieres vender, tasar o comprar una casa en Las Condes, partimos con una conversación y una tasación sin costo.",
+ "servicios": [
+  {
+   "nombre": "Tasación de propiedades en Las Condes sin costo",
+   "texto": "Calculamos un precio de salida con propiedades comparables del mismo barrio, porque en Las Condes el valor cambia mucho entre sectores: no se compara igual una casa en Colón Oriente que una en San Damián. Revisamos metros construidos y de terreno, estado, orientación y la normativa de la zona. Te entregamos un rango de precio razonado y una recomendación para publicar."
+  },
+  {
+   "nombre": "Venta de casas con gestión completa",
+   "texto": "Nos hacemos cargo de la publicación, las fotos, la coordinación de visitas, la negociación y el cierre. La ejecutiva de Las Condes filtra a los interesados antes de cada visita y te informa de cada oferta. Difundimos tu casa en portales y en nuestra base de más de 100.000 compradores."
+  },
+  {
+   "nombre": "Asesoría para comprar casa en Las Condes",
+   "texto": "Si buscas casa en la comuna, te ayudamos a definir barrio, presupuesto y prioridades: colegios, metro, áreas verdes o terreno. Te acompañamos a las visitas, revisamos antecedentes de la propiedad y negociamos por ti hasta la promesa y la escritura."
+  },
+  {
+   "nombre": "Crédito hipotecario y asesoría financiera",
+   "texto": "Gestionamos el crédito hipotecario y te asesoramos para ordenar el financiamiento antes de ofertar. Gracias a nuestra alianza con Bci puedes acceder a un crédito preaprobado, lo que da más fuerza a tu oferta frente al vendedor."
+  },
+  {
+   "nombre": "Beneficios para clientes CyM",
+   "texto": "Quienes compran o venden con CyM acceden a beneficios de nuestras alianzas: 15% de descuento en IKEA para equipar la casa nueva y el respaldo de Fundamenta. Te explicamos las condiciones vigentes al iniciar el proceso."
+  }
+ ],
+ "secciones": [
+  {
+   "h2": "Las Condes: perfil de la comuna",
+   "parrafos": [
+    "Las Condes es una de las comunas más pobladas del país. El Censo 2024 contó 296.134 personas, lo que la deja en el octavo lugar nacional según los resultados publicados por el INE y recogidos por Emol.",
+    "La comuna combina dos realidades. Hacia el poniente, en torno a El Golf, Apoquindo y Nueva Las Condes, se concentran oficinas, edificios en altura, comercio y servicios. Hacia el oriente, desde Colón y Tomás Moro hacia la precordillera, dominan los barrios de casas, con calles más tranquilas, antejardines y más espacio.",
+    "Para quien busca casa, el interés suele estar en el sector oriente: Colón Oriente, Vital Apoquindo, Los Dominicos y San Damián. San Carlos de Apoquindo, el barrio de casas en el extremo oriente de la comuna, tiene su propia página en CyM, porque su oferta y su dinámica merecen un análisis aparte."
+   ]
+  },
+  {
+   "h2": "Mercado y precios: casas y departamentos en Las Condes",
+   "parrafos": [
+    "En departamentos nuevos, Las Condes llegó a 114 UF/m² en el trimestre móvil cerrado en julio de 2026, con un alza de 6,9% en doce meses, según el InfoInmobiliario de TocToc publicado por La Tercera. Un año antes, Colliers había medido 106,7 UF/m² para el primer trimestre de 2025, con una leve baja de 0,5% anual, según el Diario Financiero.",
+    "En casas no encontramos un índice público reciente de precio por metro cuadrado solo para Las Condes. La referencia más clara es de Colliers, citada por Emol en febrero de 2025: en San Damián y el sector tradicional de Los Dominicos la oferta de alto valor promediaba 50.000 UF y 335 m² interiores. Es un precio de oferta del segmento más alto, no un promedio comunal.",
+    "En la práctica, el precio de una casa en Las Condes depende sobre todo del barrio, del terreno y del estado de la construcción. Por eso conviene tasar con comparables del mismo sector antes de fijar un precio, en vez de usar promedios de toda la comuna."
+   ],
+   "lista": [
+    "Departamentos nuevos: 114 UF/m² (TocToc, julio 2026).",
+    "Departamentos nuevos: 106,7 UF/m² (Colliers, primer trimestre 2025).",
+    "Casas de alto valor en San Damián y Los Dominicos: oferta promedio de 50.000 UF y 335 m² (Colliers vía Emol, febrero 2025)."
+   ]
+  },
+  {
+   "h2": "Cómo vender tu casa en Las Condes con CyM, paso a paso",
+   "parrafos": [
+    "Vender una casa toma tiempo y requiere orden. Este es el proceso que seguimos con cada propietario en Las Condes:"
+   ],
+   "lista": [
+    "Primera conversación con la ejecutiva de Las Condes para entender tus plazos y expectativas.",
+    "Visita a la propiedad y tasación sin costo con comparables del mismo barrio.",
+    "Revisión de antecedentes: dominio vigente, recepción municipal, permisos de ampliaciones y contribuciones.",
+    "Fotos, descripción y publicación en portales y en nuestra base de más de 100.000 compradores.",
+    "Coordinación de visitas con interesados filtrados previamente.",
+    "Negociación de ofertas, con información clara para que decidas.",
+    "Promesa de compraventa, apoyo con el crédito del comprador, escritura e inscripción."
+   ]
+  },
+  {
+   "h2": "Cómo comprar casa en Las Condes",
+   "parrafos": [
+    "Antes de visitar, define tu presupuesto real con un crédito preaprobado. Con nuestra alianza con Bci puedes llegar a la negociación con el financiamiento resuelto.",
+    "Elige el barrio por tu rutina: distancia al trabajo, colegios, metro y áreas verdes. Una casa en Colón Oriente y otra en San Damián responden a necesidades distintas.",
+    "Revisa la normativa del sector si piensas ampliar. En los barrios de baja densidad la altura está limitada, y eso define qué puedes construir. Te ayudamos a revisar estos puntos antes de ofertar."
+   ]
+  },
+  {
+   "h2": "Conectividad: Metro, autopistas y la futura Línea 7",
+   "parrafos": [
+    "La Línea 1 del Metro recorre Las Condes por el eje Apoquindo con las estaciones El Golf, Alcántara, Escuela Militar, Manquehue, Hernando de Magallanes y Los Dominicos. Las tres últimas abrieron el 7 de enero de 2010.",
+    "La Línea 7 unirá Renca con Vitacura en 26 kilómetros y 19 estaciones, y Metro proyecta que inicie operaciones en 2028. En Las Condes tendrá paradas en sectores como Isidora Goyenechea, Cerro Colorado con Rosario Norte y Manquehue Norte, Presidente Kennedy con Estrella del Norte y Avenida Las Condes, según Meganoticias. Los nombres de las estaciones todavía son referenciales.",
+    "En autopistas, la comuna tiene acceso a Costanera Norte y a Américo Vespucio Oriente. El tramo El Salto–Príncipe de Gales de Vespucio Oriente, de 9,1 kilómetros, comenzó a operar en 2022 y cruza Recoleta, Huechuraba, Las Condes, Vitacura, La Reina y Ñuñoa."
+   ]
+  },
+  {
+   "h2": "Colegios en Las Condes",
+   "parrafos": [
+    "Las Condes tiene una oferta amplia de colegios particulares, particulares subvencionados y municipales, y para muchas familias es la razón principal para buscar casa en la comuna.",
+    "Para comparar colegios, revisa los resultados SIMCE que publica la Agencia de Calidad de la Educación. Los resultados de 2024 se presentaron en marzo de 2025. Te recomendamos cruzar esa información con la distancia real desde la casa en hora punta."
+   ]
+  },
+  {
+   "h2": "Áreas verdes y vida de barrio",
+   "parrafos": [
+    "El Parque Araucano, junto a Nueva Las Condes, es uno de los parques más usados de la comuna. La municipalidad anunció en abril de 2026 una remodelación de sus cerca de 180 mil m², en tres etapas, con laguna, anfiteatro y un corredor peatonal hacia la futura Línea 7. La meta es terminarla en 2028, según The Clinic.",
+    "Hacia el oriente, el Pueblito Los Dominicos y los parques cercanos al río y a la precordillera dan a los barrios de casas un ritmo más tranquilo. El Parque Padre Hurtado, en el límite con La Reina, es otra opción de áreas verdes para los vecinos del sector Colón."
+   ]
+  },
+  {
+   "h2": "Seguridad en Las Condes",
+   "parrafos": [
+    "Para ver cifras oficiales de delitos por comuna, la fuente es el Centro de Estudios y Análisis del Delito (CEAD), que publica casos policiales de Carabineros y la PDI y tasas por cada 100 mil habitantes. Permite filtrar por Las Condes y comparar años.",
+    "La seguridad cambia de un barrio a otro, incluso dentro de la misma comuna. Si estás comprando, te sugerimos visitar el sector a distintas horas y conversar con vecinos. Si estás vendiendo, los sistemas de seguridad y el tipo de calle son atributos que los compradores valoran y que destacamos en la publicación."
+   ]
+  },
+  {
+   "h2": "Normativa y proyectos que conviene conocer",
+   "parrafos": [
+    "El Plan Regulador Comunal de Las Condes, con su Modificación N° 11 incorporada, divide la comuna en zonas de edificación. En las zonas aisladas bajas, que incluyen barrios residenciales como San Damián y Los Dominicos, la altura se controla entre 2 y 3 pisos. En los ejes como Apoquindo, El Golf y Nueva Las Condes se permiten edificios bastante más altos, según el resumen del plan publicado por Modulor.",
+    "Para un propietario, esto significa que el entorno de una casa en zona baja está relativamente protegido de la densificación. Para quien quiere ampliar, define los límites de lo que puede construir. Antes de vender o comprar, conviene revisar el certificado de informaciones previas de la propiedad en la Dirección de Obras.",
+    "Los dos proyectos que más pueden cambiar la comuna en los próximos años son la Línea 7 del Metro y la remodelación del Parque Araucano, ambos con 2028 como horizonte."
+   ]
+  }
+ ],
+ "barrios": [
+  {
+   "nombre": "El Golf",
+   "texto": "Barrio consolidado en torno a la Línea 1 y a la avenida Apoquindo, con edificios, oficinas, restaurantes y servicios a pocos pasos. Predominan los departamentos y quedan pocas casas. Es el sector de Las Condes con mejor acceso al transporte público.",
+   "lat": -33.4153,
+   "lng": -70.5945
+  },
+  {
+   "nombre": "Nueva Las Condes y Parque Araucano",
+   "texto": "Zona de desarrollo reciente con oficinas, comercio y departamentos, junto al Parque Araucano y al Parque Juan Pablo II. Tendrá estaciones de la futura Línea 7. Es una opción para quienes priorizan servicios y áreas verdes por sobre el terreno.",
+   "lat": -33.402,
+   "lng": -70.572
+  },
+  {
+   "nombre": "Estadio Italiano y Apoquindo",
+   "texto": "Sector residencial entre las avenidas Apoquindo y Las Condes, cerca de las estaciones Manquehue y Hernando de Magallanes de la Línea 1. Mezcla casas y edificios de baja y mediana altura. Atrae a familias que quieren metro y comercio cerca.",
+   "lat": -33.4076,
+   "lng": -70.5605
+  },
+  {
+   "nombre": "Rotonda Atenas",
+   "texto": "Barrio residencial tradicional en el centro-sur de la comuna, con calles arboladas y casas de distintas épocas. Tiene buen acceso a Cristóbal Colón y a Américo Vespucio. Suele interesar a familias que buscan casa a una distancia razonable de los ejes de oficinas.",
+   "lat": -33.4177,
+   "lng": -70.5527
+  },
+  {
+   "nombre": "Colón Oriente",
+   "texto": "Barrio de casas al oriente de Tomás Moro, en torno a Cristóbal Colón y Padre Hurtado. Calles tranquilas, plazas y colegios cercanos. Es uno de los sectores de casas más buscados por familias en Las Condes.",
+   "lat": -33.4162,
+   "lng": -70.5392
+  },
+  {
+   "nombre": "Vital Apoquindo",
+   "texto": "Sector residencial de casas en torno a la calle Vital Apoquindo, entre Apoquindo y Colón. Combina casas familiares con buen tamaño de terreno y acceso a la avenida Las Condes. Tiene un ambiente de barrio con poco tránsito de paso.",
+   "lat": -33.4147,
+   "lng": -70.5345
+  },
+  {
+   "nombre": "Los Dominicos",
+   "texto": "Barrio de casas en torno al Pueblito Los Dominicos y la estación terminal de la Línea 1. Tiene terrenos amplios, entorno verde y una identidad de barrio muy marcada. Colliers lo ubica, junto con San Damián, entre los sectores de mayor valor de la oferta de casas.",
+   "lat": -33.4078,
+   "lng": -70.541
+  },
+  {
+   "nombre": "San Damián",
+   "texto": "Sector de casas grandes en terrenos amplios, hacia la precordillera y al norte de la avenida Las Condes. Es uno de los barrios de mayor valor de Santiago según Colliers. La normativa limita la altura de lo que se puede construir, lo que protege el carácter del barrio.",
+   "lat": -33.38,
+   "lng": -70.523
+  }
+ ],
+ "ranking": {
+  "titulo": "Ranking de barrios de Las Condes para comprar casa (2026)",
+  "metodologia": "Elaboración de CyM Propiedades con fuentes públicas. Evaluamos cada barrio en cinco criterios: oferta de casas y tamaño de terreno (30%), conectividad con Metro y autopistas actual y proyectada (25%), áreas verdes cercanas (15%), protección normativa frente a la densificación según el Plan Regulador (15%) y acceso a colegios y servicios (15%). El ranking es orientativo y no incluye precios: el barrio ideal depende de tu presupuesto y de tu rutina. San Carlos de Apoquindo se analiza en su propia página.",
+  "items": [
+   {
+    "puesto": 1,
+    "barrio": "Colón Oriente",
+    "fortalezas": "Oferta estable de casas familiares, calles tranquilas, colegios y plazas cerca.",
+    "ojo": "La Línea 1 queda a cierta distancia de buena parte del barrio; se depende más del auto.",
+    "ideal_para": "Familias con hijos en edad escolar que buscan casa con patio."
+   },
+   {
+    "puesto": 2,
+    "barrio": "Los Dominicos",
+    "fortalezas": "Terrenos amplios, entorno verde y estación terminal de la Línea 1.",
+    "ojo": "Precios en el segmento alto de la comuna.",
+    "ideal_para": "Familias que quieren terreno grande sin alejarse del metro."
+   },
+   {
+    "puesto": 3,
+    "barrio": "Vital Apoquindo",
+    "fortalezas": "Casas con buen terreno, poco tránsito de paso y acceso a la avenida Las Condes.",
+    "ojo": "Oferta acotada: las casas disponibles se mueven rápido.",
+    "ideal_para": "Compradores que buscan barrio residencial consolidado."
+   },
+   {
+    "puesto": 4,
+    "barrio": "San Damián",
+    "fortalezas": "Casas grandes, terrenos amplios y altura limitada por normativa.",
+    "ojo": "Uno de los sectores de mayor valor de Santiago y más lejos del metro.",
+    "ideal_para": "Familias que priorizan espacio, privacidad y entorno natural."
+   },
+   {
+    "puesto": 5,
+    "barrio": "Rotonda Atenas",
+    "fortalezas": "Ubicación central, calles arboladas y acceso rápido a Colón y Vespucio.",
+    "ojo": "Más mezcla con edificios y casas de distintas épocas que pueden requerir remodelación.",
+    "ideal_para": "Quienes quieren casa cerca de los ejes de trabajo."
+   },
+   {
+    "puesto": 6,
+    "barrio": "Estadio Italiano y Apoquindo",
+    "fortalezas": "Línea 1 a pocas cuadras, comercio y servicios cercanos.",
+    "ojo": "Pocas casas disponibles y más tránsito en los ejes principales.",
+    "ideal_para": "Parejas o familias que usan transporte público a diario."
+   }
+  ]
+ },
+ "faq": [
+  {
+   "q": "¿Qué hace una corredora de propiedades en Las Condes?",
+   "a": "Te acompaña en todo el proceso de compra o venta: tasación, revisión de antecedentes, publicación, visitas, negociación, promesa y escritura. En CyM una ejecutiva está a cargo de Las Condes y coordina cada etapa contigo."
+  },
+  {
+   "q": "¿Cuánto cuesta tasar mi casa en Las Condes con CyM?",
+   "a": "La tasación es sin costo. Visitamos la propiedad, la comparamos con casas similares del mismo barrio y te entregamos un rango de precio para publicar."
+  },
+  {
+   "q": "¿Cuánto vale el metro cuadrado en Las Condes?",
+   "a": "En departamentos nuevos, TocToc registró 114 UF/m² en el trimestre móvil cerrado en julio de 2026. En casas no hay un índice público reciente solo para la comuna, y los valores cambian mucho entre barrios. Por eso tasamos con comparables del mismo sector."
+  },
+  {
+   "q": "¿Qué documentos necesito para vender mi casa en Las Condes?",
+   "a": "Lo habitual es el certificado de dominio vigente, el de hipotecas y gravámenes, el certificado de recepción final y los permisos de ampliaciones, además de las contribuciones al día. Te ayudamos a revisar qué tienes y qué falta antes de publicar."
+  },
+  {
+   "q": "¿Cuánto se demora en venderse una casa en Las Condes?",
+   "a": "Depende del precio de salida, el barrio y el estado de la propiedad. Un precio bien fijado desde el inicio es lo que más acorta los plazos. En la tasación te damos una estimación para tu caso."
+  },
+  {
+   "q": "¿CyM me ayuda con el crédito hipotecario si quiero comprar?",
+   "a": "Sí. Gestionamos el crédito hipotecario y te damos asesoría financiera. Con nuestra alianza con Bci puedes acceder a un crédito preaprobado antes de ofertar."
+  },
+  {
+   "q": "¿Qué barrios de Las Condes son mejores para comprar casa?",
+   "a": "Colón Oriente, Los Dominicos, Vital Apoquindo y San Damián concentran buena parte de la oferta de casas. El mejor depende de tu presupuesto, del colegio de tus hijos y de cómo te mueves. Revisa nuestro ranking en esta página."
+  },
+  {
+   "q": "¿Cuándo llega la Línea 7 del Metro a Las Condes?",
+   "a": "Metro proyecta que la Línea 7 inicie operaciones en 2028. Unirá Renca con Vitacura y tendrá varias estaciones en Las Condes, por ejemplo en Isidora Goyenechea, Cerro Colorado y avenida Las Condes. Los nombres de las estaciones aún son referenciales."
+  },
+  {
+   "q": "¿Trabajan en San Carlos de Apoquindo?",
+   "a": "Sí. San Carlos de Apoquindo es una de nuestras zonas de especialidad y tiene su propia página en el sitio, con información del barrio y su mercado de casas."
+  },
+  {
+   "q": "¿Dónde está la oficina de CyM?",
+   "a": "Nuestra oficina está en Av. La Dehesa 1844, oficina 313, Lo Barnechea. La ejecutiva de Las Condes también puede reunirse contigo en tu propiedad."
+  }
+ ],
+ "mapa": {
+  "lat": -33.41,
+  "lng": -70.56,
+  "zoom": 13
+ },
+ "fuentes": [
+  {
+   "titulo": "Emol: Censo 2024, comunas con más y menos población",
+   "url": "https://www.emol.com/noticias/Nacional/2025/03/28/1161836/censo-2024-comunas-mas-menos.html"
+  },
+  {
+   "titulo": "La Tercera: Sube venta de departamentos nuevos en la RM (InfoInmobiliario TocToc, sept. 2026)",
+   "url": "https://www.latercera.com/pulso/noticia/sube-venta-de-departamentos-nuevos-en-la-rm-y-en-tres-comunas-el-precio-ya-supera-las-uf-100-por-metro-cuadrado/"
+  },
+  {
+   "titulo": "Diario Financiero: Vitacura lidera alza en precio de venta de departamentos nuevos (Colliers, 1T 2025)",
+   "url": "https://www.df.cl/empresas/construccion/vitacura-lidera-alza-en-precio-de-venta-de-departamentos-nuevos-en-la"
+  },
+  {
+   "titulo": "Emol: ¿Nueva Costanera, Lo Curro o San Damián? Barrios de mayor valor (Colliers, feb. 2025)",
+   "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+  },
+  {
+   "titulo": "Meganoticias: Línea 7 del Metro en Las Condes, estaciones y fecha",
+   "url": "https://www.meganoticias.cl/dato-util/523811-linea-7-metro-las-condes-donde-estaran-estaciones-cuando-abre-04-06-2026.html"
+  },
+  {
+   "titulo": "Wikipedia: Línea 1 del Metro de Santiago",
+   "url": "https://en.wikipedia.org/wiki/Santiago_Metro_Line_1"
+  },
+  {
+   "titulo": "Pauta: Sectores de AVO I inician operaciones",
+   "url": "https://www.pauta.cl/actualidad/2022/06/23/sectores-de-avo-i-inician-operaciones-autopista-vespucio-inauguracion.html"
+  },
+  {
+   "titulo": "The Clinic: Proyecto de remodelación del Parque Araucano",
+   "url": "https://www.theclinic.cl/2026/05/05/el-millonario-proyecto-de-las-condes-para-remodelar-el-parque-araucano-buscan-sumar-una-laguna-un-anfiteatro-y-hasta-un-aviario/"
+  },
+  {
+   "titulo": "Modulor: Plan Regulador Comunal de Las Condes (texto refundido)",
+   "url": "https://modulor.cl/planes-reguladores/las-condes/"
+  },
+  {
+   "titulo": "CEAD: Estadísticas delictuales por comuna",
+   "url": "https://cead.minsegpublica.gob.cl/estadisticas-delictuales/"
+  },
+  {
+   "titulo": "Agencia de Calidad de la Educación: Resultados Simce 2024",
+   "url": "https://www.agenciaeducacion.cl/?p=6097"
+  }
+ ]
+}

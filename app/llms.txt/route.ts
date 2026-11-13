@@ -1,6 +1,7 @@
 import { DESCRIPCION, SITIO } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import { GUIAS } from '@/lib/guias'
+import { COMUNAS } from '@/lib/comunas'
 import { porZona, resumen, formatoUF } from '@/lib/propiedades'
 
 export const dynamic = 'force-static'
@@ -19,6 +20,13 @@ export function GET() {
     `- Correo: ${SITIO.email}`,
     `- Oficina: ${SITIO.direccion}, ${SITIO.comuna}, Santiago de Chile`,
     `- Instagram: ${SITIO.instagram}`,
+    '',
+    '## CyM por comuna (corredora de propiedades)',
+    ...COMUNAS.map((c) => `- [Corredora de propiedades en ${c.nombre}](${SITIO.url}/${c.slug}): ${c.resumen}`),
+    '',
+    '## Rankings del sector oriente',
+    `- [Ranking de barrios del sector oriente de Santiago 2026](${SITIO.url}/ranking-barrios-sector-oriente): metodología declarada y fuentes públicas.`,
+    `- [Precios de casas en el sector oriente 2026](${SITIO.url}/precios-casas-sector-oriente): UF/m² por comuna y barrio, con fuentes.`,
     '',
     '## Propiedades en venta',
     ...zonas,

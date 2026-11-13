@@ -1,0 +1,316 @@
+{
+ "slug": "la-reina",
+ "nombre": "La Reina",
+ "comuna": "La Reina",
+ "title": "Corredora de propiedades en La Reina | CyM Propiedades",
+ "description": "Vende, tasa o compra tu casa en La Reina con CyM Propiedades: tasación sin costo, publicación, visitas, negociación y cierre con una ejecutiva en la comuna.",
+ "h1": "Corredora de propiedades en La Reina",
+ "bajada": "Tasación sin costo, venta acompañada y búsqueda de casa en La Reina, con una ejecutiva a cargo de la comuna.",
+ "resumen": "CyM Propiedades es una corredora de propiedades que vende casas en La Reina con una ejecutiva a cargo de la comuna y acompañamiento completo: tasación sin costo, publicación, visitas, negociación y cierre. Trabajamos con una base de más de 100.000 compradores y 12 años en el mercado. Si quieres vender tu casa en La Reina, saber cuánto vale o comprar en la comuna, partimos con un análisis de precio basado en comparables reales.",
+ "servicios": [
+  {
+   "nombre": "Tasación de propiedades en La Reina",
+   "texto": "Analizamos tu casa con comparables reales de la comuna: metraje construido, terreno, estado, orientación y cercanía a Metro, parques y colegios. En La Reina el valor cambia bastante entre sectores, por eso comparamos con casas del mismo barrio y no con promedios generales. La tasación es sin costo."
+  },
+  {
+   "nombre": "Venta de casas en La Reina",
+   "texto": "Definimos la estrategia de salida al mercado, preparamos la publicación, la promovemos en portales y redes sociales, coordinamos visitas, negociamos las ofertas y te acompañamos hasta un cierre seguro. Tu ejecutiva de La Reina es tu contacto durante todo el proceso."
+  },
+  {
+   "nombre": "Compra de casa en La Reina",
+   "texto": "Si buscas casa en la comuna, te ayudamos a filtrar por sector, conectividad y tipo de propiedad, a revisar antecedentes y a negociar. Las propiedades disponibles están en nuestro listado de La Reina; esta página explica cómo trabajamos en la comuna."
+  },
+  {
+   "nombre": "Crédito hipotecario y asesoría financiera",
+   "texto": "Gestionamos tu crédito hipotecario y te asesoramos en el financiamiento. Gracias a nuestra alianza con Bci puedes acceder a crédito preaprobado, lo que da más certeza al momento de ofertar."
+  },
+  {
+   "nombre": "Asesoría legal, remodelación y beneficios",
+   "texto": "Te acompañamos con asesoría inmobiliaria y legal en la promesa y la escritura, y con remodelaciones si quieres preparar la casa antes de vender o adaptarla después de comprar. Por nuestras alianzas, accedes a 15% de descuento en IKEA y a los beneficios de Fundamenta."
+  }
+ ],
+ "secciones": [
+  {
+   "h2": "La Reina: perfil de la comuna",
+   "parrafos": [
+    "La Reina es una comuna residencial del sector oriente de Santiago. Tiene 23 km² y limita con Las Condes al norte y al oriente, con Peñalolén al sur y con Providencia y Ñuñoa al poniente. Nació como comuna en 1963, separada de Ñuñoa.",
+    "Según el Censo 2024 del INE, viven en La Reina 89.870 personas, un 3,1% menos que en el Censo 2017 (92.787). Es una comuna con población mayor que el promedio: el 17,9% tiene 65 años o más, frente al 13,2% de la Región Metropolitana. Un 7,3% de sus habitantes nació fuera de Chile.",
+    "Su carácter se explica por el plan regulador: la mayor parte de los barrios residenciales permite construcciones de baja altura, por lo que predominan las casas con antejardín. La densidad se concentra en algunos ejes, como Ossa, Tobalaba o Larraín. Hacia el oriente la comuna sube a la precordillera, con el Parque Mahuida y el Parque Natural Aguas de Ramón."
+   ]
+  },
+  {
+   "h2": "Mercado y precios de casas en La Reina",
+   "parrafos": [
+    "La Reina está entre las comunas con casas usadas de mayor valor por metro cuadrado de la Región Metropolitana. Según el reporte de viviendas usadas de Portal Inmobiliario del primer semestre de 2025, publicado por La Tercera, las casas usadas en La Reina promediaron 80,9 UF/m², por sobre Providencia (80,5) y Ñuñoa (70,1).",
+    "Como referencia regional, en el mismo período el precio promedio de una casa usada en la Región Metropolitana fue de 12.456 UF. Al cierre de 2024, las casas en venta en la región permanecían en promedio 147 días publicadas, según Portal Inmobiliario citado por Emol. Una casa bien tasada desde el inicio suele evitar rebajas sucesivas y meses extra de publicación.",
+    "Dentro de la comuna los valores varían bastante. Influyen el tamaño del terreno, la cercanía a Metro, la vista y la altura (los sectores hacia la precordillera son distintos a los cercanos a Tobalaba), el estado de la construcción y si la casa está en una calle de bajo tráfico. Por eso nuestra tasación compara con propiedades del mismo sector."
+   ]
+  },
+  {
+   "h2": "Cómo vender tu casa en La Reina con CyM",
+   "parrafos": [
+    "Vender una casa en La Reina requiere un precio bien fundamentado y una buena presentación, porque el comprador compara barrio por barrio. Este es nuestro proceso:"
+   ],
+   "lista": [
+    "Tasación sin costo: visitamos la casa y calculamos un rango de precio con comparables reales de tu sector.",
+    "Estrategia de salida: definimos precio de publicación, público objetivo y mensajes clave (conectividad, colegios, parques, metraje).",
+    "Preparación y publicación: fotos, descripción y difusión en portales inmobiliarios, redes sociales y nuestra base de más de 100.000 compradores.",
+    "Visitas: tu ejecutiva de La Reina coordina y acompaña las visitas con compradores interesados.",
+    "Negociación: revisamos cada oferta contigo y negociamos plazos, precio y condiciones.",
+    "Cierre seguro: coordinamos promesa, estudio de títulos, escritura y entrega, con asesoría legal."
+   ]
+  },
+  {
+   "h2": "Cómo comprar casa en La Reina",
+   "parrafos": [
+    "Antes de buscar, define el sector según tu rutina: cerca de Plaza Egaña tienes Metro L3 y L4 y comercio; hacia el oriente, más cercanía a la precordillera y parques. Revisa también la normativa del barrio si piensas ampliar.",
+    "Ordena el financiamiento antes de ofertar. Con nuestra alianza Bci puedes llegar con crédito preaprobado, y gestionamos tu crédito hipotecario. Las casas disponibles están en el listado de propiedades en venta en La Reina."
+   ],
+   "lista": [
+    "Define presupuesto total: pie, crédito, gastos operacionales y eventuales arreglos.",
+    "Compara casas del mismo sector y revisa metraje construido versus terreno.",
+    "Pide antecedentes: títulos, permisos de edificación y recepción final de ampliaciones.",
+    "Visita en distintos horarios para evaluar ruido y tráfico.",
+    "Negocia con información de comparables, no solo con el precio publicado."
+   ]
+  },
+  {
+   "h2": "Conectividad: Metro y autopistas",
+   "parrafos": [
+    "La Reina tiene estaciones de dos líneas de Metro. La Línea 4 pasa por el poniente de la comuna, con Francisco Bilbao, Príncipe de Gales (en el límite con Ñuñoa), Simón Bolívar y Plaza Egaña. La Línea 3, inaugurada el 22 de enero de 2019, une Quilicura con La Reina en 22 kilómetros y termina en la estación Fernando Castillo Velasco. Plaza Egaña es combinación entre ambas líneas.",
+    "Las vías principales son Avenida Larraín, Tobalaba, Ossa, Príncipe de Gales, Bilbao y Alcalde Fernando Castillo Velasco. Por el norte llega la autopista Américo Vespucio Oriente (AVO I).",
+    "En construcción está AVO II: 5,2 km de autopista subterránea entre Príncipe de Gales y Los Presidentes, con dos túneles de tres pistas por sentido, que conectará hacia el norte con AVO I y hacia el sur con Vespucio Sur. Según The Clinic, su puesta en servicio provisoria se fijó para el 2 de septiembre de 2029. El proyecto incluye un nuevo espacio público de unos 1.800 m² en Plaza Egaña."
+   ]
+  },
+  {
+   "h2": "Colegios y educación",
+   "parrafos": [
+    "La comuna tiene 43 establecimientos educacionales y una matrícula de 22.592 estudiantes en 2024, según la Biblioteca del Congreso Nacional. En el SIMCE 2024 (preliminar), La Reina superó al promedio regional en 4° básico (Lectura 296 vs. 281; Matemática 286 vs. 267) y en 6° básico (Lectura 271 vs. 253; Matemática 278 vs. 250).",
+    "Entre los colegios particulares de la comuna están The Grange School, Colegio De La Salle, The British Royal School y Andree English School. En educación municipal destacan el Liceo Eugenio María de Hostos y el Complejo Educacional La Reina. Para familias con hijos en edad escolar, la cercanía al colegio suele pesar tanto como el metraje."
+   ]
+  },
+  {
+   "h2": "Áreas verdes: Parque Mahuida y más",
+   "parrafos": [
+    "El Parque Mahuida es el gran pulmón verde de la comuna: más de 180 hectáreas de bosque esclerófilo, con miradores, senderos y zonas recreativas en la precordillera. Lo administra la Corporación de Parques La Reina, de la Municipalidad.",
+    "Más arriba está el Parque Natural Aguas de Ramón. En la ciudad, La Reina suma el Parque Padre Hurtado, el Parque Tobalaba junto al canal San Carlos, el Parque Alcalde Ricardo Contreras Bueras y plazas de barrio. La Municipalidad compró además un terreno de 5,4 hectáreas en la calle Poeta Ángel Cruchaga para un nuevo parque urbano, según Pauta."
+   ]
+  },
+  {
+   "h2": "Seguridad en La Reina",
+   "parrafos": [
+    "Según los reportes comunales de la Biblioteca del Congreso Nacional, con datos de denuncias, La Reina registró en 2024 una tasa de 1.487,7 delitos violentos por cada 100.000 habitantes, bajo el promedio de la Región Metropolitana (2.453,3). La tasa comunal subió respecto de 2023 (1.297,1), por lo que conviene revisar el detalle por sector.",
+    "Al evaluar una casa, observa la iluminación de la calle, el tránsito, la cercanía a avenidas y la organización vecinal. Tu ejecutiva te puede orientar sobre las diferencias entre sectores."
+   ]
+  },
+  {
+   "h2": "Normativa y proyectos urbanos",
+   "parrafos": [
+    "El Plan Regulador Comunal de La Reina se aprobó en 2001 y tuvo una modificación importante en 2010. En las zonas residenciales la altura máxima es de 2 pisos más mansarda (hasta 9 m), con antejardines de 5 a 10 metros. Los edificios se concentran en ejes y corredores, donde se permiten entre 4 y 14 pisos. Esta regla protege el carácter de barrio de casas y es un factor de valor para los propietarios.",
+    "Si piensas ampliar o remodelar, revisa la zona de tu predio en la Dirección de Obras antes de comprar. Los principales proyectos en curso son AVO II, con obras en Plaza Egaña, y el nuevo parque de Poeta Ángel Cruchaga."
+   ]
+  }
+ ],
+ "barrios": [
+  {
+   "nombre": "Príncipe de Gales",
+   "texto": "Sector del norponiente de la comuna, en torno a la avenida Príncipe de Gales. Tiene cerca la estación Príncipe de Gales de la Línea 4 y colegios como The Grange School y Colegio De La Salle. Lo buscan familias que quieren casa con buena conexión hacia Providencia y Las Condes.",
+   "lat": -33.4386,
+   "lng": -70.5615
+  },
+  {
+   "nombre": "Plaza Egaña y Lynch Norte",
+   "texto": "Es el sector más conectado de La Reina: Plaza Egaña combina las Líneas 3 y 4 del Metro y tiene al lado el Mall Plaza Egaña. Aquí se concentrarán las obras de AVO II, que incluyen un nuevo espacio público. Conviene a quien prioriza transporte y servicios.",
+   "lat": -33.4488,
+   "lng": -70.566
+  },
+  {
+   "nombre": "Palmas de Mallorca",
+   "texto": "Barrio residencial al oriente de Tobalaba y al norte de Avenida Larraín. Está a pocas cuadras de la estación Fernando Castillo Velasco de la Línea 3. Combina calles tranquilas con acceso rápido al Metro.",
+   "lat": -33.449,
+   "lng": -70.5557
+  },
+  {
+   "nombre": "Blest Gana",
+   "texto": "Barrio al sur de Avenida Larraín, cerca de Plaza Egaña y del Parque Tobalaba junto al canal San Carlos. Tiene acceso a la Línea 3 y a la Línea 4. Es una alternativa para quienes buscan casa cerca del Metro.",
+   "lat": -33.4552,
+   "lng": -70.5648
+  },
+  {
+   "nombre": "Francisco de Villagra",
+   "texto": "Barrio del surponiente de la comuna, en torno a la avenida Francisco de Villagra, cerca del límite con Ñuñoa. Es un sector residencial de casas, con acceso a Ossa y a la Línea 4.",
+   "lat": -33.4599,
+   "lng": -70.5621
+  },
+  {
+   "nombre": "Ossandón",
+   "texto": "Sector central de la comuna, en torno a la Plaza Ossandón y la avenida Carlos Ossandón. Tiene cerca Cesfam, comisaría y el centro cultural Casona Nemesio Antúnez. Queda a medio camino entre el Metro y la precordillera.",
+   "lat": -33.4424,
+   "lng": -70.5433
+  },
+  {
+   "nombre": "Villa La Reina",
+   "texto": "Barrio con historia propia: nació en los años 60 como un proyecto de autoconstrucción impulsado por Fernando Castillo Velasco, primer alcalde de la comuna. Está cerca de la Municipalidad y de la Aldea del Encuentro. Es uno de los barrios más reconocidos de la arquitectura social chilena.",
+   "lat": -33.4557,
+   "lng": -70.5354
+  },
+  {
+   "nombre": "La Reina Alta",
+   "texto": "Sector oriente de la comuna, hacia la precordillera, en torno a Plaza La Reina, Onofre Jarpa y Álvaro Casanova. Tiene acceso cercano al Parque Mahuida y al Parque Natural Aguas de Ramón. Lo eligen quienes priorizan naturaleza y tranquilidad, y aceptan depender más del auto.",
+   "lat": -33.44,
+   "lng": -70.527
+  }
+ ],
+ "ranking": {
+  "titulo": "Ranking de barrios de La Reina para comprar casa (2026)",
+  "metodologia": "Elaboración de CyM Propiedades con fuentes públicas (Metro, MOP, Plan Regulador, Municipalidad y OpenStreetMap). Evaluamos cada barrio con cuatro criterios: acceso a Metro y autopistas (30%), cercanía a áreas verdes (25%), servicios cercanos como comercio, salud y colegios (25%) y carácter residencial de baja altura según el Plan Regulador (20%). Es una evaluación cualitativa y comparativa, no un índice de precios; el barrio ideal depende de tu rutina.",
+  "items": [
+   {
+    "puesto": 1,
+    "barrio": "Palmas de Mallorca",
+    "fortalezas": "Calles residenciales a pocas cuadras de la Línea 3 y cerca de Tobalaba y Larraín.",
+    "ojo": "Las casas más cercanas a Larraín y Tobalaba reciben más tráfico.",
+    "ideal_para": "Familias que quieren casa y Metro sin perder tranquilidad."
+   },
+   {
+    "puesto": 2,
+    "barrio": "Príncipe de Gales",
+    "fortalezas": "Línea 4, colegios particulares cercanos y buena salida hacia Providencia y Las Condes.",
+    "ojo": "Hay mucho tránsito en horario escolar.",
+    "ideal_para": "Familias con hijos en edad escolar."
+   },
+   {
+    "puesto": 3,
+    "barrio": "Plaza Egaña y Lynch Norte",
+    "fortalezas": "Combinación de Líneas 3 y 4, mall y servicios a pie.",
+    "ojo": "Obras de AVO II en curso hasta 2029 y avenidas de alto flujo.",
+    "ideal_para": "Quien se mueve en transporte público."
+   },
+   {
+    "puesto": 4,
+    "barrio": "La Reina Alta",
+    "fortalezas": "Cercanía al Parque Mahuida y Aguas de Ramón; entorno más natural.",
+    "ojo": "Más lejos del Metro; se depende del auto.",
+    "ideal_para": "Quien prioriza naturaleza y espacio."
+   },
+   {
+    "puesto": 5,
+    "barrio": "Ossandón",
+    "fortalezas": "Ubicación central, servicios municipales y de salud cercanos.",
+    "ojo": "Metro a distancia media; conviene revisar cada calle.",
+    "ideal_para": "Quien busca equilibrio entre ciudad y precordillera."
+   },
+   {
+    "puesto": 6,
+    "barrio": "Blest Gana",
+    "fortalezas": "Cerca de Plaza Egaña y del Parque Tobalaba.",
+    "ojo": "Influencia de las obras de Plaza Egaña.",
+    "ideal_para": "Parejas y familias que usan Metro."
+   },
+   {
+    "puesto": 7,
+    "barrio": "Villa La Reina",
+    "fortalezas": "Barrio con identidad e historia, cerca de la Municipalidad y la Aldea del Encuentro.",
+    "ojo": "Casas de origen autoconstruido con ampliaciones; revisar permisos y recepción.",
+    "ideal_para": "Quien valora vida de barrio y patrimonio."
+   }
+  ]
+ },
+ "faq": [
+  {
+   "q": "¿Qué corredora de propiedades trabaja en La Reina?",
+   "a": "CyM Propiedades trabaja en La Reina con una ejecutiva a cargo de la comuna. Acompañamos a propietarios y compradores en tasación sin costo, publicación, visitas, negociación y cierre."
+  },
+  {
+   "q": "¿Cuánto vale una casa en La Reina?",
+   "a": "Depende del sector, el terreno y el estado. Como referencia, las casas usadas en La Reina promediaron 80,9 UF/m² en el primer semestre de 2025 según Portal Inmobiliario. Para tu casa, pide una tasación sin costo con comparables reales del barrio."
+  },
+  {
+   "q": "¿Cómo es la tasación de propiedades en La Reina con CyM?",
+   "a": "Visitamos la propiedad, revisamos metraje, terreno, estado y ubicación, y la comparamos con casas similares de tu sector. Te entregamos un rango de precio y una estrategia de venta. No tiene costo."
+  },
+  {
+   "q": "¿Cuánto demora vender una casa en La Reina?",
+   "a": "Varía según precio y ubicación. Como referencia regional, al cierre de 2024 las casas en venta en la Región Metropolitana permanecían en promedio 147 días publicadas según Portal Inmobiliario. Un precio bien fundamentado desde el inicio ayuda a acortar ese plazo."
+  },
+  {
+   "q": "¿Qué documentos necesito para vender mi casa en La Reina?",
+   "a": "Normalmente se piden escritura y certificado de dominio vigente, certificado de hipotecas y gravámenes, avalúo fiscal, permisos de edificación y recepción final, y certificado de no expropiación. Te guiamos en cada uno."
+  },
+  {
+   "q": "¿Qué estaciones de Metro hay en La Reina?",
+   "a": "La Línea 4 tiene Francisco Bilbao, Príncipe de Gales (en el límite con Ñuñoa), Simón Bolívar y Plaza Egaña. La Línea 3 tiene Plaza Egaña y su estación terminal, Fernando Castillo Velasco."
+  },
+  {
+   "q": "¿Se pueden construir edificios en los barrios de casas de La Reina?",
+   "a": "En las zonas residenciales del Plan Regulador la altura máxima es de 2 pisos más mansarda, hasta 9 metros. La edificación en altura se concentra en ejes y corredores. Antes de comprar o ampliar, revisa la zona de tu predio en la Dirección de Obras."
+  },
+  {
+   "q": "¿Me ayudan con el crédito hipotecario para comprar en La Reina?",
+   "a": "Sí. Gestionamos tu crédito hipotecario y te asesoramos en el financiamiento. Por nuestra alianza con Bci puedes acceder a crédito preaprobado."
+  },
+  {
+   "q": "¿Dónde veo las casas en venta en La Reina?",
+   "a": "Las propiedades disponibles están en nuestro listado de propiedades en venta en La Reina. Esta página explica cómo trabajamos en la comuna y cómo vender o comprar con nosotros."
+  },
+  {
+   "q": "¿Dónde está la oficina de CyM Propiedades?",
+   "a": "Nuestra oficina está en Av. La Dehesa 1844, oficina 313, Lo Barnechea. Para La Reina, tu ejecutiva coordina visitas y reuniones en la comuna."
+  }
+ ],
+ "mapa": {
+  "lat": -33.45,
+  "lng": -70.545,
+  "zoom": 13
+ },
+ "fuentes": [
+  {
+   "titulo": "Biblioteca del Congreso Nacional – Reporte comunal La Reina 2025 (Censo 2024, seguridad, educación, SIMCE)",
+   "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=13113"
+  },
+  {
+   "titulo": "La Tercera – Precios de viviendas usadas primer semestre 2025 (Portal Inmobiliario)",
+   "url": "https://www.latercera.com/pulso/noticia/precios-de-departamentos-usados-suben-en-el-primer-semestre-luego-de-cuatro-anos-a-la-baja-en-la-rm/"
+  },
+  {
+   "titulo": "Emol – Venta de propiedades usadas en la RM, cierre 2024 (Portal Inmobiliario)",
+   "url": "https://www.emol.com/noticias/Economia/2025/02/21/1158194/mercado-libre-sector-inmobiliario.html"
+  },
+  {
+   "titulo": "Wikipedia – La Reina (límites, Metro, avenidas, parques, colegios)",
+   "url": "https://es.wikipedia.org/wiki/La_Reina"
+  },
+  {
+   "titulo": "Cooperativa – Línea 3 del Metro se inaugura el 22 de enero de 2019",
+   "url": "https://www.cooperativa.cl/noticias/site/artic/20190115/pags-amp/20190115120622.html"
+  },
+  {
+   "titulo": "The Clinic – AVO II: puesta en marcha se extiende a 2029",
+   "url": "https://www.theclinic.cl/2026/09/04/se-vuelve-a-retrasar-avo-ii-puesta-en-marcha-se-extiende-a-fines-de-2029-tras-encargo-del-mop-por-mejores-obras-para-evitar-filtraciones-de-agua/"
+  },
+  {
+   "titulo": "Meganoticias – Así será AVO II en Plaza Egaña y Rotonda Grecia",
+   "url": "https://www.meganoticias.cl/nacional/485144-como-sera-avo-ii-cuando-estara-listo-plaza-egana-rotonda-grecia-pdp-13-5-2025.html"
+  },
+  {
+   "titulo": "24horas – Parque Mahuida",
+   "url": "https://www.24horas.cl/actualidad/nacional/parque-mahuida-sera-el-primero-de-latinoamerica-con-flota-de-seguridad"
+  },
+  {
+   "titulo": "Pauta – La Reina adquiere terreno para nuevo parque urbano",
+   "url": "https://www.pauta.cl/ciudad/2023/03/28/la-reina-adquiere-terreno-para-construir-un-nuevo-parque-urbano.html"
+  },
+  {
+   "titulo": "Modulor – Plan Regulador Comunal de La Reina",
+   "url": "https://modulor.cl/planes-reguladores/la-reina/"
+  },
+  {
+   "titulo": "Radio Universidad de Chile – Fernando Castillo Velasco y Villa La Reina",
+   "url": "https://radio.uchile.cl/?p=223645"
+  },
+  {
+   "titulo": "OpenStreetMap (ubicación de barrios y estaciones)",
+   "url": "https://www.openstreetmap.org/"
+  }
+ ]
+}

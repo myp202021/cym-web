@@ -1,0 +1,338 @@
+{
+ "slug": "vitacura",
+ "nombre": "Vitacura",
+ "comuna": "Vitacura",
+ "title": "Corredora de propiedades en Vitacura | CyM Propiedades",
+ "description": "Corredora de propiedades en Vitacura: vende tu casa con tasación sin costo, publicación, visitas y negociación, o compra asesorado con CyM Propiedades.",
+ "h1": "Corredora de propiedades en Vitacura",
+ "bajada": "Venta de casas, tasación sin costo y compra asesorada en Vitacura, con una base de más de 100.000 compradores.",
+ "resumen": "CyM Propiedades es una corredora de propiedades especializada en la venta de casas en Vitacura, una comuna residencial del sector oriente de Santiago con barrios de casas amplias como Lo Curro, Santa María de Manquehue y Jardín del Este. Acompañamos a propietarios y compradores en todo el proceso: tasación sin costo, publicación, visitas, negociación y cierre. Trabajamos con una base de más de 100.000 compradores y llevamos 12 años en el mercado.",
+ "servicios": [
+  {
+   "nombre": "Venta de casas en Vitacura",
+   "texto": "Nos encargamos de la venta completa de tu casa: definimos el precio contigo, preparamos la publicación, coordinamos las visitas, filtramos a los interesados y negociamos hasta el cierre. En Vitacura la oferta de casas es acotada y el comprador compara mucho, por eso cuidamos que la propiedad salga al mercado bien presentada y con un precio defendible."
+  },
+  {
+   "nombre": "Tasación de propiedades en Vitacura sin costo",
+   "texto": "Antes de publicar, tasamos tu casa sin costo. Revisamos el barrio, el terreno, los metros construidos, el estado de la casa y la oferta comparable que compite con ella hoy. El resultado es un rango de precio realista para salir al mercado, explicado con los datos que lo sostienen."
+  },
+  {
+   "nombre": "Compra asesorada",
+   "texto": "Si buscas casa en Vitacura, te ayudamos a definir qué sector calza con tu rutina (colegios, trabajo, accesos), a revisar propiedades y a negociar el precio. También te acompañamos en la revisión de antecedentes de la propiedad antes de firmar la promesa."
+  },
+  {
+   "nombre": "Gestión del crédito hipotecario",
+   "texto": "Si compras con crédito hipotecario, te orientamos sobre los pasos y plazos: preaprobación, tasación del banco, estudio de títulos y firma de la escritura. Coordinamos los tiempos entre vendedor, comprador y banco para que la operación no se trabe al final."
+  },
+  {
+   "nombre": "Asesoría a inversionistas",
+   "texto": "Para quien evalúa comprar una casa en Vitacura como inversión patrimonial, revisamos ubicación, tamaño de terreno, normativa del sector y proyectos que pueden mover el valor, como la futura Línea 7 del Metro o la actualización del Plan Regulador. Te entregamos la información para que decidas con datos, sin promesas de rentabilidad."
+  }
+ ],
+ "secciones": [
+  {
+   "h2": "Vitacura en breve: qué comuna es para comprar o vender una casa",
+   "parrafos": [
+    "Vitacura es una comuna residencial del sector oriente de Santiago, separada de Las Condes en 1981. Tiene una superficie cercana a 28 km² y limita con Lo Barnechea, Las Condes, Providencia, Recoleta y Huechuraba.",
+    "Según el Censo 2024 del INE, Vitacura tiene 86.420 habitantes, una cifra muy parecida a la del Censo 2017. Es una comuna estable: crece poco y su población es mayor que el promedio, con más de 16.000 personas de 65 años o más.",
+    "Para quien compra, eso se traduce en barrios consolidados, calles tranquilas y una oferta de casas que cambia poco año a año. Para quien vende, significa competir con pocas casas similares, pero frente a un comprador exigente que conoce bien los precios.",
+    "En el Índice de Calidad de Vida Urbana 2024 de la UC y la Cámara Chilena de la Construcción, Vitacura aparece en el grupo de comunas mejor evaluadas del país, junto a Las Condes, Lo Barnechea, Providencia y Ñuñoa."
+   ]
+  },
+  {
+   "h2": "Mercado y precios de casas en Vitacura",
+   "parrafos": [
+    "Vitacura concentra algunos de los barrios de casas más caros de la Región Metropolitana. Un análisis de Colliers publicado por Diario Financiero en noviembre de 2025 identifica a Lo Curro, Santa María de Manquehue y Jardín del Este como los sectores con los precios más altos de la región.",
+    "En esos tres barrios, el valor por metro cuadrado pasó de cerca de 87 UF/m² hace diez años a más de 120 UF/m² en 2025, según Colliers. Las casas parten en torno a 40.000 UF y en algunos casos superan las 80.000 UF.",
+    "La oferta es reducida. Colliers estimó poco más de 500 viviendas en venta en esos barrios, menos del 1% del stock regional, y una baja cercana al 50% en la velocidad de venta respecto de años anteriores.",
+    "Para Lo Curro en particular, un informe de Colliers citado por Emol en febrero de 2025 registró viviendas ofertadas a un precio promedio de 39.000 UF, con una superficie interior promedio de 285 m².",
+    "Estas cifras son precios de oferta y promedios de sector. El valor de una casa concreta depende del terreno, los metros construidos, la orientación, el estado y la calle. Por eso, antes de publicar o de hacer una oferta, conviene una tasación caso a caso."
+   ],
+   "lista": [
+    "Barrios más caros de la RM según Colliers (2025): Lo Curro, Santa María de Manquehue y Jardín del Este.",
+    "Valor de referencia en esos barrios: más de 120 UF/m² (Colliers, 2025).",
+    "Rango de precios en esos barrios: desde unas 40.000 UF hasta más de 80.000 UF (Colliers, 2025).",
+    "Velocidad de venta: cerca de 50% más lenta que antes en esos barrios (Colliers, 2025)."
+   ]
+  },
+  {
+   "h2": "Conectividad y transporte",
+   "parrafos": [
+    "Hoy Vitacura es una comuna que se recorre principalmente en auto. Un análisis del Censo 2024 publicado por The Clinic muestra que en Vitacura más del 60% de quienes trabajan van al trabajo en auto particular, una de las cinco comunas del Gran Santiago donde predomina ese medio.",
+    "Los ejes principales son Avenida Vitacura, Avenida Presidente Kennedy, Avenida Santa María, Américo Vespucio, Alonso de Córdova y Padre Hurtado, con conexión a Costanera Norte.",
+    "El cambio grande será la Línea 7 del Metro, que unirá Renca con Vitacura en 26 km y 19 estaciones. Metro reportó un 40% de avance a inicios de 2026 y estima su apertura para fines de 2028. El trayecto completo entre Renca y Vitacura tomará unos 37 minutos.",
+    "Según Meganoticias (junio de 2026), las estaciones en Vitacura estarán en Av. Vitacura con Las Catalpas, Alonso de Córdova con Américo Vespucio, Kennedy con Gerónimo de Alderete, Kennedy con Padre Hurtado Norte (junto al mall Alto Las Condes) y Kennedy con Estoril (cerca de Clínica Las Condes). Los nombres son referenciales."
+   ]
+  },
+  {
+   "h2": "Colegios y educación",
+   "parrafos": [
+    "La cercanía a colegios es uno de los criterios más pesados al elegir casa en Vitacura. En la comuna funcionan colegios conocidos como Saint George's College y el Lycée Antoine de Saint-Exupéry, además de una sede de la Universidad Técnica Federico Santa María y la casa central de INACAP.",
+    "Varios colegios de la comuna aparecen en los primeros lugares de la PAES. En el ranking de la admisión 2025 publicado por Meganoticias, el colegio Los Andes de Vitacura quedó en el cuarto lugar nacional, con 865,6 puntos promedio.",
+    "Según datos del Censo 2024 difundidos por Emol, Vitacura tiene un promedio de 16 años de escolaridad, el segundo más alto de la Región Metropolitana después de Providencia.",
+    "Si compras pensando en un colegio específico, revisa el trayecto en horario punta. En Vitacura la diferencia entre vivir a cinco minutos o a veinte minutos del colegio se nota todos los días."
+   ]
+  },
+  {
+   "h2": "Áreas verdes y vida de barrio",
+   "parrafos": [
+    "El principal parque de la comuna es el Parque Bicentenario, de 27 hectáreas en la ribera del río Mapocho. Tiene dos lagunas, con cisnes de cuello negro y flamencos en la laguna norte, unos 4.000 árboles, juegos infantiles, senderos y zona para perros. La entrada es gratuita.",
+    "Hacia el norte, el borde del cerro Manquehue y los sectores de Lo Curro y Santa María de Manquehue ofrecen calles arboladas, casas en terrenos grandes y vistas a la ciudad.",
+    "La vida comercial se concentra en Alonso de Córdova, Nueva Costanera y Avenida Vitacura, con restaurantes, galerías y tiendas. Para el día a día, los barrios de casas suelen depender del auto para compras y trámites."
+   ]
+  },
+  {
+   "h2": "Seguridad en Vitacura",
+   "parrafos": [
+    "Vitacura registra algunas de las tasas de delitos más bajas del país. Según datos 2023 del CEAD (Subsecretaría de Prevención del Delito) analizados por La Tercera, la comuna tuvo la tasa más baja de lesiones leves (117,1 por cada 100.000 habitantes) y una de las más bajas de robo en lugar habitado (94,5 por cada 100.000 habitantes).",
+    "Aun así, la seguridad varía entre calles. Al comprar, fíjate en la iluminación, la cercanía a vías de alto flujo, los cierres perimetrales, la vigilancia del sector y si la casa tiene sistemas de alarma operativos. Al vender, tener esos elementos al día ayuda en la negociación."
+   ]
+  },
+  {
+   "h2": "Plan Regulador y proyectos que mueven el valor",
+   "parrafos": [
+    "El Plan Regulador Comunal de Vitacura está vigente desde 1999 y su última modificación fue en 2019. En agosto de 2026 el municipio licitó su actualización integral por unos $550 millones, en un proceso que estima tomará al menos tres años, según Emol.",
+    "Aún no hay propuestas concretas de alturas ni densidades. El municipio ha dicho que mantendrá el carácter residencial de la comuna, y el eje Avenida Vitacura–Tabancura aparece como el foco principal de cambio, con la idea de densificar en lo residencial.",
+    "Para quien tiene una casa, esto importa por dos razones. Primero, lo que se permita construir en tu sector puede cambiar el interés de compradores e inversionistas. Segundo, la llegada del Metro a Kennedy, Alonso de Córdova y Avenida Vitacura puede revalorizar los sectores cercanos a las estaciones, aunque también traer más movimiento.",
+    "Antes de comprar o vender, revisa con la Dirección de Obras Municipales el certificado de informaciones previas de la propiedad. Ahí aparece la zona y las normas que aplican hoy."
+   ]
+  },
+  {
+   "h2": "Cómo vender tu casa en Vitacura con CyM",
+   "parrafos": [
+    "Vender una casa en Vitacura toma su tiempo: la oferta es acotada, los montos son altos y el comprador compara con calma. Nuestro trabajo es que la casa salga al mercado con el precio correcto y llegue a los compradores que de verdad pueden comprarla."
+   ],
+   "lista": [
+    "Tasación sin costo: visitamos la casa, revisamos terreno, metros, estado y la oferta comparable del sector, y te proponemos un rango de precio con sus fundamentos.",
+    "Documentos al día: te indicamos qué antecedentes reunir desde el inicio (dominio vigente, certificado de hipotecas y gravámenes, recepción final, contribuciones), para no perder tiempo cuando aparezca el comprador.",
+    "Publicación: preparamos fotos, descripción y difusión de la casa, y la presentamos a nuestra base de más de 100.000 compradores.",
+    "Visitas: coordinamos y acompañamos cada visita, filtrando antes a los interesados para que entren a tu casa solo personas con interés y capacidad de compra real.",
+    "Negociación: recibimos las ofertas, te explicamos cada una y negociamos precio, plazos y condiciones.",
+    "Cierre: acompañamos la promesa de compraventa, el estudio de títulos, el crédito del comprador si lo tiene, la escritura y la entrega de la casa."
+   ]
+  },
+  {
+   "h2": "Cómo comprar una casa en Vitacura con CyM",
+   "parrafos": [
+    "Comprar en Vitacura exige elegir bien el sector antes que la casa. Lo Curro, Santa María de Manquehue o el sector de Luis Pasteur ofrecen estilos de vida distintos, con diferencias en terrenos, trayectos y precios."
+   ],
+   "lista": [
+    "Definición de búsqueda: revisamos contigo presupuesto, número de dormitorios, tamaño de terreno, colegios y trayectos diarios.",
+    "Selección de casas: te mostramos opciones que calzan con tu búsqueda y te acompañamos en las visitas.",
+    "Revisión de la propiedad: te ayudamos a revisar el estado de la casa y los antecedentes legales y municipales antes de ofertar.",
+    "Oferta y negociación: preparamos la oferta con datos del sector y negociamos por ti.",
+    "Crédito y cierre: si compras con crédito hipotecario, coordinamos los pasos con el banco, la promesa, el estudio de títulos y la escritura hasta la entrega."
+   ]
+  }
+ ],
+ "barrios": [
+  {
+   "nombre": "Lo Curro",
+   "texto": "Sector en la ladera del cerro, con casas grandes en terrenos amplios y vistas a Santiago. Es uno de los barrios más caros de la Región Metropolitana según Colliers. Le acomoda a familias que priorizan privacidad y espacio, y que se mueven en auto.",
+   "lat": -33.376,
+   "lng": -70.583
+  },
+  {
+   "nombre": "Santa María de Manquehue",
+   "texto": "Barrio de casas sobre terrenos generosos, calles tranquilas y mucha vegetación, a los pies del cerro Manquehue. Colliers lo ubica entre los sectores con precios más altos de la región. Ideal para familias que buscan casa grande en un entorno muy residencial.",
+   "lat": -33.374,
+   "lng": -70.566
+  },
+  {
+   "nombre": "Jardín del Este",
+   "texto": "Sector residencial del oriente de la comuna, con casas amplias y calles con poco tráfico. Es uno de los tres barrios más caros de la RM según Colliers. Le acomoda a familias que quieren cercanía a Kennedy y Padre Hurtado sin perder tranquilidad.",
+   "lat": -33.386,
+   "lng": -70.553
+  },
+  {
+   "nombre": "Las Hualtatas – Tabancura",
+   "texto": "Zona de casas familiares cerca de colegios y del eje Avenida Vitacura–Tabancura, que el municipio identifica como foco de cambio en el futuro Plan Regulador. Buena opción para familias con hijos en edad escolar. Conviene seguir de cerca la discusión normativa del eje.",
+   "lat": -33.381,
+   "lng": -70.559
+  },
+  {
+   "nombre": "Luis Pasteur",
+   "texto": "Barrio consolidado de casas de distintos tamaños, con buen acceso a Avenida Vitacura y Kennedy. Suele tener una oferta más variada en metros y precios que los sectores de cerro. Le acomoda a familias que valoran estar cerca de servicios y comercio.",
+   "lat": -33.391,
+   "lng": -70.578
+  },
+  {
+   "nombre": "Las Catalpas – Avenida Vitacura",
+   "texto": "Sector de casas y edificios bajos cerca de Avenida Vitacura, donde se construirá una de las estaciones de la Línea 7. Mezcla vida residencial con comercio cercano. Puede interesar a quien quiere caminar a servicios y valorar la llegada del Metro.",
+   "lat": -33.396,
+   "lng": -70.588
+  },
+  {
+   "nombre": "Alonso de Córdova – Nueva Costanera",
+   "texto": "Zona comercial y gastronómica de la comuna, con predominio de departamentos y oficinas, y algunas casas en calles interiores. Tendrá una estación de la Línea 7 en Alonso de Córdova con Américo Vespucio. Le acomoda a quien prioriza ubicación y vida urbana sobre terreno.",
+   "lat": -33.398,
+   "lng": -70.597
+  },
+  {
+   "nombre": "Bicentenario – San Luis",
+   "texto": "Sector poniente de la comuna, cercano al Parque Bicentenario y al río Mapocho. Ofrece acceso rápido a Costanera Norte y a Providencia. Le acomoda a quien quiere áreas verdes a pasos y buena salida hacia el centro.",
+   "lat": -33.401,
+   "lng": -70.604
+  }
+ ],
+ "ranking": {
+  "titulo": "Ranking de barrios de Vitacura para comprar casa (2026)",
+  "metodologia": "Ranking de elaboración propia de CyM Propiedades, construido con fuentes públicas citadas en esta página (Colliers vía Diario Financiero y Emol, Metro de Santiago vía prensa, CEAD vía La Tercera, Censo 2024) y conocimiento del terreno. Evaluamos cinco criterios con la siguiente ponderación: tipo de vivienda y tamaño de terreno (30%), áreas verdes y entorno residencial (20%), cercanía a colegios (20%), conectividad actual y futura, incluida la Línea 7 (15%) y seguridad del entorno (15%). Como los datos de seguridad están disponibles a nivel comunal y no por barrio, ese criterio se evalúa en forma cualitativa. El precio no es un criterio: el ranking ordena barrios para vivir en casa, no por valor. Es una guía de orientación, no una tasación.",
+  "items": [
+   {
+    "puesto": 1,
+    "barrio": "Santa María de Manquehue",
+    "fortalezas": "Casas en terrenos amplios, entorno muy residencial y arbolado, cercanía a colegios del sector oriente.",
+    "ojo": "Precios entre los más altos de la RM y dependencia del auto.",
+    "ideal_para": "Familias que buscan casa grande y tranquilidad."
+   },
+   {
+    "puesto": 2,
+    "barrio": "Lo Curro",
+    "fortalezas": "Terrenos grandes, privacidad y vistas a la ciudad.",
+    "ojo": "Pendientes, accesos limitados y precios altos; conviene revisar bien los trayectos en hora punta.",
+    "ideal_para": "Familias que priorizan espacio y privacidad."
+   },
+   {
+    "puesto": 3,
+    "barrio": "Jardín del Este",
+    "fortalezas": "Casas amplias en calles de poco tráfico y cercanía a Kennedy, Padre Hurtado y la futura estación Estoril.",
+    "ojo": "Oferta escasa: pocas casas salen a la venta cada año.",
+    "ideal_para": "Familias que combinan tranquilidad con buenos accesos."
+   },
+   {
+    "puesto": 4,
+    "barrio": "Las Hualtatas – Tabancura",
+    "fortalezas": "Casas familiares cerca de colegios y servicios.",
+    "ojo": "El eje Vitacura–Tabancura es foco de cambio en el futuro Plan Regulador.",
+    "ideal_para": "Familias con hijos en edad escolar."
+   },
+   {
+    "puesto": 5,
+    "barrio": "Luis Pasteur",
+    "fortalezas": "Oferta más variada en tamaños y precios, buen acceso a Avenida Vitacura y Kennedy.",
+    "ojo": "Terrenos más pequeños que en los sectores de cerro.",
+    "ideal_para": "Familias que quieren cercanía a servicios."
+   },
+   {
+    "puesto": 6,
+    "barrio": "Bicentenario – San Luis",
+    "fortalezas": "Cercanía al Parque Bicentenario y salida rápida a Costanera Norte y Providencia.",
+    "ojo": "Más flujo vehicular y mayor presencia de edificios.",
+    "ideal_para": "Quien valora áreas verdes y trayectos cortos al poniente."
+   },
+   {
+    "puesto": 7,
+    "barrio": "Las Catalpas – Avenida Vitacura",
+    "fortalezas": "Futura estación de Línea 7 y comercio a pasos.",
+    "ojo": "Más ruido y tráfico sobre Avenida Vitacura; las obras del Metro siguen en curso.",
+    "ideal_para": "Quien quiere moverse sin auto en el futuro."
+   }
+  ]
+ },
+ "faq": [
+  {
+   "q": "¿Cuánto cuesta una casa en Vitacura?",
+   "a": "Depende mucho del barrio y del terreno. En los sectores más caros, Lo Curro, Santa María de Manquehue y Jardín del Este, Colliers informó en 2025 valores sobre 120 UF/m² y casas desde unas 40.000 UF hasta más de 80.000 UF. Para conocer el valor de una casa específica, lo correcto es una tasación caso a caso."
+  },
+  {
+   "q": "¿Qué incluye el servicio de venta de CyM en Vitacura?",
+   "a": "Incluye la tasación sin costo con comparables reales de la comuna, la estrategia de salida al mercado, la promoción en portales y redes sociales, la gestión de visitas y la negociación, y el cierre seguro y ordenado. Si lo necesitas, CyM también te orienta en asesoría legal, remodelaciones y gestión del crédito hipotecario del comprador."
+  },
+  {
+   "q": "¿Cuánto demora vender una casa en Vitacura?",
+   "a": "No hay un plazo único: depende del precio, el estado de la casa y el barrio. Colliers informó en 2025 que en los barrios más caros de Vitacura la velocidad de venta bajó cerca de 50% respecto de años anteriores, así que conviene planificar con holgura. Un precio bien tasado desde el inicio es lo que más acorta los plazos."
+  },
+  {
+   "q": "¿La tasación de CyM tiene costo?",
+   "a": "No. La tasación de tu casa en Vitacura es sin costo. Te entregamos un rango de precio sustentado en la oferta comparable del sector y las características de tu propiedad."
+  },
+  {
+   "q": "¿Qué documentos necesito para vender mi casa?",
+   "a": "Lo básico es el certificado de dominio vigente, el certificado de hipotecas y gravámenes, la recepción final municipal y el comprobante de contribuciones al día. Tenerlos desde el inicio evita demoras cuando aparece el comprador y el banco pide el estudio de títulos."
+  },
+  {
+   "q": "¿Cuándo llega el Metro a Vitacura?",
+   "a": "La Línea 7 tenía un 40% de avance a inicios de 2026 y Metro estima su apertura para fines de 2028. Tendrá cinco estaciones en Vitacura, en Avenida Vitacura, Alonso de Córdova y Avenida Kennedy."
+  },
+  {
+   "q": "¿Qué barrios de Vitacura son mejores para familias?",
+   "a": "Santa María de Manquehue, Lo Curro, Jardín del Este y Las Hualtatas–Tabancura destacan por casas amplias y entorno residencial. La mejor elección depende de dónde quedan el colegio y el trabajo, porque los trayectos en hora punta cambian mucho entre sectores."
+  },
+  {
+   "q": "¿Vitacura es una comuna segura?",
+   "a": "Según datos 2023 del CEAD analizados por La Tercera, Vitacura está entre las comunas con menores tasas de varios delitos, incluido el robo en lugar habitado (94,5 por cada 100.000 habitantes). Igual conviene revisar la calle específica, la iluminación y los sistemas de seguridad de la casa."
+  },
+  {
+   "q": "¿Puede cambiar lo que se permite construir en mi barrio?",
+   "a": "Sí. Vitacura inició la actualización integral de su Plan Regulador, vigente desde 1999, en un proceso que tomaría al menos tres años. Aún no hay propuestas de alturas ni densidades, y el eje Avenida Vitacura–Tabancura aparece como el foco de cambio."
+  },
+  {
+   "q": "¿Dónde está la oficina de CyM?",
+   "a": "Nuestra oficina está en Av. La Dehesa 1844, oficina 313, Lo Barnechea, a pocos minutos de Vitacura. Desde ahí atendemos la venta y compra de casas en Vitacura, La Dehesa y San Carlos de Apoquindo."
+  }
+ ],
+ "mapa": {
+  "lat": -33.385,
+  "lng": -70.575,
+  "zoom": 13
+ },
+ "fuentes": [
+  {
+   "titulo": "Diario Financiero: Vitacura lidera el lujo inmobiliario: Lo Curro, Santa María y Jardín del Este (Colliers, nov. 2025)",
+   "url": "https://www.df.cl/empresas/construccion/vitacura-lidera-el-lujo-inmobiliario-lo-curro-santa-maria-y-jardin-del"
+  },
+  {
+   "titulo": "Meganoticias: ¿Cuánto cuesta una casa en uno de los tres barrios más exclusivos de Chile? (nov. 2025)",
+   "url": "https://www.meganoticias.cl/nacional/504519-casas-vitacura-precios-barrios-exclusivos-lujo-colliers-05-11-2025.html"
+  },
+  {
+   "titulo": "Emol: barrios de Santiago y precios del segmento alto (Colliers, feb. 2025)",
+   "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+  },
+  {
+   "titulo": "City Population: Vitacura, Censo 2024 (INE)",
+   "url": "https://www.citypopulation.de/en/chile/mun/admin/santiago/13132__vitacura"
+  },
+  {
+   "titulo": "Wikipedia: Vitacura",
+   "url": "https://es.wikipedia.org/wiki/Vitacura"
+  },
+  {
+   "titulo": "El Mostrador: Índice de Calidad de Vida Urbana 2024 (UC–CChC)",
+   "url": "https://www.elmostrador.cl/noticias/pais/2025/04/29/vivir-en-chile-mejor-en-vitacura-que-en-otras-60-comunas-juntas/"
+  },
+  {
+   "titulo": "Infraestructura Pública: Línea 7 de Metro alcanza 40% de avance y abriría a fines de 2028 (feb. 2026)",
+   "url": "https://cpichile.org/linea-7-de-metro-alcanza-40-de-avance-y-se-estima-que-abrira-a-fines-de-2028/"
+  },
+  {
+   "titulo": "Meganoticias: Las cinco estaciones de Vitacura en la Línea 7 (jun. 2026)",
+   "url": "https://www.meganoticias.cl/dato-util/524456-estas-seran-las-cinco-estaciones-de-vitacura-en-la-linea-7-del-metro-de-santiago-dtcf01-13-06-2026.html"
+  },
+  {
+   "titulo": "The Clinic: Censo 2024, comunas donde predomina ir al trabajo en auto",
+   "url": "https://www.theclinic.cl/2025/12/22/la-fuerte-brecha-que-revela-el-censo-2024-solo-en-cinco-comunas-del-gran-santiago-predomina-ir-a-trabajar-en-auto-mientras-la-mayoria-usa-el-transporte-publico/"
+  },
+  {
+   "titulo": "Meganoticias: colegios con mejores puntajes PAES, admisión 2025",
+   "url": "https://www.meganoticias.cl/nacional/472041-colegios-con-mejores-puntajes-paes-admision-2025-brk-07-01-2025.html"
+  },
+  {
+   "titulo": "Emol: Censo 2024, escolaridad por comuna en la RM",
+   "url": "https://www.emol.com/noticias/Nacional/2025/07/01/1170878/censo-escolaridad-comunas-mapa-rm.html"
+  },
+  {
+   "titulo": "Meganoticias: Parque Bicentenario de Vitacura",
+   "url": "https://www.meganoticias.cl/dato-util/357732-como-llegar-al-parque-bicentenario-de-vitacura-09-11-2021.html"
+  },
+  {
+   "titulo": "La Tercera: Delitos de mayor connotación social, las comunas más seguras del país (CEAD 2023)",
+   "url": "https://www.latercera.com/la-tercera-sabado/noticia/delitos-de-mayor-connotacion-social-estas-son-las-comunas-mas-seguras-del-pais/RFHI5LSMZBEJDOICZXTQZ2CQCI/"
+  },
+  {
+   "titulo": "Emol: Vitacura licita la actualización de su Plan Regulador (sept. 2026)",
+   "url": "https://www.emol.com/noticias/Economia/2026/09/06/1210588/plan-regulador-vitacura.html"
+  }
+ ]
+}

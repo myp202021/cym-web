@@ -97,6 +97,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/guias">Guías del sector oriente</Link>
             </div>
             <div>
+              <b>CyM por comuna</b>
+              {ZONAS.map((z) => (
+                <Link key={z.slug} href={`/${z.slug}`}>
+                  Corredora de propiedades en {z.nombre}
+                </Link>
+              ))}
+              <Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link>
+              <Link href="/precios-casas-sector-oriente">Precios de casas en el sector oriente</Link>
+            </div>
+            <div>
               <b>Contacto</b>
               <a href={SITIO.telefonoHref}>{SITIO.telefono}</a>
               <a href={`mailto:${SITIO.email}`}>{SITIO.email}</a>

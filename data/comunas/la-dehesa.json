@@ -1,0 +1,320 @@
+{
+  "slug": "la-dehesa",
+  "nombre": "La Dehesa",
+  "comuna": "Lo Barnechea",
+  "title": "Corredora de propiedades en La Dehesa | CyM Propiedades",
+  "description": "Corredora de propiedades en La Dehesa, Lo Barnechea: vende tu casa con tasación sin costo, publicación y negociación, o compra asesorado con CyM Propiedades.",
+  "h1": "Corredora de propiedades en La Dehesa",
+  "bajada": "Venta de casas, tasación sin costo y compra asesorada en La Dehesa, desde nuestra oficina en Av. La Dehesa.",
+  "resumen": "CyM Propiedades es una corredora de propiedades especializada en la venta de casas en La Dehesa, el principal sector residencial de la comuna de Lo Barnechea, con oficina en Av. La Dehesa 1844, of. 313, Torre Norte. Acompañamos a propietarios y compradores en todo el proceso: tasación sin costo, publicación, visitas, negociación y cierre. Trabajamos con una base de más de 100.000 compradores y llevamos 12 años en el mercado.",
+  "servicios": [
+    {
+      "nombre": "Venta de casas en La Dehesa",
+      "texto": "Nos encargamos de la venta completa de tu casa: análisis de precio con comparables reales, estrategia de salida al mercado, promoción en portales inmobiliarios y redes sociales, gestión de visitas, negociación y un cierre seguro. En La Dehesa hay mucha oferta de casas publicadas al mismo tiempo, así que la tuya tiene que destacar por precio, presentación y respuesta rápida a cada interesado. Como nuestra oficina está en Av. La Dehesa, podemos mostrar la casa en horarios flexibles y conocemos de primera mano cada sector."
+    },
+    {
+      "nombre": "Tasación de propiedades en La Dehesa sin costo",
+      "texto": "Antes de publicar, tasamos tu casa sin costo. Revisamos el sector (no vale lo mismo El Huinganal que Los Trapenses o Valle La Dehesa), el terreno, los metros construidos, la vista, el estado de la casa, si está en condominio o en calle abierta y la oferta comparable que compite con ella hoy. Te entregamos un rango de precio realista y te explicamos los datos que lo sostienen."
+    },
+    {
+      "nombre": "Compra asesorada en La Dehesa",
+      "texto": "Si buscas casa en La Dehesa, te ayudamos a elegir el sector según tu rutina: colegios, trayecto al trabajo, accesos a Costanera Norte y comercio cercano. Revisamos propiedades contigo, comparamos precios con la oferta del sector y negociamos por ti. Nuestra asesoría inmobiliaria y legal te acompaña en la revisión de títulos y antecedentes antes de firmar la promesa, y si la casa necesita cambios, también coordinamos remodelaciones."
+    },
+    {
+      "nombre": "Gestión de crédito hipotecario y asesoría financiera",
+      "texto": "Si compras con crédito hipotecario, gestionamos el crédito y te damos asesoría financiera en cada paso: preaprobación, tasación del banco, estudio de títulos y firma de la escritura. Con nuestra alianza con Bci puedes acceder a un crédito preaprobado, y también trabajamos en alianza con Fundamenta. Coordinamos los tiempos entre vendedor, comprador y banco para que la operación no se atrase al final."
+    },
+    {
+      "nombre": "Asesoría a inversionistas",
+      "texto": "Si evalúas una casa en La Dehesa como inversión patrimonial, te ayudamos a comparar sectores, tamaños de terreno y estado de las propiedades, y a entender cómo el nuevo Plan Regulador de Lo Barnechea y los proyectos de transporte pueden influir en el valor. Trabajamos solo con operaciones de compra y venta."
+    }
+  ],
+  "secciones": [
+    {
+      "h2": "La Dehesa en breve: qué es y para quién",
+      "parrafos": [
+        "La Dehesa es un sector de la comuna de Lo Barnechea, en el extremo nororiente de Santiago, a los pies de la cordillera. No es una comuna propia: sus trámites municipales, permisos y contribuciones dependen de la Municipalidad de Lo Barnechea. Lo Barnechea se creó en 1981 a partir de territorio de Las Condes.",
+        "Según el Censo 2024 del INE, recogido por la Biblioteca del Congreso Nacional, Lo Barnechea tiene 112.620 habitantes, 6,4% más que en el Censo 2017. La Dehesa concentra a la mayor parte de esa población: con datos del Censo 2017, el sector reunía 58.092 habitantes, cerca del 55% de la comuna.",
+        "El perfil es residencial y familiar. Predominan las casas con jardín, muchas de ellas en condominios o calles cerradas, combinadas con edificios de baja y mediana altura en torno a Av. La Dehesa y El Rodeo. Para quien busca más espacio, áreas verdes y cercanía a colegios, La Dehesa suele estar entre las primeras opciones del sector oriente."
+      ]
+    },
+    {
+      "h2": "Mercado y precios de casas en La Dehesa",
+      "parrafos": [
+        "La Dehesa forma parte del segmento alto del mercado de Santiago. Un análisis de Colliers publicado por Emol en febrero de 2025 ubicó a Lo Barnechea dentro del segmento alto de la capital, junto a Vitacura y Las Condes, con un precio promedio cercano a 34.000 UF y una superficie interior promedio de 217 m² para las propiedades de ese segmento en la comuna. Lo Barnechea representaba cerca del 6% de ese mercado.",
+        "La oferta de casas es amplia. Al revisar un portal inmobiliario en noviembre de 2026, encontramos más de 800 avisos de casas en venta en La Dehesa. Eso tiene dos lecturas: el comprador tiene dónde elegir y compara mucho, y el vendedor necesita un precio bien calibrado para no quedar estancado entre avisos parecidos.",
+        "Los precios varían mucho entre sectores y dentro de cada sector. Pesan el tamaño del terreno, la vista, la antigüedad y el estado de la casa, si está en condominio con seguridad, la cercanía a colegios y la facilidad para salir hacia Costanera Norte. Por eso preferimos no dar un valor por metro cuadrado único para todo La Dehesa: la forma correcta de saber cuánto vale una casa es una tasación caso a caso."
+      ]
+    },
+    {
+      "h2": "Cómo vender tu casa en La Dehesa con CyM",
+      "parrafos": [
+        "Vender en La Dehesa requiere paciencia y método. Un informe de RE/MAX publicado por El Dínamo en abril de 2025 estimó hasta 180 días para vender una casa en Santiago. Con mucha oferta en el sector, lo que más acorta ese plazo es salir con el precio correcto desde el primer día.",
+        "Este es nuestro proceso, paso a paso:"
+      ],
+      "lista": [
+        "Reunión inicial y visita: conocemos la casa, tus plazos y tus motivos para vender.",
+        "Tasación sin costo: te entregamos un rango de precio con la oferta comparable del sector y te explicamos cómo lo calculamos.",
+        "Revisión de documentos: pedimos y revisamos dominio vigente, hipotecas y gravámenes, recepción final y avalúo fiscal para anticipar problemas.",
+        "Preparación de la casa: te sugerimos arreglos y orden para las fotos y las visitas; si hace falta, coordinamos remodelaciones.",
+        "Estrategia de salida y promoción: fotos, descripción y difusión en portales inmobiliarios, redes sociales y nuestra base de más de 100.000 compradores.",
+        "Visitas filtradas: coordinamos y acompañamos cada visita, y priorizamos a compradores con capacidad real de compra.",
+        "Negociación: te presentamos cada oferta por escrito y negociamos precio, plazos y condiciones.",
+        "Promesa de compraventa: te damos asesoría legal, coordinamos con abogados y, si corresponde, con el banco del comprador.",
+        "Escritura y cierre: acompañamos la firma en notaría, la inscripción en el Conservador y la entrega de la casa."
+      ]
+    },
+    {
+      "h2": "Cómo comprar una casa en La Dehesa con CyM",
+      "parrafos": [
+        "Comprar en La Dehesa parte por elegir el sector antes que la casa. El Huinganal, Los Trapenses, Valle La Dehesa y La Dehesa central ofrecen rutinas distintas en trayectos, colegios y tamaño de terrenos.",
+        "Te ayudamos a definir tu presupuesto real, incluyendo pie, crédito hipotecario y gastos de la operación. Con la alianza Bci puedes partir con un crédito preaprobado, lo que te da más fuerza al negociar.",
+        "Antes de ofertar, comparamos la casa con la oferta del sector y revisamos sus antecedentes: títulos, permisos y recepción municipal de ampliaciones, deudas de contribuciones y gastos comunes si es condominio. Después negociamos por ti y te acompañamos hasta la entrega. Si ya compraste, nuestra alianza con IKEA te da un 15% de descuento para equipar tu nueva casa."
+      ]
+    },
+    {
+      "h2": "Conectividad y transporte",
+      "parrafos": [
+        "La Dehesa se recorre principalmente en auto. Un análisis del Censo 2024 publicado por The Clinic muestra que en Lo Barnechea más del 60% de quienes trabajan van al trabajo en auto particular, la proporción más alta del Gran Santiago junto con Vitacura.",
+        "Los ejes principales son Av. La Dehesa, El Rodeo, José Alcalde Délano y Raúl Labbé. La salida natural hacia el resto de la ciudad es por el sector del Puente La Dehesa y Costanera Norte, por lo que la distancia a esos accesos pesa en el valor de cada casa.",
+        "Lo Barnechea no tiene Metro. La futura Línea 7, con 40% de avance a enero de 2026 y apertura estimada para fines de 2028 según CNN Chile, termina en la estación Estoril, en Las Condes. El municipio propone extenderla unos 3,8 km con dos estaciones nuevas, Cantagallo y La Dehesa, con un costo estimado por la municipalidad en US$400 millones. En septiembre de 2026, Emol informó que la extensión sigue sin estudios ni financiamiento definidos, al igual que la idea de prolongar Costanera Norte hasta Plaza San Enrique. Por ahora son propuestas: conviene seguirlas, pero no comprar contando con ellas."
+      ]
+    },
+    {
+      "h2": "Colegios y educación",
+      "parrafos": [
+        "La oferta de colegios es una de las principales razones para vivir en La Dehesa. En Lo Barnechea funcionan colegios como Craighouse, Santiago College, Nido de Águilas, Instituto Hebreo, The Newland School, Huinganal, Los Alerces, Tabor y Nazareth y Lincoln International Academy, además de sedes de la Universidad del Desarrollo y la Universidad Andrés Bello.",
+        "Varios aparecen en los primeros lugares de la PAES. En el ranking de los 50 colegios con mejor promedio de la admisión 2025, publicado por Pauta, figuran ocho colegios de Lo Barnechea; el mejor ubicado fue Lincoln International Academy, en el puesto 12 con 850,52 puntos.",
+        "Al comprar, revisa los trayectos reales a la hora punta de la mañana: dos casas a la misma distancia en el mapa pueden tener tiempos muy distintos según la salida que usen."
+      ]
+    },
+    {
+      "h2": "Áreas verdes y vida de barrio",
+      "parrafos": [
+        "La Dehesa combina vida de barrio con cercanía a la montaña. El Parque El Huinganal, en Av. El Rodeo, tiene unos 15.000 m² de vegetación de bajo consumo de agua, juegos infantiles, senderos inclusivos, zonas de picnic y espacio para mascotas, con entrada gratuita.",
+        "En la comuna está también el Parque de la Chilenidad, en el sector de Cerro 18, con cerca de 35 hectáreas, canopy, bike park, senderos y miradores, y el Santuario de la Naturaleza Yerba Loca, hacia la cordillera.",
+        "Para el día a día, el sector cuenta con centros comerciales como Portal La Dehesa, Espacio Urbano La Dehesa, Paseo Los Trapenses y Mall Vivo Los Trapenses, además de supermercados, clínicas y servicios a lo largo de Av. La Dehesa y José Alcalde Délano."
+      ]
+    },
+    {
+      "h2": "Seguridad en La Dehesa",
+      "parrafos": [
+        "Lo Barnechea registra tasas bajas en delitos que afectan directamente a las viviendas. Según datos 2023 del CEAD (Subsecretaría de Prevención del Delito) analizados por La Tercera, la comuna tuvo una tasa de robo en lugar habitado de 82,4 por cada 100.000 habitantes, la quinta más baja entre las comunas analizadas.",
+        "Aun así, la seguridad cambia de una calle a otra. Al comprar, fíjate en la iluminación, en si la casa está en condominio o en calle abierta, en los cierres perimetrales, la vigilancia del sector y los sistemas de alarma. Al vender, tener esos elementos al día ayuda en la negociación."
+      ]
+    },
+    {
+      "h2": "Plan Regulador y proyectos que mueven el valor",
+      "parrafos": [
+        "Lo Barnechea actualizó su Plan Regulador Comunal tras un proceso de más de cinco años, y la nueva norma rige desde el 30 de octubre de 2025. Según The Clinic, permite edificios de 4 a 8 pisos en los ejes centrales y bien conectados, como El Rodeo, Av. La Dehesa y José Alcalde Délano, y mantiene un máximo de 2 pisos en la periferia, como El Arrayán y el camino a Farellones. El plan habilita en total unos 500.000 m² de nueva construcción, que podrían desarrollarse en 5 a 10 años.",
+        "Para quien tiene casa en barrios residenciales, la norma protege el carácter de baja densidad, lo que tiende a sostener el atractivo de las casas con terreno. Para quien vive cerca de los ejes principales, conviene revisar qué permite la nueva zonificación en su manzana. Algunas inmobiliarias han impugnado el plan, y Meganoticias informó que la nueva norma reduce la densidad y la altura en zonas de piedemonte y precordillera.",
+        "Los otros dos factores a seguir son la posible extensión de la Línea 7 hasta La Dehesa y la prolongación de Costanera Norte. Si se concretan, mejorarían la conexión del sector con el resto de Santiago."
+      ]
+    }
+  ],
+  "barrios": [
+    {
+      "nombre": "La Dehesa central (Av. La Dehesa y El Rodeo)",
+      "texto": "Es el corazón comercial y de servicios del sector, en torno al cruce de Av. La Dehesa con El Rodeo, donde están Portal La Dehesa, el edificio municipal y nuestra oficina. Mezcla casas con edificios de baja y mediana altura. Es la zona donde el nuevo Plan Regulador permite más altura.",
+      "lat": -33.357,
+      "lng": -70.517
+    },
+    {
+      "nombre": "El Huinganal",
+      "texto": "Sector de casas en la ladera poniente de La Dehesa, con calles tranquilas, condominios y vistas a la ciudad. Tiene el Parque El Huinganal sobre Av. El Rodeo y colegios cercanos. Hay casas de distintos tamaños, desde casas mediterráneas en calles cerradas hasta propiedades en terrenos grandes.",
+      "lat": -33.346,
+      "lng": -70.535
+    },
+    {
+      "nombre": "Los Trapenses",
+      "texto": "Sector norte de La Dehesa, articulado por José Alcalde Délano y Camino Los Trapenses, con centros comerciales como Paseo Los Trapenses y Mall Vivo Los Trapenses. Predominan los condominios de casas para familias, con más cercanía a los cerros. Los trayectos hacia Costanera Norte son más largos que desde La Dehesa central.",
+      "lat": -33.331,
+      "lng": -70.545
+    },
+    {
+      "nombre": "Valle La Dehesa",
+      "texto": "Sector residencial al norte del centro de La Dehesa, con casas en condominios y calles interiores. Ofrece un entorno tranquilo y cercanía a colegios y comercio. Es una opción frecuente para familias que buscan casa con jardín sin alejarse de los servicios.",
+      "lat": -33.34,
+      "lng": -70.522
+    },
+    {
+      "nombre": "Lomas de La Dehesa",
+      "texto": "Sector de casas en altura, en las laderas del oriente de La Dehesa, con vistas y entorno de golf. Suele tener casas de mayor superficie y terrenos amplios. Las pendientes y la distancia a los ejes principales son puntos a revisar al comprar.",
+      "lat": -33.343,
+      "lng": -70.508
+    },
+    {
+      "nombre": "El Tranque",
+      "texto": "Sector residencial entre El Huinganal y Los Trapenses, vinculado al antiguo tranque y a su entorno natural, que el Plan Regulador incorpora como área verde. Tiene casas y condominios con ambiente de barrio. Conviene revisar los trayectos en hora punta.",
+      "lat": -33.336,
+      "lng": -70.534
+    },
+    {
+      "nombre": "Sector Puente La Dehesa – Raúl Labbé",
+      "texto": "Es la puerta de entrada de La Dehesa desde Las Condes y Vitacura, junto al río Mapocho. Su ventaja es la salida rápida hacia Costanera Norte y Kennedy. Combina casas con edificios y servicios.",
+      "lat": -33.366,
+      "lng": -70.522
+    }
+  ],
+  "ranking": {
+    "titulo": "Ranking de sectores de La Dehesa para comprar casa (2026)",
+    "metodologia": "Ranking de elaboración propia de CyM Propiedades, construido con las fuentes públicas citadas en esta página (Censo 2024, Colliers vía Emol, CEAD vía La Tercera, Plan Regulador vía The Clinic y Meganoticias, prensa sobre Línea 7 y Costanera Norte, ranking PAES 2025 de Pauta) y con el conocimiento del terreno de nuestra oficina en Av. La Dehesa. Evaluamos cinco criterios con esta ponderación: tipo de vivienda y tamaño de terreno (30%), conectividad actual y futura (25%), cercanía a colegios (20%), comercio y servicios cercanos (15%) y áreas verdes y entorno natural (10%). Como no hay datos públicos de precios ni de delitos desagregados por sector, el puntaje es cualitativo y sirve como guía para orientar la búsqueda, no como tasación. El mejor sector depende de las prioridades de cada familia.",
+    "items": [
+      {
+        "puesto": 1,
+        "barrio": "La Dehesa central",
+        "fortalezas": "Comercio, servicios, colegios y salida a Costanera Norte a pocos minutos; posible estación de una futura extensión de la Línea 7.",
+        "ojo": "Más tránsito y edificios en los ejes donde el Plan Regulador permite de 4 a 8 pisos.",
+        "ideal_para": "Familias que priorizan trayectos cortos y tener todo cerca."
+      },
+      {
+        "puesto": 2,
+        "barrio": "El Huinganal",
+        "fortalezas": "Calles residenciales tranquilas, vistas, parque propio y buena cercanía a colegios.",
+        "ojo": "Algunas calles tienen pendiente y hay que revisar el estado de casas más antiguas.",
+        "ideal_para": "Familias que buscan barrio de casas con vista sin alejarse del centro del sector."
+      },
+      {
+        "puesto": 3,
+        "barrio": "Valle La Dehesa",
+        "fortalezas": "Condominios de casas con jardín, ambiente tranquilo y comercio a mano.",
+        "ojo": "Las salidas hacia Av. La Dehesa se congestionan en hora punta.",
+        "ideal_para": "Familias con niños que quieren condominio y buen equilibrio entre espacio y ubicación."
+      },
+      {
+        "puesto": 4,
+        "barrio": "Sector Puente La Dehesa – Raúl Labbé",
+        "fortalezas": "La mejor conexión con Las Condes, Vitacura y Costanera Norte.",
+        "ojo": "Más flujo vehicular y menos sensación de barrio cerrado.",
+        "ideal_para": "Quienes trabajan en el sector oriente y pasan mucho tiempo en el auto."
+      },
+      {
+        "puesto": 5,
+        "barrio": "Los Trapenses",
+        "fortalezas": "Condominios familiares, centros comerciales propios y cercanía a cerros y senderos.",
+        "ojo": "Trayectos más largos hacia el resto de Santiago.",
+        "ideal_para": "Familias que quieren casas más nuevas y vida al aire libre."
+      },
+      {
+        "puesto": 6,
+        "barrio": "Lomas de La Dehesa",
+        "fortalezas": "Casas de mayor superficie, terrenos amplios, vistas y entorno de golf.",
+        "ojo": "Pendientes, mayor distancia a los ejes principales y casas de valor alto que tardan más en venderse.",
+        "ideal_para": "Compradores que priorizan espacio y privacidad."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿La Dehesa es una comuna?",
+      "a": "No. La Dehesa es un sector de la comuna de Lo Barnechea, en el nororiente de Santiago. Los permisos, la recepción municipal, el Plan Regulador y los trámites dependen de la Municipalidad de Lo Barnechea."
+    },
+    {
+      "q": "¿Cuánto cuesta una casa en La Dehesa?",
+      "a": "Depende mucho del sector, el terreno y el estado de la casa. Como referencia, Colliers informó en 2025 que en el segmento alto de Lo Barnechea el precio promedio rondaba 34.000 UF, con 217 m² interiores en promedio. Para conocer el valor de una casa específica, lo correcto es una tasación caso a caso, que en CyM es sin costo."
+    },
+    {
+      "q": "¿Qué incluye el servicio de venta de CyM en La Dehesa?",
+      "a": "Incluye análisis de precio con comparables reales del sector, estrategia de salida al mercado, promoción en portales inmobiliarios y redes sociales, gestión de visitas, negociación y un cierre seguro, con asesoría legal en la promesa y la escritura. Si la casa necesita arreglos antes de publicarse, también podemos coordinar remodelaciones."
+    },
+    {
+      "q": "¿Cuánto demora vender una casa en La Dehesa?",
+      "a": "No hay un plazo único. Un informe de RE/MAX publicado en abril de 2025 estimó hasta 180 días para vender una casa en Santiago. En La Dehesa la oferta es amplia, así que un precio bien tasado desde el inicio y una buena presentación son lo que más acorta los plazos."
+    },
+    {
+      "q": "¿Qué documentos necesito para vender mi casa?",
+      "a": "Lo básico es el certificado de dominio vigente, el certificado de hipotecas y gravámenes, la copia de la escritura anterior, el certificado de avalúo fiscal, el comprobante de contribuciones al día, el certificado de recepción final municipal (incluidas las ampliaciones) y, si es condominio, el certificado de gastos comunes al día. Te ayudamos a reunirlos antes de publicar."
+    },
+    {
+      "q": "¿La tasación de CyM tiene costo?",
+      "a": "No. La tasación de tu casa en La Dehesa es sin costo. Te entregamos un rango de precio sustentado en la oferta comparable del sector y las características de tu propiedad."
+    },
+    {
+      "q": "¿Llegará el Metro a La Dehesa?",
+      "a": "Por ahora es una propuesta. La futura Línea 7 termina en la estación Estoril, en Las Condes, y el municipio de Lo Barnechea propone extenderla con dos estaciones, Cantagallo y La Dehesa. A septiembre de 2026 no había estudios ni financiamiento definidos, según Emol."
+    },
+    {
+      "q": "¿Qué cambió con el nuevo Plan Regulador de Lo Barnechea?",
+      "a": "Rige desde el 30 de octubre de 2025. Permite edificios de 4 a 8 pisos en ejes como Av. La Dehesa, El Rodeo y José Alcalde Délano, y mantiene un máximo de 2 pisos en sectores periféricos como El Arrayán. Antes de comprar o vender una casa con potencial de desarrollo, conviene revisar la zonificación de esa manzana."
+    },
+    {
+      "q": "¿Me ayudan a conseguir el crédito hipotecario?",
+      "a": "Sí. Gestionamos el crédito hipotecario y te damos asesoría financiera durante la compra. Con nuestra alianza con Bci puedes acceder a un crédito preaprobado, y coordinamos tasación, estudio de títulos y escritura con el banco."
+    },
+    {
+      "q": "¿Dónde está la oficina de CyM en La Dehesa?",
+      "a": "Estamos en Av. La Dehesa 1844, oficina 313, Torre Norte, Lo Barnechea. Desde ahí atendemos a propietarios y compradores de La Dehesa, Vitacura y San Carlos de Apoquindo."
+    }
+  ],
+  "mapa": {
+    "lat": -33.35,
+    "lng": -70.522,
+    "zoom": 13
+  },
+  "fuentes": [
+    {
+      "titulo": "Biblioteca del Congreso Nacional: Reporte comunal 2025 de Lo Barnechea (Censo 2024, INE)",
+      "url": "https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2025&idcom=13115"
+    },
+    {
+      "titulo": "Telencuestas: población de La Dehesa, Censo 2017 (INE)",
+      "url": "https://telencuestas.com/censos-de-poblacion/chile/2017/metropolitana-de-santiago/santiago/lo-barnechea/la-dehesa"
+    },
+    {
+      "titulo": "Wikipedia: Lo Barnechea",
+      "url": "https://es.wikipedia.org/wiki/Lo_Barnechea"
+    },
+    {
+      "titulo": "Emol: barrios de Santiago y precios del segmento alto (Colliers, feb. 2025)",
+      "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+    },
+    {
+      "titulo": "HousePricing: casas en venta en La Dehesa, Lo Barnechea (consulta nov. 2026)",
+      "url": "https://www.housepricing.cl/venta/casa-lo-barnechea-metropolitana/la-dehesa/"
+    },
+    {
+      "titulo": "El Dínamo: hasta seis meses se necesitan para vender una casa en Santiago (RE/MAX, abr. 2025)",
+      "url": "https://www.eldinamo.cl/economia/2025/04/09/hasta-seis-meses-se-necesitan-para-vender-una-casa-en-santiago-y-el-precio-promedio-de-los-departamentos-usados-crece-un-20/"
+    },
+    {
+      "titulo": "The Clinic: Censo 2024, comunas donde predomina ir al trabajo en auto (dic. 2025)",
+      "url": "https://www.theclinic.cl/2025/12/22/la-fuerte-brecha-que-revela-el-censo-2024-solo-en-cinco-comunas-del-gran-santiago-predomina-ir-a-trabajar-en-auto-mientras-la-mayoria-usa-el-transporte-publico/"
+    },
+    {
+      "titulo": "CNN Chile: Línea 7 de Metro alcanza 40% de avance y abriría a fines de 2028",
+      "url": "https://www.cnnchile.com/pais/linea-7-de-metro-alcanza-40-de-avance-y-se-estima-que-abrira-a-fines-de-2028_20260203/"
+    },
+    {
+      "titulo": "Emol: Lo Barnechea propone extender la Línea 7 con estaciones Cantagallo y La Dehesa (nov. 2024)",
+      "url": "https://www.emol.com/noticias/Nacional/2024/11/28/1149811/lobarnechea-linea-metro-cantagallo-dehesa.html"
+    },
+    {
+      "titulo": "Emol: Alessandri por Costanera Norte y Metro (sep. 2026)",
+      "url": "https://www.emol.com/noticias/Nacional/2026/09/16/1211622/alessandri-por-costaneranorte-y-metro.html"
+    },
+    {
+      "titulo": "Pauta: los 50 colegios con mayores puntajes en la PAES 2025",
+      "url": "https://www.pauta.cl/actualidad/2025/01/07/los-50-colegios-que-promediaron-mayores-puntajes-en-la-paes-2025.html"
+    },
+    {
+      "titulo": "En Cancha: Parque El Huinganal, Lo Barnechea",
+      "url": "https://www.encancha.cl/enlahora/panoramas/2025/09/23/el-jardin-secreto-que-esta-en-santiago-y-no-sabias-que-existia-es-ideal-para-visitar-en-familia/"
+    },
+    {
+      "titulo": "En Cancha: Parque de la Chilenidad, Lo Barnechea (mar. 2026)",
+      "url": "https://www.encancha.cl/enlahora/panoramas/2026/03/27/tiene-35-hectareas-canopy-un-bike-park-y-es-gratis-el-imperdible-pulmon-verde-a-minutos-del-centro-de-santiago/"
+    },
+    {
+      "titulo": "La Tercera: delitos de mayor connotación social, las comunas más seguras del país (CEAD 2023)",
+      "url": "https://www.latercera.com/la-tercera-sabado/noticia/delitos-de-mayor-connotacion-social-estas-son-las-comunas-mas-seguras-del-pais/RFHI5LSMZBEJDOICZXTQZ2CQCI/"
+    },
+    {
+      "titulo": "The Clinic: Lo Barnechea actualiza su Plan Regulador (oct. 2025)",
+      "url": "https://www.theclinic.cl/2025/10/11/lo-barnechea-actualiza-su-plan-regulador-y-permitira-el-desarrollo-de-inversiones-inmobiliarias-por-alrededor-de-500-mil-metros-cuadrados/"
+    },
+    {
+      "titulo": "Meganoticias: proyecto en Lo Barnechea y vigencia del nuevo Plan Regulador (may. 2026)",
+      "url": "https://www.meganoticias.cl/nacional/521746-cencosud-activa-proyecto-lo-barnechea-viviendas-comercio-servicios-11-05-2026.html"
+    }
+  ]
+}

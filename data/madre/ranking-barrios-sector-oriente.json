@@ -1,0 +1,479 @@
+{
+  "slug": "ranking-barrios-sector-oriente",
+  "title": "Mejores barrios para vivir en Santiago oriente (2026)",
+  "description": "Ranking 2026 de 13 barrios para comprar casa en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina: seguridad, colegios, precios y metodología.",
+  "h1": "Ranking de los mejores barrios para vivir y comprar casa en el sector oriente de Santiago (2026)",
+  "bajada": "Comparamos 13 barrios de Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina con seis criterios y datos públicos: conectividad, colegios, áreas verdes, seguridad, oferta de casas y precio.",
+  "resumen": "Según este ranking 2026 de CyM Propiedades, los tres mejores barrios para comprar casa en el sector oriente de Santiago son La Dehesa central (7,6 de 10), San Carlos de Apoquindo en torno a Camino El Alba (7,6) y Los Trapenses (7,5). La Dehesa y Los Trapenses ganan por seguridad y colegios: Lo Barnechea registró en 2025 la menor cifra de portonazos del sector oriente y tiene cinco colegios entre los 20 con mejor ponderación PAES 2026. San Carlos de Apoquindo gana por equilibrio: casas con terreno, buenos colegios cerca y mejor precio por metro cuadrado que Vitacura. Santa María de Manquehue (7,5) completa el grupo de cabeza, con la mejor conectividad de los barrios de casas, pero a precios entre los más altos de la Región Metropolitana.",
+  "metodologia": {
+    "texto": "Este ranking es una elaboración de CyM Propiedades a partir de fuentes públicas. CyM es una corredora que vende casas en estas mismas zonas, por eso declaramos la metodología completa y las fuentes de cada dato. Evaluamos 13 barrios de cinco zonas: Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina. No incluimos Providencia, Ñuñoa ni otras comunas porque no operamos ahí. Cada barrio recibe un puntaje de 1 a 10 en seis criterios. El puntaje total es el promedio ponderado con los pesos que se indican abajo, redondeado a un decimal. Casi todas las estadísticas públicas se publican por comuna y no por barrio. Por eso partimos del dato comunal y lo ajustamos según criterios cualitativos del barrio: distancia a Metro y autopistas, tipo de vivienda, cercanía a parques y cerros, y lo que vemos en terreno en tasaciones y visitas. Esos ajustes son juicio de CyM y lo decimos así. Los puntajes de seguridad usan cifras de denuncias y casos de la Fiscalía y del CEAD, que reflejan delitos denunciados y no toda la delincuencia. Los precios citados son de informes de consultoras y de la Cámara Chilena de la Construcción, mayoritariamente de oferta y no de cierre. Revisaremos el ranking cuando se publiquen nuevos datos del ICVU, la PAES o la Fiscalía.",
+    "criterios": [
+      {
+        "nombre": "Seguridad",
+        "peso": 0.2,
+        "fuente": "Portonazos 2025 por comuna (Ministerio Público, vía Emol), robos en domicilios por comuna (Fiscalía, vía CNN Chile) y tasas CEAD 2023 (vía La Tercera)."
+      },
+      {
+        "nombre": "Colegios",
+        "peso": 0.2,
+        "fuente": "Ranking de ponderaciones PAES 2026 con datos DEMRE (vía T13) y colegios por comuna en el top 100 PAES 2023 (vía 24horas)."
+      },
+      {
+        "nombre": "Conectividad",
+        "peso": 0.15,
+        "fuente": "Estaciones proyectadas de Línea 7 (Metro de Santiago, vía Meganoticias), autopista Américo Vespucio Oriente (MOP, vía CPI) y modo de viaje al trabajo del Censo 2024 (vía The Clinic)."
+      },
+      {
+        "nombre": "Áreas verdes",
+        "peso": 0.15,
+        "fuente": "Áreas verdes por habitante (CEDEUS y Centro de Políticas Públicas UC), cobertura arbórea (Universidad Mayor) y estándar SIEDU de 10 m² por habitante."
+      },
+      {
+        "nombre": "Oferta de casas",
+        "peso": 0.15,
+        "fuente": "Criterio cualitativo de CyM: proporción de casas frente a departamentos, rotación y variedad de tamaños observadas en el mercado de venta."
+      },
+      {
+        "nombre": "Valor / precio",
+        "peso": 0.15,
+        "fuente": "Precios por barrio y segmento de Colliers (vía Emol y Diario Financiero) y precios por comuna de la CChC (vía Emol). Más puntaje significa más metros y terreno por UF invertida."
+      }
+    ]
+  },
+  "ranking": [
+    {
+      "puesto": 1,
+      "barrio": "La Dehesa central (Av. La Dehesa – El Rodeo)",
+      "zona": "la-dehesa",
+      "puntajes": {
+        "conectividad": 5,
+        "colegios": 9,
+        "areas_verdes": 7,
+        "seguridad": 9,
+        "oferta_casas": 9,
+        "valor": 6
+      },
+      "total": 7.6,
+      "resumen": "El corazón comercial y residencial de La Dehesa. Concentra la mayor oferta de casas del sector, desde casas de barrio hasta condominios, con servicios, supermercados y clínicas a pocos minutos. Lo Barnechea tuvo en 2025 la menor cifra de portonazos del sector oriente y bajó 42,3% respecto de 2024. Cinco colegios de la comuna están entre los 20 con mejor ponderación PAES 2026.",
+      "ideal_para": "Familias que quieren la seguridad y los colegios de La Dehesa sin alejarse tanto de los servicios.",
+      "ojo": "Las plazas públicas quedan lejos en buena parte de la comuna; revisa si la casa tiene jardín propio o áreas verdes de condominio."
+    },
+    {
+      "puesto": 2,
+      "barrio": "San Carlos de Apoquindo – Camino El Alba",
+      "zona": "san-carlos-de-apoquindo",
+      "puntajes": {
+        "conectividad": 6,
+        "colegios": 8,
+        "areas_verdes": 8,
+        "seguridad": 8,
+        "oferta_casas": 8,
+        "valor": 7
+      },
+      "total": 7.6,
+      "resumen": "Sector de Las Condes alto con casas de barrio y condominios, cerca del precordillera y de colegios tradicionales del oriente. Combina terrenos más grandes que en Las Condes bajo con precios por metro cuadrado más contenidos que Vitacura. La salida es por Camino El Alba y Padre Hurtado hacia Kennedy y Apoquindo. Es una de las zonas con mayor rotación de casas familiares de la comuna.",
+      "ideal_para": "Familias jóvenes que necesitan más metros y jardín y quieren seguir dentro de Las Condes.",
+      "ojo": "La salida en la mañana se concentra en pocas vías. Prueba el trayecto a tu trabajo antes de decidir."
+    },
+    {
+      "puesto": 3,
+      "barrio": "Los Trapenses",
+      "zona": "la-dehesa",
+      "puntajes": {
+        "conectividad": 4,
+        "colegios": 9,
+        "areas_verdes": 8,
+        "seguridad": 9,
+        "oferta_casas": 8,
+        "valor": 6
+      },
+      "total": 7.5,
+      "resumen": "Sector de Lo Barnechea con casas en condominio y loteos amplios al pie del cerro. Suma la comuna con menos robos en domicilios del sector oriente según datos de la Fiscalía y colegios como Huinganal, quinto en ponderación PAES 2026, dentro de la misma comuna. La oferta de casas usadas es amplia y variada en tamaño. Su punto débil es la distancia: casi todo se hace en auto y la salida en hora punta por La Dehesa y Costanera Norte se congestiona.",
+      "ideal_para": "Familias con hijos en edad escolar que priorizan seguridad, colegios y espacio, y que trabajan con horario flexible o cerca del oriente.",
+      "ojo": "Mide tu trayecto real a la oficina en hora punta antes de comprar. No hay Metro en la zona ni proyectado en el corto plazo."
+    },
+    {
+      "puesto": 4,
+      "barrio": "Santa María de Manquehue",
+      "zona": "vitacura",
+      "puntajes": {
+        "conectividad": 7,
+        "colegios": 9,
+        "areas_verdes": 8,
+        "seguridad": 8,
+        "oferta_casas": 7,
+        "valor": 5
+      },
+      "total": 7.5,
+      "resumen": "Barrio de casas de Vitacura junto al cerro Manquehue, con calles tranquilas y mucho arbolado. Según Colliers, citado por Diario Financiero en noviembre de 2025, es uno de los tres barrios más caros de la Región Metropolitana. Tiene acceso rápido a Kennedy y Costanera Norte, y la futura Línea 7 tendrá una estación en Kennedy con Padre Hurtado Norte. Colegios como Tabancura, Los Andes y Santa Úrsula están en la misma comuna.",
+      "ideal_para": "Familias consolidadas que buscan barrio residencial puro con buena salida a autopistas.",
+      "ojo": "Los precios están entre los más altos de Santiago. Revisa estado de techumbres e instalaciones en casas de los años 80 y 90."
+    },
+    {
+      "puesto": 5,
+      "barrio": "El Huinganal",
+      "zona": "la-dehesa",
+      "puntajes": {
+        "conectividad": 4,
+        "colegios": 9,
+        "areas_verdes": 8,
+        "seguridad": 9,
+        "oferta_casas": 7,
+        "valor": 6
+      },
+      "total": 7.3,
+      "resumen": "Sector alto de Lo Barnechea con casas en condominio rodeadas de cerro. Comparte los indicadores de seguridad de la comuna, que en 2025 registró la menor cifra de portonazos del sector oriente. El colegio Huinganal está en la zona. Es más residencial y apartado que La Dehesa central.",
+      "ideal_para": "Familias que buscan naturaleza y comunidad de condominio, con colegio cerca.",
+      "ojo": "Distancias largas a la ciudad. Pregunta por gastos comunes del condominio y reglas de construcción."
+    },
+    {
+      "puesto": 6,
+      "barrio": "La Reina alta (Parque Mahuida – Valenzuela Llanos)",
+      "zona": "la-reina",
+      "puntajes": {
+        "conectividad": 5,
+        "colegios": 7,
+        "areas_verdes": 9,
+        "seguridad": 7,
+        "oferta_casas": 8,
+        "valor": 8
+      },
+      "total": 7.3,
+      "resumen": "Sector de casas de La Reina junto a la precordillera y al Parque Mahuida. Vitacura y La Reina tienen más de la mitad de su superficie cubierta por árboles, según un estudio de la Universidad Mayor. La oferta de casas con terreno es amplia y los precios de entrada son más bajos que en Vitacura o Las Condes. La Reina bajó 59,4% sus portonazos en 2025.",
+      "ideal_para": "Familias que priorizan jardín, árboles y precio por metro cuadrado.",
+      "ojo": "Lejos del Metro. La conexión a Vespucio Oriente se hace por Príncipe de Gales o Larraín."
+    },
+    {
+      "puesto": 7,
+      "barrio": "San Carlos de Apoquindo alto – Camino Las Flores",
+      "zona": "san-carlos-de-apoquindo",
+      "puntajes": {
+        "conectividad": 4,
+        "colegios": 8,
+        "areas_verdes": 9,
+        "seguridad": 8,
+        "oferta_casas": 7,
+        "valor": 7
+      },
+      "total": 7.2,
+      "resumen": "La parte más alta de San Carlos de Apoquindo, con vista a la ciudad, aire más limpio y cercanía a los cerros. Las casas tienen terrenos amplios y muchas están en condominio. Es más tranquila que el sector bajo, pero queda más lejos de Metro y de los centros comerciales. Por metro cuadrado suele ofrecer más casa que barrios equivalentes de Vitacura.",
+      "ideal_para": "Quienes valoran naturaleza, vista y espacio, y trabajan parte de la semana desde la casa.",
+      "ojo": "Revisa pendientes, accesos en días de lluvia y la distancia a servicios básicos."
+    },
+    {
+      "puesto": 8,
+      "barrio": "Los Dominicos tradicional",
+      "zona": "las-condes",
+      "puntajes": {
+        "conectividad": 8,
+        "colegios": 8,
+        "areas_verdes": 7,
+        "seguridad": 7,
+        "oferta_casas": 7,
+        "valor": 6
+      },
+      "total": 7.2,
+      "resumen": "Barrio de casas de Las Condes alrededor del pueblito y la iglesia de Los Dominicos, con la estación terminal de la Línea 1 cerca. Colliers lo agrupa con San Damián en un sector cuya oferta promedia 50.000 UF y 335 m² interiores. Tiene buena salida por Apoquindo y Las Condes, y servicios a pie en varios puntos.",
+      "ideal_para": "Familias que quieren casa con Metro cerca y todo el equipamiento de Las Condes.",
+      "ojo": "Las Condes subió 29,4% en portonazos en 2025 según el Ministerio Público. Revisa cierres, alarma y la calle en particular."
+    },
+    {
+      "puesto": 9,
+      "barrio": "Estoril – Padre Hurtado (Las Condes)",
+      "zona": "las-condes",
+      "puntajes": {
+        "conectividad": 8,
+        "colegios": 8,
+        "areas_verdes": 7,
+        "seguridad": 7,
+        "oferta_casas": 6,
+        "valor": 6
+      },
+      "total": 7.1,
+      "resumen": "Sector de casas entre Kennedy, Las Condes y Padre Hurtado, cerca de Clínica Las Condes. La futura Línea 7 tendrá estaciones en Kennedy con Estoril y en Av. Las Condes con Estoril, con operación proyectada para 2028. Hoy ya tiene acceso directo a Kennedy y a la zona comercial del oriente.",
+      "ideal_para": "Compradores que apuestan por la conectividad de la Línea 7 y quieren casa en un barrio consolidado.",
+      "ojo": "Las obras de Metro generan desvíos hasta su apertura. Mira la casa en hora punta."
+    },
+    {
+      "puesto": 10,
+      "barrio": "Jardín del Este",
+      "zona": "vitacura",
+      "puntajes": {
+        "conectividad": 6,
+        "colegios": 9,
+        "areas_verdes": 8,
+        "seguridad": 8,
+        "oferta_casas": 5,
+        "valor": 5
+      },
+      "total": 7.0,
+      "resumen": "Barrio cerrado de Vitacura con casas grandes y calles internas de baja circulación. Diario Financiero lo ubica, junto a Lo Curro y Santa María de Manquehue, en el grupo de barrios que promedian sobre 120 UF/m². La oferta es escasa porque las familias rotan poco. Tiene a mano los colegios de Vitacura y Las Condes y la zona comercial de Kennedy.",
+      "ideal_para": "Compradores que priorizan privacidad y un entorno muy controlado, y que pueden esperar a que aparezca la casa correcta.",
+      "ojo": "Hay poca oferta. Si te interesa, conviene registrarte como comprador y moverte rápido cuando sale una casa."
+    },
+    {
+      "puesto": 11,
+      "barrio": "Príncipe de Gales – Plaza Egaña",
+      "zona": "la-reina",
+      "puntajes": {
+        "conectividad": 8,
+        "colegios": 7,
+        "areas_verdes": 6,
+        "seguridad": 6,
+        "oferta_casas": 7,
+        "valor": 8
+      },
+      "total": 7.0,
+      "resumen": "La Reina baja, con casas de barrio cerca de Línea 4 y de Américo Vespucio Oriente, autopista de 9 km que conecta La Reina con Las Condes, Vitacura y Huechuraba. Es la opción con mejor transporte público de la comuna y precios más accesibles que el resto del ranking. Colegios como The Grange School y Andree English School están en La Reina.",
+      "ideal_para": "Parejas y familias que necesitan Metro y autopista, y buscan su primera casa en el oriente.",
+      "ojo": "Según datos de la Fiscalía publicados por CNN Chile, el sector entre Bilbao, Tobalaba y Vespucio es una de las zonas con más robos en domicilios de La Reina. Revisa seguridad calle por calle."
+    },
+    {
+      "puesto": 12,
+      "barrio": "San Damián",
+      "zona": "las-condes",
+      "puntajes": {
+        "conectividad": 6,
+        "colegios": 8,
+        "areas_verdes": 8,
+        "seguridad": 7,
+        "oferta_casas": 7,
+        "valor": 5
+      },
+      "total": 6.9,
+      "resumen": "Barrio de casas grandes en Las Condes alto, con terrenos amplios y calles tranquilas. Según Colliers, junto a Los Dominicos forma uno de los sectores más caros del segmento alto, con viviendas promedio de 335 m² interiores. Diario Financiero señala que San Damián tenía valores cercanos a Vitacura hasta hace unos años. Está a pocos minutos de colegios de Las Condes y Lo Barnechea.",
+      "ideal_para": "Familias grandes que buscan metros y terreno sin irse a Lo Barnechea.",
+      "ojo": "Pocas casas chicas. Si buscas menos de 250 m², la oferta es limitada."
+    },
+    {
+      "puesto": 13,
+      "barrio": "Lo Curro",
+      "zona": "vitacura",
+      "puntajes": {
+        "conectividad": 5,
+        "colegios": 8,
+        "areas_verdes": 8,
+        "seguridad": 8,
+        "oferta_casas": 6,
+        "valor": 4
+      },
+      "total": 6.7,
+      "resumen": "Cerro residencial de Vitacura con casas grandes, vista y mucha privacidad. Según el análisis de Colliers publicado por Emol en febrero de 2025, la oferta en Lo Curro promedia 39.000 UF con 285 m² interiores. Es de los barrios más caros del país. El acceso depende de pocas vías, lo que alarga los tiempos de salida.",
+      "ideal_para": "Compradores de alto presupuesto que priorizan vista, terreno y privacidad.",
+      "ojo": "Calcula bien gastos de mantención de jardines, piscinas y muros de contención en pendiente."
+    }
+  ],
+  "secciones": [
+    {
+      "h2": "Comparación por comuna: qué ofrece cada zona del sector oriente",
+      "parrafos": [
+        "Las cinco comunas del ranking están en el nivel alto del Índice de Calidad de Vida Urbana 2025, que elaboran la Cámara Chilena de la Construcción y el Instituto de Estudios Urbanos y Territoriales de la UC sobre 99 comunas. En la lista de comunas con nivel alto, Las Condes aparece primera, Vitacura segunda, Lo Barnechea quinta y La Reina sexta. En la práctica, elegir entre ellas es elegir entre buenas opciones con distintas prioridades.",
+        "Vitacura (86.420 habitantes en el Censo 2024) es la comuna más consolidada. Tiene barrios de casas de alto valor como Santa María de Manquehue, Lo Curro y Jardín del Este, cinco colegios entre los 20 con mejor ponderación PAES 2026 y la mejor dotación de áreas verdes públicas del grupo. Su punto débil es el precio.",
+        "Lo Barnechea (112.620 habitantes) concentra La Dehesa, Los Trapenses y El Huinganal. Es la zona con mejores cifras de seguridad del sector oriente y también tiene cinco colegios en el top 20 PAES 2026. Su punto débil es la distancia: según el Censo 2024, en Vitacura y Lo Barnechea más del 60% de quienes trabajan van en auto.",
+        "Las Condes (296.134 habitantes) es la comuna más grande y diversa. San Carlos de Apoquindo, San Damián y Los Dominicos son sus barrios de casas. Tiene Metro hoy en Los Dominicos y tendrá más estaciones con la Línea 7. En 2023 fue la comuna con más colegios en el top 100 de la PAES, con 14. Su punto débil en 2025 fue el alza de portonazos.",
+        "La Reina (89.870 habitantes) es la puerta de entrada al sector oriente. Ofrece casas con terreno a precios más bajos, mucho arbolado y acceso a Línea 4 y a Vespucio Oriente. Su seguridad es dispar entre sectores y tiene menos colegios en los primeros lugares de la PAES."
+      ],
+      "lista": [
+        "Mejor para seguridad: Lo Barnechea (La Dehesa, Los Trapenses, El Huinganal).",
+        "Mejor para conectividad con casa: Las Condes (Los Dominicos, Estoril) y La Reina baja.",
+        "Mejor para áreas verdes públicas: Vitacura.",
+        "Mejor relación metros por UF: La Reina y San Carlos de Apoquindo.",
+        "Mayor valor de reventa en el segmento alto: Vitacura (Lo Curro, Santa María de Manquehue, Jardín del Este)."
+      ]
+    },
+    {
+      "h2": "Precios de referencia por barrio y comuna (con fuente)",
+      "parrafos": [
+        "No existe una estadística pública de precio de casas usadas por barrio. Usamos las mejores referencias disponibles y te indicamos qué mide cada una.",
+        "Según Colliers, citado por Diario Financiero en noviembre de 2025, Lo Curro, Santa María de Manquehue y Jardín del Este promedian más de 120 UF/m², frente a cerca de 87 UF/m² hace diez años. En esos barrios las propiedades parten en 40.000 UF y algunas superan las 80.000 UF.",
+        "El mismo análisis de Colliers, publicado por Emol en febrero de 2025, describe el segmento alto de Vitacura, Las Condes y Lo Barnechea con un precio promedio de 25.600 UF, 141 UF/m² y 157 m² de superficie media. Por barrio, San Damián y Los Dominicos tradicional promedian 50.000 UF con 335 m² interiores, Lo Curro 39.000 UF con 285 m² y la oferta dispersa de Lo Barnechea 34.000 UF con 217 m².",
+        "Para casas nuevas, la Cámara Chilena de la Construcción agrupa Las Condes, Lo Barnechea y Vitacura con un precio promedio de 23.991 UF en 2024, un alza de 8,19% respecto de 2023, según Emol. En departamentos nuevos, la misma fuente muestra la diferencia entre comunas: Vitacura 14.332 UF, Lo Barnechea 12.570 UF, Las Condes 9.621 UF y La Reina, agrupada con Peñalolén, 6.204 UF. Es un dato de departamentos, pero confirma que La Reina tiene el precio de entrada más bajo del grupo.",
+        "Estas cifras son de oferta y de proyectos nuevos. El precio final de una casa usada depende de su estado, terreno, orientación y calle. Para un valor real, lo que corresponde es una tasación con comparables de cierre."
+      ]
+    },
+    {
+      "h2": "Seguridad: qué dicen los datos por comuna",
+      "parrafos": [
+        "En 2025 el sector oriente tuvo la menor cantidad de portonazos en cuatro años, según cifras del Ministerio Público publicadas por Emol. Lo Barnechea registró 15 casos (-42,3% frente a 2024), La Reina 26 (-59,4%), Vitacura 84 (-7,7%) y Las Condes 88 (+29,4%).",
+        "En robos en domicilios, datos de la Fiscalía publicados por CNN Chile muestran 239 casos en Las Condes, 159 en La Reina, 66 en Vitacura y 38 en Lo Barnechea en el último año informado. Si se dividen por la población del Censo 2024, el cálculo de CyM da cerca de 34 casos por cada 100.000 habitantes en Lo Barnechea, 76 en Vitacura, 81 en Las Condes y 177 en La Reina.",
+        "Con datos CEAD 2023, La Tercera informó que Vitacura tuvo la tasa más baja de lesiones leves del país entre comunas de más de 50 mil habitantes, con 117,1 casos por cada 100.000 habitantes, y que Lo Barnechea tuvo la quinta tasa más baja de robo en lugar habitado, con 82,4.",
+        "Los números comunales esconden diferencias entre calles. Antes de comprar, recorre el barrio de noche, pregunta a vecinos y revisa la seguridad del condominio o de la cuadra."
+      ]
+    },
+    {
+      "h2": "Cómo elegir barrio según tu etapa de vida",
+      "parrafos": [
+        "El mejor barrio no es el mismo para todos. El puntaje total sirve para comparar, pero conviene mirar los criterios que más pesan en tu caso."
+      ],
+      "lista": [
+        "Primera casa en el oriente: La Reina baja (Príncipe de Gales) o La Reina alta. Más metros por UF, Metro o autopista cerca.",
+        "Familia con niños chicos: San Carlos de Apoquindo o La Dehesa central. Jardín, colegios cerca y calles tranquilas.",
+        "Familia con hijos en el colegio: Los Trapenses, El Huinganal o Santa María de Manquehue. Están cerca de varios de los colegios mejor ubicados en la PAES 2026.",
+        "Hijos que ya se fueron: Los Dominicos o Estoril. Casas más manejables, Metro y servicios cerca.",
+        "Compra patrimonial de largo plazo: Lo Curro, Jardín del Este o Santa María de Manquehue, los barrios más caros de la Región Metropolitana según Colliers.",
+        "Trabajo híbrido y vida al aire libre: San Carlos de Apoquindo alto o La Reina alta, junto a cerros y parques."
+      ]
+    },
+    {
+      "h2": "Qué mirar cuando visitas una casa en estos barrios",
+      "parrafos": [
+        "En el sector oriente buena parte de la oferta son casas usadas. La ubicación pesa, pero el estado de la casa define el precio final y los gastos de los primeros años."
+      ],
+      "lista": [
+        "Trayecto en hora punta: haz el recorrido a tu trabajo y al colegio entre 7:30 y 8:30 antes de ofertar.",
+        "Techumbre, humedad y filtraciones: revisa cielos, muros y bodegas después de una lluvia.",
+        "Instalaciones eléctricas y de gas: pide certificados y fecha de la última revisión.",
+        "Regularización: confirma que las ampliaciones tengan permiso y recepción municipal.",
+        "Terreno y pendiente: en Lo Curro, La Dehesa y San Carlos de Apoquindo alto revisa muros de contención y drenajes.",
+        "Gastos comunes y reglamento si es condominio.",
+        "Orientación y asoleamiento del living y del jardín.",
+        "Ruido: cercanía a avenidas, obras de Metro o colegios en horario de entrada y salida."
+      ]
+    },
+    {
+      "h2": "Conectividad: Metro, autopistas y lo que viene",
+      "parrafos": [
+        "La Línea 7 de Metro unirá Renca con Vitacura y su inicio de operación está proyectado para 2028. En Vitacura tendrá cinco estaciones, entre ellas Kennedy con Padre Hurtado Norte, junto al mall Alto Las Condes, y Kennedy con Estoril, cerca de Clínica Las Condes. En Las Condes tendrá estaciones en Av. Las Condes con Estoril y con Lo Fontecilla, entre otras. Los barrios de Estoril, Santa María de Manquehue y Los Dominicos son los que más ganan.",
+        "La autopista Américo Vespucio Oriente (AVO I), de 9 km, conecta La Reina, Las Condes y Vitacura con Huechuraba y Recoleta. El MOP estimó ahorros de hasta 30 minutos en hora punta. La Dehesa, Los Trapenses y El Huinganal no tienen Metro proyectado y dependen de Costanera Norte y del auto."
+      ]
+    },
+    {
+      "h2": "Cómo vender tu casa en estos barrios con CyM Propiedades",
+      "parrafos": [
+        "CyM Propiedades es una corredora de propiedades de Santiago de Chile especializada en la venta de casas en Vitacura, La Dehesa (Lo Barnechea) y San Carlos de Apoquindo (Las Condes). Acompaña a propietarios y compradores en todo el proceso: tasación sin costo, publicación, visitas, negociación y cierre. Trabaja con una base de más de 100.000 compradores y 12 años en el mercado.",
+        "Si tienes una casa en alguno de los barrios de este ranking, el primer paso es una tasación sin costo para fijar un precio de salida realista. Con eso preparamos la publicación, coordinamos las visitas con compradores calificados y te acompañamos en la negociación hasta la firma.",
+        "Además de la compraventa, CyM ofrece asesorías inmobiliarias y legales, remodelaciones, gestión de créditos hipotecarios y asesorías financieras. Tiene alianzas con Bci para crédito preaprobado, con IKEA (15%) y con Fundamenta."
+      ],
+      "lista": [
+        "Tasación sin costo con comparables del barrio.",
+        "Publicación y difusión a la base de compradores de CyM.",
+        "Coordinación de visitas y filtro de compradores.",
+        "Negociación y acompañamiento hasta el cierre."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuál es el mejor barrio para vivir en el sector oriente de Santiago?",
+      "a": "En el ranking 2026 de CyM Propiedades, el primer lugar es La Dehesa central, con 7,6 de 10, empatado con San Carlos de Apoquindo en torno a Camino El Alba. Les siguen Los Trapenses y Santa María de Manquehue, con 7,5. La Dehesa gana por seguridad y colegios; San Carlos de Apoquindo, por equilibrio entre precio, terreno y ubicación."
+    },
+    {
+      "q": "¿Dónde conviene comprar casa en Santiago oriente si mi presupuesto es más acotado?",
+      "a": "La Reina ofrece el precio de entrada más bajo del sector oriente. En departamentos nuevos, la CChC registró 6.204 UF promedio en La Reina y Peñalolén en 2024, frente a 9.621 UF en Las Condes y 14.332 UF en Vitacura. En casas, La Reina alta y Príncipe de Gales obtienen 8 de 10 en valor en este ranking."
+    },
+    {
+      "q": "¿Cuál es la comuna más segura del sector oriente?",
+      "a": "Con los datos públicos revisados, Lo Barnechea. En 2025 tuvo 15 portonazos, la menor cifra del sector oriente según el Ministerio Público, y la menor cantidad de robos en domicilios entre las cuatro comunas, según datos de la Fiscalía."
+    },
+    {
+      "q": "¿Qué comuna tiene mejores colegios?",
+      "a": "Vitacura y Lo Barnechea tienen cada una cinco colegios entre los 20 con mejor ponderación PAES 2026, según datos DEMRE publicados por T13. Las Condes tiene tres en ese grupo, incluido Cordillera, segundo del país, y La Reina dos: The Grange School y Andree English School."
+    },
+    {
+      "q": "¿Cuánto cuesta una casa en Vitacura, Las Condes o Lo Barnechea?",
+      "a": "Según Colliers, el segmento alto de estas tres comunas promedia 25.600 UF y 141 UF/m². En Lo Curro, Santa María de Manquehue y Jardín del Este el promedio supera 120 UF/m² y las propiedades parten en 40.000 UF. Para tu casa en particular, lo correcto es una tasación con comparables."
+    },
+    {
+      "q": "¿La Línea 7 de Metro va a llegar a estos barrios?",
+      "a": "Sí, a parte de ellos. La Línea 7 tiene operación proyectada para 2028 y llegará a Vitacura por Kennedy hasta Estoril, y a Las Condes con estaciones como Av. Las Condes con Estoril y con Lo Fontecilla. No llega a La Dehesa, Los Trapenses, El Huinganal ni San Carlos de Apoquindo."
+    },
+    {
+      "q": "¿Qué comuna tiene más áreas verdes?",
+      "a": "Vitacura. La plataforma de datos de CEDEUS le asigna 16,8 m² de áreas verdes por habitante, sobre el estándar SIEDU de 10 m². Además, Vitacura y La Reina tienen más de la mitad de su superficie cubierta por árboles, según un estudio de la Universidad Mayor."
+    },
+    {
+      "q": "¿Por qué una corredora hace este ranking? ¿Es imparcial?",
+      "a": "CyM Propiedades vende casas en estas zonas y lo declaramos. Para que el ranking sea verificable, publicamos los criterios, los pesos y las fuentes de cada cifra. Los ajustes por barrio son juicio de CyM y están identificados como tales en la metodología."
+    },
+    {
+      "q": "¿Por qué no aparecen Providencia o Ñuñoa?",
+      "a": "Porque el ranking cubre solo las zonas donde trabaja CyM: Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina. Preferimos evaluar barrios que conocemos en terreno."
+    },
+    {
+      "q": "¿Cómo vendo mi casa en uno de estos barrios?",
+      "a": "Empieza con una tasación sin costo. CyM Propiedades se encarga de la publicación, las visitas, la negociación y el cierre, con una base de más de 100.000 compradores y 12 años en el mercado."
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "Emol (feb. 2025): barrios más caros de Santiago, informe Colliers",
+      "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+    },
+    {
+      "titulo": "Diario Financiero (nov. 2025): Vitacura lidera el lujo inmobiliario, Colliers",
+      "url": "https://www.df.cl/empresas/construccion/vitacura-lidera-el-lujo-inmobiliario-lo-curro-santa-maria-y-jardin-del"
+    },
+    {
+      "titulo": "Emol (mar. 2025): precios de vivienda por comuna, CChC y Real Data",
+      "url": "https://www.emol.com/noticias/Economia/2025/03/07/1159672/precios-vivienda-rm-comunas.html"
+    },
+    {
+      "titulo": "Meganoticias (abr. 2026): ICVU 2025, comunas con nivel alto de calidad de vida",
+      "url": "https://www.meganoticias.cl/nacional/520396-ranking-calidad-de-vida-comunas-santiago-region-metropolitana-24-04-2026.html"
+    },
+    {
+      "titulo": "Emol (abr. 2026): Índice de Calidad de Vida Urbana 2025, CChC e IEUT UC",
+      "url": "https://www.emol.com/noticias/Nacional/2026/04/23/1198042/indice-calidad-vida-urbana-comunas.html"
+    },
+    {
+      "titulo": "Emol (abr. 2025): ICVU 2024 y sus seis dimensiones",
+      "url": "https://www.emol.com/noticias/Nacional/2025/04/29/1164894/calidad-vida-comunas-urbanas-chile.html"
+    },
+    {
+      "titulo": "Portal Innova (mar. 2025): población por comuna, Censo 2024",
+      "url": "https://portalinnova.cl/?p=125566"
+    },
+    {
+      "titulo": "The Clinic (dic. 2025): Censo 2024, comunas donde predomina ir al trabajo en auto",
+      "url": "https://www.theclinic.cl/2025/12/22/la-fuerte-brecha-que-revela-el-censo-2024-solo-en-cinco-comunas-del-gran-santiago-predomina-ir-a-trabajar-en-auto-mientras-la-mayoria-usa-el-transporte-publico/"
+    },
+    {
+      "titulo": "T13 (ene. 2026): 20 colegios con mejores ponderaciones PAES 2026, datos DEMRE",
+      "url": "https://www.t13.cl/noticia/nacional/ninguno-municipal-20-colegios-mejores-ponderaciones-paes-2026-5-1-2026"
+    },
+    {
+      "titulo": "24horas: comunas con más colegios en el top 100 de la PAES 2023",
+      "url": "https://www.24horas.cl/actualidad/nacional/paes-2023-comunas-colegios-mejores-puntajes"
+    },
+    {
+      "titulo": "Emol (feb. 2026): portonazos 2025 en el sector oriente, Ministerio Público",
+      "url": "https://www.emol.com/noticias/Nacional/2026/02/24/1192384/portonazos-encerronas-fiscalia-oriente.html"
+    },
+    {
+      "titulo": "CNN Chile: robos en domicilios en el sector oriente, datos de Fiscalía",
+      "url": "https://www.cnnchile.com/pais/estos-son-los-barrios-con-mas-y-menos-asaltos-en-casas-del-sector-oriente/"
+    },
+    {
+      "titulo": "La Tercera: comunas más seguras según tasas CEAD 2023",
+      "url": "https://www.latercera.com/la-tercera-sabado/noticia/delitos-de-mayor-connotacion-social-estas-son-las-comunas-mas-seguras-del-pais/RFHI5LSMZBEJDOICZXTQZ2CQCI/"
+    },
+    {
+      "titulo": "Meganoticias (jun. 2026): estaciones de Línea 7 en Vitacura",
+      "url": "https://www.meganoticias.cl/dato-util/524456-estas-seran-las-cinco-estaciones-de-vitacura-en-la-linea-7-del-metro-de-santiago-dtcf01-13-06-2026.html"
+    },
+    {
+      "titulo": "Meganoticias (jun. 2026): estaciones de Línea 7 en Las Condes",
+      "url": "https://www.meganoticias.cl/dato-util/523811-linea-7-metro-las-condes-donde-estaran-estaciones-cuando-abre-04-06-2026.html"
+    },
+    {
+      "titulo": "CPI: MOP inaugura autopista Américo Vespucio Oriente (AVO I)",
+      "url": "https://cpichile.org/mop-inaugura-nueva-autopista-americo-vespucio-oriente-avo-i/"
+    },
+    {
+      "titulo": "CPI / País Circular (oct. 2022): áreas verdes por habitante, datos CEDEUS",
+      "url": "https://cpichile.org/medir-y-aumentar-las-areas-verdes-para-el-desarrollo-sustentable/"
+    },
+    {
+      "titulo": "The Clinic (dic. 2019): la desigualdad verde de Santiago, estudio U. Mayor",
+      "url": "https://www.theclinic.cl/2019/12/17/columna-de-ignacio-fernandez-la-desigualdad-verde-de-santiago/"
+    },
+    {
+      "titulo": "La Tercera: áreas verdes accesibles por habitante, Centro de Políticas Públicas UC",
+      "url": "https://www.latercera.com/masdeco/verde-para-todos/"
+    },
+    {
+      "titulo": "Emol (oct. 2019): indicadores SIEDU de áreas verdes y plazas",
+      "url": "https://www.emol.com/noticias/Nacional/2019/10/16/964558/Comunas-areas-verdes-parques-plazas.html"
+    }
+  ]
+}

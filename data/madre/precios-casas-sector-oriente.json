@@ -1,0 +1,385 @@
+{
+  "slug": "precios-casas-sector-oriente",
+  "title": "Precio de casas en el sector oriente 2026: ranking UF/m²",
+  "description": "Cuánto cuesta una casa en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina en 2026: UF/m², precio típico y ranking por barrio con fuentes.",
+  "h1": "Precios de casas en el sector oriente de Santiago 2026: ranking por comuna y barrio",
+  "bajada": "UF por metro cuadrado, precio típico y ranking de barrios en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina. Datos de mercado con fuente y fecha, más la muestra de casas que CyM Propiedades tiene a la venta en noviembre de 2026.",
+  "resumen": "En noviembre de 2026, una casa usada en el sector oriente de Santiago se transa en torno a UF 78 a UF 101 por m² construido, según los valores de referencia de cierre de calcular.cl (avisos de septiembre de 2026). Vitacura es la comuna más cara (UF 100,8/m² de cierre; casa típica de 208 m² por UF 20.966, unos $866 millones) y La Reina la más accesible (UF 77,8/m²; casa típica de 171 m² por UF 13.304, unos $550 millones). Las Condes marca UF 89,5/m² y Lo Barnechea, donde está La Dehesa, UF 81,7/m², aunque ahí las casas son más grandes y el precio típico sube a UF 21.814. En los barrios top de Vitacura (Lo Curro, Santa María de Manquehue y Jardín del Este) Colliers sitúa el m² sobre UF 120 a 130 y casas desde UF 40.000.",
+  "tabla_mercado": [
+    {
+      "zona": "vitacura",
+      "nombre": "Vitacura",
+      "uf_m2": "UF 100,8 (cierre ref.) · UF 111,2 mediana de oferta (rango UF 98,6–128,6)",
+      "precio_casa_tipica": "UF 20.966 por 208 m² (≈ $866 millones)",
+      "fuente": "calcular.cl, Vitacura",
+      "fecha": "Avisos sept. 2026"
+    },
+    {
+      "zona": "la-dehesa",
+      "nombre": "La Dehesa (Lo Barnechea)",
+      "uf_m2": "UF 81,7 (cierre ref. comunal) · UF 85,9 mediana de oferta (rango UF 75,6–100). UFHouse: La Dehesa hasta UF 96",
+      "precio_casa_tipica": "UF 21.814 por 267 m² (≈ $901 millones), dato comunal de Lo Barnechea",
+      "fuente": "calcular.cl, Lo Barnechea; UFHouse",
+      "fecha": "Sept. 2026; ago. 2026"
+    },
+    {
+      "zona": "san-carlos-de-apoquindo",
+      "nombre": "San Carlos de Apoquindo (Las Condes)",
+      "uf_m2": "Sin índice público por barrio. Referencia comunal Las Condes: UF 89,5 (cierre) · UF 96 (oferta)",
+      "precio_casa_tipica": "Sin dato público por barrio. Muestra CyM: UF 18.900–21.900 (n=4)",
+      "fuente": "calcular.cl, Las Condes; cartera CyM",
+      "fecha": "Sept. 2026; nov. 2026"
+    },
+    {
+      "zona": "las-condes",
+      "nombre": "Las Condes",
+      "uf_m2": "UF 89,5 (cierre ref.) · UF 96 mediana de oferta (rango UF 83,8–112,1)",
+      "precio_casa_tipica": "UF 17.721 por 198 m² (≈ $732 millones)",
+      "fuente": "calcular.cl, Las Condes",
+      "fecha": "Avisos sept. 2026"
+    },
+    {
+      "zona": "la-reina",
+      "nombre": "La Reina",
+      "uf_m2": "UF 77,8 (cierre ref.) · UF 83,6 mediana de oferta (rango UF 66,5–89,6)",
+      "precio_casa_tipica": "UF 13.304 por 171 m² (≈ $550 millones)",
+      "fuente": "calcular.cl, La Reina",
+      "fecha": "Avisos sept. 2026"
+    }
+  ],
+  "tabla_cym": [
+    {
+      "zona": "vitacura",
+      "nombre": "Vitacura",
+      "n": 4,
+      "rango_uf": "UF 12.900–23.000",
+      "uf_m2_construido": "UF 94,6–149,9 (promedio ponderado UF 107,4)"
+    },
+    {
+      "zona": "la-dehesa",
+      "nombre": "La Dehesa (Lo Barnechea)",
+      "n": 1,
+      "rango_uf": "UF 19.900",
+      "uf_m2_construido": "UF 92,6"
+    },
+    {
+      "zona": "san-carlos-de-apoquindo",
+      "nombre": "San Carlos de Apoquindo",
+      "n": 4,
+      "rango_uf": "UF 18.900–21.900",
+      "uf_m2_construido": "UF 92,8–108,0 (promedio ponderado UF 101,6)"
+    },
+    {
+      "zona": "las-condes",
+      "nombre": "Las Condes (fuera de San Carlos)",
+      "n": 2,
+      "rango_uf": "UF 10.300–11.500",
+      "uf_m2_construido": "UF 109,5–122,6 (promedio ponderado UF 115,3)"
+    },
+    {
+      "zona": "la-reina",
+      "nombre": "La Reina",
+      "n": 1,
+      "rango_uf": "UF 16.700",
+      "uf_m2_construido": "UF 81,1"
+    }
+  ],
+  "ranking": [
+    {
+      "puesto": 1,
+      "barrio": "Lo Curro",
+      "zona": "vitacura",
+      "referencia": "≈ UF 130/m² y casas desde UF 40.000 (Colliers vía BioBioChile, 5 nov. 2025). Promedio UF 39.000 por 285 m² (Colliers vía Emol, 17 feb. 2025)",
+      "comentario": "Cerro con vista, sitios grandes y muy poca oferta. Colliers lo pone en el trío más caro de la Región Metropolitana junto a Santa María de Manquehue y Jardín del Este. Aquí el terreno y la vista pesan más que los metros construidos."
+    },
+    {
+      "puesto": 2,
+      "barrio": "Santa María de Manquehue",
+      "zona": "vitacura",
+      "referencia": "≈ UF 130/m² según BioBioChile; sobre UF 120/m² según Diario Financiero (ambos citan a Colliers, 5 nov. 2025)",
+      "comentario": "Barrio cerrado de casas amplias con jardín, junto al cerro Manquehue. Las dos notas de prensa difieren en el piso del m²; muestro ambas. Las casas parten en UF 40.000 y algunas superan UF 80.000."
+    },
+    {
+      "puesto": 3,
+      "barrio": "Jardín del Este",
+      "zona": "vitacura",
+      "referencia": "≈ UF 130/m² (BioBioChile) o sobre UF 120/m² (Diario Financiero), Colliers, nov. 2025",
+      "comentario": "Casas de alto estándar en calles tranquilas, cerca de colegios y del eje Vitacura. Colliers estima poco más de 500 viviendas en venta en los tres barrios top, menos del 1% del stock de la RM."
+    },
+    {
+      "puesto": 4,
+      "barrio": "San Damián",
+      "zona": "las-condes",
+      "referencia": "Colliers: UF 131/m² y promedio UF 50.000 por 335 m², junto a Los Dominicos tradicional (Emol, feb. 2025). UFHouse: UF 89/m² (ago. 2026)",
+      "comentario": "Casas grandes en pendiente, con vista y terrenos amplios. Las dos fuentes difieren mucho: Colliers mide la oferta del segmento alto y UFHouse da un promedio de barrio. Ojo: 50.000 dividido por 335 da cerca de UF 149/m², y la nota no explica la diferencia."
+    },
+    {
+      "puesto": 5,
+      "barrio": "Lo Barnechea segmento alto (La Dehesa alta, Los Trapenses)",
+      "zona": "la-dehesa",
+      "referencia": "Colliers: UF 131/m², promedio UF 34.000 por 217 m² (Emol, feb. 2025). Colliers: casas en Lo Barnechea escalan a UF 120/m² (Emol, 26 dic. 2025)",
+      "comentario": "Condominios nuevos y casas de diseño en la parte alta de la comuna. Es una oferta dispersa, sin un barrio único. Los Trapenses aparece en prensa como zona de casas y condominios, sin cifra propia publicada."
+    },
+    {
+      "puesto": 6,
+      "barrio": "Los Dominicos tradicional",
+      "zona": "las-condes",
+      "referencia": "Colliers: UF 131/m² junto a San Damián (Emol, feb. 2025). UFHouse: UF 70/m² (ago. 2026)",
+      "comentario": "Barrio consolidado de casas en el oriente de Las Condes. La brecha entre fuentes es la más grande del ranking: Colliers habla del segmento alto en oferta; UFHouse, de un promedio general. Para tasar aquí, compara calle por calle."
+    },
+    {
+      "puesto": 7,
+      "barrio": "Vitacura tradicional (Lo Matta, Vitacura centro)",
+      "zona": "vitacura",
+      "referencia": "Comuna Vitacura: UF 100,8/m² de cierre y UF 111,2/m² de oferta (calcular.cl, sept. 2026). Muestra CyM: UF 94,6–149,9/m² (n=4)",
+      "comentario": "En la muestra CyM, casas en sitios de 182 a 440 m². La futura Línea 7 del Metro suma interés. En la cartera de CyM, una casa remodelada de 110 m² cerca de Lo Matta llega a UF 149,9/m² construido."
+    },
+    {
+      "puesto": 8,
+      "barrio": "San Carlos de Apoquindo",
+      "zona": "san-carlos-de-apoquindo",
+      "referencia": "Sin índice público por barrio. Muestra CyM: UF 92,8–108,0/m² construido, promedio ponderado UF 101,6 (n=4, nov. 2026)",
+      "comentario": "Barrio familiar de casas y condominios en la precordillera, con colegios como Cumbres y la Universidad del Desarrollo cerca. Las casas de la muestra CyM tienen entre 175 y 236 m² y piden UF 18.900 a UF 21.900. Son precios de publicación, no de cierre."
+    },
+    {
+      "puesto": 9,
+      "barrio": "Las Condes tradicional (bajo Av. Tomás Moro y Colón)",
+      "zona": "las-condes",
+      "referencia": "Comuna Las Condes: UF 89,5/m² de cierre y UF 96/m² de oferta (calcular.cl, sept. 2026). Muestra CyM: UF 109,5–122,6/m² (n=2)",
+      "comentario": "Las casas de esta zona en la cartera CyM son más chicas, de 84 y 105 m². Por eso el m² sube aunque el precio total baje: en CyM hay casas de UF 10.300 y UF 11.500. Es la puerta de entrada más barata a Las Condes."
+    },
+    {
+      "puesto": 10,
+      "barrio": "La Dehesa central y condominios",
+      "zona": "la-dehesa",
+      "referencia": "Comuna Lo Barnechea: UF 81,7/m² de cierre y UF 85,9/m² de oferta (calcular.cl, sept. 2026). UFHouse: La Dehesa hasta UF 96/m² (ago. 2026). Muestra CyM: UF 92,6/m² (n=1)",
+      "comentario": "Casas más grandes que el promedio del oriente, con 267 m² típicos. El m² sale más bajo que en Vitacura, pero el ticket total es alto: la casa típica de Lo Barnechea cierra en UF 21.814."
+    },
+    {
+      "puesto": 11,
+      "barrio": "La Reina alta (Príncipe de Gales, Larraín)",
+      "zona": "la-reina",
+      "referencia": "Comuna La Reina: UF 77,8/m² de cierre y UF 83,6/m² de oferta (calcular.cl, sept. 2026). Muestra CyM: UF 81,1/m² (n=1)",
+      "comentario": "Sitios grandes, calles arboladas y poco edificio en altura. Tiene el m² más bajo del sector oriente. La casa de CyM en La Reina tiene 206 m² sobre 410 m² de terreno y pide UF 16.700."
+    },
+    {
+      "puesto": 12,
+      "barrio": "La Reina baja",
+      "zona": "la-reina",
+      "referencia": "Rango bajo de la oferta comunal: UF 66,5/m² en el percentil 25 (calcular.cl, sept. 2026)",
+      "comentario": "Corresponde al tramo más barato de la oferta comunal de La Reina. Es el punto más accesible para comprar casa en el oriente. Revisa el estado de la construcción antes de ofertar."
+    }
+  ],
+  "secciones": [
+    {
+      "h2": "Cómo leer estas cifras",
+      "parrafos": [
+        "Hay tres tipos de dato en esta página y conviene no mezclarlos. El primero es el valor de referencia de cierre: lo que se paga de verdad. El segundo es el precio de oferta: lo que piden los avisos. El tercero son los estudios de consultoras como Colliers, que miden el segmento alto de la oferta.",
+        "Con los datos de calcular.cl, la oferta queda entre 5% y 10% sobre el cierre en estas comunas (cálculo propio). En Vitacura, la mediana de oferta es UF 111,2/m² y la referencia de cierre UF 100,8/m². En Las Condes, UF 96 contra UF 89,5. En La Reina, UF 83,6 contra UF 77,8.",
+        "Otras fuentes dan números distintos. UFHouse (agosto 2026) pone a Lo Barnechea en UF 87/m², Vitacura en UF 84, Las Condes en UF 77 y La Reina en UF 73, sin separar casas de departamentos. PortalPM, con datos de NielsenIQ-GfK y Valuaciones, informa Vitacura UF 120,8, Las Condes UF 111,1, Lo Barnechea UF 105,7 y La Reina UF 86,3, también sin separar tipo de vivienda ni indicar fecha. Por eso esta página usa como base las cifras de casas de calcular.cl y muestra las demás como contraste.",
+        "Los valores en pesos usan la UF del 13 de noviembre de 2026: $41.322,93, según el SII."
+      ],
+      "lista": [
+        "Cierre: lo que se paga. Úsalo para tasar.",
+        "Oferta: lo que se pide. Úsalo para ver competencia.",
+        "Colliers: segmento alto en oferta. Úsalo para barrios top.",
+        "Muestra CyM: precios de publicación de casas que CyM vende hoy."
+      ]
+    },
+    {
+      "h2": "Qué mueve el precio de una casa en el oriente",
+      "parrafos": [
+        "El terreno manda. Grupo Colibrí calculó el valor del suelo en escrituras de casas entre enero de 2025 y marzo de 2026: Vitacura tiene la mediana más alta de la Región Metropolitana, con UF 33,1/m² de terreno, y subió más de 15% frente a 2023. Las Condes marca UF 15,5/m² y Lo Barnechea UF 13,0/m², ambas estables. Por eso una casa vieja en Vitacura puede valer más que una nueva en La Dehesa del mismo tamaño.",
+        "El condominio suma. En La Dehesa y San Carlos de Apoquindo, una casa en condominio con seguridad y áreas comunes compite con casas en calle abierta de mayor terreno. El comprador paga por seguridad y por gastos comunes compartidos.",
+        "Los colegios también pesan. La cercanía a colegios es un criterio central para familias que buscan casa. Un aviso de la cartera CyM en Vitacura lleva en su título el nombre del colegio cercano.",
+        "Y el transporte. La futura Línea 7 del Metro unirá Renca con Vitacura, con estaciones en la comuna y en Estoril, cerca de la Clínica Las Condes. Según Meganoticias (mayo 2026), la planificación de Metro apunta a que empiece a operar en 2028."
+      ],
+      "lista": [
+        "Terreno: Vitacura UF 33,1/m², Las Condes UF 15,5/m², Lo Barnechea UF 13,0/m² (Grupo Colibrí, 2025–2026).",
+        "Superficie construida: a mayor casa, menor UF/m², pero mayor precio total.",
+        "Estado: en la cartera CyM de Vitacura, el m² va de UF 94,6 a UF 149,9; el valor más alto corresponde a una casa remodelada.",
+        "Orientación, vista y piscina: suben el precio dentro del mismo barrio."
+      ]
+    },
+    {
+      "h2": "Casas vs. departamentos en el sector oriente",
+      "parrafos": [
+        "Una casa reparte su precio entre metros construidos y terreno. Un departamento concentra el valor en menos metros, con servicios comunes incluidos.",
+        "En la cartera de CyM se ve claro. En Vitacura hay un departamento de 80 m² por UF 7.900 y otro de 199 m² por UF 17.600, frente a casas de 110 a 240 m² entre UF 12.900 y UF 23.000. En La Dehesa, un departamento de 140 m² pide UF 16.900 y una casa de 215 m², UF 19.900.",
+        "Si buscas espacio y jardín, la casa entrega más metros por UF en la muestra CyM. Si buscas ubicación, seguridad sin mantención y cercanía al metro, el departamento puede convenir aunque el m² salga más caro."
+      ]
+    },
+    {
+      "h2": "Cómo tasar tu casa en el oriente",
+      "parrafos": [
+        "Partir del valor comunal sirve para orientarse, no para fijar el precio. En Vitacura, la mitad central de la oferta va de UF 98,6 a UF 128,6 por m² (calcular.cl), según terreno, estado y calle.",
+        "Un método simple: toma la referencia de cierre de tu comuna, ajústala por estado y terreno, y compárala con tres a cinco casas parecidas vendidas o publicadas en tu barrio. Luego revisa cuánto tiempo llevan publicadas."
+      ],
+      "lista": [
+        "1. Mide bien: m² construidos con permiso y m² de terreno según escritura.",
+        "2. Busca la referencia comunal: Vitacura UF 100,8, Las Condes UF 89,5, Lo Barnechea UF 81,7 o La Reina UF 77,8 por m² (calcular.cl, sept. 2026).",
+        "3. Ajusta por estado: remodelada, original o para remodelar.",
+        "4. Ajusta por terreno: un sitio grande en Vitacura vale por sí solo, por su suelo de UF 33,1/m² (Grupo Colibrí).",
+        "5. Compara con casas de tu misma calle o condominio.",
+        "6. Pide una tasación profesional antes de publicar. CyM la hace sin compromiso de exclusividad."
+      ]
+    },
+    {
+      "h2": "Costos de comprar una casa: impuestos, notaría, Conservador, tasación y estudio de títulos",
+      "parrafos": [
+        "Al precio de la casa súmale los gastos de cierre. Por costumbre los paga el comprador, aunque se pueden negociar.",
+        "Impuesto de timbres y estampillas: se paga sobre el monto del crédito hipotecario, no sobre el precio de la casa. Según el SII, la tasa es 0,066% por mes con un tope de 0,8% desde 2016. En un crédito de largo plazo se paga el tope. Diario Financiero (2021) indica que en viviendas DFL2 baja a 0,2%. Si compras al contado, no hay crédito y no aplica.",
+        "Notaría, Conservador y gastos del banco: Diario Financiero (abril 2021) estimó tasación entre UF 2 y UF 8, estudio de títulos hasta UF 4, borrador de escritura cerca de UF 2,75 e inscripción en el Conservador de Bienes Raíces entre UF 4 y UF 35,5. En total, entre 0,7% y 0,8% del precio, sin contar timbres. Son cifras de 2021: cotiza antes de firmar."
+      ],
+      "lista": [
+        "Timbres: 0,8% del crédito (tope SII). Ejemplo: crédito de UF 14.177 → UF 113,4.",
+        "Notaría + Conservador + tasación + estudio de títulos: 0,7% a 0,8% del precio (DF, 2021)."
+      ]
+    },
+    {
+      "h2": "Crédito hipotecario: tasas en noviembre de 2026",
+      "parrafos": [
+        "La tasa promedio de colocación para vivienda en UF del Banco Central fue 4,07% anual en septiembre de 2026, después de 4,04% en agosto y 4,00% en julio. Es el dato oficial más reciente; el de octubre se publica a mediados de noviembre.",
+        "Algunos bancos publican tasas más bajas para vivienda nueva con subsidio a la tasa y garantía Fogaes: según PortalPM (fuentes consultadas el 6 de noviembre de 2026), BancoEstado ofrece UF + 3,25%, Santander 3,39% fija, BCI 3,41% y Banco de Chile 3,49%. Esas ofertas aplican a vivienda nueva con requisitos; una casa usada en el oriente suele quedar fuera y financiarse cerca del promedio de mercado.",
+        "Ejemplo de cálculo: la casa típica de Las Condes cierra en UF 17.721. Con pie de 20%, el crédito es UF 14.177. A 4,07% anual y 25 años, el dividendo ronda UF 74,8 al mes, unos $3,1 millones con la UF del 13 de noviembre de 2026, sin seguros. Es un cálculo propio con la tasa del Banco Central; tu banco te dará la cifra real.",
+        "CyM gestiona créditos hipotecarios y ofrece asesoría financiera. Con su alianza con Bci puedes obtener un crédito preaprobado antes de ofertar, lo que fortalece tu posición al negociar."
+      ]
+    },
+    {
+      "h2": "Cómo vender tu casa al mejor precio con CyM Propiedades",
+      "parrafos": [
+        "CyM Propiedades vende casas en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina. Esta página usa la cartera publicada al 10 de noviembre de 2026: 12 casas y 4 departamentos.",
+        "Vender bien en el oriente depende de tres cosas: un precio de salida alineado con el cierre real del barrio, buena presentación y llegar a compradores que ya buscan en esa zona. Si publicas muy sobre el cierre del barrio, lo más probable es que termines bajando el precio.",
+        "Si quieres saber cuánto vale tu casa hoy, CyM la tasa con datos del barrio y te dice en cuánto publicar y en cuánto esperar cerrar.",
+        "Si además compras, CyM gestiona tu crédito hipotecario y te asesora en lo financiero. Por su alianza con Bci, puedes llegar a la búsqueda con un crédito preaprobado."
+      ],
+      "lista": [
+        "Tasación con comparables de tu calle y condominio.",
+        "Fotos y descripción pensadas para el comprador del oriente.",
+        "Difusión en portales y en la base de compradores de CyM.",
+        "Acompañamiento hasta la escritura e inscripción.",
+        "Gestión de crédito hipotecario y asesoría financiera, con crédito preaprobado Bci."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "¿Cuánto cuesta una casa en Vitacura en 2026?",
+      "a": "La casa típica en Vitacura tiene 208 m² y cierra en torno a UF 20.966, unos $866 millones, con una referencia de UF 100,8 por m² construido (calcular.cl, septiembre 2026). En Lo Curro, Santa María de Manquehue y Jardín del Este, Colliers informa casas desde UF 40.000 y m² sobre UF 120 a 130 (noviembre 2025). La cartera de CyM en Vitacura va de UF 12.900 a UF 23.000 (n=4)."
+    },
+    {
+      "q": "¿Cuánto cuesta una casa en La Dehesa?",
+      "a": "La referencia comunal de Lo Barnechea es UF 81,7 por m² de cierre y la casa típica, de 267 m², cierra en UF 21.814, unos $901 millones (calcular.cl, septiembre 2026). UFHouse sitúa La Dehesa hasta UF 96/m² (agosto 2026). La casa que CyM tiene en La Dehesa pide UF 19.900 por 215 m²."
+    },
+    {
+      "q": "¿Cuánto cuesta una casa en Las Condes?",
+      "a": "La casa típica de Las Condes tiene 198 m² y cierra en UF 17.721, unos $732 millones, con UF 89,5/m² de referencia (calcular.cl, septiembre 2026). Hay casas chicas desde unas UF 10.000: CyM publica dos de 84 y 105 m² en UF 10.300 y UF 11.500."
+    },
+    {
+      "q": "¿Cuánto cuesta una casa en San Carlos de Apoquindo?",
+      "a": "No hay un índice público por barrio. En la cartera de CyM (n=4, noviembre 2026) las casas de 175 a 236 m² piden entre UF 18.900 y UF 21.900, con un promedio ponderado de UF 101,6 por m² construido. Como referencia, la comuna de Las Condes cierra en UF 89,5/m²."
+    },
+    {
+      "q": "¿Cuál es el precio del m² en el sector oriente?",
+      "a": "En casas, la referencia de cierre va de UF 77,8/m² en La Reina a UF 100,8/m² en Vitacura (calcular.cl, septiembre 2026). Otras fuentes que no separan casas de departamentos dan rangos distintos: UFHouse, UF 73 a 87; PortalPM, UF 86,3 a 120,8."
+    },
+    {
+      "q": "¿Dónde es más barato comprar casa en el sector oriente?",
+      "a": "En La Reina: UF 77,8/m² de cierre y casa típica de 171 m² por UF 13.304, unos $550 millones (calcular.cl, septiembre 2026). Si buscas el menor precio total, también hay casas chicas en Las Condes desde unas UF 10.300, aunque su m² es más caro."
+    },
+    {
+      "q": "¿Cuál es el barrio más caro de Santiago para comprar casa?",
+      "a": "Según Colliers (noviembre 2025), Lo Curro, Santa María de Manquehue y Jardín del Este, los tres en Vitacura. BioBioChile informa un m² en torno a UF 130; Diario Financiero, sobre UF 120. Las casas parten en UF 40.000 y algunas superan UF 80.000."
+    },
+    {
+      "q": "¿Cuánto cuesta el terreno en Vitacura, Las Condes y Lo Barnechea?",
+      "a": "Grupo Colibrí calculó la mediana del suelo en escrituras de casas entre enero de 2025 y marzo de 2026: Vitacura UF 33,1/m², Las Condes UF 15,5/m² y Lo Barnechea UF 13,0/m². La Reina no aparece en ese estudio."
+    },
+    {
+      "q": "¿Qué gastos tengo al comprar una casa además del precio?",
+      "a": "Impuesto de timbres de 0,8% del crédito (tope del SII), notaría, Conservador, tasación y estudio de títulos por 0,7% a 0,8% del precio (Diario Financiero, 2021). Son cifras de 2021; conviene cotizar antes de firmar."
+    },
+    {
+      "q": "¿Qué tasa hipotecaria hay en noviembre de 2026?",
+      "a": "El último dato oficial del Banco Central es 4,07% anual en UF, de septiembre de 2026. Algunos bancos publican tasas desde 3,25% a 3,49% para vivienda nueva con subsidio a la tasa y Fogaes, según PortalPM (consultado el 6 de noviembre de 2026)."
+    }
+  ],
+  "fuentes": [
+    {
+      "titulo": "calcular.cl: tasación de casas en Vitacura (avisos sept. 2026, IPV Banco Central 2T 2026)",
+      "url": "https://www.calcular.cl/tasacion/casa/vitacura"
+    },
+    {
+      "titulo": "calcular.cl: tasación de casas en Las Condes (234 avisos, sept. 2026)",
+      "url": "https://www.calcular.cl/tasacion/casa/las-condes"
+    },
+    {
+      "titulo": "calcular.cl: tasación de casas en Lo Barnechea (114 avisos, sept. 2026)",
+      "url": "https://www.calcular.cl/tasacion/casa/lo-barnechea"
+    },
+    {
+      "titulo": "calcular.cl: tasación de casas en La Reina (41 avisos, sept. 2026)",
+      "url": "https://www.calcular.cl/tasacion/casa/la-reina"
+    },
+    {
+      "titulo": "Grupo Colibrí, act. 28 sept. 2026: precio del m² de terrenos por comuna (escrituras ene. 2025–mar. 2026)",
+      "url": "https://www.grupocolibri.cl/blog/precio-metro-cuadrado-terrenos-chile"
+    },
+    {
+      "titulo": "Emol, 17 feb. 2025: barrios con mayor plusvalía de Santiago (datos Colliers y TocToc)",
+      "url": "https://www.emol.com/noticias/Economia/2025/02/17/1157501/barios-santiago-plusvalia.html"
+    },
+    {
+      "titulo": "Portal Innova, 19 mar. 2025: ¿Cuáles son los barrios más caros de la capital? (Colliers)",
+      "url": "https://portalinnova.cl/cuales-son-los-barrios-mas-caros-de-la-capital/"
+    },
+    {
+      "titulo": "BioBioChile, 5 nov. 2025: los tres barrios más caros y exclusivos de Chile (Colliers)",
+      "url": "https://www.biobiochile.cl/noticias/economia/actualidad-economica/2025/11/05/estos-son-los-tres-barrios-mas-lujosos-caros-y-exclusivos-para-vivir-en-chile.shtml"
+    },
+    {
+      "titulo": "Diario Financiero, 5 nov. 2025: Vitacura lidera el lujo inmobiliario (Colliers)",
+      "url": "https://www.df.cl/empresas/construccion/vitacura-lidera-el-lujo-inmobiliario-lo-curro-santa-maria-y-jardin-del"
+    },
+    {
+      "titulo": "Emol, 26 dic. 2025: rubro inmobiliario de cara a 2026 (Colliers)",
+      "url": "https://www.emol.com/noticias/Economia/2025/12/26/1186910/rubro-inmobiliario-2026.html"
+    },
+    {
+      "titulo": "UFHouse, 14 ago. 2026: comunas del sector oriente de Santiago",
+      "url": "https://ufhouse.com/blog/comunas-sector-oriente-santiago/"
+    },
+    {
+      "titulo": "PortalPM: precio del metro cuadrado por comuna en Santiago 2026 (NielsenIQ-GfK y Valuaciones)",
+      "url": "https://www.portalpm.cl/blog/precio-del-metro-cuadrado-por-comuna-en-santiago-2026-ranking-completo/"
+    },
+    {
+      "titulo": "SII: valores de la UF 2026",
+      "url": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm"
+    },
+    {
+      "titulo": "Banco Central de Chile, Base de Datos Estadísticos: tasa de colocación para vivienda en UF",
+      "url": "https://si3.bcentral.cl/siete/login.aspx?idMenutree=MN_TASA_INTERES_09&idCuadro=TSF_27&idSerie=F022.VIV.TIP.MA03.UF.Z.M"
+    },
+    {
+      "titulo": "PortalPM: tasas de crédito hipotecario noviembre 2026 (serie Banco Central y ofertas por banco)",
+      "url": "https://www.portalpm.cl/blog/tasas-credito-hipotecario/"
+    },
+    {
+      "titulo": "SII, preguntas frecuentes: impuesto de timbres y estampillas en créditos hipotecarios",
+      "url": "https://www.sii.cl/preguntas_frecuentes/otros_impuestos/001_390_0358.htm"
+    },
+    {
+      "titulo": "Diario Financiero, 1 abr. 2021: antes del crédito hipotecario, ¿qué otros gastos hay que pagar?",
+      "url": "https://www.df.cl/df-mas/como-cuido-mis-lucas/antes-del-credito-hipotecario-que-otros-gastos-hay-que-pagar"
+    },
+    {
+      "titulo": "Meganoticias, 28 may. 2026: Línea 7 del Metro, cuándo va a operar",
+      "url": "https://www.meganoticias.cl/dato-util/523129-linea-7-metro-de-santiago-cuando-va-a-operar-1ab-28-5-2026.html"
+    },
+    {
+      "titulo": "CyM Propiedades: propiedades publicadas (cartera al 10 nov. 2026)",
+      "url": "https://www.cympropiedades.cl/"
+    }
+  ]
+}
