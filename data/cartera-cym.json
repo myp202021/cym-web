@@ -1,0 +1,111 @@
+{
+ "fecha": "2026-11-16",
+ "fuente": "https://www.cympropiedades.cl/i_listing.asp?select-status=VE&select-property-type=-1&select-region=-1&select-location=-1&rbEs=0&min-price=0&max-price=0&condominio=2",
+ "total_venta": 804,
+ "comunas": [
+  {
+   "slug": "vitacura",
+   "nombre": "Vitacura",
+   "comuna_ficha": "Vitacura",
+   "nota": null,
+   "venta": 174,
+   "casas": 148,
+   "departamentos": 25,
+   "otros": 1,
+   "min_uf": 7900,
+   "max_uf": 52000,
+   "mediana_uf": 18850,
+   "sectores": [
+    "Club de Polo",
+    "Colegio Manquehue",
+    "Colegio Alemán",
+    "Estadio Croata",
+    "Sport Francés",
+    "Santa María de Manquehue",
+    "Alianza Francesa",
+    "Club Manquehue"
+   ]
+  },
+  {
+   "slug": "la-dehesa",
+   "nombre": "La Dehesa",
+   "comuna_ficha": "Lo Barnechea",
+   "nota": "La Dehesa es el principal sector de Lo Barnechea; el conteo es de toda la comuna",
+   "venta": 328,
+   "casas": 279,
+   "departamentos": 41,
+   "otros": 8,
+   "min_uf": 7350,
+   "max_uf": 45000,
+   "mediana_uf": 18500,
+   "sectores": [
+    "Valle La Dehesa",
+    "Barrio Alpino",
+    "La Dehesa Central",
+    "Los Trapenses",
+    "El Peumo",
+    "El Arrayán",
+    "Camino del Sol",
+    "Pie Andino"
+   ]
+  },
+  {
+   "slug": "san-carlos-de-apoquindo",
+   "nombre": "San Carlos de Apoquindo",
+   "comuna_ficha": "San Carlos de Apoquindo, Las Condes",
+   "nota": "son las fichas de Las Condes que nombran el sector San Carlos de Apoquindo",
+   "venta": 60,
+   "casas": 59,
+   "departamentos": 1,
+   "otros": 0,
+   "min_uf": 13350,
+   "max_uf": 39500,
+   "mediana_uf": 22095,
+   "sectores": [
+    "San Carlos de Apoquindo"
+   ]
+  },
+  {
+   "slug": "las-condes",
+   "nombre": "Las Condes",
+   "comuna_ficha": "Las Condes",
+   "nota": null,
+   "venta": 250,
+   "casas": 197,
+   "departamentos": 53,
+   "otros": 0,
+   "min_uf": 5800,
+   "max_uf": 41950,
+   "mediana_uf": 16700,
+   "sectores": [
+    "San Carlos de Apoquindo",
+    "Los Dominicos",
+    "Quinchamalí",
+    "Metro Hernando de Magallanes",
+    "Colegio Verbo Divino",
+    "Alto Las Condes",
+    "Estadio Español",
+    "Alonso de Camargo"
+   ]
+  },
+  {
+   "slug": "la-reina",
+   "nombre": "La Reina",
+   "comuna_ficha": "La Reina",
+   "nota": null,
+   "venta": 48,
+   "casas": 46,
+   "departamentos": 2,
+   "otros": 0,
+   "min_uf": 7190,
+   "max_uf": 38000,
+   "mediana_uf": 14600,
+   "sectores": [
+    "Ossandón",
+    "La Reina Alta",
+    "Príncipe de Gales",
+    "Metro Príncipe de Gales"
+   ]
+  }
+ ]
+}

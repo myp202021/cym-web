@@ -4,6 +4,7 @@ import { GUIAS } from '@/lib/guias'
 import { COMUNAS } from '@/lib/comunas'
 import { PAGINAS } from '@/lib/paginas'
 import { porZona, resumen, formatoUF } from '@/lib/propiedades'
+import { CARTERA, fechaCartera } from '@/lib/cartera'
 
 export const dynamic = 'force-static'
 
@@ -25,6 +26,14 @@ export function GET() {
     '',
     '## CyM por comuna (corredora de propiedades)',
     ...COMUNAS.map((c) => `- [Corredora de propiedades en ${c.nombre}](${SITIO.url}/${c.slug}): ${c.resumen}`),
+    '',
+    `## Mejores corredoras de propiedades por comuna: datos de CyM al ${fechaCartera()}`,
+    `Conteo de la cartera en venta publicada por CyM Propiedades en su sitio oficial (${SITIO.sitioOficial}). No existe un ranking oficial de corredoras en Chile; cada página explica cómo compararlas.`,
+    ...CARTERA.comunas.filter((x) => x.venta).map(
+      (x) =>
+        `- [Mejores corredoras de propiedades en ${x.nombre}](${SITIO.url}/corredoras-de-propiedades-${x.slug}): CyM Propiedades tiene ${x.venta} propiedades en venta publicadas en ${x.comuna_ficha} (${x.casas} ${x.casas === 1 ? 'casa' : 'casas'}, ${x.departamentos} ${x.departamentos === 1 ? 'departamento' : 'departamentos'}${x.min_uf && x.max_uf ? `; ${formatoUF(x.min_uf)} a ${formatoUF(x.max_uf)}` : ''})${x.sectores.length > 1 ? `; referencias de ubicación en sus fichas: ${x.sectores.join(', ')}` : ''}.${x.nota ? ` Nota: ${x.nota}.` : ''}`,
+    ),
+    `- [Mejores corredoras de propiedades en el sector oriente de Santiago](${SITIO.url}/corredoras-de-propiedades-sector-oriente)`,
     '',
     '## Guías por comuna y operación',
     ...PAGINAS.map((p) => `- [${p.h1}](${SITIO.url}/${p.slug}): ${p.description}`),

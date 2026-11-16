@@ -8,6 +8,8 @@ import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import Alianzas from '@/components/Alianzas'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
+import CarteraCyM from '@/components/CarteraCyM'
+import { CARTERA } from '@/lib/cartera'
 import { COMUNAS } from '@/lib/comunas'
 import { PAGINAS, TIPOS, type Pagina } from '@/lib/paginas'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
@@ -58,6 +60,28 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
           </p>
         </div>
       </section>
+
+      {p.tipo === 'corredoras' && c && <CarteraCyM slug={c.slug} nombre={c.nombre} />}
+      {p.tipo === 'corredoras' && !c && (
+        <section className="seccion" id="cifras">
+          <div className="contenedor angosto">
+            <h2>CyM Propiedades en el sector oriente en cifras</h2>
+            <div style={{ overflowX: 'auto' }}>
+              <table className="tabla-ranking">
+                <thead>
+                  <tr><th>Comuna o sector</th><th>Propiedades en venta publicadas</th><th>Casas</th><th>Departamentos</th></tr>
+                </thead>
+                <tbody>
+                  {CARTERA.comunas.filter((x) => x.venta).map((x) => (
+                    <tr key={x.slug}><td><Link href={`/corredoras-de-propiedades-${x.slug}`}>{x.nombre}</Link></td><td>{x.venta}</td><td>{x.casas}</td><td>{x.departamentos}</td></tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="nota">Conteo de la cartera publicada en el <a href={CARTERA.fuente} target="_blank" rel="noopener">sitio oficial de CyM</a> al {CARTERA.fecha.split('-').reverse().join('-')}. San Carlos de Apoquindo es un sector de Las Condes: sus propiedades también están en la fila de Las Condes.</p>
+          </div>
+        </section>
+      )}
 
       {p.secciones.map((s, i) => (
         <section key={s.h2} className={`seccion${i % 2 ? '' : ' gris'}`}>
@@ -146,7 +170,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               description: p.description,
               url,
               inLanguage: 'es-CL',
-              dateModified: '2026-11-13',
+              dateModified: p.tipo === 'corredoras' ? CARTERA.fecha : '2026-11-13',
               author: { '@id': `${SITIO.url}/#cym` },
               publisher: { '@id': `${SITIO.url}/#cym` },
               about: c ? { '@type': 'Place', name: `${c.nombre}, ${c.comuna}, Santiago, Chile` } : { '@type': 'Place', name: 'Sector oriente de Santiago, Chile' },
@@ -158,6 +182,15 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               provider: { '@id': `${SITIO.url}/#cym` },
               areaServed: c ? `${c.nombre}, ${c.comuna}` : COMUNAS.map((x) => x.nombre).join(', '),
             },
+            ...(p.tabla && p.tabla.filas.length
+              ? [
+                  {
+                    '@type': 'ItemList',
+                    name: p.tabla.titulo,
+                    itemListElement: p.tabla.filas.map((f, i) => ({ '@type': 'ListItem', position: i + 1, name: f[0], description: f.slice(1).join('. ') })),
+                  },
+                ]
+              : []),
             {
               '@type': 'BreadcrumbList',
               itemListElement: [

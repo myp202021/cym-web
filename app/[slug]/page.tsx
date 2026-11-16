@@ -13,6 +13,7 @@ import JsonLd from '@/components/JsonLd'
 import { COMUNAS, comuna as buscar } from '@/lib/comunas'
 import { PAGINAS, pagina, paginasDe, TIPOS } from '@/lib/paginas'
 import PaginaOperacion from '@/components/PaginaOperacion'
+import CarteraCyM from '@/components/CarteraCyM'
 import { porZona } from '@/lib/propiedades'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 import { PROCESO } from '@/app/page'
@@ -99,6 +100,8 @@ export default async function PaginaRaiz({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <CarteraCyM slug={c.slug} nombre={c.nombre} />
 
       {propiedades.length > 0 && (
         <section className="seccion">
@@ -309,7 +312,11 @@ export default async function PaginaRaiz({ params }: Props) {
                 addressRegion: SITIO.region,
                 addressCountry: 'CL',
               },
-              areaServed: { '@type': 'Place', name: `${lugar}, Santiago, Chile`, geo: { '@type': 'GeoCoordinates', latitude: c.mapa.lat, longitude: c.mapa.lng } },
+              areaServed: [
+                { '@type': 'Place', name: `${lugar}, Santiago, Chile`, geo: { '@type': 'GeoCoordinates', latitude: c.mapa.lat, longitude: c.mapa.lng } },
+                ...c.barrios.map((b) => ({ '@type': 'Place', name: `${b.nombre}, ${c.comuna}, Santiago, Chile`, geo: { '@type': 'GeoCoordinates', latitude: b.lat, longitude: b.lng } })),
+              ],
+              knowsAbout: [`Venta de casas en ${c.nombre}`, `Tasación de propiedades en ${c.nombre}`, `Compra de casas en ${c.nombre}`],
               parentOrganization: { '@id': `${SITIO.url}/#cym` },
               sameAs: [SITIO.sitioOficial, SITIO.instagram],
               makesOffer: c.servicios.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `${s.nombre} en ${c.nombre}`, description: s.texto } })),
