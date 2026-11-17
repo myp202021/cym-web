@@ -23,7 +23,8 @@ export const WHATSAPP_AGENTE = '56934018822'
 
 export const TRACKING = {
   gtm: 'GTM-57H283KW',
-  ga4: 'G-52T9G8JFN6',
+  ga4: 'G-52T9G8JFN6', // GA4 oficial de CyM (compartido con cympropiedades.cl)
+  ga4Myp: 'G-K4QL72295Y', // GA4 propio de M&P (christopher@, cuenta 416676506, propiedad 564796635), 17 nov 2026
   pixel: '2684262525251873',
 }
 
