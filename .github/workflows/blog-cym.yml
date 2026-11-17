@@ -1,7 +1,6 @@
 name: Blog CyM (guías por comuna)
 on:
-  schedule:
-    - cron: '0 11 * * 2,5'  # 08:00 Chile, martes y viernes
+  # 17 nov 2026: sin cron (GitHub nunca lo disparó); lo lanza el vigilante de myp-daily-agent martes y viernes 08:00 Chile
   workflow_dispatch:
     inputs:
       tema:
