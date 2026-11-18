@@ -133,6 +133,12 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               <Link href={`/propiedades/${c.slug}`} className="btn btn-borde">Propiedades en venta en {c.nombre}</Link>
             </p>
           )}
+          {p.tipo === 'vender-casa' && (
+            <p className="destacado-b3d">
+              <b>¿Cuánto vale tu casa?</b> Mira en 10 videos 3D cómo se forma el precio (terreno, microzona, regularización y competencia) y haz la cuenta:{' '}
+              <Link href="/vender-casa-sector-oriente">vender casa en el sector oriente</Link>.
+            </p>
+          )}
           {hermanas.length > 0 && (
             <>
               <h2>Sigue leyendo</h2>

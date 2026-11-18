@@ -61,6 +61,8 @@ export default function Vende() {
             ))}
           </ol>
           <p>
+            ¿Vendes una casa? Mira cómo se forma su precio (terreno, microzona, regularización y competencia) en{' '}
+            <Link href="/vender-casa-sector-oriente">vender casa en el sector oriente</Link>.
           </p>
         </div>
       </section>

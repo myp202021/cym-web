@@ -117,6 +117,7 @@ export default function Home() {
                 <p className="sobretitulo">Sector oriente</p>
                 <h3>Compara las comunas</h3>
                 <ul>
+                  <li><Link href="/vender-casa-sector-oriente">Vender casa en el sector oriente: cuánto vale (videos 3D)</Link></li>
                   <li><Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link></li>
                   <li><Link href="/precios-casas-sector-oriente">Precios de casas por comuna</Link></li>
                   <li><Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades del sector oriente</Link></li>
@@ -201,9 +202,14 @@ export default function Home() {
                 <li key={t}>{t}</li>
               ))}
             </ol>
-            <Link href="/vende-tu-propiedad" className="btn">
-              Quiero vender mi propiedad
-            </Link>
+            <p className="acciones">
+              <Link href="/vende-tu-propiedad" className="btn">
+                Quiero vender mi propiedad
+              </Link>{' '}
+              <Link href="/vender-casa-sector-oriente" className="btn btn-borde">
+                ¿Cuánto vale mi casa? Ver videos
+              </Link>
+            </p>
           </div>
           <div className="caja-propietarios">
             <p className="sobretitulo">Tasación sin costo</p>
