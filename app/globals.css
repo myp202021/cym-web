@@ -699,3 +699,98 @@ div.servicios p { margin: 0; font-size: .95rem; }
   .b3d-cifras span { font-size: .62rem; }
   .b3d-formula p { font-size: .74rem; }
 }
+
+/* ===== Barrio 3D versión CyM (/vender-casa-sector-oriente-cym): misma página, identidad de cympropiedades.cl ===== */
+.b3d-cym .b3d { --b3d-fondo: #fff; --b3d-panel: #fff; --b3d-verde: var(--acento); --b3d-rojo: var(--acento-osc); --b3d-linea: rgba(17,17,17,.05); --b3d-texto: var(--texto); --b3d-tenue: var(--suave);
+  font-family: inherit; color: var(--texto); }
+.b3d-cym .b3d .mono { font-family: inherit; letter-spacing: .1em; font-weight: 700; }
+.b3d-cym .b3d h1, .b3d-cym .b3d h2, .b3d-cym .b3d h3 { font-family: inherit; color: var(--negro); }
+.b3d-cym .b3d h1 { font-weight: 800; }
+.b3d-cym .b3d b, .b3d-cym .b3d strong { color: var(--negro); }
+.b3d-cym .b3d .verde, .b3d-cym .b3d b.verde { color: var(--acento); }
+.b3d-cym .b3d .rojo, .b3d-cym .b3d b.rojo { color: var(--acento-osc); }
+.b3d-cym .b3d .rojo-suave { color: var(--acento); }
+.b3d-cym .b3d a { color: var(--acento); }
+.b3d-cym .b3d .migas, .b3d-cym .b3d .migas a { color: var(--suave); }
+.b3d-cym .b3d-sec { border-top: 0; }
+.b3d-cym .b3d-sec { background: #fff; }
+.b3d-cym .b3d { font-variant-numeric: lining-nums; }
+.b3d-cym .b3d-sec.b3d-rejilla { background: var(--gris); }
+.b3d-cym .b3d-rejilla::before { display: none; }
+.b3d-cym .b3d-tag { color: var(--acento); font-weight: 700; letter-spacing: .12em; }
+.b3d-cym .b3d-tag .punto { display: none; }
+/* Hero: negro con línea roja inferior, como las portadas del sitio */
+.b3d-cym .b3d-hero { background: #111; border-bottom: 4px solid var(--acento); }
+.b3d-cym .b3d-hero::before { background: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 64px 64px, linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 64px 64px; }
+.b3d-cym .b3d-hero::after { background: radial-gradient(ellipse at 75% 60%, rgba(235,61,96,.16), transparent 55%), linear-gradient(180deg, #111 10%, transparent 45%, rgba(17,17,17,.6)); }
+.b3d-cym .b3d-hero h1 { color: #fff; }
+.b3d-cym .b3d-hero .verde { color: var(--acento); }
+.b3d-cym .b3d-hero .b3d-bajada { color: #ddd; }
+.b3d-cym .b3d-hero .b3d-cifras b { color: #fff; }
+.b3d-cym .b3d-hero .b3d-cifras span, .b3d-cym .b3d-hero .b3d-formula .tenue { color: #aaa; }
+.b3d-cym .b3d-hero .b3d-formula p { color: #eee; }
+.b3d-cym .b3d-hero .b3d-formula { border-color: rgba(255,255,255,.18); }
+.b3d-cym .b3d-hero .b3d-barra-leyenda span:last-child { color: #ccc; }
+.b3d-cym .b3d-hero .migas, .b3d-cym .b3d > .migas { color: var(--suave); }
+.b3d-cym .b3d-cifras b { font-family: inherit; font-weight: 800; color: var(--acento); }
+/* Botones como el sitio: rectángulo redondeado 8px, sin brillo */
+.b3d-cym .btn-b3d { background: var(--acento); border-color: var(--acento); color: #fff !important; border-radius: 8px; box-shadow: none; }
+.b3d-cym .btn-b3d:hover { background: var(--acento-osc); border-color: var(--acento-osc); box-shadow: none; }
+.b3d-cym .btn-b3d-borde { background: transparent; color: #fff !important; border-color: #fff; }
+.b3d-cym .btn-b3d-borde:hover { background: #fff; color: var(--negro) !important; }
+.b3d-cym .b3d .btn-wa { background: var(--wa); color: #fff; border-radius: 8px; box-shadow: none; }
+.b3d-cym .b3d .btn-wa:hover { background: #1eb457; }
+.b3d-cym .b3d-barra { background: #3a3a3a; }
+.b3d-cym .b3d-barra span { background: var(--acento); box-shadow: none; }
+/* Reels: tarjeta blanca con borde suave */
+.b3d-cym .reel-marco { border: 1px solid var(--borde); box-shadow: 0 14px 40px rgba(0,0,0,.18); border-radius: 14px; }
+.b3d-cym .b3d-hero .reel-marco { border-color: #333; }
+.b3d-cym .reel-play-icono { background: var(--acento); color: #fff; box-shadow: 0 6px 20px rgba(235,61,96,.5); }
+.b3d-cym .reel figcaption .mono { color: var(--acento); }
+.b3d-cym .b3d-hero .reel figcaption b { color: #fff; }
+.b3d-cym .b3d-resumen { border-left-color: var(--acento); }
+.b3d-cym .b3d-indice a { color: var(--negro); border-color: var(--borde); background: #fff; letter-spacing: .02em; font-weight: 600; }
+.b3d-cym .b3d-indice a:hover { border-color: var(--acento); color: var(--acento); background: #fff; }
+/* Tablas, mapa del valor, tramos, KPI */
+.b3d-cym .b3d-tabla { font-family: inherit; }
+.b3d-cym .b3d-tabla td { color: var(--negro); border-color: var(--borde); }
+.b3d-cym .b3d-tabla th { border-color: #ccc; }
+.b3d-cym .b3d-tabla tr.destacado td { color: var(--acento); }
+.b3d-cym .b3d-mapa li { border: 1px solid rgba(235,61,96, calc(.15 + var(--nivel) * .6)); background: rgba(235,61,96, calc(var(--nivel) * .12)); }
+.b3d-cym .b3d-mapa li b { font-family: inherit; font-weight: 800; color: var(--negro); }
+.b3d-cym .b3d-lista, .b3d-cym .b3d-pasos, .b3d-cym .b3d-lista.mono, .b3d-cym .b3d-pasos.mono { font-family: inherit; color: var(--negro); font-weight: 600; letter-spacing: .01em; }
+.b3d-cym .b3d-lista span, .b3d-cym .b3d-pasos span { color: var(--acento); }
+.b3d-cym .b3d-lista li.rojo, .b3d-cym .b3d-lista li.rojo span { color: var(--acento-osc); }
+.b3d-cym .b3d-kpis > div { background: #fff; border-color: var(--borde); box-shadow: 0 4px 14px rgba(0,0,0,.05); }
+.b3d-cym .b3d-num { font-family: inherit; font-weight: 800; text-shadow: none; }
+.b3d-cym .b3d-num.verde { color: var(--negro); }
+.b3d-cym .b3d-num.rojo { color: var(--acento); }
+.b3d-cym .b3d-tramos li b { color: var(--negro); }
+.b3d-cym .b3d-tramo-barra { background: #e9e6e2; }
+.b3d-cym .b3d-tramo-barra span { background: #bdb7b0; }
+.b3d-cym .b3d-tramos li.destacado, .b3d-cym .b3d-tramos li.destacado b { color: var(--acento); }
+.b3d-cym .b3d-tramos li.destacado .b3d-tramo-barra span { background: var(--acento); box-shadow: none; }
+/* Calculadora y comunas */
+.b3d-cym .calc { background: #fff; border-color: var(--borde); box-shadow: 0 6px 24px rgba(0,0,0,.06); }
+.b3d-cym .calc select, .b3d-cym .calc input { background: #fff; color: var(--negro); border-color: #ccc; }
+.b3d-cym .calc select:focus, .b3d-cym .calc input:focus { outline-color: var(--acento); }
+.b3d-cym .calc-cuenta div { border-color: var(--borde); }
+.b3d-cym .calc-cuenta dd { font-family: inherit; font-weight: 800; color: var(--negro); }
+.b3d-cym .calc-total dd { color: var(--acento); text-shadow: none; }
+.b3d-cym .b3d-comunas article { background: #fff; border-color: var(--borde); border-top: 3px solid var(--acento); }
+.b3d-cym .b3d-comunas h3 a { color: var(--negro); }
+.b3d-cym .b3d .chips li { background: #fff; border-color: #e3e3e3; }
+.b3d-cym .b3d .chips a { color: var(--negro); }
+/* Componentes comunes: vuelven al estilo del sitio */
+.b3d-cym .b3d .seccion { background: #fff; border-top: 0; }
+.b3d-cym .b3d .faq { border-color: var(--borde); }
+.b3d-cym .b3d .faq summary { color: var(--negro); }
+.b3d-cym .b3d .faq summary::after { color: var(--acento); }
+.b3d-cym .b3d .formulario { background: #fff; border-color: var(--borde); }
+.b3d-cym .b3d .formulario label { color: var(--negro); }
+.b3d-cym .b3d .formulario input, .b3d-cym .b3d .formulario select, .b3d-cym .b3d .formulario textarea { background: #fff; color: var(--negro); border-color: #ccc; }
+.b3d-cym .b3d .formulario .btn { background: var(--acento); color: #fff; border-radius: 8px; }
+.b3d-cym .b3d .btn-borde { color: var(--negro); border-color: var(--negro); }
+.b3d-cym .b3d .btn-borde:hover { background: var(--negro); color: #fff; }
+.b3d-cym .b3d .fuentes a { color: #666; }
+.b3d-cym .b3d h2::after { background: var(--acento) !important; box-shadow: none; }
