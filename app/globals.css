@@ -794,3 +794,16 @@ div.servicios p { margin: 0; font-size: .95rem; }
 .b3d-cym .b3d .btn-borde:hover { background: var(--negro); color: #fff; }
 .b3d-cym .b3d .fuentes a { color: #666; }
 .b3d-cym .b3d h2::after { background: var(--acento) !important; box-shadow: none; }
+
+/* Barrio 3D: celular sin desbordes (calculadora y columnas de grilla) */
+.b3d-hero-grid > *, .b3d-dos > *, .b3d-reels > *, .calc-campos > *, .b3d-kpis > *, .b3d-comunas > * { min-width: 0; }
+.calc { min-width: 0; max-width: 100%; box-sizing: border-box; }
+.calc select, .calc input { width: 100%; min-width: 0; box-sizing: border-box; }
+.calc-cuenta div { flex-wrap: wrap; min-width: 0; }
+.calc-cuenta dt { min-width: 0; flex: 1 1 12em; overflow-wrap: anywhere; }
+.calc-cuenta dd { flex: 0 0 auto; margin-left: auto; font-size: clamp(1.05rem, 4.6vw, 1.25rem); }
+.calc-total dd { font-size: clamp(1.3rem, 6vw, 1.7rem); }
+@media (max-width: 520px) {
+  .calc { padding: 16px; }
+  .calc-cuenta dt { font-size: .66rem; }
+}
