@@ -29,14 +29,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = (await params).slug
   const pg = pagina(slug)
-  if (pg) return { title: pg.title, description: pg.description, alternates: { canonical: `/${pg.slug}` }, openGraph: { title: pg.title, description: pg.description, url: `/${pg.slug}`, type: 'article' } }
+  if (pg) return { title: pg.title, description: pg.description, alternates: { canonical: `/${pg.slug}` }, openGraph: { title: pg.title, description: pg.description, url: `/${pg.slug}`, type: 'article', images: ['/og-cym.png'] } }
   const c = buscar(slug)
   if (!c) return {}
   return {
     title: c.title,
     description: c.description,
     alternates: { canonical: `/${c.slug}` },
-    openGraph: { title: c.title, description: c.description, url: `/${c.slug}`, type: 'website' },
+    openGraph: { title: c.title, description: c.description, url: `/${c.slug}`, type: 'website', images: ['/og-cym.png'] },
   }
 }
 

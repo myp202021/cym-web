@@ -7,9 +7,9 @@ import Link from 'next/link'
 import { mensajeWeb } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'Vende tu propiedad en el sector oriente — tasación y estrategia | CyM',
+  title: 'Vende tu propiedad en el sector oriente | CyM Propiedades',
   description:
-    'Vende tu casa o departamento en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes o La Reina con un proceso de venta basado en información de mercado.',
+    'Vende tu casa o departamento en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes o La Reina con tasación sin costo y datos reales de mercado.',
   alternates: { canonical: '/vende-tu-propiedad' },
 }
 

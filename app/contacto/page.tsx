@@ -8,7 +8,7 @@ import SitioOficial from '@/components/SitioOficial'
 
 export const metadata = {
   title: 'Contacto | CyM Propiedades',
-  description: 'Contacta a CyM Propiedades por WhatsApp, teléfono +56 9 3401 8822 o formulario. Oficina en Av. La Dehesa 1844, Lo Barnechea.',
+  description: 'Contacta a CyM Propiedades por WhatsApp, al teléfono +56 9 3401 8822 o con el formulario. Oficina en Av. La Dehesa 1844, of. 313, Lo Barnechea.',
   alternates: { canonical: '/contacto' },
 }
 

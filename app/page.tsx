@@ -17,8 +17,8 @@ import { FONDOS as FOTOS } from '@/components/FondoHero'
 import SitioOficial from '@/components/SitioOficial'
 
 export const metadata = {
-  title: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades',
-  description: DESCRIPCION,
+  title: 'Casas en venta en Vitacura y La Dehesa | CyM Propiedades',
+  description: 'Corredora de casas en Vitacura, La Dehesa y San Carlos de Apoquindo: 12 años, más de 100.000 compradores y tasación sin costo. Mira las propiedades.',
   alternates: { canonical: '/' },
 }
 
@@ -54,13 +54,13 @@ export default function Home() {
         <div className="contenedor hero-grid">
           <div>
             <p className="sobretitulo">CyM Propiedades · Sector oriente</p>
-            <h1>Líderes en venta en el sector oriente</h1>
+            <h1>Venta de casas en el sector oriente</h1>
             <p className="comunas-hero">
               {ZONAS.map((z) => (
                 <Link key={z.slug} href={`/${z.slug}`}>{z.nombre}</Link>
               ))}
             </p>
-            <p className="bajada">Compra, vende o tasa sin costo tu propiedad con CyM.</p>
+            <p className="bajada">12 años · +100.000 compradores · tasación sin costo. Compra, vende o tasa tu propiedad con CyM.</p>
             <div className="acciones">
               <Link href="/vende-tu-propiedad" className="btn">
                 Quiero vender

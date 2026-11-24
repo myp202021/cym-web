@@ -17,8 +17,8 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const g = guia((await params).slug)
   if (!g) return {}
-  const titulo = `${g.titulo} | CyM Propiedades`
-  return { title: titulo, description: g.descripcion, alternates: { canonical: `/guias/${g.slug}` }, openGraph: { title: titulo, description: g.descripcion, url: `/guias/${g.slug}`, type: 'article' } }
+  const titulo = g.tituloSeo || `${g.titulo} | CyM`
+  return { title: titulo, description: g.descripcion, alternates: { canonical: `/guias/${g.slug}` }, openGraph: { title: titulo, description: g.descripcion, url: `/guias/${g.slug}`, type: 'article', images: ['/og-cym.png'] } }
 }
 
 export default async function PaginaGuia({ params }: Props) {

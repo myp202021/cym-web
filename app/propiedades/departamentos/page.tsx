@@ -13,7 +13,7 @@ import { zona as buscarZona } from '@/lib/zonas'
 
 // Departamentos: categoría aparte, como una zona más (Christopher, 10 nov 2026). Los atiende Caro Paoletti.
 export const metadata: Metadata = {
-  title: 'Departamentos en venta en el sector oriente | CyM Propiedades',
+  title: 'Departamentos en venta en el sector oriente | CyM',
   description: 'Departamentos en venta en el sector oriente de Santiago, con fotos, superficie y precio en UF. Cotiza por WhatsApp con el equipo de Departamentos de CyM.',
   alternates: { canonical: '/propiedades/departamentos' },
 }

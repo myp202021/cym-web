@@ -28,8 +28,8 @@ function segmentos() {
 const TITULO = 'Datos del mercado de casas y departamentos en el sector oriente'
 
 export const metadata: Metadata = {
-  title: 'Precios de casas y departamentos en el sector oriente (datos CyM) | CyM Propiedades',
-  description: `Precio pedido mediano en UF de casas y departamentos en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes y La Reina, según los avisos publicados por CyM Propiedades al ${fecha(ACTUALIZADO)}.`,
+  title: 'Precios de casas en el sector oriente | Datos CyM',
+  description: `Precio pedido mediano en UF de casas y departamentos en Vitacura, La Dehesa, San Carlos, Las Condes y La Reina, según avisos de CyM al ${fecha(ACTUALIZADO)}.`,
   alternates: { canonical: '/datos-mercado-oriente' },
 }
 

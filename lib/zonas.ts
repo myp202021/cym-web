@@ -55,7 +55,7 @@ export const ZONAS: Zona[] = [
     comuna: 'Lo Barnechea',
     title: 'Casas en venta en La Dehesa, Lo Barnechea | CyM Propiedades',
     description:
-      'Casas y departamentos en venta en La Dehesa (Lo Barnechea), muchas en condominio. Fotos, precio en UF y corredor local de CyM por WhatsApp.',
+      'Casas y departamentos en venta en La Dehesa (Lo Barnechea), muchas en condominio. Fotos, precio en UF y un corredor local de CyM por WhatsApp.',
     h1: 'Casas en venta en La Dehesa, Lo Barnechea',
     bajada: 'Nuestra oficina está en Av. La Dehesa: conocemos el sector desde adentro.',
     intro: [
@@ -112,9 +112,9 @@ export const ZONAS: Zona[] = [
     slug: 'las-condes',
     nombre: 'Las Condes',
     comuna: 'Las Condes',
-    title: 'Casas y departamentos en venta en Las Condes | CyM Propiedades',
+    title: 'Casas y departamentos en venta en Las Condes | CyM',
     description:
-      'Propiedades en venta en Las Condes: casas y departamentos con fotos y precio en UF. Cotiza por WhatsApp con CyM.',
+      'Casas y departamentos en venta en Las Condes y San Carlos de Apoquindo, con fotos, superficie y precio en UF. Cotiza por WhatsApp con CyM Propiedades.',
     h1: 'Casas y departamentos en venta en Las Condes',
     bajada: 'Casas y departamentos en Las Condes, con un corredor a cargo de la comuna.',
     intro: [
@@ -146,7 +146,7 @@ export const ZONAS: Zona[] = [
     comuna: 'La Reina',
     title: 'Casas en venta en La Reina | CyM Propiedades',
     description:
-      'Casas en venta en La Reina y La Reina Alta: terrenos amplios, fotos y precio en UF. Cotiza por WhatsApp con un corredor de CyM Propiedades.',
+      'Casas en venta en La Reina y La Reina Alta: terrenos amplios, fotos y precio en UF. Cotiza por WhatsApp con un corredor de CyM Propiedades hoy.',
     h1: 'Casas en venta en La Reina',
     bajada: 'Casas de barrio con terrenos amplios, cerca de la precordillera.',
     intro: [

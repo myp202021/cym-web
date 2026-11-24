@@ -8,7 +8,7 @@ import { SITIO, DESCRIPCION } from '@/lib/sitio'
 
 export const metadata = {
   title: 'Quiénes somos | CyM Propiedades',
-  description: DESCRIPCION,
+  description: 'Quiénes somos: CyM Propiedades, corredora de casas del sector oriente con 12 años en el mercado, más de 100.000 compradores y tasación sin costo.',
   alternates: { canonical: '/quienes-somos' },
 }
 

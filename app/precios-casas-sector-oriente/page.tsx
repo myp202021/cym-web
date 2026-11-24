@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: m.title,
   description: m.description,
   alternates: { canonical: '/precios-casas-sector-oriente' },
-  openGraph: { title: m.title, description: m.description, url: '/precios-casas-sector-oriente', type: 'article' },
+  openGraph: { title: m.title, description: m.description, url: '/precios-casas-sector-oriente', type: 'article', images: ['/og-cym.png'] },
 }
 
 export default function Pagina() {
