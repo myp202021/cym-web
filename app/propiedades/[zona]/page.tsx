@@ -9,14 +9,15 @@ import BotonWhatsApp from '@/components/BotonWhatsApp'
 import FormularioContacto from '@/components/FormularioContacto'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
-import { ZONAS, zona as buscarZona } from '@/lib/zonas'
-import { porZona, resumen, formatoUF, titulo } from '@/lib/propiedades'
+import { porZona, resumen, formatoUF, titulo, comunasCatalogo, zonaOComuna as buscarZona } from '@/lib/propiedades'
+import { ZONAS } from '@/lib/zonas'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 
 type Props = { params: Promise<{ zona: string }> }
 
 export function generateStaticParams() {
-  return ZONAS.map((z) => ({ zona: z.slug }))
+  const s = new Set([...ZONAS.map((z) => z.slug), ...comunasCatalogo().map((c) => c.slug)])
+  return [...s].filter((x) => x !== 'departamentos').map((zona) => ({ zona }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -45,7 +46,7 @@ export default async function PaginaZona({ params }: Props) {
       </nav>
 
       <section className="hero hero-zona">
-        <FondoHero src={FONDOS[z.slug as keyof typeof FONDOS]} />
+        <FondoHero src={FONDOS[z.slug as keyof typeof FONDOS] || FONDOS.home} />
         <div className="contenedor">
           <p className="sobretitulo">
             {z.nombre === z.comuna ? 'Comuna de' : 'Sector de'} {z.nombre === z.comuna ? z.comuna : `${z.nombre}, ${z.comuna}`}
@@ -92,6 +93,7 @@ export default async function PaginaZona({ params }: Props) {
         </div>
       </section>
 
+      {z.intro.length > 0 && (
       <section className="seccion gris">
         <div className="contenedor dos-col">
           <div>
@@ -121,10 +123,12 @@ export default async function PaginaZona({ params }: Props) {
         </div>
       </section>
 
+      )}
+
       <section className="seccion">
         <div className="contenedor dos-col">
           <div>
-            <h2>Microzonas de {z.nombre}</h2>
+            {z.microzonas.length > 0 && <h2>Microzonas de {z.nombre}</h2>}
             <ul className="chips">
               {z.microzonas.map((m) => (
                 <li key={m}>{m}</li>
