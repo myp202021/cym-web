@@ -18,7 +18,7 @@ export default function MercadoComuna({ zona, nombre, tipo }: { zona: string; no
           {plural[0].toUpperCase() + plural.slice(1)} en venta en {nombre}: lo que muestran los avisos de CyM
         </h2>
         <p>
-          Al {fecha(ACTUALIZADO)}, CyM Propiedades tiene <strong>{s.n} {plural} en venta</strong> publicados en {nombre}. El precio pedido mediano es{' '}
+          Al {fecha(ACTUALIZADO)}, CyM Propiedades tiene <strong>{s.n} {plural} en venta</strong> {tipo === 'Casa' ? 'publicadas' : 'publicados'} en {nombre}. El precio pedido mediano es{' '}
           <strong>{formatoUF(s.mediana)}</strong> y la mitad central de los avisos va de {formatoUF(s.p25)} a {formatoUF(s.p75)}.
           {s.m2 ? ` La superficie construida típica es de ${s.m2} m²` : ''}
           {s.m2 && s.terreno && tipo === 'Casa' ? `, sobre un terreno de ${s.terreno} m²` : ''}
