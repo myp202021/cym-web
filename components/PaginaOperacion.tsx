@@ -124,7 +124,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
         <div className="contenedor angosto">
           <h2>{propietario ? 'Pide tu tasación sin costo' : 'Cuéntanos qué buscas'}</h2>
           <p className="intro-seccion">Déjanos tus datos y el equipo de CyM{c ? ` en ${c.nombre}` : ''} te contactará por WhatsApp.</p>
-          <FormularioContacto origen={`pagina_${p.slug}`} zona={c?.nombre} propietario={propietario} />
+          <FormularioContacto origen={`pagina_${p.slug}`} zona={c?.nombre} propietario={propietario} {...(p.tipo === 'tasacion' || p.tipo === 'vender-departamento' ? { corto: true, boton: 'Pedir tasación sin costo' } : {})} />
         </div>
       </section>
 
