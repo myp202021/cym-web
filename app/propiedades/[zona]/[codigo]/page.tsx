@@ -10,8 +10,7 @@ import BotonWhatsApp from '@/components/BotonWhatsApp'
 import FormularioContacto from '@/components/FormularioContacto'
 import TarjetaPropiedad from '@/components/TarjetaPropiedad'
 import JsonLd from '@/components/JsonLd'
-import { zona as buscarZona } from '@/lib/zonas'
-import { PROPIEDADES, porCodigo, porZona, titulo, uf, zonaAgente, numeroPropiedad } from '@/lib/propiedades'
+import { PROPIEDADES, porCodigo, porZona, titulo, uf, zonaAgente, numeroPropiedad, sinOptimizar, zonaOComuna as buscarZona } from '@/lib/propiedades'
 import { SITIO, mensajeWeb } from '@/lib/sitio'
 
 type Props = { params: Promise<{ zona: string; codigo: string }> }
@@ -77,7 +76,7 @@ export default async function PaginaPropiedad({ params }: Props) {
             <div className="galeria">
               {p.fotos.slice(0, 7).map((f, i) => (
                 <div key={f} className={i === 0 ? 'foto principal' : 'foto'}>
-                  <Image src={f} alt={`${titulo(p)}, foto ${i + 1}`} fill sizes={i === 0 ? '(max-width: 900px) 100vw, 760px' : '250px'} priority={i === 0} />
+                  <Image src={f} alt={`${titulo(p)}, foto ${i + 1}`} fill sizes={i === 0 ? '(max-width: 900px) 100vw, 760px' : '250px'} priority={i === 0} unoptimized={sinOptimizar(p)} />
                 </div>
               ))}
             </div>
@@ -171,7 +170,7 @@ export default async function PaginaPropiedad({ params }: Props) {
           '@context': 'https://schema.org',
           '@graph': [
             {
-              '@type': p.tipo === 'Casa' ? 'SingleFamilyResidence' : 'Apartment',
+              '@type': p.tipo === 'Casa' ? 'SingleFamilyResidence' : p.tipo === 'Departamento' ? 'Apartment' : 'Place',
               '@id': `${url}#inmueble`,
               name: titulo(p),
               url,

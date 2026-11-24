@@ -1,0 +1,38 @@
+name: Catálogo CyM (todas las propiedades de cympropiedades.cl)
+on:
+  # 24 nov 2026: todos los días 06:30 Chile; también se puede lanzar a mano
+  schedule:
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: catalogo-cym
+jobs:
+  catalogo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Bajar el listado público y las fichas (sin ocultas &ve=si)
+        run: python3 scripts/catalogo-completo.py
+      - name: Compilar (si falla, no se publica)
+        run: npm run build
+      - name: Publicar
+        run: |
+          git config user.name "M&P bot"
+          git config user.email "bot@mulleryperez.cl"
+          git add data/catalogo.json
+          git diff --cached --quiet -- data/catalogo.json && { echo "Sin cambios"; exit 0; }
+          # solo la fecha cambió → no publicar
+          if git diff --cached -U0 data/catalogo.json | grep '^[+-]"' | grep -v '"actualizado"' | grep -q .; then :; else echo "Solo cambió la fecha"; exit 0; fi
+          git commit -m "Catálogo CyM: $(python3 -c "import json;print(len(json.load(open('data/catalogo.json'))['propiedades']))") propiedades"
+          git push
+          echo "publicado=1" >> $GITHUB_ENV
+      - name: Avisar a buscadores (espera el despliegue)
+        if: env.publicado == '1'
+        run: |
+          sleep 240
+          npm run indexnow

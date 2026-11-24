@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import BotonWhatsApp from './BotonWhatsApp'
-import { type Propiedad, titulo, zonaAgente, numeroPropiedad } from '@/lib/propiedades'
+import { type Propiedad, titulo, zonaAgente, numeroPropiedad, sinOptimizar } from '@/lib/propiedades'
 import { mensajeWeb } from '@/lib/sitio'
 
 export default function TarjetaPropiedad({ p, nombreZona }: { p: Propiedad; nombreZona: string }) {
@@ -10,7 +10,7 @@ export default function TarjetaPropiedad({ p, nombreZona }: { p: Propiedad; nomb
   return (
     <article className="tarjeta">
       <Link href={`/propiedades/${p.zona}/${p.codigo}`} className="tarjeta-foto">
-        <Image src={p.fotos[0]} alt={`${p.tipo} en venta en ${p.sector || p.comuna}, código ${p.codigo}`} fill sizes="(max-width: 700px) 100vw, 380px" />
+        <Image src={p.fotos[0]} alt={`${p.tipo} en venta en ${p.sector || p.comuna}, código ${p.codigo}`} fill sizes="(max-width: 700px) 100vw, 380px" unoptimized={sinOptimizar(p)} loading="lazy" />
         <span className="etiqueta">{p.operacion}</span>
       </Link>
       <div className="tarjeta-texto">

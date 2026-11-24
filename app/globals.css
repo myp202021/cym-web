@@ -807,3 +807,11 @@ div.servicios p { margin: 0; font-size: .95rem; }
   .calc { padding: 16px; }
   .calc-cuenta dt { font-size: .66rem; }
 }
+
+/* Catálogo por comuna (/propiedades) */
+.bloque-comuna { margin-top: 2.2rem; scroll-margin-top: 90px; }
+.bloque-comuna h2 a { color: inherit; text-decoration: none; }
+.lista-propiedades { list-style: none; padding: 0; margin: .6rem 0 0; columns: 2 420px; column-gap: 2rem; }
+.lista-propiedades li { break-inside: avoid; padding: .45rem 0; border-bottom: 1px solid #eee; font-size: .95rem; }
+.lista-propiedades li span { display: block; color: #6b7280; font-size: .85rem; }
+.chips a { color: inherit; text-decoration: none; }

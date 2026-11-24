@@ -90,6 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div>
               <b>Propiedades</b>
+              <Link href="/propiedades">Todas las propiedades por comuna</Link>
               {ZONAS.map((z) => (
                 <Link key={z.slug} href={`/propiedades/${z.slug}`}>
                   Propiedades en {z.nombre}

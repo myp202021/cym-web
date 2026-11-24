@@ -5,7 +5,7 @@ Next.js en Vercel. Cada cambio en `main` se publica solo: trabaja en una rama, r
 ## Dónde se cambia cada cosa
 - Texto único de CyM (portada, Quiénes somos, pie, schema, llms.txt): `DESCRIPCION` en `lib/sitio.ts`.
 - Zonas y su orden: `lib/zonas.ts`.
-- Propiedades: `data/propiedades.json`.
+- Propiedades en campaña: `data/propiedades.json`. Catálogo completo (todas las de cympropiedades.cl, sin las ocultas `&ve=si`, ordenadas por comuna en /propiedades): `data/catalogo.json`, lo actualiza cada día `.github/workflows/catalogo-cym.yml` con `scripts/catalogo-completo.py`.
 - Guías: `data/guias.json`.
 - Teléfono, WhatsApp, dirección y medición: `lib/sitio.ts`.
 
