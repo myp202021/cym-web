@@ -10,12 +10,15 @@ export default function FormularioContacto({
   zona = '',
   codigo = '',
   propietario = false,
+  corto = false,
   boton = 'Enviar por WhatsApp',
 }: {
   origen: string
   zona?: string
   codigo?: string
   propietario?: boolean
+  // Formulario de 3 datos (dirección, m², teléfono) para tasación y departamentos: manual Google e IA, semana 2.
+  corto?: boolean
   boton?: string
 }) {
   const [estado, setEstado] = useState<'listo' | 'ok'>('listo')
@@ -54,6 +57,30 @@ export default function FormularioContacto({
         <b>¡Gracias! Te abrimos WhatsApp con tus datos.</b>
         <p>Envía el mensaje y un corredor de CyM te contactará a la brevedad.</p>
       </div>
+    )
+
+  if (corto)
+    return (
+      <form className="formulario" onSubmit={enviar}>
+        <input type="hidden" name="operacion" value="Tasar mi propiedad" />
+        <input type="hidden" name="zona" value={zona} />
+        <div className="fila">
+          <label>
+            Dirección*
+            <input name="direccion" required maxLength={120} autoComplete="street-address" />
+          </label>
+          <label>
+            Superficie (m²)*
+            <input name="construida" required maxLength={8} inputMode="numeric" />
+          </label>
+        </div>
+        <label>
+          Teléfono*
+          <input name="telefono" required type="tel" maxLength={20} placeholder="+56 9" autoComplete="tel" />
+        </label>
+        <input name="empresa" className="oculto" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+        <button className="btn">{boton}</button>
+      </form>
     )
 
   return (
