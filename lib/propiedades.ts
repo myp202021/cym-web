@@ -119,7 +119,7 @@ export function zonaOComuna(slug: string): Zona | undefined {
     nombre: n,
     comuna: n,
     title: `Propiedades en venta en ${n} | CyM Propiedades`,
-    description: `Casas y departamentos en venta en ${n} publicados por CyM Propiedades, con fotos, superficie y precio en UF. Cotiza por WhatsApp.`,
+    description: `Casas y departamentos en venta en ${n} publicados por CyM Propiedades, con fotos, superficie, dormitorios y precio en UF. Cotiza por WhatsApp.`,
     h1: `Propiedades en venta en ${n}`,
     bajada: 'Propiedades publicadas por CyM, con la ficha oficial de cada una.',
     intro: [],

@@ -6,7 +6,7 @@ import Faq from '@/components/Faq'
 import { mensajeWeb } from '@/lib/sitio'
 
 export const metadata = {
-  title: '¿Cuánto vale tu casa? Tasación de propiedades en el sector oriente | CyM',
+  title: 'Tasación de casas en el sector oriente | CyM Propiedades',
   description:
     'Tasación comercial de casas y departamentos en Vitacura, La Dehesa (Lo Barnechea), San Carlos de Apoquindo, Las Condes y La Reina. Sin costo y sin compromiso.',
   alternates: { canonical: '/tasacion-propiedades' },

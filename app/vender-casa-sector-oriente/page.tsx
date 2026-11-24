@@ -30,9 +30,9 @@ import {
 } from '@/lib/barrio3d'
 
 const SLUG = 'vender-casa-sector-oriente'
-const TITULO = 'Vender casa en el sector oriente: cuánto vale y cómo venderla | CyM'
+const TITULO = 'Vender casa en el sector oriente: precio y plazos | CyM'
 const DESCRIPCION =
-  'Cuánto vale tu casa en Vitacura, La Dehesa, San Carlos de Apoquindo, Las Condes o La Reina: terreno, microzona, regularización y precio correcto, explicado en 10 videos 3D.'
+  'Cuánto vale tu casa en el sector oriente: terreno, microzona, regularización y precio correcto, explicado en 10 videos 3D por CyM Propiedades.'
 const H1 = 'Vender tu casa en el sector oriente, con el precio correcto'
 
 export const metadata: Metadata = {

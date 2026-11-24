@@ -7,8 +7,8 @@ import { GUIAS } from '@/lib/guias'
 import { SITIO } from '@/lib/sitio'
 
 export const metadata = {
-  title: 'Guías para comprar y vender casas en el sector oriente | CyM Propiedades',
-  description: 'Plan Regulador de Vitacura, precio del m² por sector y casas para remodelar: guías con fuentes de CyM Propiedades.',
+  title: 'Guías para comprar y vender casa en el sector oriente | CyM',
+  description: 'Plan Regulador de Vitacura, precio del m² por sector, casas para remodelar y barrios para familias: guías con fuentes para comprar o vender casa.',
   alternates: { canonical: '/guias' },
 }
 

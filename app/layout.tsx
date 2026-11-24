@@ -14,7 +14,7 @@ const raleway = Raleway({ subsets: ['latin'], weight: ['400', '500', '700', '800
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITIO.url),
-  title: { default: 'Casas en venta en Vitacura, La Dehesa y San Carlos de Apoquindo | CyM Propiedades', template: '%s' },
+  title: { default: 'Casas en venta en Vitacura y La Dehesa | CyM Propiedades', template: '%s' },
   description: DESCRIPCION,
   applicationName: SITIO.nombre,
   openGraph: { type: 'website', locale: 'es_CL', siteName: SITIO.nombre, images: ['/og-cym.png'] },
