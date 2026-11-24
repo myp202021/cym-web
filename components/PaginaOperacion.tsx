@@ -73,7 +73,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
                 </thead>
                 <tbody>
                   {CARTERA.comunas.filter((x) => x.venta).map((x) => (
-                    <tr key={x.slug}><td><Link href={`/corredoras-de-propiedades-${x.slug}`}>{x.nombre}</Link></td><td>{x.venta}</td><td>{x.casas}</td><td>{x.departamentos}</td></tr>
+                    <tr key={x.slug}><td><Link href={`/${x.slug}#elegir-corredora`}>{x.nombre}</Link></td><td>{x.venta}</td><td>{x.casas}</td><td>{x.departamentos}</td></tr>
                   ))}
                 </tbody>
               </table>

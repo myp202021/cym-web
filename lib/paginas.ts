@@ -20,9 +20,18 @@ export type Pagina = {
 
 const DIR = path.join(process.cwd(), 'data', 'paginas')
 
-export const PAGINAS: Pagina[] = fs.existsSync(DIR)
+const TODAS: Pagina[] = fs.existsSync(DIR)
   ? fs.readdirSync(DIR).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8')) as Pagina)
   : []
+
+// 24 nov 2026 (plan Google e IA, semana 2): «Mejores corredoras en {comuna}» competía con /{comuna} por
+// «corredora de propiedades {comuna}» (Search Console: las dos salen para la misma búsqueda). Su contenido
+// pasa a la página de la comuna y la URL antigua redirige con 301 (next.config.ts). Se mantiene la del sector oriente.
+const fusionada = (p: Pagina) => p.tipo === 'corredoras' && !!p.comuna
+export const CORREDORAS_FUSIONADAS = TODAS.filter(fusionada)
+export const corredorasDe = (comuna: string) => CORREDORAS_FUSIONADAS.find((p) => p.comuna === comuna)
+
+export const PAGINAS: Pagina[] = TODAS.filter((p) => !fusionada(p))
 
 export const pagina = (slug: string) => PAGINAS.find((p) => p.slug === slug)
 export const paginasDe = (comuna: string) => PAGINAS.filter((p) => p.comuna === comuna)

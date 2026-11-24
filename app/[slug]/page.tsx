@@ -11,7 +11,7 @@ import Alianzas from '@/components/Alianzas'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import { COMUNAS, comuna as buscar } from '@/lib/comunas'
-import { PAGINAS, pagina, paginasDe, TIPOS } from '@/lib/paginas'
+import { PAGINAS, pagina, paginasDe, TIPOS, corredorasDe } from '@/lib/paginas'
 import PaginaOperacion from '@/components/PaginaOperacion'
 import CarteraCyM from '@/components/CarteraCyM'
 import { porZona } from '@/lib/propiedades'
@@ -47,6 +47,8 @@ export default async function PaginaRaiz({ params }: Props) {
   const c = buscar(slug)
   if (!c) notFound()
   const relacionadas = paginasDe(c.slug)
+  const elegir = corredorasDe(c.slug)
+  const faqs = [...c.faq, ...(elegir?.faq ?? []).filter((f) => !c.faq.some((x) => x.q === f.q))]
   const url = `${SITIO.url}/${c.slug}`
   const numero = WHATSAPP_ZONA[c.nombre]
   const propiedades = porZona(c.slug).slice(0, 6)
@@ -244,7 +246,49 @@ export default async function PaginaRaiz({ params }: Props) {
         </div>
       </section>
 
-      <Faq items={c.faq} titulo={`Preguntas frecuentes: corredora de propiedades en ${c.nombre}`} />
+      {elegir && (
+        <>
+          {elegir.secciones.map((s, i) => (
+            <section key={s.h2} id={i === 0 ? 'elegir-corredora' : undefined} className={`seccion${i % 2 ? ' gris' : ''}`}>
+              <div className="contenedor angosto articulo">
+                {i === 0 ? <p className="sobretitulo">Mejores corredoras de propiedades en {c.nombre}: cómo elegir</p> : null}
+                <h2>{s.h2}</h2>
+                {s.parrafos.map((t) => (
+                  <p key={t}>{t}</p>
+                ))}
+                {s.lista && s.lista.length > 0 && (
+                  <ul className="checks">
+                    {s.lista.map((t) => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </section>
+          ))}
+          {elegir.tabla && elegir.tabla.filas.length > 0 && (
+            <section className="seccion">
+              <div className="contenedor angosto">
+                <h2>{elegir.tabla.titulo}</h2>
+                <div style={{ overflowX: 'auto' }}>
+                  <table className="tabla-ranking">
+                    <thead>
+                      <tr>{elegir.tabla.columnas.map((col) => <th key={col}>{col}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {elegir.tabla.filas.map((f, i) => (
+                        <tr key={i}>{f.map((x, j) => <td key={j}>{x}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+          )}
+        </>
+      )}
+
+      <Faq items={faqs} titulo={`Preguntas frecuentes: corredora de propiedades en ${c.nombre}`} />
 
       <section className="seccion gris" id="contacto">
         <div className="contenedor angosto">
