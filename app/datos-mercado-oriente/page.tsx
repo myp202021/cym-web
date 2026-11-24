@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { PROPIEDADES, ACTUALIZADO, uf, formatoUF, zonaOComuna } from '@/lib/propiedades'
+import { ACTUALIZADO, formatoUF, zonaOComuna } from '@/lib/propiedades'
+import { segmento, MIN_AVISOS } from '@/lib/mercado'
 import { SITIO } from '@/lib/sitio'
 
 // Plan Google e IA, semana 2 (24 nov 2026): un dato propio y fechado que la IA pueda citar.
@@ -9,37 +10,16 @@ import { SITIO } from '@/lib/sitio'
 // Sin UF/m²: publicarlo lo decide Alejandro.
 
 const ZONAS = ['vitacura', 'la-dehesa', 'san-carlos-de-apoquindo', 'las-condes', 'la-reina']
-const TIPOS = ['Casa', 'Departamento']
-const MIN = 5
-
-const cuantil = (xs: number[], q: number) => {
-  const s = [...xs].sort((a, b) => a - b)
-  const i = (s.length - 1) * q, lo = Math.floor(i), hi = Math.ceil(i)
-  return s[lo] + (s[hi] - s[lo]) * (i - lo)
-}
-const redondeo = (n: number) => Math.round(n / 100) * 100
+const TIPOS = ['Casa', 'Departamento'] as const
+const MIN = MIN_AVISOS
 const fecha = (iso: string) => iso.split('-').reverse().join('-')
 
 function segmentos() {
   const filas = []
   for (const z of ZONAS) {
     for (const t of TIPOS) {
-      const ps = PROPIEDADES.filter((p) => p.zona === z && p.tipo === t && p.operacion === 'Venta')
-      const precios = ps.map((p) => uf(p.precio)).filter((n) => Number.isFinite(n))
-      if (precios.length < MIN) continue
-      const m2 = ps.map((p) => Number(String(p.m2_construidos || '').replace(/\./g, '').replace(',', '.'))).filter((n) => n > 0)
-      const dorm = ps.map((p) => p.dormitorios || 0).filter((n) => n > 0)
-      filas.push({
-        zona: z,
-        nombre: zonaOComuna(z)?.nombre || z,
-        tipo: t,
-        n: precios.length,
-        mediana: redondeo(cuantil(precios, 0.5)),
-        p25: redondeo(cuantil(precios, 0.25)),
-        p75: redondeo(cuantil(precios, 0.75)),
-        m2: m2.length >= MIN ? Math.round(cuantil(m2, 0.5)) : null,
-        dorm: dorm.length >= MIN ? Math.round(cuantil(dorm, 0.5)) : null,
-      })
+      const s = segmento(z, t)
+      if (s) filas.push({ zona: z, nombre: zonaOComuna(z)?.nombre || z, tipo: t, n: s.n, mediana: s.mediana, p25: s.p25, p75: s.p75, m2: s.m2, dorm: s.dorm })
     }
   }
   return filas

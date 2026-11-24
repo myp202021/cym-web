@@ -9,6 +9,7 @@ import Alianzas from '@/components/Alianzas'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import CarteraCyM from '@/components/CarteraCyM'
+import MercadoComuna from '@/components/MercadoComuna'
 import { CARTERA } from '@/lib/cartera'
 import { COMUNAS } from '@/lib/comunas'
 import { PAGINAS, TIPOS, type Pagina } from '@/lib/paginas'
@@ -62,6 +63,8 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
       </section>
 
       {p.tipo === 'corredoras' && c && <CarteraCyM slug={c.slug} nombre={c.nombre} />}
+      {c && (p.tipo === 'vender-casa' || p.tipo === 'comprar-casa' || p.tipo === 'tasacion') && <MercadoComuna zona={c.slug} nombre={c.nombre} tipo="Casa" />}
+      {c && p.tipo === 'vender-departamento' && <MercadoComuna zona={c.slug} nombre={c.nombre} tipo="Departamento" />}
       {p.tipo === 'corredoras' && !c && (
         <section className="seccion" id="cifras">
           <div className="contenedor angosto">
