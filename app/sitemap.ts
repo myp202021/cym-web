@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...COMUNAS.map((c) => ({ url: `${SITIO.url}/${c.slug}`, lastModified: fechaCartera, changeFrequency: 'weekly' as const, priority: 0.95 })),
     ...PAGINAS.map((p) => ({ url: `${SITIO.url}/${p.slug}`, lastModified: p.tipo === 'corredoras' ? fechaCartera : fecha, changeFrequency: 'monthly' as const, priority: 0.85 })),
     { url: `${SITIO.url}/vender-casa-sector-oriente`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly' as const, priority: 0.95 },
-    ...['ranking-barrios-sector-oriente', 'precios-casas-sector-oriente'].map((r) => ({ url: `${SITIO.url}/${r}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.9 })),
+    ...['ranking-barrios-sector-oriente', 'precios-casas-sector-oriente', 'datos-mercado-oriente'].map((r) => ({ url: `${SITIO.url}/${r}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.9 })),
     { url: `${SITIO.url}/propiedades`, lastModified: fecha, changeFrequency: 'daily' as const, priority: 0.9 },
     ...[...new Set([...ZONAS.map((z) => z.slug), ...comunasCatalogo().map((c) => c.slug)])].map((s) => ({ url: `${SITIO.url}/propiedades/${s}`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: ZONAS.some((z) => z.slug === s) ? 0.9 : 0.75 })),
     { url: `${SITIO.url}/propiedades/departamentos`, lastModified: fecha, changeFrequency: 'weekly' as const, priority: 0.9 },

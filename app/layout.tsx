@@ -107,6 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               ))}
               <Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link>
               <Link href="/precios-casas-sector-oriente">Precios de casas en el sector oriente</Link>
+              <Link href="/datos-mercado-oriente">Datos del mercado oriente</Link>
               <Link href="/vender-casa-sector-oriente">Vender casa en el sector oriente</Link>
               <Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades en el sector oriente</Link>
             </div>
