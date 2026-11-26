@@ -16,6 +16,7 @@ export type Pagina = {
   tabla?: { titulo: string; columnas: string[]; filas: string[][] }
   faq: { q: string; a: string }[]
   fuentes: { titulo: string; url: string }[]
+  fecha?: string // última revisión del contenido (dateModified y sitemap)
 }
 
 const DIR = path.join(process.cwd(), 'data', 'paginas')

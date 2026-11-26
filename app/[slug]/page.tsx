@@ -15,7 +15,7 @@ import { PAGINAS, pagina, paginasDe, TIPOS, corredorasDe } from '@/lib/paginas'
 import PaginaOperacion from '@/components/PaginaOperacion'
 import CarteraCyM from '@/components/CarteraCyM'
 import { porZona } from '@/lib/propiedades'
-import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
+import { SITIO, mensajeWeb, WHATSAPP_ZONA, PERFILES } from '@/lib/sitio'
 import { PROCESO } from '@/app/page'
 
 type Props = { params: Promise<{ slug: string }> }
@@ -362,7 +362,7 @@ export default async function PaginaRaiz({ params }: Props) {
               ],
               knowsAbout: [`Venta de casas en ${c.nombre}`, `Tasación de propiedades en ${c.nombre}`, `Compra de casas en ${c.nombre}`],
               parentOrganization: { '@id': `${SITIO.url}/#cym` },
-              sameAs: [SITIO.sitioOficial, SITIO.instagram],
+              sameAs: PERFILES,
               makesOffer: c.servicios.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: `${s.nombre} en ${c.nombre}`, description: s.texto } })),
             },
             {

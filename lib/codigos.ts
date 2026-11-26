@@ -636,10 +636,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "Vitacura",
     "tipo": "Casa"
   },
-  "4632": {
-    "zona": "Vitacura",
-    "tipo": "Casa"
-  },
   "4639": {
     "zona": "Las Condes",
     "tipo": "Departamento"
@@ -1401,6 +1397,10 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "tipo": "Casa"
   },
   "5342": {
+    "zona": "Las Condes",
+    "tipo": "Casa"
+  },
+  "5343": {
     "zona": "Las Condes",
     "tipo": "Casa"
   },
@@ -3248,12 +3248,12 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "La Dehesa",
     "tipo": "Casa"
   },
-  "6204": {
-    "zona": "La Dehesa",
-    "tipo": "Departamento"
-  },
   "6207": {
     "zona": "La Dehesa",
     "tipo": "Casa"
+  },
+  "6209": {
+    "zona": "Las Condes",
+    "tipo": "Departamento"
   }
 }

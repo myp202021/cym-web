@@ -347,6 +347,7 @@ export default function VenderCasaSectorOriente() {
               )
             })}
           </div>
+          <p>¿Tu casa vale más de 20.000 UF? <Link href="/vender-casa-mas-de-20000-uf-sector-oriente">Guía para vender una casa de valor alto en el sector oriente</Link>: cuántas compiten en tu tramo por comuna, documentos e impuestos.</p>
           <p className="b3d-chico">
             Medianas de precio de la cartera publicada por CyM (todas las propiedades en venta de cada comuna), no del mercado completo.{' '}
             <a href={CARTERA.fuente} target="_blank" rel="noopener">Ver la cartera en cympropiedades.cl</a>.

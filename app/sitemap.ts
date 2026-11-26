@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: `${SITIO.url}/`, lastModified: fecha, changeFrequency: 'weekly', priority: 1 },
     ...COMUNAS.map((c) => ({ url: `${SITIO.url}/${c.slug}`, lastModified: fechaCartera, changeFrequency: 'weekly' as const, priority: 0.95 })),
-    ...PAGINAS.map((p) => ({ url: `${SITIO.url}/${p.slug}`, lastModified: p.tipo === 'corredoras' ? fechaCartera : fecha, changeFrequency: 'monthly' as const, priority: 0.85 })),
+    ...PAGINAS.map((p) => ({ url: `${SITIO.url}/${p.slug}`, lastModified: p.fecha ? new Date(p.fecha) : p.tipo === 'corredoras' ? fechaCartera : fecha, changeFrequency: 'monthly' as const, priority: 0.85 })),
     { url: `${SITIO.url}/vender-casa-sector-oriente`, lastModified: new Date('2026-11-18'), changeFrequency: 'monthly' as const, priority: 0.95 },
     ...['ranking-barrios-sector-oriente', 'precios-casas-sector-oriente', 'datos-mercado-oriente'].map((r) => ({ url: `${SITIO.url}/${r}`, lastModified: fecha, changeFrequency: 'monthly' as const, priority: 0.9 })),
     { url: `${SITIO.url}/propiedades`, lastModified: fecha, changeFrequency: 'daily' as const, priority: 0.9 },

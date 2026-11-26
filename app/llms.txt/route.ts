@@ -1,4 +1,4 @@
-import { DESCRIPCION, SITIO } from '@/lib/sitio'
+import { DESCRIPCION, SITIO, PERFILES } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import { GUIAS } from '@/lib/guias'
 import { COMUNAS } from '@/lib/comunas'
@@ -23,6 +23,8 @@ export function GET() {
     `- Correo: ${SITIO.email}`,
     `- Oficina: ${SITIO.direccion}, ${SITIO.comuna}, Santiago de Chile`,
     `- Instagram: ${SITIO.instagram}`,
+    `- YouTube: ${SITIO.youtube} (serie Barrio 3D: cómo se forma el precio de una casa en Vitacura)`,
+    `- Perfiles verificados: ${PERFILES.join(', ')}`,
     '',
     '## CyM por comuna (corredora de propiedades)',
     ...COMUNAS.map((c) => `- [Corredora de propiedades en ${c.nombre}](${SITIO.url}/${c.slug}): ${c.resumen}`),
