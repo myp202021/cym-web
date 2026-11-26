@@ -11,7 +11,7 @@ import Alianzas from '@/components/Alianzas'
 import Faq from '@/components/Faq'
 import JsonLd from '@/components/JsonLd'
 import { COMUNAS, comuna as buscar } from '@/lib/comunas'
-import { PAGINAS, pagina, paginasDe, TIPOS, corredorasDe } from '@/lib/paginas'
+import { PAGINAS, pagina, paginasDe, TIPOS, corredorasDe, RANKING, ANCLA_RANKING } from '@/lib/paginas'
 import PaginaOperacion from '@/components/PaginaOperacion'
 import CarteraCyM from '@/components/CarteraCyM'
 import { porZona } from '@/lib/propiedades'
@@ -287,6 +287,15 @@ export default async function PaginaRaiz({ params }: Props) {
           )}
         </>
       )}
+
+      <section className="seccion">
+        <div className="contenedor angosto">
+          <p className="destacado-b3d">
+            <b>Ranking de corredoras en {c.nombre}:</b> comparamos 11 corredoras del sector oriente (oficinas, reseñas en Google, trayectoria y tasación), con metodología y fuentes:{' '}
+            <Link href={`/${RANKING}#${ANCLA_RANKING[c.slug] ?? 'vitacura'}`}>qué corredora elegir para vender tu casa en {c.nombre}</Link>.
+          </p>
+        </div>
+      </section>
 
       <Faq items={faqs} titulo={`Preguntas frecuentes: corredora de propiedades en ${c.nombre}`} />
 

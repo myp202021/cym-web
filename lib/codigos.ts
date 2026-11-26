@@ -380,10 +380,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "La Dehesa",
     "tipo": "Casa"
   },
-  "4173": {
-    "zona": "Vitacura",
-    "tipo": "Casa"
-  },
   "4183": {
     "zona": "Vitacura",
     "tipo": "Casa"
@@ -1400,10 +1396,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "Las Condes",
     "tipo": "Casa"
   },
-  "5343": {
-    "zona": "Las Condes",
-    "tipo": "Casa"
-  },
   "5345": {
     "zona": "Las Condes",
     "tipo": "Departamento"
@@ -2184,10 +2176,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "Vitacura",
     "tipo": "Casa"
   },
-  "5792": {
-    "zona": "Las Condes",
-    "tipo": "Casa"
-  },
   "5793": {
     "zona": "La Reina",
     "tipo": "Casa"
@@ -2724,10 +2712,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "La Dehesa",
     "tipo": "Casa"
   },
-  "6021": {
-    "zona": "San Carlos de Apoquindo",
-    "tipo": "Casa"
-  },
   "6022": {
     "zona": "San Carlos de Apoquindo",
     "tipo": "Casa"
@@ -3132,10 +3116,6 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "Las Condes",
     "tipo": "Casa"
   },
-  "6160": {
-    "zona": "Las Condes",
-    "tipo": "Casa"
-  },
   "6161": {
     "zona": "Las Condes",
     "tipo": "Departamento"
@@ -3204,6 +3184,10 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "zona": "Vitacura",
     "tipo": "Departamento"
   },
+  "6180": {
+    "zona": "Vitacura",
+    "tipo": "Casa"
+  },
   "6184": {
     "zona": "Vitacura",
     "tipo": "Departamento"
@@ -3253,6 +3237,22 @@ export const CODIGOS: Record<string, { zona: string; tipo: string }> = {
     "tipo": "Casa"
   },
   "6209": {
+    "zona": "Las Condes",
+    "tipo": "Departamento"
+  },
+  "6212": {
+    "zona": "Las Condes",
+    "tipo": "Casa"
+  },
+  "6213": {
+    "zona": "San Carlos de Apoquindo",
+    "tipo": "Casa"
+  },
+  "6214": {
+    "zona": "La Dehesa",
+    "tipo": "Casa"
+  },
+  "6215": {
     "zona": "Las Condes",
     "tipo": "Departamento"
   }
