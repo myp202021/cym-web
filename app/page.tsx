@@ -121,6 +121,7 @@ export default function Home() {
                   <li><Link href="/ranking-barrios-sector-oriente">Ranking de barrios del sector oriente</Link></li>
                   <li><Link href="/precios-casas-sector-oriente">Precios de casas por comuna</Link></li>
                   <li><Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades del sector oriente</Link></li>
+                  <li><Link href="/ranking-corredoras-de-propiedades-sector-oriente">Ranking de corredoras para vender casa</Link></li>
                 </ul>
                 <a href={SITIO.sitioOficial} target="_blank" rel="noopener" className="btn btn-borde">Sitio oficial: cympropiedades.cl</a>
               </div>

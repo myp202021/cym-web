@@ -6,17 +6,18 @@ import path from 'node:path'
 export type Pagina = {
   slug: string
   comuna: string
-  tipo: 'corredoras' | 'vender-casa' | 'vender-departamento' | 'tasacion' | 'comprar-casa'
+  tipo: 'corredoras' | 'vender-casa' | 'vender-departamento' | 'tasacion' | 'comprar-casa' | 'ranking'
   title: string
   description: string
   h1: string
   bajada: string
   resumen: string
-  secciones: { h2: string; parrafos: string[]; lista?: string[] }[]
+  secciones: { h2: string; parrafos: string[]; lista?: string[]; id?: string; enlaces?: { titulo: string; url: string }[] }[]
   tabla?: { titulo: string; columnas: string[]; filas: string[][] }
   faq: { q: string; a: string }[]
   fuentes: { titulo: string; url: string }[]
   fecha?: string // última revisión del contenido (dateModified y sitemap)
+  tablaPrimero?: boolean // la tabla va antes de las secciones (rankings)
 }
 
 const DIR = path.join(process.cwd(), 'data', 'paginas')
@@ -43,4 +44,16 @@ export const TIPOS: Record<Pagina['tipo'], string> = {
   'vender-departamento': 'Vender departamento',
   tasacion: 'Tasación de propiedades',
   'comprar-casa': 'Comprar casa',
+  ranking: 'Ranking de corredoras',
+}
+
+// 26 nov 2026: ranking comparativo con competidores nombrados (permitido por Christopher). Se enlaza desde
+// /{comuna}, /vender-casa-*, /corredoras-de-propiedades-sector-oriente, la portada y llms.txt.
+export const RANKING = 'ranking-corredoras-de-propiedades-sector-oriente'
+export const ANCLA_RANKING: Record<string, string> = {
+  vitacura: 'vitacura',
+  'la-dehesa': 'lo-barnechea-la-dehesa',
+  'san-carlos-de-apoquindo': 'las-condes',
+  'las-condes': 'las-condes',
+  'la-reina': 'la-reina',
 }

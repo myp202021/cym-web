@@ -12,7 +12,7 @@ import CarteraCyM from '@/components/CarteraCyM'
 import MercadoComuna from '@/components/MercadoComuna'
 import { CARTERA } from '@/lib/cartera'
 import { COMUNAS } from '@/lib/comunas'
-import { PAGINAS, TIPOS, type Pagina } from '@/lib/paginas'
+import { PAGINAS, TIPOS, RANKING, ANCLA_RANKING, type Pagina } from '@/lib/paginas'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 
 const SEGMENTO_ALTO = 'vender-casa-mas-de-20000-uf-sector-oriente'
@@ -24,6 +24,30 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
   const propietario = p.tipo !== 'comprar-casa'
   const hermanas = PAGINAS.filter((x) => x.slug !== p.slug && (x.comuna === p.comuna || (!c && !x.comuna)))
   const fondo = c ? FONDOS[c.slug as keyof typeof FONDOS] : FONDOS.home
+  const ranking = p.tipo === 'ranking'
+  const tablaJsx = (
+    <>
+      {p.tabla && p.tabla.filas.length > 0 && (
+          <section className="seccion">
+            <div className="contenedor">
+              <h2>{p.tabla.titulo}</h2>
+              <div style={{ overflowX: 'auto' }}>
+                <table className="tabla-ranking">
+                  <thead>
+                    <tr>{p.tabla.columnas.map((col) => <th key={col}>{col}</th>)}</tr>
+                  </thead>
+                  <tbody>
+                    {p.tabla.filas.map((f, i) => (
+                      <tr key={i}>{f.map((cel, j) => <td key={j}>{cel}</td>)}</tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        )}
+    </>
+  )
   return (
     <>
       <nav className="migas contenedor" aria-label="Ruta">
@@ -45,7 +69,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
           <div className="acciones">
             <BotonWhatsApp
               texto={propietario ? 'Tasar sin costo por WhatsApp' : 'Hablar con CyM por WhatsApp'}
-              mensaje={mensajeWeb([`${TIPOS[p.tipo]}${c ? ` en ${c.nombre}` : ''}: quiero asesoría.`])}
+              mensaje={mensajeWeb([`${ranking ? 'Vender casa en el sector oriente' : TIPOS[p.tipo]}${c ? ` en ${c.nombre}` : ''}: quiero asesoría.`])}
               origen={`pagina_${p.slug}`}
               numero={numero}
             />
@@ -88,35 +112,30 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
         </section>
       )}
 
+      {p.tablaPrimero && tablaJsx}
+
       {p.secciones.map((s, i) => (
-        <section key={s.h2} className={`seccion${i % 2 ? '' : ' gris'}`}>
+        <section key={s.h2} id={s.id} className={`seccion${i % 2 ? '' : ' gris'}`}>
           <div className="contenedor angosto articulo">
             <h2>{s.h2}</h2>
             {s.parrafos.map((t) => <p key={t}>{t}</p>)}
             {s.lista && s.lista.length > 0 && <ul className="checks">{s.lista.map((t) => <li key={t}>{t}</li>)}</ul>}
+            {s.enlaces && s.enlaces.length > 0 && (
+              <p className="nota">
+                Fuentes:{' '}
+                {s.enlaces.map((e, j) => (
+                  <span key={e.url}>
+                    {j > 0 && ' · '}
+                    <a href={e.url} target="_blank" rel="noopener nofollow">{e.titulo}</a>
+                  </span>
+                ))}
+              </p>
+            )}
           </div>
         </section>
       ))}
 
-      {p.tabla && p.tabla.filas.length > 0 && (
-        <section className="seccion">
-          <div className="contenedor">
-            <h2>{p.tabla.titulo}</h2>
-            <div style={{ overflowX: 'auto' }}>
-              <table className="tabla-ranking">
-                <thead>
-                  <tr>{p.tabla.columnas.map((col) => <th key={col}>{col}</th>)}</tr>
-                </thead>
-                <tbody>
-                  {p.tabla.filas.map((f, i) => (
-                    <tr key={i}>{f.map((cel, j) => <td key={j}>{cel}</td>)}</tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </section>
-      )}
+      {!p.tablaPrimero && tablaJsx}
 
       <Alianzas />
 
@@ -148,6 +167,12 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
             <p>
               <b>¿Tu casa vale más de 20.000 UF?</b> Mira cuántas compiten en tu tramo, qué mira el comprador y qué dice el SII:{' '}
               <Link href={`/${SEGMENTO_ALTO}`}>vender una casa de más de 20.000 UF en el sector oriente</Link>.
+            </p>
+          )}
+          {!ranking && (p.tipo === 'vender-casa' || p.tipo === 'corredoras') && (
+            <p>
+              <b>¿Qué corredora elegir?</b> Comparamos 11 corredoras del sector oriente con seis criterios y fuentes públicas:{' '}
+              <Link href={`/${RANKING}${c && ANCLA_RANKING[c.slug] ? `#${ANCLA_RANKING[c.slug]}` : ''}`}>ranking de corredoras para vender casa{c ? ` en ${c.nombre}` : ' en el sector oriente'}</Link>.
             </p>
           )}
           {hermanas.length > 0 && (
@@ -193,18 +218,22 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               about: c ? { '@type': 'Place', name: `${c.nombre}, ${c.comuna}, Santiago, Chile` } : { '@type': 'Place', name: 'Sector oriente de Santiago, Chile' },
               citation: p.fuentes.map((f) => f.url),
             },
-            {
-              '@type': 'Service',
-              name: `${TIPOS[p.tipo]}${c ? ` en ${c.nombre}` : ' en el sector oriente de Santiago'}`,
-              provider: { '@id': `${SITIO.url}/#cym` },
-              areaServed: c ? `${c.nombre}, ${c.comuna}` : COMUNAS.map((x) => x.nombre).join(', '),
-            },
+            ...(ranking
+              ? []
+              : [
+                  {
+                    '@type': 'Service',
+                    name: `${TIPOS[p.tipo]}${c ? ` en ${c.nombre}` : ' en el sector oriente de Santiago'}`,
+                    provider: { '@id': `${SITIO.url}/#cym` },
+                    areaServed: c ? `${c.nombre}, ${c.comuna}` : COMUNAS.map((x) => x.nombre).join(', '),
+                  },
+                ]),
             ...(p.tabla && p.tabla.filas.length
               ? [
                   {
                     '@type': 'ItemList',
                     name: p.tabla.titulo,
-                    itemListElement: p.tabla.filas.map((f, i) => ({ '@type': 'ListItem', position: i + 1, name: f[0], description: f.slice(1).join('. ') })),
+                    itemListElement: p.tabla.filas.map((f, i) => ({ '@type': 'ListItem', position: i + 1, name: f[0], description: f.slice(1).map((x, j) => `${p.tabla!.columnas[j + 1]}: ${x}`).join('. ') })),
                   },
                 ]
               : []),
