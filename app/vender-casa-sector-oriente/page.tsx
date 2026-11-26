@@ -348,6 +348,7 @@ export default function VenderCasaSectorOriente() {
             })}
           </div>
           <p>¿Qué corredora elegir? <Link href="/ranking-corredoras-de-propiedades-sector-oriente">Ranking de 11 corredoras para vender casa en el sector oriente</Link>, con metodología, reseñas y oficinas por comuna.</p>
+          <p>¿Cuánto demora vender? <Link href="/cuanto-demora-vender-casa-sector-oriente">Cuánto demora vender una casa en el sector oriente y cómo acortarlo</Link>: plazos de referencia, etapas hasta la escritura y qué hacer antes de publicar.</p>
           <p>¿Tu casa vale más de 20.000 UF? <Link href="/vender-casa-mas-de-20000-uf-sector-oriente">Guía para vender una casa de valor alto en el sector oriente</Link>: cuántas compiten en tu tramo por comuna, documentos e impuestos.</p>
           <p className="b3d-chico">
             Medianas de precio de la cartera publicada por CyM (todas las propiedades en venta de cada comuna), no del mercado completo.{' '}

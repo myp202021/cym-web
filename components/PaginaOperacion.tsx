@@ -16,6 +16,8 @@ import { PAGINAS, TIPOS, RANKING, ANCLA_RANKING, type Pagina } from '@/lib/pagin
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 
 const SEGMENTO_ALTO = 'vender-casa-mas-de-20000-uf-sector-oriente'
+const PLAZO_VENTA = 'cuanto-demora-vender-casa-sector-oriente'
+const ETIQUETAS: Record<string, string> = { [SEGMENTO_ALTO]: 'Vender casa de más de 20.000 UF', [PLAZO_VENTA]: 'Cuánto demora vender una casa' }
 
 export default function PaginaOperacion({ p }: { p: Pagina }) {
   const c = COMUNAS.find((x) => x.slug === p.comuna)
@@ -169,6 +171,12 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               <Link href={`/${SEGMENTO_ALTO}`}>vender una casa de más de 20.000 UF en el sector oriente</Link>.
             </p>
           )}
+          {p.tipo === 'vender-casa' && p.slug !== PLAZO_VENTA && (
+            <p>
+              <b>¿Cuánto demora vender?</b> Plazos de referencia, etapas desde la publicación hasta la escritura y qué acorta cada una:{' '}
+              <Link href={`/${PLAZO_VENTA}`}>cuánto demora vender una casa en el sector oriente</Link>.
+            </p>
+          )}
           {!ranking && (p.tipo === 'vender-casa' || p.tipo === 'corredoras' || p.tipo === 'tasacion' || p.tipo === 'vender-departamento') && (
             <p>
               <b>¿Qué corredora elegir?</b> Comparamos 11 corredoras del sector oriente con seis criterios y fuentes públicas:{' '}
@@ -183,7 +191,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
                   const hc = COMUNAS.find((x) => x.slug === h.comuna)
                   return (
                     <li key={h.slug}>
-                      <Link href={`/${h.slug}`}>{h.slug === SEGMENTO_ALTO ? 'Vender casa de más de 20.000 UF' : <>{TIPOS[h.tipo]}{hc ? ` en ${hc.nombre}` : ' en el sector oriente'}</>}</Link>
+                      <Link href={`/${h.slug}`}>{ETIQUETAS[h.slug] ? ETIQUETAS[h.slug] : <>{TIPOS[h.tipo]}{hc ? ` en ${hc.nombre}` : ' en el sector oriente'}</>}</Link>
                     </li>
                   )
                 })}
