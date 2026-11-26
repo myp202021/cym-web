@@ -14,7 +14,18 @@ export const SITIO = {
   region: 'Región Metropolitana',
   instagram: 'https://www.instagram.com/cym_propiedades/',
   sitioOficial: 'https://www.cympropiedades.cl',
+  youtube: 'https://www.youtube.com/@cym.propiedades',
 }
+
+// Perfiles externos verificados de CyM (sameAs del schema y llms.txt). 26 nov 2026: 2x3.cl queda fuera
+// mientras su perfil siga noindex (falta verificar identidad).
+export const PERFILES = [
+  'https://www.cympropiedades.cl',
+  'https://www.instagram.com/cym_propiedades/',
+  'https://www.youtube.com/@cym.propiedades',
+  'https://www.portalinmobiliario.com/tienda/cym-propiedades',
+  'https://www.toppropiedades.cl/corredora/3618',
+]
 
 // WhatsApp central de CyM (+56 9 3401 8822), pedido de Christopher 27 oct.
 // Los mensajes salen armados ("Vengo de la web…" + zona/código/nombre). Si el agente (~/myp-whatsapp-agent)

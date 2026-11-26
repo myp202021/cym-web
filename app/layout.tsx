@@ -6,7 +6,7 @@ import { Raleway } from 'next/font/google'
 import JsonLd from '@/components/JsonLd'
 import WhatsAppFlotante from '@/components/WhatsAppFlotante'
 import MenuPrincipal from '@/components/MenuPrincipal'
-import { SITIO, TRACKING, DESCRIPCION } from '@/lib/sitio'
+import { SITIO, TRACKING, DESCRIPCION, PERFILES } from '@/lib/sitio'
 import { ZONAS } from '@/lib/zonas'
 import './globals.css'
 
@@ -43,7 +43,7 @@ const organizacion = {
     addressCountry: 'CL',
   },
   areaServed: ZONAS.map((z) => ({ '@type': 'AdministrativeArea', name: `${z.nombre}, ${z.comuna}` })),
-  sameAs: [SITIO.instagram, SITIO.sitioOficial],
+  sameAs: PERFILES,
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

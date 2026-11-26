@@ -15,12 +15,14 @@ import { COMUNAS } from '@/lib/comunas'
 import { PAGINAS, TIPOS, type Pagina } from '@/lib/paginas'
 import { SITIO, mensajeWeb, WHATSAPP_ZONA } from '@/lib/sitio'
 
+const SEGMENTO_ALTO = 'vender-casa-mas-de-20000-uf-sector-oriente'
+
 export default function PaginaOperacion({ p }: { p: Pagina }) {
   const c = COMUNAS.find((x) => x.slug === p.comuna)
   const url = `${SITIO.url}/${p.slug}`
   const numero = c ? WHATSAPP_ZONA[c.nombre] : undefined
   const propietario = p.tipo !== 'comprar-casa'
-  const hermanas = PAGINAS.filter((x) => x.slug !== p.slug && (x.comuna === p.comuna || (!c && x.tipo === 'corredoras')))
+  const hermanas = PAGINAS.filter((x) => x.slug !== p.slug && (x.comuna === p.comuna || (!c && !x.comuna)))
   const fondo = c ? FONDOS[c.slug as keyof typeof FONDOS] : FONDOS.home
   return (
     <>
@@ -142,6 +144,12 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               <Link href="/vender-casa-sector-oriente">vender casa en el sector oriente</Link>.
             </p>
           )}
+          {p.tipo === 'vender-casa' && p.slug !== SEGMENTO_ALTO && (
+            <p>
+              <b>¿Tu casa vale más de 20.000 UF?</b> Mira cuántas compiten en tu tramo, qué mira el comprador y qué dice el SII:{' '}
+              <Link href={`/${SEGMENTO_ALTO}`}>vender una casa de más de 20.000 UF en el sector oriente</Link>.
+            </p>
+          )}
           {hermanas.length > 0 && (
             <>
               <h2>Sigue leyendo</h2>
@@ -150,7 +158,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
                   const hc = COMUNAS.find((x) => x.slug === h.comuna)
                   return (
                     <li key={h.slug}>
-                      <Link href={`/${h.slug}`}>{TIPOS[h.tipo]}{hc ? ` en ${hc.nombre}` : ' en el sector oriente'}</Link>
+                      <Link href={`/${h.slug}`}>{h.slug === SEGMENTO_ALTO ? 'Vender casa de más de 20.000 UF' : <>{TIPOS[h.tipo]}{hc ? ` en ${hc.nombre}` : ' en el sector oriente'}</>}</Link>
                     </li>
                   )
                 })}
@@ -179,7 +187,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               description: p.description,
               url,
               inLanguage: 'es-CL',
-              dateModified: p.tipo === 'corredoras' ? CARTERA.fecha : '2026-11-13',
+              dateModified: p.fecha ?? (p.tipo === 'corredoras' ? CARTERA.fecha : '2026-11-13'),
               author: { '@id': `${SITIO.url}/#cym` },
               publisher: { '@id': `${SITIO.url}/#cym` },
               about: c ? { '@type': 'Place', name: `${c.nombre}, ${c.comuna}, Santiago, Chile` } : { '@type': 'Place', name: 'Sector oriente de Santiago, Chile' },
