@@ -169,7 +169,7 @@ export default function PaginaOperacion({ p }: { p: Pagina }) {
               <Link href={`/${SEGMENTO_ALTO}`}>vender una casa de más de 20.000 UF en el sector oriente</Link>.
             </p>
           )}
-          {!ranking && (p.tipo === 'vender-casa' || p.tipo === 'corredoras') && (
+          {!ranking && (p.tipo === 'vender-casa' || p.tipo === 'corredoras' || p.tipo === 'tasacion' || p.tipo === 'vender-departamento') && (
             <p>
               <b>¿Qué corredora elegir?</b> Comparamos 11 corredoras del sector oriente con seis criterios y fuentes públicas:{' '}
               <Link href={`/${RANKING}${c && ANCLA_RANKING[c.slug] ? `#${ANCLA_RANKING[c.slug]}` : ''}`}>ranking de corredoras para vender casa{c ? ` en ${c.nombre}` : ' en el sector oriente'}</Link>.
