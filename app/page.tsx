@@ -122,6 +122,8 @@ export default function Home() {
                   <li><Link href="/precios-casas-sector-oriente">Precios de casas por comuna</Link></li>
                   <li><Link href="/corredoras-de-propiedades-sector-oriente">Corredoras de propiedades del sector oriente</Link></li>
                   <li><Link href="/ranking-corredoras-de-propiedades-sector-oriente">Ranking de corredoras para vender casa</Link></li>
+                  <li><Link href="/cuanto-demora-vender-casa-sector-oriente">Cuánto demora vender una casa</Link></li>
+                  <li><Link href="/vender-casa-mas-de-20000-uf-sector-oriente">Vender casa de más de 20.000 UF</Link></li>
                 </ul>
                 <a href={SITIO.sitioOficial} target="_blank" rel="noopener" className="btn btn-borde">Sitio oficial: cympropiedades.cl</a>
               </div>
