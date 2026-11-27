@@ -294,6 +294,9 @@ export default async function PaginaRaiz({ params }: Props) {
             <b>Ranking de corredoras en {c.nombre}:</b> comparamos 11 corredoras del sector oriente (oficinas, reseñas en Google, trayectoria y tasación), con metodología y fuentes:{' '}
             <Link href={`/${RANKING}#${ANCLA_RANKING[c.slug] ?? 'vitacura'}`}>qué corredora elegir para vender tu casa en {c.nombre}</Link>.
           </p>
+          <p className="destacado-b3d">
+            <b>Antes de publicar:</b> <Link href="/cuanto-demora-vender-casa-sector-oriente">cuánto demora vender una casa en el sector oriente y cómo acortarlo</Link>, y si tu casa supera las 20.000 UF, <Link href="/vender-casa-mas-de-20000-uf-sector-oriente">cómo vender una casa de más de 20.000 UF</Link>.
+          </p>
         </div>
       </section>
 

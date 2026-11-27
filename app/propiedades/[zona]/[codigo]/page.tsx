@@ -27,7 +27,7 @@ function datosPagina(zonaSlug: string, codigo: string) {
   const zonaTxt = p.sector || z.nombre
   const m2 = p.m2_construidos ? ` de ${p.m2_construidos} m²` : ''
   const h1 = `${p.tipo}${m2} en venta en ${zonaTxt}`
-  const title = `${p.tipo} en venta en ${zonaTxt}, ${p.precio} · Código ${p.codigo} | CyM Propiedades`
+  const title = `${p.tipo} en venta en ${zonaTxt}, ${p.precio} · Cód. ${p.codigo} | CyM`
   const description = [
     `${p.tipo}${m2}`,
     p.m2_terreno ? ` en terreno de ${p.m2_terreno} m²` : '',
